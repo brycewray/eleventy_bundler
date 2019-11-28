@@ -46,8 +46,9 @@ module.exports = function (eleventyConfig) {
   /* pathPrefix: "/"; */
   return {
     dir: {
-      input: 'src',
-      data: '../_data'
+      input: 'src', // <--- everything else in 'dir' is relative to this directory! https://www.11ty.io/docs/config/#directory-for-includes
+      data: '../_data',
+      includes: '_includes'
     },
     templateFormats: [
       'html',
