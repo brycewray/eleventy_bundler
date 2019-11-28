@@ -1,5 +1,5 @@
 /* index.js */
 
-require("typeface-vollkorn")
-
 import '../css/index.scss'
+
+require("typeface-vollkorn")
