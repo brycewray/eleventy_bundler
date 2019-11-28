@@ -5,14 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ssgquiet": "npx @11ty/eleventy --serve --quiet"
+    "ssgquiet": "npx @11ty/eleventy --serve --quiet",
+    "dev:eleventy": "rimraf _site && ELEVENTY_ENV=development eleventy --serve --quiet",
+    "dev:parcel": "rimraf _site && parcel watch src/assets/images/* src/assets/css/index.scss src/assets/js/index.js --out-dir _site/assets",
+    "build": "run-s prod:*",
+    "prod:eleventy": "ELEVENTY_ENV=production eleventy --output =./build",
+    "prod:parcel": "parcel build src/assets/images/* src/assets/css/index.scss src/assets/js/index.js --out-dir _site/assets"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.7"
   }
 }
