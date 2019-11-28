@@ -46,7 +46,8 @@ module.exports = function (eleventyConfig) {
   /* pathPrefix: "/"; */
   return {
     dir: {
-      input: 'src'
+      input: 'src',
+      data: '../_data'
     },
     templateFormats: [
       'html',
