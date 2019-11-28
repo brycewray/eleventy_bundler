@@ -1,5 +1,5 @@
 /* index.js */
 
-import '../css/index.scss'
+import '../scss/ofotigrid.scss'
 
 require("typeface-vollkorn")
