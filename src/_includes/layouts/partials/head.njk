@@ -1,0 +1,80 @@
+  <head>
+    <meta name="generator" content="Eleventy - https://11ty.io" />
+        
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146418828-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-146418828-1');
+    </script>
+
+    {% if title == "Home page" %}
+      <title>{{ siteparams.siteTitle }}</title>
+      <meta property="og:title" content="{{ siteparams.siteTitle }}" />
+    {% else %}
+      <title>{{ title }} | {{ siteparams.siteTitle }}</title>
+      <meta property="og:title" content="{{ title }} | {{ siteparams.siteTitle }}" />
+    {% endif %}
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% if title == "Home page" %}
+      <meta name="description" content="{{ siteparams.siteDescription }}">
+      <meta property="og:description" content="{{ siteparams.siteDescription }}" />
+      <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+    {% elseif description != "" %}
+      <meta name="description" content="{{ description }}">
+    {% endif %}
+
+    {% if final_url %}
+      <meta property="og:url" content="{{ siteparams.siteBaseURL }}{{ final_url }}" />        
+    {% endif %}
+
+    {% if featured_image %}
+    <meta property="og:image" content="https://brycewray.com{{ featured_image }}" />
+    {% endif %}
+
+    <!-- CSS/SCSS -->
+    <!-- resulting CSS after Gulp builds it from SCSS files -->
+    <link rel="stylesheet" href="/css/ofotigrid.css">
+
+    <!-- Twitter meta -->
+    <meta name="twitter:site" content="@BryceWrayTX">
+    <meta name="twitter:creator" content="@BryceWrayTX">
+    <meta name="twitter:card" content="summary_large_image" />
+    {% if title != "Home page" %}
+      <meta name="twitter:description" content="{{ description }}" />
+      <meta name="twitter:title" content="{{ title }}" />
+      <meta name="twitter:image" content="https://brycewray.com{{ featured_image }}" />
+    {% else %}
+      <meta name="twitter:description" content="{{ siteparams.siteDescription }}" />
+      <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
+      <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+    {% endif %}
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon_180x180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon_120x120.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon_167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon_152x152.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/apple-touch-icon_1024x1024.png">
+
+    <!-- js here -->
+    <script src="/js/lazysizes/plugins/blur-up/ls.blur-up.min.js"></script>
+    <script src="/js/lazysizes/plugins/progressive/ls.progressive.min.js"></script>
+    <script src="/js/lazysizes/lazysizes.min.js" async=""></script>
+
+    <noscript>
+      <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
+      <meta name="twitter:widgets:theme" content="dark">
+      <meta name="twitter:widgets:link-color" content="#00bbff">
+    </noscript>
+  </head>
