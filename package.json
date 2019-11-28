@@ -10,9 +10,9 @@
     "start": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
     "dev:webpack": "webpack -d --mode development",
-    "build": "npm-run-all clean run-s prod:*",
+    "build": "npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
-    "prod:webpack": "webpack -p mode production"
+    "prod:webpack": "webpack -p --mode production"
   },
   "keywords": [],
   "author": "",
