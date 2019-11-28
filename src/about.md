@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singleposthero.njk
 title: "About me"
 ---
 
