@@ -4,10 +4,12 @@ const path = require('path')
 
 const config = {
   watch: true,
-  entry: './src/assets/js/index.js',
+  entry: {
+    index: './src/assets/js/index.js',
+  },
   output: {
+    filename: 'bundle.js',
     path: path.resolve(__dirname, '_site'),
-    filename: 'bundle.js'
   },
   module: {
     rules: [
@@ -23,12 +25,7 @@ const config = {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
-            loader: 'url-loader',
-            options: {
-              limit: 50000,
-              mimetype: 'application/font-woff',
-              name: '/assets/fonts/[name].[ext]',
-            },
+            loader: 'file-loader',
           },
         ],
       },
