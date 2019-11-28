@@ -26,7 +26,7 @@
     {% if title == "Home page" %}
       <meta name="description" content="{{ siteparams.siteDescription }}">
       <meta property="og:description" content="{{ siteparams.siteDescription }}" />
-      <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+      <meta property="og:image" content="https://brycewray.com/assets/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
     {% elseif description != "" %}
       <meta name="description" content="{{ description }}">
     {% endif %}
@@ -52,23 +52,20 @@
     {% else %}
       <meta name="twitter:description" content="{{ siteparams.siteDescription }}" />
       <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
-      <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
+      <meta name="twitter:image" content="https://brycewray.com/assets/images/typewriter-monochrome_2242164_1280x720_60pct.jpg" />
     {% endif %}
 
     <!-- Favicon -->
-    <link rel="icon" href="/images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon_180x180.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon_120x120.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon_167x167.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon_152x152.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/apple-touch-icon_1024x1024.png">
+    <link rel="icon" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon_180x180.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/apple-touch-icon_120x120.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/apple-touch-icon_167x167.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/apple-touch-icon_152x152.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/assets/images/apple-touch-icon_1024x1024.png">
 
-    <!-- js here -->
-    <script src="/js/lazysizes/plugins/blur-up/ls.blur-up.min.js"></script>
-    <script src="/js/lazysizes/plugins/progressive/ls.progressive.min.js"></script>
-    <script src="/js/lazysizes/lazysizes.min.js" async=""></script>
+    <!-- js formerly here for lazysizes stuff -->
 
     <noscript>
       <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
