@@ -8,7 +8,7 @@ date: 2019-11-24T10:15:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-odds-ends-2019-11"
 idx: 39
-featured_image: /images/nuts-768243_1920x1080.jpg
+featured_image: /assets/images/nuts-768243_1920x1080.jpg
 featured_image_alt: "Closeup view of mixed nuts"
 featured_image_caption: "Image: Pixabay"
 ---
