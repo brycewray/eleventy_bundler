@@ -5,7 +5,16 @@ $serif: Vollkorn, Georgia, Times, 'Times New Roman', serif;
 
 html, body {
   font-family: $serif;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+}
+
+p, li, td, th {
+  font-size: 1.2em;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
