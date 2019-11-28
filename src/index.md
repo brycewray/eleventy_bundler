@@ -1,6 +1,6 @@
 ---
 title: "Starter"
-layout: layouts/baseof.njk
+layout: layouts/_default/index.njk
 description: "Let's see if the var picks it up"
 ---
 

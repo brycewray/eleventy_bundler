@@ -1,5 +1,5 @@
 ---
-layout: layouts/baseof.njk
+layout: layouts/posts/singlepost.njk
 title: "About me"
 ---
 
