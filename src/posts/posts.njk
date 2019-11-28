@@ -1,0 +1,53 @@
+---
+layout: layouts/_default/baseof.njk
+tags:
+  - nav
+navtitle: Posts
+title: Posts
+pagination: 
+  data: collections.post
+  size: 5
+  reverse: true
+  alias: posts
+---
+
+<main>
+	<div class="container">
+		<h1 class="ctr topOfMain">Posts</h1>
+		<div class="post-line"></div>
+		<div class="container-narrower">
+      {% for post in posts %}
+        <div>          
+          <h2 class="h5" style="margin-bottom: 0;"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <time datetime="{{ post.date | htmlDateString }}" class="pokey text-muted text-sans-serif">{{ post.date | htmlDateString }}</time>
+          <p class="pokey text-body">
+            {{ post.data.description }}
+          </p>
+        </div>
+      {% endfor %}
+      <hr style="margin-top: 2em;" />
+      <p class="ctr legal" style="margin-top: 0.5em;">
+        {% if pagination.firstPageHref != page.url %}
+        <a href={{ pagination.firstPageHref}}>&lt;&lt;</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href={{ pagination.previousPageHref }}>&lt;</a>
+        {% else %}
+        <span class="text-muted">&lt;&lt;</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="text-muted">&lt;</span>
+        {% endif %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% if pagination.lastPageHref != page.url %}
+        <a href={{ pagination.nextPageHref }}>&gt;</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href={{ pagination.lastPageHref }}>&gt;&gt;</a>
+        {% else %}
+        <span class="text-muted">&gt;</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="text-muted">&gt;&gt;</span>
+        {% endif %}
+      </p>
+		</div>
+	</div>
+
+</main>
