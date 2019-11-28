@@ -12,7 +12,7 @@ draft: false
 actual_path: /content/posts/2019/07/lessons-learned
 final_url: /posts/2019/07/lessons-learned
 discussionId: "2019-07-lessons-learned"
-featured_image: /images/binoculars-4143165_1280x719_60pct.jpg
+featured_image: /assets/images/binoculars-4143165_1280x719_60pct.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/08/make-games-not-war
 final_url: /posts/2019/08/make-games-not-war
 discussionId: "2019-08-make-games-not-war"
-featured_image: /images/stadium-seats-3310891_1280x720_60pct_prog.jpg
+featured_image: /assets/images/stadium-seats-3310891_1280x720_60pct_prog.jpg
 featured_image_alt: Rows of empty seats in a sports stadium
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

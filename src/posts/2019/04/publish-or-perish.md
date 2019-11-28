@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/04/publish-or-perish
 #discussionId: "2019-04-publish-or-perish" -- assign later if possible
 final_url: /posts/2019/04/publish-or-perish
-featured_image: /images/office-blogging-monochrome-381228_1280x720_60pct_prog.jpg
+featured_image: /assets/images/office-blogging-monochrome-381228_1280x720_60pct_prog.jpg
 featured_image_alt: Hand moving a computer mouse near a keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

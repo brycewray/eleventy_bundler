@@ -8,7 +8,7 @@ date: 2019-11-03T17:59:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
 idx: 38
-featured_image: /images/angry-bird-2234295_1920x1080.jpg
+featured_image: /assets/images/angry-bird-2234295_1920x1080.jpg
 featured_image_alt: "Stuffed Angry Bird toy sitting on ground with blurred vehicles in the background"
 featured_image_caption: "Image: Pixabay"
 ---

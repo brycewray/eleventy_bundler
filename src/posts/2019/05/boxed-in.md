@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/05/boxed-in
 discussionId: "2019-05-boxed-in"
 final_url: /posts/2019/05/boxed-in
-featured_image: /images/thunderstorm-3625405_1280x720_60pct_prog.jpg
+featured_image: /assets/images/thunderstorm-3625405_1280x720_60pct_prog.jpg
 featured_image_alt: Thunderstorm clouds with lighting flashes
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

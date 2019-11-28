@@ -11,7 +11,7 @@ lastmod: 2019-10-11
 idx: 34
 #draft: Note!
 discussionId: "2019-10-its-about-food-not-decor" # figure it out later
-featured_image: /images/mount-horeb-lunch-4162348_1280x720_60pct_prog.jpg
+featured_image: /assets/images/mount-horeb-lunch-4162348_1280x720_60pct_prog.jpg
 featured_image_alt: "Duotone photo of a diner with customers waiting to be served"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -11,7 +11,7 @@ date: 2019-10-11
 idx: 35
 #draft: Note!
 discussionId: "2019-10-otoh"
-featured_image: /images/compass-1344839_1280x720_60pct_prog.jpg
+featured_image: /assets/images/compass-1344839_1280x720_60pct_prog.jpg
 featured_image_alt: "Compass lying on a granite background"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

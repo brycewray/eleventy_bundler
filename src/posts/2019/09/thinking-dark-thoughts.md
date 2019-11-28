@@ -8,7 +8,7 @@ date: 2019-09-29
 #lastmod:
 idx: 33
 discussionId: "2019-09-thinking-dark-thoughts"
-featured_image: /images/sunset-1090164_1280x720_60pct_prog.jpg
+featured_image: /assets/images/sunset-1090164_1280x720_60pct_prog.jpg
 #featured_image_alt: ""
 featured_image_caption: "Image: Pixabay"
 ---
