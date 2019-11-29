@@ -1,8 +1,7 @@
 /* index.js */
 
-import '../scss/ofotigrid.scss'
-
 require("typeface-vollkorn")
+import '../scss/ofotigrid.scss'
 
 import 'lazysizes'
 import 'lazysizes/plugins/bgset/ls.bgset'

@@ -1,12 +1,11 @@
 const webpack = require('webpack')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // const HtmlWebpackPlugin = require('html-webpack-plugin') 
 // const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
-const devMode = process.env.NODE_ENV !== 'production'
+// const devMode = process.env.NODE_ENV !== 'production'
 
 const config = {
-  watch: true,
   entry: {
     index: './src/assets/js/index.js',
   },
@@ -14,24 +13,30 @@ const config = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '_site'),
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '/css/[name].css',
+      chunkFIlename: '[id].css',
+      // ignoreOrder: false, // Enable to remove warnings about conflicting order
+    })
+  ],
   module: {
     rules: [
       {
-        test: /\.s?[ac]ss$/,
+        test: /\.(s*)css$/,
         use: [
-          MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader', options: {
-              url: false, 
-              sourceMap: true
-            }
-          },
-          {
-            loader: 'sass-loader', 
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              sourceMap: true
-            }
-          }
+              // you can specify a publicPath here
+              // by default it uses publicPath in webpackOptions.output
+              publicPath: '../',
+              hmr: process.env.NODE_ENV === 'development',
+            },
+          },
+          // 'style-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
       {
@@ -39,18 +44,16 @@ const config = {
         use: [
           {
             loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+            }
           },
         ],
       },
     ],
   },
-  devtool: 'source-map',
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '/css/ofotigrid.css'
-    })
-  ],
-  mode : devMode ? 'development' : 'production'
+  watch: true,
 }
 
 module.exports = config
