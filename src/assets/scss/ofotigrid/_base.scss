@@ -116,6 +116,8 @@ td {
 
 .footnotes {
   font-size: $legal + unquote("em");
+  letter-spacing: normal;
+  // font-family: $sans-serif-boot;
 
   ol li {
     margin-bottom: 0.5em;
