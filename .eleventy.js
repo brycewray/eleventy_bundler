@@ -43,6 +43,8 @@ module.exports = function (config) {
   markdownEngine.use(markdownItPrism)
   config.setLibrary("md", markdownEngine)
 
+  config.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+
   /* pathPrefix: "/"; */
   return {
     dir: {
