@@ -89,7 +89,7 @@ const eleventyConfig = {
             600,
           ],
           quality: 60,
-          placeholder: false, // true makes bundle-eleventy.js massive
+          placeholder: false, // otherwise, bundle is too big -- unless you'll use the placeholder data, no point
           // placeholderSize: 40,
           name: 'assets/images/[name]-[width].[ext]',
         },
