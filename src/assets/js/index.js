@@ -4,6 +4,12 @@ import '../scss/ofotigrid.scss'
 
 require("typeface-vollkorn")
 
+import 'lazysizes'
+import 'lazysizes/plugins/bgset/ls.bgset'
+import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
+import 'lazysizes/plugins/blur-up/ls.blur-up'
+import 'lazysizes/plugins/progressive/ls.progressive'
+
 // --- start, twitterMeta ---
 
 /* detect dark or light mode and handle Twitter embeds accordingly */
