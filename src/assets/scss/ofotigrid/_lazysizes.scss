@@ -36,3 +36,23 @@
   opacity: 0;
   filter: blur(5px);
 }
+
+.blur-up {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+  &.lazyloaded {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+}
+
+.fade-box .lazyload, 
+.fade-box .lazyloading {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.fade-box img.lazyloaded {
+  opacity: 1;
+}
