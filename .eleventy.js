@@ -2,6 +2,7 @@ const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 // const lazyImagesPlugin = require("eleventy-plugin-lazyimages")
+const htmlmin = require('html-minifier')
 
 module.exports = function (config) {
 
@@ -44,6 +45,18 @@ module.exports = function (config) {
   config.setLibrary("md", markdownEngine)
 
   config.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+
+  config.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      })
+      return minified
+    }
+    return content
+  })
 
   /* pathPrefix: "/"; */
   return {

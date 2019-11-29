@@ -100,6 +100,7 @@ const eleventyConfig = {
           loader: 'html-loader',
           options: {
             interpolate: true,
+            minimize: true
           },
         }
       }
