@@ -1,11 +1,11 @@
-const webpack = require('webpack')
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 // const HtmlWebpackPlugin = require('html-webpack-plugin') 
 // const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
 // const devMode = process.env.NODE_ENV !== 'production'
 
-const config = {
+const mainConfig = {
   entry: {
     index: './src/assets/js/index.js',
   },
@@ -18,7 +18,7 @@ const config = {
       filename: '/css/[name].css',
       chunkFIlename: '[id].css',
       // ignoreOrder: false, // Enable to remove warnings about conflicting order
-    })
+    }),
   ],
   module: {
     rules: [
@@ -56,4 +56,54 @@ const config = {
   watch: true,
 }
 
-module.exports = config
+const eleventyConfig = {
+  entry: {
+    index: './src/assets/js/index-eleventy.js',
+  },
+  output: {
+    filename: 'bundle-eleventy.js',
+    path: path.resolve(__dirname, '_site'),
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '/css/[name].css',
+      chunkFIlename: '[id].css',
+      // ignoreOrder: false, // Enable to remove warnings about conflicting order
+    }),
+    new ImageminPlugin(
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+      },
+    ),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        loader: 'responsive-loader',
+        options: {
+          adapter: require('responsive-loader/sharp'),
+          sizes: [300],
+          placeholder: true,
+          placeholderSize: 50,
+          name: '/src/assets/images/[name]-[width].ext',
+        },
+      },
+      {
+        test: /\.html$/,
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true,
+          },
+        }
+      }
+    ],
+  },
+  watch: true,
+}
+
+module.exports = [
+  mainConfig, 
+  eleventyConfig
+]
