@@ -16,7 +16,13 @@ const config = {
       {
         test: [/.css$|.scss$/],
         use: [
-          'style-loader',
+          {
+            loader: 'style-loader',
+            options: {
+              insert: 'head',
+              injectType: 'singletonStyleTag',
+            },
+          },
           'css-loader',
           'sass-loader',
         ],
