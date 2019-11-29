@@ -1,3 +1,9 @@
+.lazywrapper {
+  width: 80%;
+  min-width: 320px;
+  max-width: 100%;
+}
+
 .lazybox {
   position: relative;
   display: block;
@@ -14,11 +20,12 @@
 
 .ls-blur-up-img, 
 .lazybox-img {
-  position: absolute;
+  // position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  display: block;
 
   font-family: "blur-up: auto", "object-fit: cover";
 
