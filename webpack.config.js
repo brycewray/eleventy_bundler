@@ -86,12 +86,11 @@ const eleventyConfig = {
           sizes: [
             20,
             300,
-            450,
             600,
-            900
           ],
-          placeholder: true,
-          placeholderSize: 50,
+          quality: 60,
+          placeholder: false, // true makes bundle-eleventy.js massive
+          // placeholderSize: 40,
           name: 'assets/images/[name]-[width].[ext]',
         },
       },
