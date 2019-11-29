@@ -3,28 +3,28 @@ const pluginRss = require("@11ty/eleventy-plugin-rss")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 // const lazyImagesPlugin = require("eleventy-plugin-lazyimages")
 
-module.exports = function (eleventyConfig) {
+module.exports = function (config) {
 
-  // eleventyConfig.addPassthroughCopy('src/assets/css')
-  eleventyConfig.addPassthroughCopy('src/assets/images')
-  eleventyConfig.addPassthroughCopy('src/assets/js')
+  // config.addPassthroughCopy('src/assets/css')
+  config.addPassthroughCopy('src/assets/images')
+  config.addPassthroughCopy('src/assets/js')
 
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  config.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
   })
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', dateObj => {
+  config.addFilter('htmlDateString', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('MMMM d, yyyy')
   })
 
-  eleventyConfig.addFilter('dateStringISO', dateObj => {
+  config.addFilter('dateStringISO', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd')
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
+  config.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
   /* Markdown plugins */
   // https://www.11ty.io/docs/languages/markdown/
@@ -41,7 +41,7 @@ module.exports = function (eleventyConfig) {
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
   markdownEngine.use(markdownItPrism)
-  eleventyConfig.setLibrary("md", markdownEngine)
+  config.setLibrary("md", markdownEngine)
 
   /* pathPrefix: "/"; */
   return {
