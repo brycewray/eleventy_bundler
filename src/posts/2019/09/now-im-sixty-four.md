@@ -5,10 +5,9 @@ title: Now I’m sixty-four
 subtitle: Amending my obligatory earworm
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
-date: 2019-09-06
-lastmod: 2019-09-10
+date: 2019-09-06T06:40:00
+lastmod: 2019-09-10T14:37:00
 idx: 30
-#final_date: 2019-09-06T06:40:00-05:00
 #draft: Note!
 actual_path: /content/posts/2019/09/now-im-sixty-four
 final_url: /posts/2019/09/now-im-sixty-four

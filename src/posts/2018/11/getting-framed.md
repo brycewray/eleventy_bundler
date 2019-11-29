@@ -5,10 +5,9 @@ title: Getting framed
 subtitle: Why I still use Bootstrap
 description: "In an ideal world, Web devs would never use CSS frameworks, but we’re not in that world: why I still use Bootstrap."
 author: Bryce Wray
-date: 2018-11-14
-lastmod: 2018-11-28
+date: 2018-11-14T15:09:00
+lastmod: 2018-11-28T11:58:00
 idx: 8
-final_date: 2018-11-14T15:09:00-06:00
 draft: false # note!
 actual_path: /content/posts/2018/11/getting-framed
 discussionId: "2018-11-getting-framed"

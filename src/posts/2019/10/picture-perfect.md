@@ -4,9 +4,8 @@ tags: post
 title: Picture perfect?
 subtitle: With SSGs and images, it's “location, location, location”
 description: "Image-related items to consider when structuring your SSG-powered site."
-date: 2019-10-20T18:59:00-05:00
-#publishDate: t/k
-lastmod: 2019-10-21T14:05:00-05:00
+date: 2019-10-20T19:00:00
+lastmod: 2019-10-21T14:05:00
 discussionId: "2019-10-picture-perfect"
 idx: 36
 featured_image: /images/camera-nikon-f-733546_1280x720_60pct_prog.jpg

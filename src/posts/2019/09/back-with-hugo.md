@@ -5,9 +5,8 @@ title: Back with Hugo
 subtitle: "Well, that didn't last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
-date: 2019-09-20
-#final_date: 2019-09-20
-lastmod: 2019-10-11
+date: 2019-09-20T16:40:00
+lastmod: 2019-11-09T10:00:00
 idx: 32
 #draft: Note!
 actual_path: /content/posts/2019/09/back-with-hugo

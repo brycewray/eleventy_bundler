@@ -5,9 +5,8 @@ title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
-date: 2019-09-08
-#final_date: 2019-09-08
-lastmod: 2019-10-11
+date: 2019-09-08T10:00:00
+lastmod: 2019-10-11T19:00:00
 idx: 31
 #draft: Note!
 actual_path: /content/posts/2019/09/why-left-hugo-eleventy

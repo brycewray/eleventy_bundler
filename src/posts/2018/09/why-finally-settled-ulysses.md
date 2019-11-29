@@ -5,8 +5,8 @@ title: Why I finally settled on Ulysses
 subtitle: The write stuff (sorry)
 description: How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival.
 author: Bryce Wray
-date: 2018-09-22
-lastmod: 2019-09-12
+date: 2018-09-22T11:04:36
+lastmod: 2019-09-12T19:00:00
 idx: 2
 draft: false
 actual_path: /content/posts/2018/09/why-finally-settled-ulysses.md

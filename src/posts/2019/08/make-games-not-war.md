@@ -5,9 +5,8 @@ title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
 description: "I take a break from my “techy” stuff to opine on more logical layouts for Major League Baseball and the National Football League."
 author: Bryce Wray
-date: 2019-08-03
-#final_date: 2019-08-03
-lastmod: 2019-08-07
+date: 2019-08-03T11:00:00
+lastmod: 2019-08-07T12:42:00
 idx: 27
 draft: false # note!
 actual_path: /content/posts/2019/08/make-games-not-war

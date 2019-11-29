@@ -4,9 +4,8 @@ title: Lessons learned
 tags: post
 subtitle: What I found while trying other SSGs
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
-date: 2019-07-21
-#finaldate: 2019-07-27
-lastmod: 2019-10-11
+date: 2019-07-21T17:43:00
+lastmod: 2019-08-17T16:21:00
 idx: 25
 draft: false
 actual_path: /content/posts/2019/07/lessons-learned
