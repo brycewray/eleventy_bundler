@@ -6,7 +6,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1; // ligatures won't work without this
 }
 
 p, li {
