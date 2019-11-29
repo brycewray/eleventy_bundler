@@ -1,6 +1,9 @@
 const webpack = require('webpack')
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
+// const HtmlWebpackPlugin = require('html-webpack-plugin') 
+// const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
+const devMode = process.env.NODE_ENV !== 'production'
 
 const config = {
   watch: true,
@@ -14,17 +17,21 @@ const config = {
   module: {
     rules: [
       {
-        test: [/.css$|.scss$/],
+        test: /\.s?[ac]ss$/,
         use: [
+          MiniCssExtractPlugin.loader,
           {
-            loader: 'style-loader',
-            options: {
-              insert: 'head',
-              injectType: 'singletonStyleTag',
-            },
+            loader: 'css-loader', options: {
+              url: false, 
+              sourceMap: true
+            }
           },
-          'css-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader', 
+            options: {
+              sourceMap: true
+            }
+          }
         ],
       },
       {
@@ -37,6 +44,13 @@ const config = {
       },
     ],
   },
+  devtool: 'source-map',
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '/css/ofotigrid.css'
+    })
+  ],
+  mode : devMode ? 'development' : 'production'
 }
 
 module.exports = config
