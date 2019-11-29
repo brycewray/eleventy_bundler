@@ -83,10 +83,16 @@ const eleventyConfig = {
         loader: 'responsive-loader',
         options: {
           adapter: require('responsive-loader/sharp'),
-          sizes: [300],
+          sizes: [
+            20,
+            300,
+            450,
+            600,
+            900
+          ],
           placeholder: true,
           placeholderSize: 50,
-          name: '/src/assets/images/[name]-[width].ext',
+          name: 'assets/images/[name]-[width].[ext]',
         },
       },
       {
@@ -99,6 +105,9 @@ const eleventyConfig = {
         }
       }
     ],
+  },
+  node: {
+    fs: 'empty'
   },
   watch: true,
 }
