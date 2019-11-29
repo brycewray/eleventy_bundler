@@ -2,8 +2,7 @@ html,
 body {
   font-family: $sans-serif-boot !important;
   color: $default-color;
-  letter-spacing: -0.001em; // old browsers
-  letter-spacing: -0.001rem;
+  letter-spacing: -0.001em;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -22,8 +21,7 @@ h5, .h5,
 h6, .h6 {
   font-family: $sans-serif-boot;
   color: $default-color;
-  letter-spacing: -0.05em; // old browsers
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.05em;
   font-weight: 700;
 }
 
@@ -38,28 +36,23 @@ h3, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: $biggest + unquote("em"); // old browsers
-  font-size: $biggest + unquote("rem");
+  font-size: $biggest + unquote("em");
 }
 
 h2, .h2 {
-  font-size: $bigger + unquote("em"); // old browsers
-  font-size: $bigger + unquote("rem");
+  font-size: $bigger + unquote("em");
 }
 
 h3, .h3 {
-  font-size: $mightybig + unquote("em"); // old browsers
-  font-size: $mightybig + unquote("rem");
+  font-size: $mightybig + unquote("em");
 }
 
 h4, .h4 {
-  font-size: $sortabig + unquote("em"); // old browsers
-  font-size: $sortabig + unquote("rem");
+  font-size: $sortabig + unquote("em");
 }
 
 h5, .h5, h6, .h6 {
-  font-size: $slightlybig + unquote("em"); // old browsers
-  font-size: $slightlybig + unquote("rem");
+  font-size: $slightlybig + unquote("em");
 }
 
 a, a:focus, a:hover, a:active {
@@ -122,8 +115,7 @@ td {
 }
 
 .footnotes {
-  font-size: $legal + unquote("em"); // old browsers
-  font-size: $legal + unquote("rem");
+  font-size: $legal + unquote("em");
 
   ol li {
     margin-bottom: 0.5em;
@@ -131,8 +123,7 @@ td {
 }
 
 sup.footnote-ref {
-  font-size: $teeny + unquote("em"); // old browsers
-  font-size: $teeny + unquote("rem");
+  font-size: $teeny + unquote("em");
 }
 
 a.footnote-return{
@@ -143,15 +134,13 @@ a.footnote-return{
 
   &_timeline {
     color: $default-color;
-    font-size: $timelineTxt + unquote("em"); // old browsers
-    font-size: $timelineTxt + unquote("rem");
+    font-size: $timelineTxt + unquote("em");
   }
 
   &_post {
     /* */
     border-bottom: 1px solid $grey-2;
-    padding-bottom: 0.5em; // old browsers
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5em;
   }
 
   &_text {
@@ -180,18 +169,15 @@ a.footnote-return{
 }
 
 .teenytxt, .teeny {
-  font-size: $teeny + unquote("em"); // old browsers
-  font-size: $teeny + unquote("rem");
+  font-size: $teeny + unquote("em");
 }
 
 .legaltxt, .legal {
-  font-size: $legal + unquote("em"); // old browsers
-  font-size: $legal + unquote("rem");
+  font-size: $legal + unquote("em");
 }
 
 .pokeytxt, .pokey {
-  font-size: $pokey + unquote("em"); // old browsers
-  font-size: $pokey + unquote("rem");
+  font-size: $pokey + unquote("em");
 }
 
 .nobrk {

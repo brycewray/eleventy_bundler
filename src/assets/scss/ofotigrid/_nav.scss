@@ -178,8 +178,7 @@ nav {
   }
   a {
     color: #fff;
-    font-size: $stdsize + unquote("em"); // old browsers
-    font-size: $stdsize + unquote("rem");
+    font-size: $stdsize + unquote("em");
     // text-decoration-skip-ink: none;
     text-decoration: none;
     border-bottom: 0;
@@ -211,8 +210,7 @@ nav {
     color: $grey-2;
     border-bottom: 0;
   }
-  font-size: $minimalbig + unquote("em"); // old browsers
-  font-size: $minimalbig + unquote("rem");
+  font-size: $minimalbig + unquote("em");
   font-weight: 700;
   margin-top: 0.2em;
   margin-left: 5%;
@@ -239,8 +237,7 @@ nav {
     grid-column: 1 / 2;
     text-align: left;
     padding-left: 1.5em;
-    font-size: $minimalbig + unquote("em"); // old browsers
-    font-size: $minimalbig + unquote("rem");
+    font-size: $minimalbig + unquote("em");
 }
 
   nav {

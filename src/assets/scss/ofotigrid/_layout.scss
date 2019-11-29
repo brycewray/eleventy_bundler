@@ -63,8 +63,7 @@ figure.figurebox {
 }
 
 figcaption p {
-  font-size: $legal + unquote("em"); // old browsers
-  font-size: $legal + unquote("rem");
+  font-size: $legal + unquote("em");
   color: $grey-1;
   padding-top: 1em; // old browsers
   padding-top: 1rem;
@@ -196,8 +195,7 @@ img.featured-image {
   padding-bottom: 1.5em; // old browsers
   padding-bottom: 1.5rem;
   text-align: center !important;
-  font-size: $legal + unquote("em"); // old browsers
-  font-size: $legal + unquote("rem");
+  font-size: $legal + unquote("em");
   color: $grey-1;
 }
 
@@ -284,13 +282,11 @@ img.postsFeatImg {
 }
 
 .sortabig {
-  font-size: $sortabig + unquote("em"); // old browsers
-  font-size: $sortabig + unquote("rem");
+  font-size: $sortabig + unquote("em");
 }
 
 .bigger {
-  font-size: $bigger + unquote("em"); // old browsers
-  font-size: $bigger + unquote("rem");
+  font-size: $bigger + unquote("em");
 }
 
 $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720_60pct.jpg";
