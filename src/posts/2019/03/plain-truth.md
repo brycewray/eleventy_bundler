@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2019/03/plain-truth
 discussionId: "2019-03-plain-truth"
 final_url: /posts/2019/03/plain-truth
-featured_image: /assets/images/typewriter-1031024_1280x720_60pct_prog.jpg
+featured_image: /assets/images/typewriter-1031024_1280x720.jpg
 featured_image_alt: A very old Royal-brand typewriter
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

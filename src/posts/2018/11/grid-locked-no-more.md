@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2018/11/grid-locked-no-more
 discussionId: "2018-11-grid-locked-no-more"
 final_url: /posts/2018/11/grid-locked-no-more/
-featured_image: /assets/images/hairpin-turn-sign-94966_1280x720_60pct_prog.jpg
+featured_image: /assets/images/hairpin-turn-sign-94966_1280x720.jpg
 featured_image_alt: Road sign - hairpin turn three thousand feet ahead
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

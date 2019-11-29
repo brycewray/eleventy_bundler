@@ -12,7 +12,7 @@ idx: 32
 actual_path: /content/posts/2019/09/back-with-hugo
 final_url: /posts/2019/09/back-with-hugo
 discussionId: "2019-09-back-with-hugo"
-featured_image: /assets/images/skid-mark-567668_1280x720_60pct.jpg
+featured_image: /assets/images/skid-mark-567668_1280x720.jpg
 featured_image_alt: "Skid marks on asphalt"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

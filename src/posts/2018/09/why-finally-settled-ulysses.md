@@ -12,7 +12,7 @@ draft: false
 actual_path: /content/posts/2018/09/why-finally-settled-ulysses.md
 discussionId: "2018-09-why-finally-settled-ulysses"
 final_url: /posts/2018/09/why-finally-settled-ulysses/
-featured_image: /assets/images/Ulysses-Preferences-General-screen-shot_blur_1280x720_60pct_prog.jpg
+featured_image: /assets/images/Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.png
 featured_image_alt: Screen capture - Ulysses app preferences window
 ---
 

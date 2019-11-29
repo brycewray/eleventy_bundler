@@ -13,7 +13,7 @@ draft: false # note!
 actual_path: /content/posts/2019/04/ec-static
 discussionId: "2019-04-ec-static"
 final_url: /posts/2019/04/ec-static
-featured_image: /assets/images/server-1235959_1280x720_60pct_prog.jpg
+featured_image: /assets/images/server-1235959_1280x720.jpg
 featured_image_alt: Internet server
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

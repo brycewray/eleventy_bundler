@@ -11,7 +11,7 @@ draft: false
 actual_path: /content/posts/2018/09/hardy-press-wp-ssg-with-twist.md
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
-featured_image: /assets/images/Hardy_Press_Web_page_2019-04-27_blur_1280x720_60pct_prog.jpg
+featured_image: /assets/images/wordpress-macbook-pro-923188_1920x1080.jpg
 featured_image_alt: Screen capture from hardypress-dot-com
 featured_image_caption: "[Screen capture: April 27, 2019.]" # In quotes to allow brackets
 ---

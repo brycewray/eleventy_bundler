@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2019/01/blox-sux
 discussionId: "2019-01-blox-sux"
 final_url: /posts/2019/01/blox-sux
-featured_image: /assets/images/lego-674880_1280x720_60pct_prog.jpg
+featured_image: /assets/images/lego-169603_1920x1080_crop_Gaussian_blur.jpg
 featured_image_alt: Lego blocks arranged stylistically
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

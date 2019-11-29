@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2019/02/old-dog-old-trick
 discussionId: "2019-02-old-dog-old-trick"
 final_url: /posts/2019/02/old-dog-old-trick
-featured_image: /images/dog-2514968_1280x720_60pct_prog.jpg
+featured_image: /assets/images/dog-2514968_1280x720.jpg
 featured_image_alt: Face of an old dog
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -8,7 +8,7 @@ date: 2019-10-20T19:00:00
 lastmod: 2019-10-21T14:05:00
 discussionId: "2019-10-picture-perfect"
 idx: 36
-featured_image: /assets/images/camera-nikon-f-733546_1280x720_60pct_prog.jpg
+featured_image: /assets/images/camera-nikon-f-733546_1280x720.jpg
 #featured_image: camera-nikon-f-733546_1280x720.jpg
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
 featured_image_caption: "Image: Pixabay"

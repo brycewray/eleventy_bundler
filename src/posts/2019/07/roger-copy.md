@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2019/07/roger-copy
 final_url: /posts/2019/07/roger-copy
 discussionId: "2019-07-roger-copy"
-featured_image: /assets/images/clocks-in-sync-3303560_1280x720_60pct_prog.jpg
+featured_image: /assets/images/clocks-in-sync-3303560_1280x720_100pct.jpg
 featured_image_alt: Clocks synchronized to the same time, illustrating synchronicity.
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
