@@ -34,7 +34,7 @@ The open-office concept is simply a way for businesses to cram more people into 
 
 Although this site's [been](/posts/2019/10/now-gatsby-geezer) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.io), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.
 
-In September's “[Now I'm 64](/posts/2019/09/now-im-sixty-four),” I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
+In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four)," I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
 
 Real authors deliver something. And even "eventually" has a shelf life.
 
