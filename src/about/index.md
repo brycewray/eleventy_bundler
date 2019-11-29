@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singleposthero.njk
 title: The obligatory About Me page
-description: Not a bio (you‘d fall asleep), but just a few explanatory observations.
+description: Not a bio (you’d fall asleep), but just a few explanatory observations.
 author: Bryce Wray
 publishdate: 2018-09-14T15:00:00-05:00
 date: 2018-09-14T15:00:00-05:00
