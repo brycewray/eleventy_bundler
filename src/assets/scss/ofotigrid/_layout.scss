@@ -285,7 +285,7 @@ img.postsFeatImg {
   font-size: $bigger + unquote("em");
 }
 
-$homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
+$homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; // using responsive-loader result
 
 .hero { // specifically for home page, at least to begin with
   background-color: #0088ff;
@@ -430,7 +430,8 @@ $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
 				display: block;
 				margin-top: 0.25em; // old browsers
 				margin-top: 0.25rem;
-			}
+      }
+      /*
 			img, figure img {
         display: block;
         height: auto;
@@ -442,6 +443,7 @@ $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
         width: 50%;
         max-width: 80%;
       }
+      */
 
       img.containedImage { /* for lower-res images */
         width: 50%;

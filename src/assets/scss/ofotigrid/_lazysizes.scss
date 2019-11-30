@@ -1,7 +1,8 @@
 .lazywrapper {
   width: 100%;
   min-width: 320px;
-  max-width: 100%; // was 900px in orig
+  max-width: 900px; // was 900px in orig
+  // margin: auto;
 }
 
 .lazybox {
@@ -9,7 +10,7 @@
   display: block;
   height: 0;
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 66.6667%;
 }
 
 .lazybox-img.ls-blur-up-is-loading, 
@@ -25,8 +26,8 @@
   width: 100%;
   height: 100%;
   display: block;
-  margin: 0 auto;
 
+  /* only if you want to change the blur-up option from always to auto or want to use blur up effect without a lowsrc image. */
   font-family: "blur-up: auto", "object-fit: cover";
 
   object-fit: cover;
@@ -52,14 +53,4 @@
     -webkit-filter: blur(0);
     filter: blur(0);
   }
-}
-
-.fade-box .lazyload, 
-.fade-box .lazyloading {
-  opacity: 0;
-  transition: opacity 400ms;
-}
-
-.fade-box img.lazyloaded {
-  opacity: 1;
 }
