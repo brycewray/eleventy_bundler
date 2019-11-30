@@ -13,7 +13,7 @@ discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
 featured_image: /assets/images/wordpress-macbook-pro-923188_1920x1080.jpg
 featured_image_alt: Screen capture from hardypress-dot-com
-featured_image_caption: "[Screen capture: April 27, 2019.]" # In quotes to allow brackets
+featured_image_caption: "Image: Pixabay" # In quotes to allow brackets
 ---
 
 While researching the static-site generator (SSG) scene for the first time in a while yesterday, I happened upon  [HardyPress](https://www.hardypress.com).
