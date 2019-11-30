@@ -433,11 +433,14 @@ $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
 			}
 			img, figure img {
         display: block;
-        width: 50%;
-        max-width: 80%;
         height: auto;
         margin: 0.5em auto 0.5em auto;
         text-align: center;
+      }
+
+      figure img {
+        width: 50%;
+        max-width: 80%;
       }
 
       img.containedImage { /* for lower-res images */

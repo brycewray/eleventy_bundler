@@ -15,13 +15,13 @@ module.exports = (urlBasic, ext, alt) => {
     <div class="lazybox">
       <img 
         class="lazybox-img lazyload" 
+        data-sizes="auto"
+        src="/assets/images/${urlBasic}-20.${ext}"
         data-srcset="
         /assets/images/${urlBasic}-300.${ext} 300, 
         /assets/images/${urlBasic}-600.${ext} 600,
         /assets/images/${urlBasic}.${ext}
         "
-        data-lowsrc="/assets/images/${urlBasic}-20.${ext}"
-        data-sizes="auto"
         alt="${alt}"
       />
     </div>
