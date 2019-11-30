@@ -39,11 +39,11 @@ By “easily readable,” I mean:
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of Web typography. They were current as of when I originally posted this.
 
-<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-2-2018-10-16_lowsrc.png" data-src="/images/Typography-scr-cap-2-2018-10-16.jpg" alt="Thin and dim text that is hard to read" />
+<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-2-2018-10-16_lowsrc.png" data-src="/assets/images/Typography-scr-cap-2-2018-10-16.jpg" alt="Thin and dim text that is hard to read" />
 
-<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-3-2018-10-16_lowsrc.png" data-src="/images/Typography-scr-cap-3-2018-10-16.jpg" alt="More thin and dim text that is hard to read" />
+<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-3-2018-10-16_lowsrc.png" data-src="/assets/images/Typography-scr-cap-3-2018-10-16.jpg" alt="More thin and dim text that is hard to read" />
 
-<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-4-2018-10-16_lowsrc.jpg" data-src="/images/Typography-scr-cap-4-2018-10-16.jpg" alt="Still more thin and dim text that is hard to read" />
+<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-4-2018-10-16_lowsrc.jpg" data-src="/assets/images/Typography-scr-cap-4-2018-10-16.jpg" alt="Still more thin and dim text that is hard to read" />
 
 We can do better, friends.
 
@@ -53,4 +53,4 @@ I close with these comments, by blogger Kevin Marks, taken from a [2016 article]
 
 <p>&nbsp;</p>
 
-_In [Part 2](https://brycewray.com/posts/2018/10/web-typography-part-2/), I’ll cover why_ this _site’s typography looks the way it does, including why it doesn't look the same on different platforms—and why that’s not only on purpose but also just fine and dandy. (Heresy!)_
+_In [Part 2](/posts/2018/10/web-typography-part-2/), I’ll cover why_ this _site’s typography looks the way it does, including why it doesn't look the same on different platforms—and why that’s not only on purpose but also just fine and dandy. (Heresy!)_
