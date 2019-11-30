@@ -16,7 +16,7 @@ Eons ago, when [the Web was a new thing](http://info.cern.ch/hypertext/WWW/ThePr
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-<img src="/assets/images/gte-net_HTML_1997-04-17_crop_60pct.jpg" alt="HTML code from a 1997 Web site" class="homeContainedImage">
+{% lazypicture "gte-net_HTML_1997-04-17_crop_60pct", "jpg", "HTML code from a 1997 Web site" %}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites---mine among them.
 
