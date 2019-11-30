@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2018/12/on-edge
 discussionId: "2018-12-on-edge"
 final_url: /posts/2018/12/on-edge/
-featured_image: /assets/images/MS-Edge-logo-and-bkgd_1280x720.png
+featured_image: /assets/images/MS-Edge-logo-and-bkgd_1280x720-1280.png
 featured_image_alt: Logos for Microsoft Edge and Chromium
 featured_image_caption: "Images: DeviantArt; The Chromium Projects" # quotation marks to allow colon
 ---
