@@ -5,14 +5,14 @@
 
 /* shortcode takes the following form...
 --- name 'lazypicture' rather than 'lazy-picture' comes from config in .eleventy.js
-{% lazypicture "[FILENAME WITHOUT SIZE OR EXT]", "[EXT.]", "[ALT TEXT]"  %}{%- endfor -%}
+{% lazypicture [parameters] %}
 
 */
 
-module.exports = (urlBasic, ext, width, alt) => {
+module.exports = (urlBasic, ext, width, padBtm, alt) => {
   return `
   <div class="lazywrapper">
-    <div class="lazybox">
+    <div class="lazybox" style="padding-bottom: ${padBtm};">
       <img 
         class="lazybox-img lazyload" 
         data-sizes="auto"

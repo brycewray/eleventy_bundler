@@ -86,7 +86,9 @@ const eleventyConfig = {
           quality: 60,
           sizes: [
             20, // placeholder for lqip
-            2500, // using a ridiculous width so it will process the original
+            300,
+            600,
+            4000, // using a ridiculous width so it will process the original (won't make a bigger version)
           ],
           placeholder: false, // otherwise, bundle is too big -- unless you'll use the placeholder data, no point
           // placeholderSize: 40,
