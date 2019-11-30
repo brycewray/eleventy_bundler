@@ -58,23 +58,19 @@ figure, .figure {
 }
 
 figure.figurebox {
-  padding: 0.5em; // old browsers
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
-figcaption p {
+figcaption {
   font-size: $legal + unquote("em");
   color: $grey-1;
-  padding-top: 1em; // old browsers
-  padding-top: 1rem;
+  padding-top: 1em;
   text-align: center !important;
 }
 
 h3.twitter-border {
-  margin: 1em 0; // old browsers
-  margin: 1rem 0;
-  padding: 0.5em 0 0 0; // old browsers
-  padding: 0.5rem 0 0 0;
+  margin: 1em 0;
+  padding: 0.5em 0 0 0;
   border-top: 2px solid $blue;
   a {
     border-bottom: 0;
@@ -376,13 +372,17 @@ $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
 			margin: 1em auto 0 auto;
 			width: 80%;
     }
-    img.containedImage {
+    img.containedImage, figure {
       display: block;
       width: 100%;
       max-width: 100%;
       height: auto;
       margin-right: auto;
       margin-left: auto;
+    }
+
+    figure img {
+      width: 100%;
     }
 
     .yellowBox {
@@ -401,7 +401,7 @@ $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
     }
 
     @media screen and (min-width: 769px) {
-      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight {
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight, figcaption {
 				margin: 1em auto 0 auto;
 				width: 50%;
       }
@@ -431,9 +431,9 @@ $homeHeroImageURL: "/assets/images/typewriter-monochrome_2242164_1280x720.jpg";
 				margin-top: 0.25em; // old browsers
 				margin-top: 0.25rem;
 			}
-			img {
+			img, figure img {
         display: block;
-        width: 80%;
+        width: 50%;
         max-width: 80%;
         height: auto;
         margin: 0.5em auto 0.5em auto;
