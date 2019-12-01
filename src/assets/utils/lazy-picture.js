@@ -17,11 +17,11 @@ module.exports = (urlBasic, ext, width, padBtm, alt) => {
         class="lazybox-img lazyload" 
         data-sizes="auto"
         data-srcset="
-        /assets/images/${urlBasic}-300.${ext} 300w, 
-        /assets/images/${urlBasic}-600.${ext} 600w,
-        /assets/images/${urlBasic}-${width}.${ext} ${width}w,
+        /images/${urlBasic}-300.${ext} 300w, 
+        /images/${urlBasic}-600.${ext} 600w,
+        /images/${urlBasic}-${width}.${ext} ${width}w,
         "
-        data-lowsrc="/assets/images/${urlBasic}-20.${ext}"
+        data-lowsrc="/images/${urlBasic}-20.${ext}"
         alt="${alt}"
       />
     </div>
