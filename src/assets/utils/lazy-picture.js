@@ -5,11 +5,12 @@
 
 /* shortcode takes the following form...
 --- name 'lazypicture' rather than 'lazy-picture' comes from config in .eleventy.js
-{% lazypicture [parameters] %}
+{% lazypicture [parameters separated by commas] %}
 
 */
 
-module.exports = (urlBasic, ext, width, padBtm, alt) => {
+module.exports = (urlBasic, ext, width, alt) => {
+/*
   return `
   <div class="lazywrapper">
     <div class="lazybox" style="padding-bottom: ${padBtm};">
@@ -26,5 +27,27 @@ module.exports = (urlBasic, ext, width, padBtm, alt) => {
       />
     </div>
   </div>
+  `
+*/
+  return `
+  <figure>
+    <div class="loader">
+      <img 
+      class="lazyload"
+      data-sizes="auto"
+      data-srcset="
+      /images/${urlBasic}-300.${ext} 300w, 
+      /images/${urlBasic}-600.${ext} 600w,
+      /images/${urlBasic}-${width}.${ext} ${width}w,
+      "
+      alt="${alt}"
+      />
+      <img 
+      class="frozen" 
+      src="/images/${urlBasic}-20.${ext}" 
+      alt="${alt}"
+      />
+    </div>
+  </figure>
   `
 }
