@@ -27,11 +27,24 @@ I know some of this (all of this?) is Greek to some of you. I'll try to fix that
 
 A few weeks ago, I [told you](/posts/2019/10/now-gatsby-geezer) I had managed at last to get this site up and running on [Gatsby](https://gatsbyjs.org) after [multiple](/posts/2019/07/why-staying-with-hugo) [tries](/posts/2019/09/why-left-hugo-eleventy) and [angst].
 
-For a few days, I reveled in the fact that I, a person who really doesn't know that much about the [React](https://reactjs.org) JavaScript library on which Gatsby depends, I wasn't satisfied.
+For a few days, I reveled in the fact that I, a person who really doesn't know that much about the [React](https://reactjs.org) JavaScript library on which Gatsby depends, had managed to overcome this "great rebeccapurple whale." However, I soon realized to my surprise that I wasn't satisfied. The feeling of triumph grew stale. I felt a distinct sense of "Okay, fine; **now** what?!"
+
+## !!!---Stuff not to forget...---!!!
+
+- Image processing in general---Big improvement in delivered files' sizes despite virtually imperceptible difference in images' quality
+- LQIP in particular (work in progress re background images)
+- SCSS/SASS
+- Relative ease of using NPM packages in general (especially vs. separate JS files)---Recalling @zachleat comments about NodeJS
+- Web "fonts" via Kyle Matthews's NPM Typefaces package in particular (despite earlier indications about system "fonts")
+- Faster build time vs. Gatsby
+- Eleventy/webpack combo provides things not available if one uses either without the other
+	- Easier and more flexible templating (Eleventy)
+	- Easier integration of third-party JS (webpack)
+	- All the benefits of bundling (**obviously** webpack)
 
 ## !!!---Ending section---!!!
 
-Although I have never been mechanical, much to my wife's chagrin when things need fixing around our aging home, I *do* like to tinker. Only thing is, what I like tinkering with is: code that makes Web pages work.
+Although I have never been adept at dealing with mechanical, much to my wife's chagrin when things need fixing around our aging home, I *do* like to tinker. Only thing is, what I like tinkering with is: code that makes Web pages work.
 
 In fact, not long ago, our company owner asked a group of us about our hobbies. The others mentioned normal, human things like dancing, mountain-climbing, and playing or watching various sports.[^sports] Then, he got to me. I had to be the group nerd who admitted that mine is very similar to what I do for pay. So I guess I'm the proverbial "[dull boy](https://en.wikipedia.org/wiki/All_work_and_no_play_makes_Jack_a_dull_boy)," which will shock absolutely no one who knows me.
 
