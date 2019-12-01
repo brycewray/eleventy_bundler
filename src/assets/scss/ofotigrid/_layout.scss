@@ -155,7 +155,6 @@ h3.twitter-border {
       font-weight: 600;
       padding-top: 0.25em;
       font-size: 1.25em;
-      font-style: italic;
       padding-right: 15%;
     }
   }
@@ -305,7 +304,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; //
     background-image: url($homeHeroImageURL);
     @media screen and (min-width: 1025px) {
       background-attachment: fixed;
-      height: 50vh;
+      height: 60vh;
     }
   }
 }
