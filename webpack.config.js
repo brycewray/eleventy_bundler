@@ -1,6 +1,6 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const ImageminPlugin = require('imagemin-webpack-plugin').default
+// const ImageminPlugin = require('imagemin-webpack-plugin').default
 // const HtmlWebpackPlugin = require('html-webpack-plugin') 
 // const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
 // const devMode = process.env.NODE_ENV !== 'production'
@@ -70,11 +70,13 @@ const eleventyConfig = {
       chunkFIlename: '[id].css',
       // ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
+    /*
     new ImageminPlugin(
       {
         test: /\.(jpe?g|png|gif)$/i,
       },
     ),
+    */
   ],
   module: {
     rules: [
