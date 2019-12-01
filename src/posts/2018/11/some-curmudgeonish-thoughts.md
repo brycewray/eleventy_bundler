@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 final_url: /posts/2018/11/some-curmudgeonish-thoughts/
-featured_image: /assets/images/brain-1300479_1280x720_60pct-1280.jpg
+featured_image: /images/brain-1300479_1280x720_60pct-1280.jpg
 featured_image_alt: Cartoonish art depicting ancient myths about which parts of the brain stored which kinds of thoughts
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -7,7 +7,7 @@ const htmlmin = require('html-minifier')
 module.exports = function (config) {
 
   // config.addPassthroughCopy('src/assets/css')
-  // config.addPassthroughCopy('src/assets/images')
+  // config.addPassthroughCopy('src/images')
   config.addPassthroughCopy('src/assets/js')
 
 

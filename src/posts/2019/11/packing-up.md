@@ -8,7 +8,7 @@ date: 2019-12-06T16:35:00-06:00
 #lastmod: t/k
 discussionId: "2019-12-packing-up"
 idx: 40
-#featured_image: /assets/images/<< TBD >>
+#featured_image: /images/<< TBD >>
 #featured_image_alt: "TBD"
 #featured_image_caption: "Image: Pixabay"
 ---

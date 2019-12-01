@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2018/11/getting-framed
 discussionId: "2018-11-getting-framed"
 final_url: /posts/2018/11/getting-framed/
-featured_image: /assets/images/scaffolding-1617969_1280x720-1280.jpg
+featured_image: /images/scaffolding-1617969_1280x720-1280.jpg
 featured_image_alt: Scaffolding for a building, with construction workers climbing and working within
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

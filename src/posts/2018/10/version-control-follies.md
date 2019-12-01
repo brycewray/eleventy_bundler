@@ -12,7 +12,7 @@ draft: false # note!!
 actual_path: /content/posts/2018/10/version-control-follies.md
 discussionId: "2018-10-version-control-follies"
 final_url: /posts/2018/10/version-control-follies/
-featured_image: /assets/images/javascript-programming-1873854_1280x720-1280.png
+featured_image: /images/javascript-programming-1873854_1280x720-1280.png
 featured_image_alt: Screen capture of Sourcetree software
 ---
 

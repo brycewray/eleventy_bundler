@@ -12,7 +12,7 @@ draft: false
 actual_path: /content/posts/2019/07/why-staying-with-hugo
 final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: /assets/images/hugo-logo-on-black-1280x720-1280.png
+featured_image: /images/hugo-logo-on-black-1280x720-1280.png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---
@@ -141,7 +141,7 @@ And, silly me, I figured Gatsby would follow a convention more or less like that
 
 [^filesystem]: Hugo handles this by letting you figure it out: as the [docs](https://gohugo.io/content-management/organization/) say, "Hugo assumes that the same structure that works to organize your source content is used to organize the rendered site." So, rather than using a config file to *tell* it where to point, you simply set up the directories the way you *want* it to point. I may just be used to the Hugo way, but that strikes me as far more logical than Gatsby's method.
 
-Thus, if I'd known up-front that it would prove to be a gut-wrenching experience simply to make Gatsby recognize an `/assets/images` directory that any page could access when trying to pull up pictures, I'd have probably just muttered a few colorful words and turned tail right there, realizing this thing didn't have its head on straight (to use the technical term). However, by the time I'd realized this, I was committed---in the "deep muddy," as the old expression goes.
+Thus, if I'd known up-front that it would prove to be a gut-wrenching experience simply to make Gatsby recognize an `/images` directory that any page could access when trying to pull up pictures, I'd have probably just muttered a few colorful words and turned tail right there, realizing this thing didn't have its head on straight (to use the technical term). However, by the time I'd realized this, I was committed---in the "deep muddy," as the old expression goes.
 
 I battled this particular gotcha, one night (or weekend day and night) after the other, for *two weeks*. It was one demoralizing, fruitless, coding-while-searching-for-help session after another, as I wondered why I couldn't make this simple thing work despite all the instructions I'd read. Hey, I even went through the tutorials *for the third time* just to make sure I hadn't missed something.
 

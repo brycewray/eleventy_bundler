@@ -12,7 +12,7 @@ draft: false # note!
 actual_path: /content/posts/2018/10/web-typography-part-1.md
 discussionId: "2018-10-web-typography-part-1"
 final_url: /posts/2018/10/web-typography-part-1/
-featured_image: /assets/images/letters-691842_1280x720-1280.jpg
+featured_image: /images/letters-691842_1280x720-1280.jpg
 featured_image_alt: Letters for old-style typesetting
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
@@ -39,11 +39,11 @@ By “easily readable,” I mean:
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of Web typography. They were current as of when I originally posted this.
 
-<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-2-2018-10-16_lowsrc.png" data-src="/assets/images/Typography-scr-cap-2-2018-10-16-1344.jpg" alt="Thin and dim text that is hard to read" />
+<img class="containedImage lazyload" src="/images/Typography-scr-cap-2-2018-10-16_lowsrc.png" data-src="/images/Typography-scr-cap-2-2018-10-16-1344.jpg" alt="Thin and dim text that is hard to read" />
 
-<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-3-2018-10-16_lowsrc.png" data-src="/assets/images/Typography-scr-cap-3-2018-10-16-1398.jpg" alt="More thin and dim text that is hard to read" />
+<img class="containedImage lazyload" src="/images/Typography-scr-cap-3-2018-10-16_lowsrc.png" data-src="/images/Typography-scr-cap-3-2018-10-16-1398.jpg" alt="More thin and dim text that is hard to read" />
 
-<img class="containedImage lazyload" src="/assets/images/Typography-scr-cap-4-2018-10-16_lowsrc.jpg" data-src="/assets/images/Typography-scr-cap-4-2018-10-16-1398.jpg" alt="Still more thin and dim text that is hard to read" />
+<img class="containedImage lazyload" src="/images/Typography-scr-cap-4-2018-10-16_lowsrc.jpg" data-src="/images/Typography-scr-cap-4-2018-10-16-1398.jpg" alt="Still more thin and dim text that is hard to read" />
 
 We can do better, friends.
 

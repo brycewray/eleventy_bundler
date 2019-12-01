@@ -12,7 +12,7 @@ idx: 31
 actual_path: /content/posts/2019/09/why-left-hugo-eleventy
 final_url: /posts/2019/09/why-left-hugo-eleventy
 discussionId: "2019-09-why-left-hugo-eleventy"
-featured_image: /assets/images/detour-2496197_1280x720-1280.jpg
+featured_image: /images/detour-2496197_1280x720-1280.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

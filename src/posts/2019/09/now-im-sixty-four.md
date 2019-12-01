@@ -12,7 +12,7 @@ idx: 30
 actual_path: /content/posts/2019/09/now-im-sixty-four
 final_url: /posts/2019/09/now-im-sixty-four
 discussionId: "2019-09-now-im-sixty-four"
-featured_image: /assets/images/chevrolet-1955-stylized-829805_1280x720-1280.jpg
+featured_image: /images/chevrolet-1955-stylized-829805_1280x720-1280.jpg
 featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile
 featured_image_caption: "Original image: Pixabay; edited in Affinity Photo" # quotation marks to allow colon
 ---
