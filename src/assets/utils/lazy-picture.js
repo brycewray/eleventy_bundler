@@ -45,7 +45,7 @@ module.exports = (urlBasic, ext, width, alt) => {
       <img 
       class="frozen" 
       src="/images/${urlBasic}-20.${ext}" 
-      alt="${alt}"
+      alt="Blurry version for effects - ${alt}"
       />
     </div>
   </figure>
