@@ -1,16 +1,17 @@
 /* index.js */
 
-require("typeface-vollkorn")
+// require("typeface-vollkorn")
+
 import '../scss/ofotigrid.scss'
 
 import 'lazysizes'
 import 'lazysizes/plugins/respimg/ls.respimg'
 import 'lazysizes/plugins/object-fit/ls.object-fit'
 import 'lazysizes/plugins/parent-fit/ls.parent-fit'
-import 'lazysizes/plugins/blur-up/ls.blur-up'
+// import 'lazysizes/plugins/blur-up/ls.blur-up'
 import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
 import 'lazysizes/plugins/progressive/ls.progressive'
-import 'lazysizes/plugins/bgset/ls.bgset'
+// import 'lazysizes/plugins/bgset/ls.bgset'
 
 // --- start, twitterMeta ---
 
