@@ -3,7 +3,7 @@ layout: layouts/posts/singleposthero.njk
 tags: post
 title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
-description: "How using a bundler makes my favorite SSG even better."
+description: "How using a bundler makes the coolest SSG even better."
 date: 2019-12-06T16:35:00-06:00
 #lastmod: t/k
 discussionId: "2019-12-packing-up"
