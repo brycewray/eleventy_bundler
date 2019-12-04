@@ -8,9 +8,9 @@ date: 2019-12-06T16:35:00-06:00
 #lastmod: t/k
 discussionId: "2019-12-packing-up"
 idx: 40
-#featured_image: /images/chain-11ty-webpack-3867751_1920x1080.jpg
-#featured_image_alt: "Eleventy and webpack logos over a chain"
-#featured_image_caption: "Images: 11ty.io; webpackjs.org; Pixabay"
+featured_image: /images/chain-11ty-webpack-3867751_1920x1080-1920.jpg
+featured_image_alt: "Eleventy and webpack logos over a chain"
+featured_image_caption: "Images: 11ty.io; webpackjs.org; Pixabay"
 ---
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
