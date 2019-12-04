@@ -11,6 +11,9 @@ draft: false
 actual_path: /content/posts/2018/09/hardy-press-wp-ssg-with-twist.md
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 final_url: /posts/2018/09/hardy-press-wp-ssg-with-twist/
+featured_image_base: wordpress-macbook-pro-923188_1920x1080
+featured_image_ext: jpg
+featured_image_width: 1920
 featured_image: /images/wordpress-macbook-pro-923188_1920x1080-1920.jpg
 featured_image_alt: Screen capture from hardypress-dot-com
 featured_image_caption: "Image: Pixabay" # In quotes to allow brackets
