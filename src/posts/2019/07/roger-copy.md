@@ -27,7 +27,7 @@ On July 21, I removed that reference.
 
 On July 24, I brought it back.
 
-The reason why the reference went away goes back to something from a [now-deleted](/posts/2019/10/its-about-food-not-decor) previous post:
+The reason why the reference went away goes back to something from a [previous post](/posts/2019/07/lessons-learned):
 
 > .&nbsp;.&nbsp;.&nbsp;using cloud sync with a Git repo is [a bad idea](https://stackoverflow.com/questions/35853139/can-git-and-icloud-drive-be-effectively-used-together).  So, now, I keep my [SSG](https://staticsite.gen) directory in a drive that's not sync'd with the cloud.
 
