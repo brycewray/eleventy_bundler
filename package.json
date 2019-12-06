@@ -40,6 +40,7 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "img-loader": "^3.0.1",
     "inline-source-map": "^0.6.2",
+    "instant.page": "^3.0.0",
     "lazysizes": "^5.2.0-beta1",
     "lqip-loader": "^2.2.0",
     "luxon": "^1.21.3",

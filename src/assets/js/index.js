@@ -15,6 +15,8 @@ import 'lazysizes/plugins/bgset/ls.bgset'
 
 import 'prismjs'
 
+import 'instant.page'
+
 // --- start, twitterMeta ---
 
 /* detect dark or light mode and handle Twitter embeds accordingly */
