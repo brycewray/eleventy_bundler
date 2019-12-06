@@ -110,12 +110,13 @@ A [From below]
 ## !!!---Stuff not to forget...---!!!
 
 - Image processing in general---Big improvement in delivered files' sizes despite virtually imperceptible difference in images' quality
-- LQIP in particular (work in progress re background images)
+- LQIP in particular (even with background images)
 - SCSS/SASS
+- Fast linking through instant.page (would've used Flying Pages but it's not as easily installed)
 - Relative ease of using NPM packages in general (especially vs. separate JS files)---Recalling @zachleat comments about NodeJS
-- Web "fonts" via Kyle Matthews's NPM Typefaces package in particular (despite earlier indications about system "fonts")
+- Easily installed Web "fonts" via Kyle Matthews's NPM Typefaces package in particular (despite earlier article about system "fonts")
 - Faster build time vs. Gatsby
-- Eleventy/webpack combo provides things not available if one uses either without the other
+- Summing up, Eleventy/webpack combo provides things not available if one uses either without the other
 	- Easier and more flexible templating (Eleventy)
 	- Easier integration of third-party JS (webpack)
 	- All the benefits of bundling (**obviously** webpack)
