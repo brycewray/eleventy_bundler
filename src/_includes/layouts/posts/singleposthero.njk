@@ -4,7 +4,9 @@ layout: layouts/_default/baseof.njk
 ---
 
 <main>
-  <div class="background-hero-div" style="background-image: url({{ featured_image }});">
+  <div class="background-hero-image-div lazyload blur-up" style="background-image: url({{featured_image}});">
+  </div>
+  <div class="background-hero-wrapper-div">
     <div class="background-hero-title-block">
       <h1 class="background-hero-title-text">{{ title }}</h1>
       <h2 class="background-hero-subtitle-text">
@@ -27,9 +29,9 @@ layout: layouts/_default/baseof.njk
       </p>
     </div>
   </div>
-    {% if featured_image_caption %}
-      <p class="featured-image-caption">{{ featured_image_caption }}</p>
-    {% endif %}
+  {% if featured_image_caption %}
+    <p class="featured-image-caption">{{ featured_image_caption }}</p>
+  {% endif %}
 
   <div class="post-line"></div> 
 

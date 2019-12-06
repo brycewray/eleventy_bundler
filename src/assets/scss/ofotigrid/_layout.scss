@@ -82,6 +82,36 @@ h3.twitter-border {
 }
 
 .background-hero {
+  &-image-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh; 
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 70vh;
+    }
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 80vh;
+    }
+  }
+  &-wrapper-div {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    margin-top: -20px;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 70vh;
+    }
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 80vh;
+    }
+  }
   &-div {
     background: $darkblue; // fallback for really old browsers
     background: linear-gradient(
@@ -95,13 +125,6 @@ h3.twitter-border {
     position: relative;
     height: 60vh;
     /* image supplied programmatically by template */
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
-      height: 70vh;
-    }
-    @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
-      height: 80vh;
-    }
   }
   &-title-block {
     display: block;
