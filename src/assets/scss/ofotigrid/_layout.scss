@@ -108,7 +108,7 @@ $mt1025: 0;
       left: 0;
       height: $vh0640;
       width: 100%;
-      transition: 400ms transform;
+      // transition: 400ms transform; -- if this isn't commented out, it overrides blur-up
       object-fit: cover;
       font-family: 'object-fit: cover';
       @media screen and (min-width: 641px) and (max-width: 768px) {

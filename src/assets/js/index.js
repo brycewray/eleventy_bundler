@@ -12,6 +12,7 @@ import 'lazysizes/plugins/blur-up/ls.blur-up'
 import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
 import 'lazysizes/plugins/progressive/ls.progressive'
 import 'lazysizes/plugins/bgset/ls.bgset'
+// lazysizes.cfg.blurupMode = 'auto' // uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
 
 import 'prismjs'
 
