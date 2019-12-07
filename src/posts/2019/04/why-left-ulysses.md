@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 title: Why I left Ulysses 
 subtitle: iA Writer wins—for now
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
@@ -12,6 +12,9 @@ actual_path: /content/posts/2019/04/why-left-ulysses
 final_url: posts/2019/04/why-left-ulysses
 discussionId: "2019-04-why-left-ulysses"
 featured_image: /images/hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct-1280.jpg
+featured_image_base: hand-butterfly-3751159_blue-tinted_monochrome_1280x720_60pct
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Hand releases a butterfly (which is the Ulysses logo)
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

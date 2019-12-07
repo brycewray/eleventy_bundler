@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Some curmudgeonish thoughts
 subtitle: (with apologies to the late Andy Rooney)
@@ -13,6 +13,9 @@ actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 final_url: /posts/2018/11/some-curmudgeonish-thoughts/
 featured_image: /images/brain-1300479_1280x720_60pct-1280.jpg
+featured_image_base: brain-1300479_1280x720_60pct
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Cartoonish art depicting ancient myths about which parts of the brain stored which kinds of thoughts
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

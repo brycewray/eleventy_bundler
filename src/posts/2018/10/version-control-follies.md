@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: The version-control follies
 subtitle: Life’s too short for CLI
@@ -13,6 +13,9 @@ actual_path: /content/posts/2018/10/version-control-follies.md
 discussionId: "2018-10-version-control-follies"
 final_url: /posts/2018/10/version-control-follies/
 featured_image: /images/javascript-programming-1873854_1280x720-1280.png
+featured_image_base: javascript-programming-1873854_1280x720
+featured_image_width: 1280
+featured_image_ext: png
 featured_image_alt: Screen capture of Sourcetree software
 ---
 

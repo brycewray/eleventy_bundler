@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Roger, Copy
 subtitle: Keeping my .git together with Working Copy
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/07/roger-copy
 final_url: /posts/2019/07/roger-copy
 discussionId: "2019-07-roger-copy"
 featured_image: /images/clocks-in-sync-3303560_1280x720_100pct-1280.jpg
+featured_image_base: clocks-in-sync-3303560_1280x720_100pct
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Clocks synchronized to the same time, illustrating synchronicity.
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

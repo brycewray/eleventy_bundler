@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Mark it down 
 subtitle: Plain but pretty
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/03/mark-it-down
 discussionId: "2019-03-mark-it-down"
 final_url: /posts/2019/03/mark-it-down
 featured_image: /images/ugly-duckling-young-swan-1639154_1280x720-1280.jpg
+featured_image_base: ugly-duckling-young-swan-1639154_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: A baby swan swimming
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

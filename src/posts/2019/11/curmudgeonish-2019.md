@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Some curmudgeonish thoughts, 2019 edition
 subtitle: A few more things that irk me
@@ -9,6 +9,9 @@ date: 2019-11-03T19:01:00-06:00
 discussionId: "2019-11-curmudgeonish-2019"
 idx: 38
 featured_image: /images/angry-bird-2234295_1920x1080-1920.jpg
+featured_image_base: angry-bird-2234295_1920x1080
+featured_image_width: 1920
+featured_image_ext: jpg
 featured_image_alt: "Stuffed Angry Bird toy sitting on ground with blurred vehicles in the background"
 featured_image_caption: "Image: Pixabay"
 ---

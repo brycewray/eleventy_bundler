@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
@@ -9,6 +9,9 @@ date: 2019-11-24T10:15:00-06:00
 discussionId: "2019-11-odds-ends-2019-11"
 idx: 39
 featured_image: /images/nuts-768243_1920x1080-1920.jpg
+featured_image_base: nuts-768243_1920x1080
+featured_image_width: 1920
+featured_image_ext: jpg
 featured_image_alt: "Closeup view of mixed nuts"
 featured_image_caption: "Image: Pixabay"
 ---

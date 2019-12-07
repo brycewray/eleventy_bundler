@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Ec-static 
 subtitle: How to go Hugo
@@ -14,6 +14,9 @@ actual_path: /content/posts/2019/04/ec-static
 discussionId: "2019-04-ec-static"
 final_url: /posts/2019/04/ec-static
 featured_image: /images/server-1235959_1280x720-1280.jpg
+featured_image_base: server-1235959_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Internet server
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

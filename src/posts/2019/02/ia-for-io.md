@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: iA for IO? 
 subtitle: Evaluating iA Writer for use with an SSG
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/02/ia-for-io
 discussionId: "2019-02-ia-for-io"
 final_url: /posts/2019/02/ia-for-io
 featured_image: /images/notebook-933362_1280x720-1280.jpg
+featured_image_base: notebook-933362_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

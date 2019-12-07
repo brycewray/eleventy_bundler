@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Independence
 subtitle: Thirty-five years a Mac lover
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/07/independence
 final_url: /posts/2019/07/independence
 discussionId: "2019-07-independence"
 featured_image: /images/1984-07-11_01_retouched_1280x720-1280.jpg
+featured_image_base: 1984-07-11_01_retouched_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: "Me, in 1984, eagerly wrapping my new Macintosh."
 featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)" # quotation marks to allow colon
 ---

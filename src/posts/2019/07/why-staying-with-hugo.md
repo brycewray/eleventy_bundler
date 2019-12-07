@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/07/why-staying-with-hugo
 final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: /images/hugo-logo-on-black-1280x720-1280.png
+featured_image_base: hugo-logo-on-black-1280x720
+featured_image_width: 1280
+featured_image_ext: png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---

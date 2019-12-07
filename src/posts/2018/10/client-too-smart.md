@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: The client is too smart for you
 subtitle: The email client, that is
@@ -13,6 +13,9 @@ actual_path: /content/posts/2018/10/client-too-smart.md
 discussionId: "2018-10-client-too-smart"
 final_url: /posts/2018/10/client-too-smart/
 featured_image: /images/contact-2805253_1280x720-1280.png
+featured_image_base: contact-2805253_1280x720
+featured_image_width: 1280
+featured_image_ext: png
 featured_image_alt: Illustration - mail flying at a stylized human head
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

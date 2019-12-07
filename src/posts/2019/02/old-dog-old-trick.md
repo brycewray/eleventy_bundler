@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/02/old-dog-old-trick
 discussionId: "2019-02-old-dog-old-trick"
 final_url: /posts/2019/02/old-dog-old-trick
 featured_image: /images/dog-2514968_1280x720-1280.jpg
+featured_image_base: dog-2514968_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Face of an old dog
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

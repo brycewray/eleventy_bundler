@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Blox sux
 subtitle: Page builders are a pain, but . . .
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/01/blox-sux
 discussionId: "2019-01-blox-sux"
 final_url: /posts/2019/01/blox-sux
 featured_image: /images/lego-169603_1920x1080_crop_Gaussian_blur-1920.jpg
+featured_image_base: lego-169603_1920x1080_crop_Gaussian_blur
+featured_image_width: 1920
+featured_image_ext: jpg
 featured_image_alt: Lego blocks arranged stylistically
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

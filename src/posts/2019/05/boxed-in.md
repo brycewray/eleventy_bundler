@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Boxed in?
 subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/05/boxed-in
 discussionId: "2019-05-boxed-in"
 final_url: /posts/2019/05/boxed-in
 featured_image: /images/thunderstorm-3625405_1280x720-1280.jpg
+featured_image_base: thunderstorm-3625405_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Thunderstorm clouds with lighting flashes
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

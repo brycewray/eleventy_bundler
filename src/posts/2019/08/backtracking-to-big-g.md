@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Backtracking to Big G
 subtitle: A noble experiment ends
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/08/backtracking-to-big-g
 final_url: /posts/2019/08/backtracking-to-big-g
 discussionId: "2019-08-backtracking-to-big-g"
 featured_image: /images/BW_shadow_of_G_on_gray_gradient_1280x720-1280.jpg
+featured_image_base: BW_shadow_of_G_on_gray_gradient_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Google logo overshadowing this site’s logo
 featured_image_caption: "Google favicon image: Pixabay" # quotation marks to allow colon
 ---

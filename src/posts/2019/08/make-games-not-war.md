@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/08/make-games-not-war
 final_url: /posts/2019/08/make-games-not-war
 discussionId: "2019-08-make-games-not-war"
 featured_image: /images/stadium-seats-3310891_1280x720-1280.jpg
+featured_image_base: stadium-seats-3310891_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Rows of empty seats in a sports stadium
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

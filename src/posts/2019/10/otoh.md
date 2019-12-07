@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: "OTOH"
 subtitle: "Retracting my retractions"
@@ -11,6 +11,9 @@ idx: 35
 #draft: Note!
 discussionId: "2019-10-otoh"
 featured_image: /images/compass-1344839_1280x720-1280.jpg
+featured_image_base: compass-1344839_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: "Compass lying on a granite background"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: The Holy Mail
 subtitle: Stopping the e-madness
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/05/the-holy-mail
 discussionId: "2019-05-the-holy-mail"
 final_url: /posts/2019/05/the-holy-mail
 featured_image: /images/letterbox-1926493_1280x720-1280.jpg
+featured_image_base: letterbox-1926493_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Old metal mailslot on bright red door
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

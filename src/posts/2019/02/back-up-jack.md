@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Back up, Jack 
 subtitle: From 3-2-1 to 4-2-2
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/02/back-up-jack
 discussionId: "2019-02-back-up-jack"
 final_url: /posts/2019/02/back-up-jack
 featured_image: /images/binary-2688910_1920_1280x721-1280.jpg
+featured_image_base: binary-2688910_1920_1280x721
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Stylistic illustration of moving binary data
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: A stacked deck
 subtitle: Part 2 of a two-part series on Web typography
@@ -13,6 +13,9 @@ actual_path: /content/posts/2018/10/web-typography-part-2.md
 discussionId: "2018-10-web-typography-part-2"
 final_url: /posts/2018/10/web-typography-part-2/
 featured_image: /images/computer-1869236_1920x1080-1920.jpg
+featured_image_base: computer-1869236_1920x1080
+featured_image_width: 1920
+featured_image_ext: jpg
 featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

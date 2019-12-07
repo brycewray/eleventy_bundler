@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Picture perfect?
 subtitle: With SSGs and images, it’s “location, location, location”
@@ -9,7 +9,9 @@ lastmod: 2019-10-21T14:05:00
 discussionId: "2019-10-picture-perfect"
 idx: 36
 featured_image: /images/camera-nikon-f-733546_1280x720-1280.jpg
-#featured_image: camera-nikon-f-733546_1280x720.jpg
+featured_image_base: camera-nikon-f-733546_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
 featured_image_caption: "Image: Pixabay"
 ---

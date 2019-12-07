@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Readable Web text, pretty please
 subtitle: Part 1 of a two-part series on Web typography
@@ -13,6 +13,9 @@ actual_path: /content/posts/2018/10/web-typography-part-1.md
 discussionId: "2018-10-web-typography-part-1"
 final_url: /posts/2018/10/web-typography-part-1/
 featured_image: /images/letters-691842_1280x720-1280.jpg
+featured_image_base: letters-691842_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Letters for old-style typesetting
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

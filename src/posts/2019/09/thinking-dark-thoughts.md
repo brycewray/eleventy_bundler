@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Thinking dark thoughts
 subtitle: How to keep up with a growing trend
@@ -9,7 +9,10 @@ lastmod: 2019-11-09T10:00:00
 idx: 33
 discussionId: "2019-09-thinking-dark-thoughts"
 featured_image: /images/sunset-1090164_1280x720-1280.jpg
-#featured_image_alt: ""
+featured_image_base: sunset-1090164_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
+featured_image_alt: "Skies at sunset"
 featured_image_caption: "Image: Pixabay"
 ---
 

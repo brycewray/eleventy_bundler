@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: Back with Hugo
 subtitle: "Well, that didn't last long"
@@ -13,6 +13,9 @@ actual_path: /content/posts/2019/09/back-with-hugo
 final_url: /posts/2019/09/back-with-hugo
 discussionId: "2019-09-back-with-hugo"
 featured_image: /images/skid-mark-567668_1280x720-1280.jpg
+featured_image_base: skid-mark-567668_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: "Skid marks on asphalt"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

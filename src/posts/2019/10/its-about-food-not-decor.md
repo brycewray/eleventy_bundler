@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 tags: post
 title: "It’s about the food, not the decor"
 subtitle: "The delivery method matters far less than what’s being delivered"
@@ -11,6 +11,9 @@ idx: 34
 #draft: Note!
 discussionId: "2019-10-its-about-food-not-decor" # figure it out later
 featured_image: /images/mount-horeb-lunch-4162348_1280x720-1280.jpg
+featured_image_base: mount-horeb-lunch-4162348_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: "Duotone photo of a diner with customers waiting to be served"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
