@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherolqip.njk
 title: The obligatory About Me page
 description: Not a bio (you’d fall asleep), but just a few explanatory observations.
 author: Bryce Wray
@@ -11,6 +11,9 @@ draft: false
 discussionId: "about"
 final_url: /about
 featured_image: /images/question-mark-over-mac-keyboard-49958_1280x720_100pct-1280.jpg
+featured_image_base: question-mark-over-mac-keyboard-49958_1280x720_100pct
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon 
 ---
