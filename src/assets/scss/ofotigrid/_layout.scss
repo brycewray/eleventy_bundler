@@ -81,37 +81,65 @@ h3.twitter-border {
 	width: 100vw !important;
 }
 
+// for background-hero figurings...
+$vh0640: 60 + unquote("vh");
+$vh0641768: 65 + unquote("vh");
+$vh7691024: 70 + unquote("vh");
+$vh1025: 80 + unquote("vh");
+$mt0640: 5 + unquote("vh");
+$mt0641768: 2 + unquote("vh");
+$mt7691024: 1 + unquote("vh");
+$mt1025: 0;
+
 .background-hero {
   &-image-div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 60vh; 
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
-      height: 70vh;
+    position: relative;
+    &:before {
+      display: block;
+      width: 100%;
+      content: "";
+      // padding-bottom: 100%;
+      height: 0;
     }
-    @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
-      height: 80vh;
+    img {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      height: $vh0640;
+      width: 100%;
+      transition: 400ms transform;
+      object-fit: cover;
+      font-family: 'object-fit: cover';
+      @media screen and (min-width: 641px) and (max-width: 768px) {
+        height: $vh0641768;
+      }
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        height: $vh7691024;
+      }
+      @media screen and (min-width: 1025px) {
+        height: $vh1025;
+      }
     }
   }
   &-wrapper-div {
     position: relative;
-    height: 60vh;
     width: 100%;
-    margin-top: -20px;
+    height: $vh0640;
+    margin-top: $mt0640;
+    @media screen and (min-width: 641px) and (max-width: 768px) {
+      height: $vh0641768;
+      margin-top: $mt0641768;
+    }
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-      height: 70vh;
+      height: $vh7691024;
+      margin-top: $mt7691024;
     }
     @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
-      height: 80vh;
+      height: $vh1025;
+      margin-top: $mt1025;
     }
-  }
+}
   &-div {
     background: $darkblue; // fallback for really old browsers
     background: linear-gradient(
@@ -132,7 +160,8 @@ h3.twitter-border {
     position: absolute;
     bottom: 0;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.00),
+      rgba(0, 0, 0, 0.0),
+      rgba(0,0,0,0.95),
       rgba(0, 0, 0, 1.00)
     );
   }
@@ -143,7 +172,11 @@ h3.twitter-border {
     text-align: center;
     letter-spacing: -0.025em;
     letter-spacing: -0.025rem;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      text-align: left;
+      padding-left: 5%;
+    }
+    @media screen and (min-width: 1025px) {
       text-align: left;
       padding-left: 15%;
     }

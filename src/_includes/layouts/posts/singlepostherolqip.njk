@@ -5,12 +5,16 @@ layout: layouts/_default/baseof.njk
 
 <main>
   <div class="background-hero-image-div">
-    <img data-lowsrc="/images/{{featured_image_base}}-20.{{featured_image_ext}}"
-    data-srcset="
-    /images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, 
-    /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w,
-    /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} 900w
-    " alt="{{featured_image_alt}}" data-sizes="auto" class="lazyload blur-up" style="position: absolute; height: 70vh; width: 100%;">
+    <img 
+      src="/images/{{featured_image_base}}-20.{{featured_image_ext}}" 
+      data-srcset="
+      /images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, 
+      /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, 
+      /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}
+      " 
+      data-sizes="auto"
+      class="lazyload blur-up"
+    />
   </div>
   <div class="background-hero-wrapper-div">
     <div class="background-hero-title-block">
