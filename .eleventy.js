@@ -1,13 +1,9 @@
 const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
-// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
-// const lazyImagesPlugin = require("eleventy-plugin-lazyimages")
 const htmlmin = require('html-minifier')
 
 module.exports = function (config) {
 
-  // config.addPassthroughCopy('src/assets/css')
-  // config.addPassthroughCopy('src/images')
   config.addPassthroughCopy('src/assets/js')
 
 
@@ -28,7 +24,7 @@ module.exports = function (config) {
   config.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
   /* Markdown plugins */
-  // https://www.11ty.io/docs/languages/markdown/
+  // https://www.11ty.dev/docs/languages/markdown/
   // --and-- https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   // --and-- https://github.com/planetoftheweb/seven/blob/master/.eleventy.js
   let markdownIt = require("markdown-it")
@@ -61,7 +57,7 @@ module.exports = function (config) {
   /* pathPrefix: "/"; */
   return {
     dir: {
-      input: 'src', // <--- everything else in 'dir' is relative to this directory! https://www.11ty.io/docs/config/#directory-for-includes
+      input: 'src', // <--- everything else in 'dir' is relative to this directory! https://www.11ty.dev/docs/config/#directory-for-includes
       data: '../_data',
       includes: '_includes'
     },
