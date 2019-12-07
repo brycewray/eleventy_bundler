@@ -6,6 +6,7 @@ module.exports = function (config) {
 
   config.addPassthroughCopy('src/assets/js')
 
+  config.addPlugin(pluginRss)
 
   config.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
