@@ -15,7 +15,7 @@ import 'lazysizes/plugins/bgset/ls.bgset'
 
 import 'prismjs'
 
-import 'instant.page'
+import 'instant.page' // until there's a webpack-friendly version of flying-pages
 
 // --- start, twitterMeta ---
 
