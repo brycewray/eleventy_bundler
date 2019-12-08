@@ -13,7 +13,7 @@ featured_image_base: chain-11ty-webpack-3867751_1920x1080
 featured_image_width: 1920
 featured_image_ext: jpg
 featured_image_alt: "Eleventy and webpack logos over a chain"
-featured_image_caption: "Images: 11ty.io; webpackjs.org; Pixabay"
+featured_image_caption: "Images: 11ty.dev; webpackjs.org; Pixabay"
 ---
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
@@ -22,15 +22,17 @@ Hello? Is this thing on? *[crickets]*
 
 Well, for those of you still in the room: bear with me, because there's a story here even if you're not at all into building Web sites. It's about helping a good product built by a [good person](https://www.zachleat.com) get even better.
 
-Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.org). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software--- specifically, [webpack](https://webpackjs.org)---makes possible.
+Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.dev). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software--- specifically, [webpack](https://webpackjs.org)---makes possible.
 
 I know some of this (all of this?) is Greek to some of you. I'll try to fix that.
 
-## Bundles of (not) fun
+## Before bundlers&nbsp;.&nbsp;.&nbsp;.
 
-I'd never heard of bundlers in general, or webpack in particular, until a year or so ago; and only in the last couple of months have I begun to "get" the whole point of bundlers. Now I am a firm believer in them. In the next few paragraphs, I'll endeavor to explain their purpose as best I can. I also highly encourage you to read a snappy article by [Victor Zhou](https://victorzhou.com/) called "[Why Webpack? (or, How Not to Serve JavaScript)](https://victorzhou.com/blog/why-you-should-use-webpack/)," which explains all this very, very well *and* entertainingly at the same time. Just as Mr. Zhou did, I will explain bundlers by describing the pains-in-the-fanny which their creators intended that they prevent.
+I'd never heard of bundlers in general, or webpack in particular, until a year or so ago; and only in the last couple of months have I begun to "get" the whole point of bundlers. Now I am a firm believer in them. In the next few paragraphs, I'll endeavor to explain their purpose as best I can. **I also highly encourage you to read a snappy article by [Victor Zhou](https://victorzhou.com/) called "[Why Webpack? (or, How Not to Serve JavaScript)](https://victorzhou.com/blog/why-you-should-use-webpack/),"** which explains all this very, very well *and* entertainingly at the same time.
 
-Until not all that many years ago, if you wanted to add JavaScript code to your Web site for whatever interactive jazz you wanted it to do, you'd either link to .js files&nbsp;.&nbsp;.&nbsp;.
+Just as Mr. Zhou did, I will explain bundlers by describing the pains-in-the-fanny which their creators intended that they prevent.
+
+Until not all that many years ago, if you wanted to add JavaScript code to your Web site for whatever interactive jazz you wanted it to do, you'd either link to JS files&nbsp;.&nbsp;.&nbsp;.
 
 ```html
 <script src="/js/comments-script.js"></script>
@@ -50,11 +52,11 @@ Until not all that many years ago, if you wanted to add JavaScript code to your 
 </script>
 ```
 
-(Back then, you generally needed to specify that a `<script>` tag was introducing JavaScript code. Nowadays, that's assumed.)
+(Back then, you generally needed to specify that a `<script>` tag was introducing JS code. Nowadays, that's assumed.)
 
-In the bad old days before [HTTP/2](https://http2.github.io) became widespread, the `<link>` method, in particular, was something against which Web performance gurus preached because it involved yet one more time-consuming request to the Web server, as if you weren't already making enough requests for images and other assets. One reasonably sized JS file? Fine. But, soon, the typical Web site was loading many JS files per page. Especially as smartphones came into the picture with their then-limited connectivity speeds, it became even clearer this wouldn't fly.
+In the bad old days before [HTTP/2](https://http2.github.io) became widespread, the `<link>` method, in particular, was something against which Web performance gurus preached because it involved yet one more time-consuming request to the Web server, as if you weren't already making enough requests for images and other assets. *One* reasonably sized JS file? Fine. But, soon, the typical Web site was loading many JS files per page. Especially as smartphones came into the picture with their then-limited connectivity speeds, it became even clearer this wouldn't fly.
 
-A popular way around this problem was *concatenating* and *minifying* JS files. You'd take your twelve or fourteen files and cram 'em together into one file while also eliminating comments, line breaks, and any other items not utterly necessary for the code to run.[^spaces] Now you'd be down to just one server call for that one big JS file.
+Soon, a popular way around this problem was *concatenating* and *minifying* JS files. You'd take your twelve or fourteen files and cram 'em together into one file while also eliminating comments, line breaks, and any other items not utterly necessary for the code to run.[^spaces] Now you'd be down to just one server call for that one big JS file.
 
 Good to go, right? Well, not quite.
 
