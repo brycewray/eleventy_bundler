@@ -1,6 +1,7 @@
 /* index.js */
 
-// require("typeface-vollkorn")
+require("typeface-roboto")
+require("typeface-roboto-mono")
 
 import '../scss/ofotigrid.scss'
 

@@ -62,6 +62,8 @@
     "sharp": "^0.23.3",
     "style-loader": "^1.0.1",
     "svg-url-loader": "^3.0.3",
+    "typeface-roboto": "0.0.75",
+    "typeface-roboto-mono": "0.0.75",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
