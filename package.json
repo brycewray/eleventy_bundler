@@ -9,10 +9,10 @@
     "clean": "rimraf _site",
     "start": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
-    "dev:webpack": "webpack -d --mode development",
+    "dev:webpack": "webpack --config webpack.dev.js",
     "build": "npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
-    "prod:webpack": "webpack -p --mode production"
+    "prod:webpack": "webpack -p --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -21,10 +21,12 @@
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
     "@babel/register": "^7.7.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-hot-loader": "^1.4.4",
     "css-loader": "^3.2.0",
     "debug": "^4.1.1",
@@ -51,6 +53,7 @@
     "node-loader": "^0.6.0",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "posthtml": "^0.12.0",
     "prismjs": "^1.17.1",
     "quicklink": "^2.0.0-alpha",
@@ -64,9 +67,11 @@
     "svg-url-loader": "^3.0.3",
     "typeface-roboto": "0.0.75",
     "typeface-roboto-mono": "0.0.75",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "html-minifier": "^4.0.0",
