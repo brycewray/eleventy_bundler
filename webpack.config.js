@@ -16,7 +16,7 @@ const mainConfig = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
-      chunkFIlename: '[id].css',
+      chunkFilename: '[id].css',
       // ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
@@ -67,7 +67,7 @@ const eleventyConfig = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
-      chunkFIlename: '[id].css',
+      chunkFilename: '[id].css',
       // ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
     /*
