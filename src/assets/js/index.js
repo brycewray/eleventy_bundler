@@ -19,6 +19,11 @@ import 'prismjs'
 
 import 'instant.page' // until there's a webpack-friendly version of flying-pages
 
+var req = require.context("../../images", true, /\.(jpe?g|png|gif)$/)
+req.keys().forEach(function(key){
+  req(key)
+})
+
 // --- start, twitterMeta ---
 
 /* detect dark or light mode and handle Twitter embeds accordingly */
