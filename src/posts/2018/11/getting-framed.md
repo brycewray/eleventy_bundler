@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherolqip.njk
+layout: layouts/posts/singleposthero.njk
 tags: post
 title: Getting framed
 subtitle: Why I still use Bootstrap

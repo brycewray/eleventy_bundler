@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherolqip.njk
+layout: layouts/posts/singleposthero.njk
 tags: post
 title: Back with Hugo
 subtitle: "Well, that didn't last long"

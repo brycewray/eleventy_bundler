@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherolqip.njk
+layout: layouts/posts/singleposthero.njk
 tags: post
 title: Backtracking to Big G
 subtitle: A noble experiment ends

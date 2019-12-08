@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherolqip.njk
+layout: layouts/posts/singleposthero.njk
 title: The obligatory About Me page
 description: Not a bio (you’d fall asleep), but just a few explanatory observations.
 author: Bryce Wray
