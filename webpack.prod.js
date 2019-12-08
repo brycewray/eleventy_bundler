@@ -70,8 +70,8 @@ module.exports = merge(common, {
           {
             loader: 'responsive-loader',
             options: {
-              // adapter: require('responsive-loader/sharp'),
-              // quality: 60,
+              adapter: require('responsive-loader/sharp'),
+              quality: 60,
               sizes: [
                 20, // placeholder for lqip
                 300,
@@ -81,32 +81,6 @@ module.exports = merge(common, {
               placeholder: false, // otherwise, bundle is too big -- unless you'll use the placeholder data, no point
               // placeholderSize: 40,
               name: 'images/[name]-[width].[ext]',
-            },
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 65,
-              },
-              optipng: {
-                // options to come
-              },
-              pngquant: {
-                quality: [
-                  0.65, 
-                  0.90,
-                ],
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              /*
-              webp: {
-                quality: 75,
-              },
-              */
             },
           },
         ],
