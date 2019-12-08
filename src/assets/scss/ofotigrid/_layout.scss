@@ -81,65 +81,7 @@ h3.twitter-border {
 	width: 100vw !important;
 }
 
-// for background-hero figurings...
-$vh0640: 60 + unquote("vh");
-$vh0641768: 65 + unquote("vh");
-$vh7691024: 70 + unquote("vh");
-$vh1025: 80 + unquote("vh");
-$mt0640: 5 + unquote("vh");
-$mt0641768: 2 + unquote("vh");
-$mt7691024: 1 + unquote("vh");
-$mt1025: 0;
-
 .background-hero {
-  &-image-div {
-    position: relative;
-    &:before {
-      display: block;
-      width: 100%;
-      content: "";
-      // padding-bottom: 100%;
-      height: 0;
-    }
-    img {
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-      height: $vh0640;
-      width: 100%;
-      // transition: 400ms transform; -- if this isn't commented out, it overrides blur-up
-      object-fit: cover;
-      font-family: 'object-fit: cover';
-      @media screen and (min-width: 641px) and (max-width: 768px) {
-        height: $vh0641768;
-      }
-      @media screen and (min-width: 769px) and (max-width: 1024px) {
-        height: $vh7691024;
-      }
-      @media screen and (min-width: 1025px) {
-        height: $vh1025;
-      }
-    }
-  }
-  &-wrapper-div {
-    position: relative;
-    width: 100%;
-    height: $vh0640;
-    margin-top: $mt0640;
-    @media screen and (min-width: 641px) and (max-width: 768px) {
-      height: $vh0641768;
-      margin-top: $mt0641768;
-    }
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
-      height: $vh7691024;
-      margin-top: $mt7691024;
-    }
-    @media screen and (min-width: 1025px) {
-      height: $vh1025;
-      margin-top: $mt1025;
-    }
-}
   &-div {
     background: $darkblue; // fallback for really old browsers
     background: linear-gradient(
@@ -151,8 +93,15 @@ $mt1025: 0;
     background-position-y: center;
     background-size: cover;
     position: relative;
-    height: 60vh;
+    height: 70vh;
     /* image supplied programmatically by template */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 75vh;
+    }
+    @media screen and (min-width: 1025px) {
+      background-attachment: fixed;
+      height: 80vh;
+    }
   }
   &-title-block {
     display: block;
@@ -171,14 +120,14 @@ $mt1025: 0;
     text-shadow: 4px 4px 2px #000;
     text-align: center;
     letter-spacing: -0.025em;
-    letter-spacing: -0.025rem;
+    padding: 0.25em;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
       text-align: left;
-      padding-left: 5%;
+      padding: 0 5% 0 5%;
     }
     @media screen and (min-width: 1025px) {
       text-align: left;
-      padding-left: 15%;
+      padding: 0 5% 0 10%;
     }
   }
 

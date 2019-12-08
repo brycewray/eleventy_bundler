@@ -56,3 +56,45 @@ li .lazywrapper {
     filter: blur(0);
   }
 }
+
+/*
+=== beginning of NON-lazysizes LQIP handling ===
+// based on the *S*QIP version in 
+// https://endler.dev/2017/image-previews/
+*/
+
+.loader {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  img.frozen {
+    position: absolute;
+  }
+  img {
+    // position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.frozen {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+  transform: scale(1.04);
+  animation: 0.2s ease-in 0.4s 1 forwards fade;
+  width: 100%;
+}
+
+@keyframes fade {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
