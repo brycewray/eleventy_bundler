@@ -10,7 +10,9 @@ body {
 }
 
 p, li {
-  line-height: 1.4;
+  line-height: 1.4; // if using $sans-serif-boot
+  // line-height: 1.7; // if using $serif-primary
+  // font-size: 1.2em;
 }
 
 h1, .h1,
@@ -168,6 +170,10 @@ a.footnote-return{
 
 .wht {
   color: #fff;
+}
+
+.smallCaps {
+  font-variant: small-caps;
 }
 
 .teenytxt, .teeny {
