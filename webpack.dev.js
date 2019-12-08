@@ -49,20 +49,50 @@ module.exports = merge(common, {
       },
       {
         test: /\.(jpe?g|png|gif)$/i,
-        loader: 'responsive-loader',
-        options: {
-          adapter: require('responsive-loader/sharp'),
-          quality: 60,
-          sizes: [
-            20, // placeholder for lqip
-            300,
-            600,
-            4000, // using a ridiculous width so it will process the original (won't make a bigger version)
-          ],
-          placeholder: false, // otherwise, bundle is too big -- unless you'll use the placeholder data, no point
-          // placeholderSize: 40,
-          name: 'images/[name]-[width].[ext]',
-        },
+        use: [
+          {
+            loader: 'responsive-loader',
+            options: {
+              // adapter: require('responsive-loader/sharp'),
+              // quality: 60,
+              sizes: [
+                20, // placeholder for lqip
+                300,
+                600,
+                4000, // using a ridiculous width so it will process the original (won't make a bigger version)
+              ],
+              placeholder: false, // otherwise, bundle is too big -- unless you'll use the placeholder data, no point
+              // placeholderSize: 40,
+              name: 'images/[name]-[width].[ext]',
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              optipng: {
+                // options to come
+              },
+              pngquant: {
+                quality: [
+                  0.65, 
+                  0.90,
+                ],
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              /*
+              webp: {
+                quality: 75,
+              },
+              */
+            },
+          },
+        ],
       },
       {
         test: /\.html$/,
