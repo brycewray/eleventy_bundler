@@ -43,7 +43,7 @@ Real authors deliver something. And even "eventually" has a shelf life.
 
 WordPress has its purposes, as do all things, but don't kid yourself into thinking you're a Web developer if that's all you can use. So can a reasonably motivated nine-year-old.
 
-Want to use Web fonts in your webpack-built app/site? Check out [Typefaces](https://github.com/kyleamathews/typefaces). Can't be much easier.
+Want to use Web "fonts" in your webpack-built app/site? Check out [Typefaces](https://github.com/kyleamathews/typefaces). Can't be much easier.
 
 There must be times when the wonderful folks at Literature and Latte wish they could go back in time and never make either Windows or iOS versions of Scrivener. Money aside, some things are simply not worth the angst.
 
