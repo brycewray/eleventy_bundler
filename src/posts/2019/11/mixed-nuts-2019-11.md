@@ -5,7 +5,7 @@ title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
 description: "Observations worth exactly what you’re paying for them."
 date: 2019-11-24T10:15:00-06:00
-#lastmod: t/k
+lastmod: 2019-12-11T12:05:00-06:00
 discussionId: "2019-11-odds-ends-2019-11"
 idx: 39
 featured_image: /images/nuts-768243_1280x720-1280.jpg
