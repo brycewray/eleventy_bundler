@@ -1,16 +1,6 @@
   <head>
     <meta name="generator" content="Eleventy - https://11ty.dev" />
         
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146418828-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-146418828-1');
-    </script>
-
     {% if title == "Home page" %}
       <title>{{ siteparams.siteTitle }}</title>
       <meta property="og:title" content="{{ siteparams.siteTitle }}" />
