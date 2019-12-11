@@ -5,6 +5,8 @@ const htmlmin = require('html-minifier')
 module.exports = function (config) {
 
   config.addPassthroughCopy('src/assets/js')
+  
+  config.addPassthroughCopy('robots.txt')
 
   config.addPlugin(pluginRss)
 
