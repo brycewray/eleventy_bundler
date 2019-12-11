@@ -67,7 +67,6 @@
     "svg-url-loader": "^3.0.3",
     "typeface-roboto": "0.0.75",
     "typeface-roboto-mono": "0.0.75",
-    "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
