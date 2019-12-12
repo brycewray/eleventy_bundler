@@ -8,6 +8,12 @@
       <title>{{ title }} | {{ siteparams.siteTitle }}</title>
       <meta property="og:title" content="{{ title }} | {{ siteparams.siteTitle }}" />
     {% endif %}
+
+    {% if title == "Home page" %}
+      <!-- IndieWeb -->
+      <link rel="me" href="https://twitter.com/BryceWrayTX" />
+      <link rel="me" href="https://github.com/brycewray" />
+    {% endif %}
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
