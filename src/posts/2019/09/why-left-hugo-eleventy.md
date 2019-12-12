@@ -54,7 +54,7 @@ Second, not long after I dragged my bleeding carcass away from attempting to use
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
-[You may recall](/posts/2019/07/why-sticking-with-hugo) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
+[You may recall](/posts/2019/07/why-staying-with-hugo) that at least part of my interest in Gatsby in particular, and the new-gen SSGs in general, was because I wanted to amplify my coding chops---especially  since working with this strain of SSGs was more likely to yield real-world experience I could use either on the current job or the next one.
 
 Coding chops? Hah. Instead, it felt as if I were limping away while barely retaining my mouth's choppers.
 
@@ -225,4 +225,4 @@ Indeed, one part of the transition was to convert all my Hugo site's Markdown fi
 
 To put it another way: if, somewhere down the line, I decide I'd rather switch back to Hugo, I will be able to do so without a great deal of angst.
 
-.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019-06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
+.&nbsp;.&nbsp;. except for worrying about making you [further](/posts/2018/11/grid-locked-no-more) [doubt](/posts/2019/05/boxed-in) [my](/posts/2019/06/ahoy-mate) [ability](/posts/2019/07/why-staying-with-hugo) to stick with anything, that is.
