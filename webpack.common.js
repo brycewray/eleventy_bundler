@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: [
-    './src/assets/js/index.js',
+    './src/assets/js/index.js'
   ],
   output: {
     filename: 'bundle.js',
@@ -18,6 +18,7 @@ module.exports = {
     }),
   ],
   node: {
+    global: true,
     fs: 'empty',
   },
   module: {
@@ -33,7 +34,7 @@ module.exports = {
             options: {
               // you can specify a publicPath here
               // by default it uses publicPath in webpackOptions.output
-              publicPath: '../',
+              publicPath: '../'
             },
           },
           // 'style-loader',
