@@ -1,19 +1,111 @@
-const API_ORIGIN = 'https://webmention.io/api/mentions.jf2'
+// thanks to https://mxb.dev/blog/using-webmentions-on-static-sites/ and
+// https://github.com/maxboeck/mxb/blob/master/src/data/webmentions.js
+
+const fs = require('fs')
 const fetch = require('node-fetch')
+const unionBy = require('lodash/unionBy')
+const domain = require('./site.json').domain
+
+// load .env variables with dotenv
+require('dotenv').config()
+
+// define cache location and API endpoint
+const CACHE_FILE_PATH = '_cache/webmentions.json'
+const API = 'https://webmention.io/api'
+const TOKEN = process.env.WEBMENTION_IO_TOKEN
+
+async function fetchWebmentions(since, perPage = 10000) {
+  if (!domain) {
+      // If we dont have a domain name, abort
+      console.warn(
+          'unable to fetch webmentions: no domain name specified in site.json'
+      )
+      return false
+  }
+
+  if (!TOKEN) {
+      // If we dont have a domain access token, abort
+      console.warn(
+          'unable to fetch webmentions: no access token specified in environment.'
+      )
+      return false
+  }
+
+  let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`
+  if (since) url += `&since=${since}`
+
+  const response = await fetch(url)
+  if (response.ok) {
+      const feed = await response.json()
+      console.log(
+          `${feed.children.length} new webmentions fetched from ${API}`
+      )
+      return feed
+  }
+
+  return null
+}
+
+// Merge fresh webmentions with cached entries, unique per id
+function mergeWebmentions(a, b) {
+  return unionBy(a.children, b.children, 'wm-id')
+}
+
+// save combined webmentions in cache file
+function writeToCache(data) {
+  const dir = '_cache'
+  const fileContent = JSON.stringify(data, null, 2)
+  // create cache folder if it doesnt exist already
+  if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir)
+  }
+  // write data to cache json file
+  fs.writeFile(CACHE_FILE_PATH, fileContent, err => {
+      if (err) throw err
+      console.log(`webmentions cached to ${CACHE_FILE_PATH}`)
+  })
+}
+
+// get cache contents from json file
+function readFromCache() {
+  if (fs.existsSync(CACHE_FILE_PATH)) {
+      const cacheFile = fs.readFileSync(CACHE_FILE_PATH)
+      const cachedWebmentions = JSON.parse(cacheFile)
+
+      // merge cache with wms for legacy domain
+      return {
+          lastFetched: cachedWebmentions.lastFetched,
+          children: mergeWebmentions(legacyWebmentions, cachedWebmentions)
+      }
+  }
+
+  // no cache found.
+  return {
+      lastFetched: null,
+      children: legacyWebmentions.children
+  }
+}
 
 module.exports = async function() {
-    const domain = 'brycewray.com'
-    const token = process.env.WEBMENTION_IO_TOKEN
-    const url = `${API_ORIGIN}?domain=${domain}&token=${token}`
+  const cache = readFromCache()
 
-    try {
-        const response = await fetch(url)
-        if (response.ok) {
-            const feed = await response.json()
-            return feed
-        }
-    } catch (err) {
-        console.error(err)
-        return null
-    }
+  if (cache.children.length) {
+      console.log(`${cache.children.length} webmentions loaded from cache`)
+  }
+
+  // Only fetch new mentions in production
+  if (process.env.NODE_ENV === 'production') {
+      const feed = await fetchWebmentions(cache.lastFetched)
+      if (feed) {
+          const webmentions = {
+              lastFetched: new Date().toISOString(),
+              children: mergeWebmentions(cache, feed)
+          }
+
+          writeToCache(webmentions)
+          return webmentions
+      }
+  }
+
+  return cache
 }
