@@ -17,6 +17,9 @@ module.exports = {
       // ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
+  node: {
+    fs: 'empty',
+  },
   module: {
     rules: [
       { 
