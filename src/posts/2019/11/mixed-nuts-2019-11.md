@@ -5,7 +5,7 @@ title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
 description: "Observations worth exactly what you’re paying for them."
 date: 2019-11-24T10:15:00-06:00
-lastmod: 2019-12-11T12:05:00-06:00
+lastmod: 2019-12-12T20:30:00-06:00
 discussionId: "2019-11-odds-ends-2019-11"
 idx: 39
 featured_image: /images/nuts-768243_1280x720-1280.jpg
@@ -35,35 +35,35 @@ So, let's sample some mixed nuts for November, 2019&nbsp;.&nbsp;.&nbsp;.
 
 The open-office concept is simply a way for businesses to cram more people into less, and therefore cheaper, real estate. However, on the bright side: it helps sell a metric [bleep]-ton of wireless headphones.
 
-Although this site's [been](/posts/2019/10/now-gatsby-geezer) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.io), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.
+*Although this site's [been](/posts/2019/10/now-gatsby-geezer) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.io), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.*
 
 In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four)," I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
 
-Real authors deliver something. And even "eventually" has a shelf life.
+*Real authors deliver something. And even "eventually" has a shelf life.*
 
 WordPress has its purposes, as do all things, but don't kid yourself into thinking you're a Web developer if that's all you can use. So can a reasonably motivated nine-year-old.
 
-Want to use Web "fonts" in your webpack-built app/site? Check out [Typefaces](https://github.com/kyleamathews/typefaces). Can't be much easier.
+*Want to use Web "fonts" in your webpack-built app/site? Check out [Typefaces](https://github.com/kyleamathews/typefaces). Can't be much easier.*
 
 There must be times when the wonderful folks at Literature and Latte wish they could go back in time and never make either Windows or iOS versions of Scrivener. Money aside, some things are simply not worth the angst.
 
-One wonders: if luxury cars' TV ads *stopped* showing them doing crazy high-speed maneuvers, would this keep their typical drivers from being such tailgating, lane-jumping[^BMWjoke], rules- and laws-flouting jerks?
+*One wonders: if luxury cars' TV ads* stopped *showing them doing crazy high-speed maneuvers, would this keep their typical drivers from being such tailgating, lane-jumping[^BMWjoke], rules- and laws-flouting jerks?*
 
 [^BMWjoke]: Old joke&nbsp;.&nbsp;.&nbsp;. **Q**:&nbsp;What's the most unnecessary job on Earth? **A**:&nbsp;Installing turn signals on BMWs.
 
 Have followed pro and major-college sports for decades, but it's increasingly hard for me to care much. The reasons would fill another post. Now, they're mostly background noise while I think about and work on other things.
 
-Collision-avoidance technology is still not offered across all new vehicle models. You just know that a lawsuit is bound to happen when someone is killed in a new econocar lacking such tech.
+*Collision-avoidance technology is still not offered across all new vehicle models. You just know that a lawsuit is bound to happen when someone is killed in a new econocar lacking such tech.*
 
 If you're thinking about buying your next HDTV, do some Googling about  backlighting problems. Certain brands and models seem more prone than others. I know whereof I speak, unfortunately. MicroLEDs will solve the problem---when/if they're affordable in my lifetime.
 
-If you have to be up and out at six a.m. on a weekend, the quiet of the neighborhood gas station is infinitely nicer than the usual dog-eat-dog trip during rush hour. Can almost feel your blood pressure drop.
+*If you have to be up and out at six a.m. on a weekend, the quiet of the neighborhood gas station is infinitely nicer than the usual dog-eat-dog trip during rush hour. Can almost feel your blood pressure drop.*
 
 Our community allows only two options for high-speed home connectivity[^OnlyOne]. I thus soon will have to sign up for at least another year's worth of the only one of those two that provides the *synchronous* broadband connectivity my work (paid and otherwise) requires. Maybe in a few years, 5G will make that [Hobson's choice](https://en.wikipedia.org/wiki/Hobson%27s_choice) a thing of the past.
 
 [^OnlyOne]: Of course, some of you have only one choice or, worse, zero choices. (Observing the utter paucity of such choices in my rural birthplace, on my occasional trips back there, is at once enlightening and appalling.) However, if you---as do I---live in one of the ten most populous metro areas in the U.S., that simply shouldn't be the case. [South Korea](https://www.cnet.com/news/south-korea-gets-super-duper-fast-internet/) makes us look ridiculously backward by comparison.
 
-Am really pleased with how Apple is solving a number of long-standing gripes about its products. Most notable examples are the new MacBook Pro 16 and the soon-coming Mac Pro, and more recently the [report](https://www.bloomberg.com/news/articles/2019-11-21/apple-ios-14-features-changes-testing-after-ios-13-bugs) of an overhaul to resolve software-release issues. Cupertino *has* been listening, after all.
+*Am really pleased with how Apple is solving a number of long-standing gripes about its products. Most notable examples are the new MacBook Pro 16 and the soon-coming Mac Pro, and more recently the [report](https://www.bloomberg.com/news/articles/2019-11-21/apple-ios-14-features-changes-testing-after-ios-13-bugs) of an overhaul to resolve software-release issues. Cupertino* has *been listening, after all.*
 
 [Never, ever let an employer put MDM on a personal device about which you care](https://blog.cdemi.io/never-accept-an-mdm-policy-on-your-personal-phone/). Bad Things Ensue. Pro tip: next time you buy a new phone, keep the *old* one if it still works WiFi-wise and let *that* be your work mobile device.[^WorkDevice] Just be sure it isn't linked to any personal account with your photos, messages, and so forth.
 
