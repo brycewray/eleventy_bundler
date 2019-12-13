@@ -16,7 +16,7 @@ const TOKEN = process.env.WEBMENTION_IO_TOKEN
 async function fetchWebmentions(since) {
   const { domain } = metadata
 
-  if (!domain || domain === 'brycewray.com') {
+  if (!domain || domain === 'myurl.com') {
     // If we dont have a domain name, abort
     console.warn(
       'unable to fetch webmentions: no domain specified in metadata.'
