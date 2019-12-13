@@ -34,7 +34,7 @@ module.exports = {
               // you can specify a publicPath here
               // by default it uses publicPath in webpackOptions.output
               publicPath: '../',
-              hmr: process.env.NODE_ENV === 'development',
+              // hmr: process.env.NODE_ENV === 'development',
             },
           },
           // 'style-loader',
