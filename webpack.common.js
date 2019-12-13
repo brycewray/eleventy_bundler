@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
-      chunkFIlename: '[id].css',
+      chunkFilename: '[id].css',
       // ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
@@ -34,7 +34,6 @@ module.exports = {
               // you can specify a publicPath here
               // by default it uses publicPath in webpackOptions.output
               publicPath: '../',
-              // hmr: process.env.NODE_ENV === 'development',
             },
           },
           // 'style-loader',
@@ -68,8 +67,7 @@ module.exports = {
                 600,
                 4000, // using a ridiculous width so it will process the original (won't make a bigger version)
               ],
-              placeholder: false, // otherwise, bundle is too big -- unless you'll use the placeholder data, no point
-              // placeholderSize: 40,
+              placeholder: false, // otherwise, bundle is too big
               name: 'images/[name]-[width].[ext]',
             },
           },
@@ -81,7 +79,7 @@ module.exports = {
           loader: 'html-loader',
           options: {
             interpolate: true,
-            minimize: true
+            minimize: true,
           },
         },
       },
