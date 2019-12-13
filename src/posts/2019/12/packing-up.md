@@ -5,7 +5,7 @@ title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 date: 2019-12-08T17:48:00-06:00
-#lastmod: t/k
+lastmod: 2019-12-13T06:15:00-06:00
 discussionId: "2019-12-packing-up"
 idx: 40
 featured_image: /images/chain-11ty-webpack-3867751_1920x1080-1920.jpg
@@ -56,7 +56,7 @@ Until not all that many years ago, if you wanted to add JavaScript code to your 
 
 (Back then, you generally needed to specify that a `<script>` tag was introducing JS code. Nowadays, that's assumed.)
 
-In the bad old days before [HTTP/2](https://http2.github.io) became widespread, the `<link>` method, in particular, was something against which Web performance gurus preached because it involved yet one more time-consuming request to the Web server, as if you weren't already making enough requests for images and other assets. *One* reasonably sized JS file? Fine. But, soon, the typical Web site was loading many JS files per page. Especially as smartphones came into the picture with their then-limited connectivity speeds, it became even clearer that this wouldn't fly.
+In the bad old days before [HTTP/2](https://http2.github.io) became widespread, the linking method, in particular, was something against which Web performance gurus preached because it involved yet one more time-consuming request to the Web server, as if you weren't already making enough requests for images and other assets. *One* reasonably sized JS file? Fine. But, soon, the typical Web site was loading many JS files per page. Especially as smartphones came into the picture with their then-limited connectivity speeds, it became even clearer that this wouldn't fly.
 
 ### Concatenation and minifying
 
