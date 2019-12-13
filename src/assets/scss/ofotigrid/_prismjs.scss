@@ -6,8 +6,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * @author Rose Pritchard
  */
 
- p code {
-   font-size: 1.1em;
+ code {
+   font-family: $monospaced;
  }
  
  code[class*="language-"],
