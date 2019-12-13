@@ -1,5 +1,7 @@
 /* index.js */
 
+require('dotenv').config()
+
 require("typeface-roboto")
 require("typeface-roboto-mono")
 
