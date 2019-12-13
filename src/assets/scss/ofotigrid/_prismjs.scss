@@ -135,8 +135,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
    position: absolute;
    top: .3em;
    right: .2em;
-   transition: opacity 0.3s ease-in-out;
-   opacity: 0;
+   // transition: opacity 0.3s ease-in-out;
+   opacity: 1;
  }
  
  div.code-toolbar:hover > .toolbar {
@@ -191,5 +191,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
    color: inherit;
    text-decoration: none;
  }
+
+ // for use with language-display plugin
+
  
  
