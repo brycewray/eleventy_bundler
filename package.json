@@ -8,7 +8,7 @@
     "ssgquiet": "npx @11ty/eleventy --serve --quiet",
     "clean": "rimraf _site",
     "start": "npm-run-all clean --parallel dev:*",
-    "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --serve --quiet",
+    "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
     "dev:webpack": "webpack --config webpack.dev.js",
     "build": "npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
