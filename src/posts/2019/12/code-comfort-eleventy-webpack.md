@@ -3,7 +3,7 @@ layout: layouts/posts/singleposthero.njk
 tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
-description: "Excerpts from my eleventy/webpack configuration."
+description: "Excerpts from my Eleventy/webpack configuration."
 date: 2019-12-14T10:37:00-06:00
 #lastmod: 2019-12-14T14:34:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
