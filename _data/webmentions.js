@@ -12,6 +12,7 @@ require('dotenv').config()
 const CACHE_DIR = '_cache'
 const API_ORIGIN = 'https://webmention.io/api/mentions.jf2'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
+const FAKE_VAR_FOR_TEST = process.env.FAKE_VAR_FOR_TEST
 
 async function fetchWebmentions(since) {
   const { domain } = metadata
@@ -27,6 +28,9 @@ async function fetchWebmentions(since) {
     // If we dont have a domain access token, abort
     console.warn(
       'unable to fetch webmentions: no access token specified in environment.'
+    )
+    console.warn(
+      'However, we can tell you that the fake var is' + {FAKE_VAR_FOR_TEST} + '.'
     )
     return false
   }
