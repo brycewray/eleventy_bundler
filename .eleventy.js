@@ -3,33 +3,33 @@ const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
 const sanitizeHTML = require('sanitize-html')
 
-module.exports = function (config) {
+module.exports = function (eleventyConfig) {
 
-  config.addPassthroughCopy('src/assets/js')
+  eleventyConfig.addPassthroughCopy('src/assets/js')
   
-  config.addPassthroughCopy('robots.txt')
+  eleventyConfig.addPassthroughCopy('robots.txt')
 
-  config.addPlugin(pluginRss)
+  eleventyConfig.addPlugin(pluginRss)
 
-  config.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
   })
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  config.addFilter('htmlDateString', dateObj => {
+  eleventyConfig.addFilter('htmlDateString', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('MMMM d, yyyy')
   })
 
-  config.addFilter('dateStringISO', dateObj => {
+  eleventyConfig.addFilter('dateStringISO', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd')
   })
 
-  config.addFilter('dateFromTimestamp', timestamp => {
+  eleventyConfig.addFilter('dateFromTimestamp', timestamp => {
     return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-  config.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
+  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
   /* Markdown plugins */
   // https://www.11ty.dev/docs/languages/markdown/
@@ -46,11 +46,11 @@ module.exports = function (config) {
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
   markdownEngine.use(markdownItPrism)
-  config.setLibrary("md", markdownEngine)
+  eleventyConfig.setLibrary("md", markdownEngine)
 
-  config.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+  eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 
-  config.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
@@ -63,7 +63,7 @@ module.exports = function (config) {
   })
 
   // Get the first `n` elements of a collection.
-  config.addFilter('head', (array, n) => {
+  eleventyConfig.addFilter('head', (array, n) => {
     if (n < 0) {
       return array.slice(n)
     }
@@ -72,8 +72,8 @@ module.exports = function (config) {
 
   
   // Webmentions Filter
-  config.addFilter('webmentionsForUrl', (webmentions, url) => {
-    const allowedTypes = ['mention-of', 'in-reply-to']
+  eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
+    const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of']
     const clean = content =>
       sanitizeHTML(content, {
         allowedTags: ['b', 'i', 'em', 'strong', 'a'],
