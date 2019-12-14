@@ -1,4 +1,5 @@
 _site
+_cache
 dist
 build
 node_modules
