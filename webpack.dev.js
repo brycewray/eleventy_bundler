@@ -8,7 +8,7 @@ module.exports = merge(common, {
     contentBase: './_site/',
     watchContentBase: true
   },
-  watch: true,
   */
+  watch: true,
   devtool: 'inline-source-map'
 })
