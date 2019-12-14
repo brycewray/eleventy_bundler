@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
+const sanitizeHTML = require('sanitize-html')
 
 module.exports = function (config) {
 
@@ -21,6 +22,10 @@ module.exports = function (config) {
 
   config.addFilter('dateStringISO', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd')
+  })
+
+  config.addFilter('dateFromTimestamp', timestamp => {
+    return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
@@ -57,6 +62,15 @@ module.exports = function (config) {
     return content
   })
 
+  // Get the first `n` elements of a collection.
+  config.addFilter('head', (array, n) => {
+    if (n < 0) {
+      return array.slice(n)
+    }
+    return array.slice(0, n)
+  })
+
+  
   // Webmentions Filter
   config.addFilter('webmentionsForUrl', (webmentions, url) => {
     const allowedTypes = ['mention-of', 'in-reply-to']
