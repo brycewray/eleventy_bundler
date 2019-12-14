@@ -4,8 +4,6 @@
 {%- set mentions = webmentions.children | webmentionsForUrl(absoluteUrl) -%}
 <div class="webmentions" id="webmentions">
   <h3>Webmentions</h3>
-  <p>AbsoluteURL is {{ absoluteUrl }}</p>
-
   {% if mentions | length %}
     <div class="webmentions__facepile">
       {% for webmention in mentions | reverse | head(5) %}
