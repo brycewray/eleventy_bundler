@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     new Dotenv({
       path: path.resolve(__dirname, './.env'),
+      systemvars: true
     }),
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
