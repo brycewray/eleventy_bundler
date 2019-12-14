@@ -4,7 +4,7 @@ tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Excerpts from my eleventy/webpack configuration."
-date: 2019-12-14T10:00:00-06:00
+date: 2019-12-14T09:00:00-06:00
 #lastmod: t/k
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 idx: 41
