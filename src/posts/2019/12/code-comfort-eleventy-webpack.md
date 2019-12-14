@@ -5,7 +5,7 @@ title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Excerpts from my eleventy/webpack configuration."
 date: 2019-12-14T10:37:00-06:00
-#lastmod: t/k
+#lastmod: 2019-12-14T11:26:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 idx: 41
 featured_image: /images/markus-spiske-Skf7HxARcoc-unsplash_1920x1080-1920.jpg
@@ -181,29 +181,29 @@ const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
 
-module.exports = function (config) {
+module.exports = function (eleventyConfig) {
 
-  config.addPassthroughCopy('src/assets/js')
+  eleventyConfig.addPassthroughCopy('src/assets/js')
   
-  config.addPassthroughCopy('robots.txt')
+  eleventyConfig.addPassthroughCopy('robots.txt')
 
-  config.addPlugin(pluginRss)
+  eleventyConfig.addPlugin(pluginRss)
 
-  config.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
   })
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  config.addFilter('htmlDateString', dateObj => {
+  eleventyConfig.addFilter('htmlDateString', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('MMMM d, yyyy')
   })
 
-  config.addFilter('dateStringISO', dateObj => {
+  eleventyConfig.addFilter('dateStringISO', dateObj => {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd')
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-  config.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
+  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
   /* Markdown plugins */
   // https://www.11ty.dev/docs/languages/markdown/
@@ -220,11 +220,11 @@ module.exports = function (config) {
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
   markdownEngine.use(markdownItPrism)
-  config.setLibrary("md", markdownEngine)
+  eleventyConfig.setLibrary("md", markdownEngine)
 
-  config.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+  eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 
-  config.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
