@@ -40,6 +40,7 @@ layout: layouts/_default/baseof.njk
   </div>
 
   {% if title != "Home page" and title != "Posts" %}
+  {% include "webmentionlist.njk" %}
   <div class="container container-comments">
     <p>&nbsp;</p>
     <!-- Comments code -->
