@@ -2,10 +2,21 @@
 /* from https://github.com/maxboeck/eleventy-webmentions/blob/master/css/webmentions.css */
 
 .webmentions {
+  border-top: 1px solid #333;
   display:block;
-  text-align: center;
   margin-top: 2em;
   margin-bottom: 0;
+  h2, h3, h4 {
+    text-align: center;
+  }
+  @media (prefers-color-scheme: dark) {
+    border-top: 1px solid #fff;
+  }
+  @media screen and (min-width: 1025px) {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .webmentions__facepile {
