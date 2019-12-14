@@ -4,7 +4,7 @@ tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Excerpts from my eleventy/webpack configuration."
-date: 2019-12-14T09:00:00-06:00
+date: 2019-12-14T10:37:00-06:00
 #lastmod: t/k
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 idx: 41
@@ -22,7 +22,7 @@ As I mentioned, my process in making this happy transition was much easier than 
 
 I'm not (yet) willing to put this site's repo into public territory. Maybe I'll cook up a "starter" version and make *that* public. However, in the meantime, I *will* put in this post some of the key config code I used. That's what helped me the most; perhaps it will do the same for others. (If you'd really like a "starter" repo instead, let me know either here or via [Twitter](https://twitter.com/BryceWrayTX).[^webmentions] No promises, but I'll see what I can do.)
 
-[^webmentions]: I'm also belatedly trying to get [webmentions](https://indieweb.org/Webmention) going, too; it's still a work in progress as I write this. Bear with me.
+[^webmentions]: I'm also belatedly trying to get [webmentions](https://indieweb.org/Webmention) going, too; it's still a work in progress as I write this. Bear with me. Right now, I'm hung up trying to get the right production method for providing Netlify with environment variables (in this case, the token required to make webmentions appear). Let's just say the process has some "[interesting](https://community.netlify.com/t/common-issue-using-environment-variables-on-netlify-correctly/267)" aspects. But I'm asking. While I wait for an answer, please note that the code herein **does&nbsp;not** include anything specific to webmentions, since (a.) it's a work in progress and (b.) I don't want to confuse you. (I'm confused enough for all of us right now.)
 
 ## How this site is arranged
 
@@ -58,9 +58,9 @@ const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
 
 module.exports = merge(common, {
-  mode: "development",
-  devtool: 'inline-source-map', 
-  watch: true
+  mode: 'development',
+  watch: true,
+  devtool: 'inline-source-map'
 })
 
 ```
