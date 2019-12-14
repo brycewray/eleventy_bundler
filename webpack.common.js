@@ -12,7 +12,9 @@ module.exports = {
     path: path.resolve(__dirname, '_site'),
   },
   plugins: [
-    new Dotenv(),
+    new Dotenv({
+      path: path.resolve(__dirname, './.env'),
+    }),
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
