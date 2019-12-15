@@ -151,6 +151,9 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  div.code-toolbar > .toolbar .toolbar-item {
    display: inline-block;
+   span {
+     color: #fff;
+   }
  }
  
  div.code-toolbar > .toolbar a {
@@ -173,11 +176,11 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  div.code-toolbar > .toolbar a,
  div.code-toolbar > .toolbar button,
  div.code-toolbar > .toolbar span {
-   color: #bbb;
+   color: #fff;// was #bbb
    font-size: .8em;
    padding: 0 .5em;
-   background: #f5f2f0;
-   background: rgba(224, 224, 224, 0.2);
+   background: #000; // was #f5f2f0;
+   // background: rgba(224, 224, 224, 0.2);
    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
    border-radius: .5em;
  }
