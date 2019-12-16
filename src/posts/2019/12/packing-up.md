@@ -5,7 +5,7 @@ title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2019-12-13T06:15:00-06:00
+lastmod: 2019-12-16T11:00:00-06:00
 discussionId: "2019-12-packing-up"
 idx: 40
 featured_image: /images/chain-11ty-webpack-3867751_1920x1080-1920.jpg
