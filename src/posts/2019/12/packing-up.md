@@ -22,7 +22,7 @@ Hello? Is this thing on? *[crickets]*
 
 Well, for those of you still in the room: bear with me, because there's a story here even if you're not at all into building Web sites. It's about helping a good product built by a [good person](https://www.zachleat.com) get even better.
 
-Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.dev). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software--- specifically, [webpack](https://webpack.js.org)---makes possible.
+Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.dev). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software---specifically, [webpack](https://webpack.js.org)---makes possible.
 
 I know some of this (all of this?) is Greek to some of you. I'll try to fix that.
 
