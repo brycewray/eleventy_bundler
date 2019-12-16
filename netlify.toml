@@ -3,4 +3,4 @@
   command = "npm run build"
 
 [build.environment]
-  TZ = "UTC-6:00"
+  TZ = "America/Chicago"
