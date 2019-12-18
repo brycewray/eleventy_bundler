@@ -13,7 +13,7 @@
     "dev:webpack": "webpack --mode=development --config webpack.dev.js",
     "sdev:eleventy": "ELEVENTY_ENV=development eleventy --watch",
     "sdev:modewebpack": "webpack --mode=development --watch  --config webpack.dev.js",
-    "sdev:srvwebpack": "webpack-dev-server --open --content-base ./_site",
+    "sdev:srvwebpack": "webpack-dev-server --open --hot --content-base ./_site",
     "build": "npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
     "prod:webpack": "webpack -p --config webpack.prod.js"
@@ -79,11 +79,13 @@
     "webpack-cli": "^3.3.10",
     "webpack-dashboard": "^3.2.0",
     "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "uninstall": "0.0.0"
   }
 }
