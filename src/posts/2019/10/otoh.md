@@ -5,8 +5,8 @@ title: "OTOH"
 subtitle: "Retracting my retractions"
 description: "One shouldn’t make decisions out of spite. I’m living proof."
 author: Bryce Wray
-date: 2019-10-11T19:00:00
-lastmod: 2019-11-09T10:00:00
+date: 2019-10-11T19:00:00-05:00
+lastmod: 2019-11-09T10:00:00-06:00
 idx: 35
 #draft: Note!
 discussionId: "2019-10-otoh"

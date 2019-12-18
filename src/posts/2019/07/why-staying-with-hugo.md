@@ -5,8 +5,8 @@ title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
 author: Bryce Wray
-date: 2019-07-14T20:45:00
-lastmod: 2019-10-11T19:00:00
+date: 2019-07-14T20:45:00-05:00
+lastmod: 2019-12-17T18:50:00-06:00
 idx: 24
 draft: false
 actual_path: /content/posts/2019/07/why-staying-with-hugo
@@ -216,7 +216,7 @@ If you're as unaware of MDX as I was before I started down this rabbit-hole, I'l
 
 One of the frankly cool things about Gatsby, like some of the other kewl-kid JavaScript-based SSGs[^whichOnesJSX] that I tried during these weeks, is the use of JavaScript XML (JSX) to create actions within Web pages, some of which used to require server-side capabilities. In particular, JSX working with GraphQL queries makes possible many of the dynamic capabilities that these SSGs offer. JSX has its quirks and [it *really* doesn't like it when you put multiple JSX elements together without wrapping them in something](https://stackoverflow.com/questions/50565468/returning-multiple-elements-in-jsx), but it's quite powerful when it behaves.
 
-[^whichOnesJSX]: In the original form of this post, I erroneously identified [Eleventy](https://11ty.io) as one of the SSGs which can use JSX and MDX. While those have been [subjects](https://github.com/11ty/eleventy/issues/235) [of](https://github.com/11ty/eleventy/issues/117) [interest](https://github.com/11ty/eleventy/issues/636) in the Eleventy camp, they're not yet in the feature set as of the last time I updated this.
+[^whichOnesJSX]: In the original form of this post, I erroneously identified [Eleventy](https://11ty.dev) as one of the SSGs which can use JSX and MDX. While those have been [subjects](https://github.com/11ty/eleventy/issues/235) [of](https://github.com/11ty/eleventy/issues/117) [interest](https://github.com/11ty/eleventy/issues/636) in the Eleventy camp, they're not yet in the feature set as of the last time I updated this.
 
 So that's JSX---and MDX is simply a form of Markdown that can accept JSX within its content and, when parsed by the right rendering engine, pass the JSX code over to the SSG for whatever the JSX is supposed to make happen. There's a lot more to it than that, but that's about the size of it, and that was enough to keep me interested.[^MDXHugo]
 

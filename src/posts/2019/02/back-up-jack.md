@@ -5,8 +5,8 @@ title: Back up, Jack
 subtitle: From 3-2-1 to 4-2-2
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
-date: 2019-02-23T12:45:00
-lastmod: 2019-10-07T19:00:00
+date: 2019-02-23T12:45:00-06:00
+lastmod: 2019-10-07T19:00:00-05:00
 idx: 14
 draft: false # note!
 actual_path: /content/posts/2019/02/back-up-jack

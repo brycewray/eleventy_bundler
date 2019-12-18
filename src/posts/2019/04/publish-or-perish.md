@@ -5,8 +5,8 @@ title: Publish or perish
 subtitle: Going live with your Hugo site
 description: In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free.
 author: Bryce Wray
-date: 2019-04-11T19:00:00
-lastmod: 2019-07-29T20:55:00
+date: 2019-04-11T19:00:00-05:00
+lastmod: 2019-07-29T20:55:00-05:00
 idx: 18
 draft: false # note!
 actual_path: /content/posts/2019/04/publish-or-perish

@@ -5,7 +5,7 @@ title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
 description: "Observations worth exactly what you’re paying for them."
 date: 2019-11-24T10:15:00-06:00
-lastmod: 2019-12-12T20:30:00-06:00
+lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-11-odds-ends-2019-11"
 idx: 39
 featured_image: /images/nuts-768243_1280x720-1280.jpg
@@ -35,7 +35,7 @@ So, let's sample some mixed nuts for November, 2019&nbsp;.&nbsp;.&nbsp;.
 
 The open-office concept is simply a way for businesses to cram more people into less, and therefore cheaper, real estate. However, on the bright side: it helps sell a metric [bleep]-ton of wireless headphones.
 
-*Although this site's [been](/posts/2019/10/now-gatsby-geezer) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.io), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.*
+*Although this site's [been](/posts/2019/10/now-gatsby-geezer) on [Gatsby](https://www.gatsbyjs.org) for a few weeks now, I still admire [Eleventy](https://www.11ty.dev), which is just plain fun to use. Still, Gatsby's [image processing](/posts/2019/10/picture-perfect), seamless use of [webpack](https://webpack.js.org), and staggering array of [plugins](https://www.gatsbyjs.org/plugins) are keeping me with it. For now.*
 
 In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four)," I referred to our inbound grandchild as "a little lass or lad" because we didn't know which, yet. We do now. That kiddo, due next April, will be a lass.
 

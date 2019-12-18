@@ -5,8 +5,8 @@ title: iA for IO?
 subtitle: Evaluating iA Writer for use with an SSG
 description: "A re-consideration of using iA Writer in making Markdown files for this site’s posts."
 author: Bryce Wray
-date: 2019-02-03T09:25:00
-lastmod: 2019-10-02T19:23:00
+date: 2019-02-03T09:25:00-06:00
+lastmod: 2019-10-02T19:23:00-05:00
 idx: 12
 draft: false # note!
 actual_path: /content/posts/2019/02/ia-for-io

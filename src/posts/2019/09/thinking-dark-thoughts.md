@@ -4,8 +4,8 @@ tags: post
 title: Thinking dark thoughts
 subtitle: How to keep up with a growing trend
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
-date: 2019-09-29T10:08:00
-lastmod: 2019-11-09T10:00:00
+date: 2019-09-29T10:08:00-05:00
+lastmod: 2019-11-09T10:00:00-06:00
 idx: 33
 discussionId: "2019-09-thinking-dark-thoughts"
 featured_image: /images/sunset-1090164_1280x720-1280.jpg

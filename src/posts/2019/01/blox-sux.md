@@ -5,8 +5,8 @@ title: Blox sux
 subtitle: Page builders are a pain, but . . .
 description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
-date: 2019-01-19T09:25:00
-lastmod: 2019-10-06T19:00:00
+date: 2019-01-19T09:25:00-06:00
+lastmod: 2019-10-06T19:00:00-05:00
 idx: 11
 draft: false # note!
 actual_path: /content/posts/2019/01/blox-sux

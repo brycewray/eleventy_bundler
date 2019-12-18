@@ -5,8 +5,8 @@ title: Back with Hugo
 subtitle: "Well, that didn't last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
-date: 2019-09-20T16:40:00
-lastmod: 2019-11-09T10:00:00
+date: 2019-09-20T16:40:00-05:00
+lastmod: 2019-12-17T18:50:00-06:00
 idx: 32
 #draft: Note!
 actual_path: /content/posts/2019/09/back-with-hugo
@@ -26,7 +26,7 @@ featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 I'm not even going to make a big deal of this, or spend a lot of your time explaining it. I'm just going to say it in what for me is a fairly short post.
 
-I do still like, admire the thinking behind, and anticipate a great future for, the [Eleventy](https://11ty.io) [static site generator](https://staticgen.com) (SSG). A lot.
+I do still like, admire the thinking behind, and anticipate a great future for, the [Eleventy](https://11ty.dev) [static site generator](https://staticgen.com) (SSG). A lot.
 
 But this site is back on [Hugo](https://gohugo.io).
 

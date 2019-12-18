@@ -4,8 +4,8 @@ title: Lessons learned
 tags: post
 subtitle: What I found while trying other SSGs
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
-date: 2019-07-21T17:43:00
-lastmod: 2019-08-17T16:21:00
+date: 2019-07-21T17:43:00-05:00
+lastmod: 2019-12-17T18:50:00-06:00
 idx: 25
 draft: false
 actual_path: /content/posts/2019/07/lessons-learned
@@ -78,7 +78,7 @@ First, understand how easy we Hugo users have it where SCSS/SASS compatibility i
 
 Many other SSGs make this sort of thing considerably more problematic, especially if you're not willing to craft your own pipeline between the SSG and the CSS or SCSS/SASS files, through either [plugins](https://www.npmjs.com/package/gatsby-plugin-sass) or other methods. ([I already told you my luck](/posts/2019/07/why-staying-with-hugo) with plugins, especially when there are a whole slew of them in the SSG's config files.) Believe me, I am neither willing nor (likely) able.
 
-Even the documentation for an SSG like [Eleventy](https://11ty.io) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/SASS, rather than [inlining](https://www.11ty.io/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
+Even the documentation for an SSG like [Eleventy](https://11ty.dev) that claims to be much easier and more more logically configured than other JavaScript-based SSGs---and, in many ways, it is---makes it highly obscure in how you're supposed to make that capability work, at least if you want to follow (in my opinion) good form and have separate files for your CSS and SCSS/SASS, rather than [inlining](https://www.11ty.dev/docs/quicktips/inline-css/) that code. Indeed, if you go poking around the page source from numerous sites built on the newer SSGs, you'll find a ton of inline CSS in the `<head>` section. Argggh.
 
 I'll have more to say later about the shortcomings of SSGs' documentation. Even Hugo's.
 

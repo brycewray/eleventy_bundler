@@ -5,8 +5,8 @@ title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
-date: 2019-09-08T10:00:00
-lastmod: 2019-10-11T19:00:00
+date: 2019-09-08T10:00:00-05:00
+lastmod: 2019-12-17T18:50:00-06:00
 idx: 31
 #draft: Note!
 actual_path: /content/posts/2019/09/why-left-hugo-eleventy
@@ -32,7 +32,7 @@ If you know what the JAMstack is (if you don't, follow that link above for a muc
 
 But there was more to it. Things were afoot. Now, you get to find out just what they were.
 
-The fact is: this site, about to enter its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.io).
+The fact is: this site, about to enter its second year of life, now comes to you via a different SSG---one also born in 2018, called [Eleventy](https://11ty.dev).
 
 Yep, that's what I said. Eleventy. Not Hugo any more.
 
@@ -185,11 +185,11 @@ I chose to use [Nunjucks](https://mozilla.github.io/nunjucks/) for my Eleventy t
 
 [^moreComing]: Details to come in a future post, after I've had more time to play with Eleventy---especially in view of some major look-and-feel changes I'm considering that would be easier thanks to this transition. (The operative word there is *considering*.)
 
-Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particular Eleventy *vs.* Gatsby dig. It is **vastly** easier to do, say, a list of your site's posts in Eleventy (through its [collections](https://www.11ty.io/docs/collections/) feature) than via the impressive-but-finicky [GraphQL](https://www.gatsbyjs.org/docs/graphql/) in Gatsby (and [Gridsome](https://gridsome.org/docs/querying-data), for that matter).[^graphqlExpII]
+Also: while I'm mostly talking Eleventy *vs.* Hugo here, let me get in a particular Eleventy *vs.* Gatsby dig. It is **vastly** easier to do, say, a list of your site's posts in Eleventy (through its [collections](https://www.11ty.dev/docs/collections/) feature) than via the impressive-but-finicky [GraphQL](https://www.gatsbyjs.org/docs/graphql/) in Gatsby (and [Gridsome](https://gridsome.org/docs/querying-data), for that matter).[^graphqlExpII]
 
 [^graphqlExpII]: Indeed, the Straw That Broke the Camel's Back for Gatsby Experiment II was when I couldn't *reliably* make GraphQL "see" each post's featured image *as* an image rather than a string, no matter how many ways I tried or how many tutorials I followed slavishly over a week's time. And only if you *can* get GraphQL to "see" an image can you make Gatsby apply all the admittedly cool features available through [Gatsby Image](https://www.gatsbyjs.org/docs/using-gatsby-image/), so that's where I drew the line the second and final time around with Gatsby.
 
-Mind you, the Eleventy [documentation](https://www.11ty.io/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.io/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
+Mind you, the Eleventy [documentation](https://www.11ty.dev/docs/) (although quite good, please understand) could stand to assume a little less knowledge on the part of its potential users, as [I've mentioned](/posts/2019/07/lessons-learned) is true for all SSGs in general; but Leatherman at least includes [links to quite a few Eleventy sites and, where possible, sample source code](https://www.11ty.dev/docs/sites/). Every time I got stuck, I spent some time poring through others' code and, sooner or later, found an answer to a question. (To be fair, the Hugo team [does this, too](https://gohugo.io/showcase/).)
 
 ### It's far more robust than Gatsby
 

@@ -4,8 +4,8 @@ title: Why I left Ulysses
 subtitle: iA Writer wins—for now
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
-date: 2019-04-20T11:17:00
-lastmod: 2019-10-11T19:00:00
+date: 2019-04-20T11:17:00-05:00
+lastmod: 2019-10-11T19:00:00-05:00
 idx: 19
 draft: false # note!
 actual_path: /content/posts/2019/04/why-left-ulysses

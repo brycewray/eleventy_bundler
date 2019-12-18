@@ -5,8 +5,8 @@ title: The version-control follies
 subtitle: Life’s too short for CLI
 description: Why you should go GUI with version control.
 author: Bryce Wray
-date: 2018-10-06T08:30:00
-lastmod: 2019-07-14T11:40:00
+date: 2018-10-06T08:30:00-05:00
+lastmod: 2019-07-14T11:40:00-05:00
 idx: 3
 draft: false # note!!
 actual_path: /content/posts/2018/10/version-control-follies.md
