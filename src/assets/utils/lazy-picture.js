@@ -39,7 +39,8 @@ module.exports = (urlBasic, ext, width, alt) => {
       /images/${urlBasic}-300.${ext} 300w, 
       /images/${urlBasic}-600.${ext} 600w,
       /images/${urlBasic}-${width}.${ext} ${width}w,
-      "
+      " 
+      src="/images/${urlBasic}-${width}.${ext}" 
       alt="${alt}"
       />
       <img 
