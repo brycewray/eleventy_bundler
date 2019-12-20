@@ -11,6 +11,7 @@ module.exports = merge(common, {
       server: { baseDir: ['_site'] },
       notify: false,
       watch: true,
+      open: false, // won't automatically launch in default browser when started
     })
   ],
   watch: true,
