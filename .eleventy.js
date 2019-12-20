@@ -36,7 +36,6 @@ module.exports = function (eleventyConfig) {
   // --and-- https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   // --and-- https://github.com/planetoftheweb/seven/blob/master/.eleventy.js
   let markdownIt = require("markdown-it")
-  let markdownItPrism = require("markdown-it-prism")
   let markdownItFootnote = require("markdown-it-footnote")
   let markdownItOpts = {
     html: true,
@@ -45,7 +44,6 @@ module.exports = function (eleventyConfig) {
   }
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
-  markdownEngine.use(markdownItPrism)
   eleventyConfig.setLibrary("md", markdownEngine)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
@@ -62,6 +60,9 @@ module.exports = function (eleventyConfig) {
     return content
   })
 
+
+  /* === START, webmentions stuff === */
+  
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('head', (array, n) => {
     if (n < 0) {
@@ -93,6 +94,9 @@ module.exports = function (eleventyConfig) {
       })
   })
 
+  /* === END, webmentions stuff === */
+
+  
   /* pathPrefix: "/"; */
   return {
     dir: {
