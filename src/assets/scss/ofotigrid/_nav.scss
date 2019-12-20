@@ -40,17 +40,13 @@ header {
       display: block;
       padding: 0.5em 1.5em 0.5em 1.5em;
       margin: 0;
-      // border-bottom: 1px solid #fff;
       color: #fff;
-      background: $darkblue; // example was green
-      // font-size: 1.2rem; font-size: 1.2em;
+      background: $darkblue;
       text-decoration: none;
       transition: opacity 0.5s ease;
 
       @media (min-width: $breakpoint) {
         display: inline-block;
-        // height: $nav-height;
-        // line-height: $nav-height;
         padding-top: 0;
         padding-bottom: 0;
         border: none;
@@ -160,7 +156,6 @@ nav {
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
-  // transition: transform 400ms ease-in-out;
   ul {
     padding-left: 0;
     margin: 0;
@@ -182,7 +177,6 @@ nav {
     text-decoration: none;
     border-bottom: 0;
     opacity: 0;
-    // transition: opacity 150ms ease-in-out;
   }
   a:hover, a:active {
     color: $grey-2;
@@ -201,7 +195,6 @@ nav {
   color: #fff;
   a {
     color: #fff;
-    // text-decoration-skip-ink: none;
     text-decoration: none;
     border-bottom: 0;
   }

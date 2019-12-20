@@ -77,40 +77,18 @@ sup a, a.previous, a.next, .footnote-return {
 }
 
 blockquote {
-	/*
-	border-left: .25em solid $grey-2; // old browsers
-	border-left: .25rem solid $grey-2;
-	*/
 	color: $grey-1;
-	margin-right: 1em; // old browsers
-	margin-right: 1rem;
-	margin-left: 2em; // old browsers
-	margin-left: 2rem;
-	/*
-	margin: .8em 0; // old browsers
-  margin: .8rem 0;
-  padding: .5em 1em; // old browsers
-	padding: .5rem 1rem;
-	*/
+	margin-right: 1em;
+	margin-left: 2em;
 
   p:last-child {
     margin-bottom: 0;
   }
 
   @media (min-width: 600px) {
-    padding: 0 5em 0 1.25em; // old browaers
-    padding: 0 5rem 0 1.25rem;
+    padding: 0 5em 0 1.25em;
   }
 }
-
-/*
-img {
-  display: block;
-  margin: 0 0 1rem;
-  margin: 0 0 1em;
-  max-width: 100%;
-}
-*/
 
 td {
   vertical-align: top;
@@ -119,7 +97,6 @@ td {
 .footnotes {
   font-size: $legal + unquote("em");
   letter-spacing: normal;
-  // font-family: $sans-serif-boot;
 
   ol li {
     margin-bottom: 0.5em;
@@ -142,13 +119,11 @@ a.footnote-return{
   }
 
   &_post {
-    /* */
     border-bottom: 1px solid $grey-2;
     padding-bottom: 0.5em;
   }
 
   &_text {
-    /* */
     img {
       height: auto;
     }

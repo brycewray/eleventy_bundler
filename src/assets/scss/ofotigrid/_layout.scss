@@ -1,6 +1,5 @@
 #content, main {
   padding-top: 40px;
-  // display: grid;
 }
 
 #content .topOfMain, main .topOfMain {
@@ -32,16 +31,13 @@
 }
 
 footer {
-  margin: 4em auto 0 auto;
-  margin: 4rem auto 0 auto; // top margin keeps "Comments" item from infringing on this in small-device view
+  margin: 4em auto 0 auto; // top margin keeps "Comments" item from infringing on this in small-device view
   width: 90%;
   padding-bottom: 0.5em;
   padding-bottom: 0.5rem;
   @media (min-width: 900px) {
-    margin: 25px auto 0 auto; // old browsers
-    margin: 2rem auto 0 auto;
-    padding-bottom: 1em; // old browsers
-    padding-bottom: 1rem;
+    margin: 2em auto 0 auto;
+    padding-bottom: 1em;
     width: 85%;
   }
 }
@@ -83,7 +79,6 @@ h3.twitter-border {
 
 .background-hero {
   &-div {
-    background: $darkblue; // fallback for really old browsers
     background: linear-gradient(
       rgba(0,0,170,1.00),
       rgba(0,0,85,1.00)
@@ -193,8 +188,7 @@ img.featured-image {
 
 .featured-image-caption {
   margin-top: 0.25em;
-  padding-bottom: 1.5em; // old browsers
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.5em;
   text-align: center !important;
   font-size: $legal + unquote("em");
   color: $grey-1;
@@ -202,8 +196,7 @@ img.featured-image {
 
 table.leagues {
 	width: 90%;
-	margin: 1em auto 0 auto; // old browsers
-	margin: 1rem auto 0 auto;
+	margin: 1em auto 0 auto;
 	border: 0;
 	border-collapse: collapse;
 	@media (min-width: 900px) {
@@ -219,16 +212,14 @@ table.noborders {
   @media (min-width: 900px){
     width: 90%;
   }
-  margin: 1.5em auto 1em auto; // old browsers
-  margin: 1.5rem auto 1rem auto;
+  margin: 1.5em auto 1em auto;
   border: 0;
   border-collapse: collapse;
 
   td {
     text-align: left !important;
     vertical-align: middle;
-    padding: 0.25em 0 0.25em 0.5em; // old browsers
-    padding: 0.25rem 0 0.25rem 0.5rem;
+    padding: 0.25em 0 0.25em 0.5em;
     img {
       display: inline-block;
       vertical-align: middle;
@@ -273,10 +264,8 @@ img.postsFeatImg {
   padding-left: 0;
   @media (min-width: 900px) {
     float: right;
-    padding-top: 1em; // old browsers
-    padding-top: 1rem;
-    padding-left: 1.5em; // old browsers
-    padding-left: 1.5rem;
+    padding-top: 1em;
+    padding-left: 1.5em;
     width: 50%;
     height: auto;
   }
@@ -358,7 +347,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; //
     border-spacing: 30px; // old browsers
     display: grid;
     margin: 0 auto;
-    grid-gap: 2rem; // rem is OK because old browsers don't do grid
+    grid-gap: 2em;
     width: 90%;
     grid-template-columns: 100%;
     @media screen and (min-width: 900px) {
@@ -437,22 +426,8 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; //
 			}
 			time {
 				display: block;
-				margin-top: 0.25em; // old browsers
-				margin-top: 0.25rem;
+				margin-top: 0.25em;
       }
-      /*
-			img, figure img {
-        display: block;
-        height: auto;
-        margin: 0.5em auto 0.5em auto;
-        text-align: center;
-      }
-
-      figure img {
-        width: 50%;
-        max-width: 80%;
-      }
-      */
 
       img.containedImage { /* for lower-res images */
         width: 50%;
@@ -468,8 +443,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; //
     font-size: 85%;
     width: 85%;
     max-width: 720px !important;
-    margin-bottom: 3em; // old browsers
-    margin-bottom: 3rem;
+    margin-bottom: 3em;
     @media (min-width: 900px) {
       width: 50%;
     }
@@ -501,8 +475,7 @@ $homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; //
   border-color: $blue;
   color: #fff;
   border-radius: 6px;
-  padding: 0.25em 0.5em; // old browsers
-  padding: 0.25rem 0.5rem;
+  padding: 0.25em 0.5em;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
