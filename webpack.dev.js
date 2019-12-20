@@ -25,6 +25,7 @@ module.exports = merge(common, {
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['_site'] },
+      notify: false,
       files: ['_site/**/*html'] // without this line, ignores HTML output from Eleventy
     })
   ],
