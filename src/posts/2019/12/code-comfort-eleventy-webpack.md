@@ -5,7 +5,7 @@ title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Excerpts from my Eleventy/webpack configuration."
 date: 2019-12-14T10:37:00-06:00
-#lastmod: 2019-12-14T14:34:00-06:00
+lastmod: 2019-12-20T11:00:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 idx: 41
 featured_image: /images/markus-spiske-Skf7HxARcoc-unsplash_1920x1080-1920.jpg
@@ -15,6 +15,13 @@ featured_image_ext: jpg
 featured_image_alt: "Computer code on a monitor"
 featured_image_caption: "Image: Markus Spiske; unsplash.com"
 ---
+
+<div class="yellowBox">
+	<p><strong>Update, 2019-12-20 . . .</strong></p>
+  <p>I am updating this primarily to conform to some fixes I made a few days after the original version of the post.</p>
+  <p>One thing I had noted was that, during development mode, Eleventy&rsquo;s included Browsersync server was auto-refreshing the browser when I made <em>textual</em> changes, but not <em>CSS/SCSS</em> changes; for the latter, I&rsquo;d have to do a manual refresh. Not terrible; just annoying. I then tried using webpack's built-in server instead, but found the same issue as <a href="https://github.com/11ty/eleventy/issues/272#issuecomment-457368626">others</a>, which was that it didn&rsquo;t &ldquo;see&rdquo; Eleventy&rsquo;s changes without, yep, manual refresh. What I finally tried was to install the Browsersync plugin for webpack, then config Eleventy just to <em>watch</em> and <strong>not</strong> serve during development mode. Once I did a little tinkering with settings, that did the trick. Now, with the setup I have below&mdash;noted in <code>webpack.dev.cs</code> and <code>package.json</code>&mdash; I get full and <em>automatic</em> browser refresh during development mode when I edit either text or SCSS. And, yes, it <em>is</em> worth the trouble.</p>
+  <p>I also cleaned up the <code>eleventy.js</code> file somewhat while I was at it&mdash;for example, it no longer mentions a MarkdownIt plugin I&rsquo;d used to handle code blocks since, with webpack, I simply import <code>prism.js</code> directly.</p>
+</div>
 
 *Following up on my [recent post](/posts/2019/12/packing-up) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*
 
@@ -56,23 +63,21 @@ With that understood, let's take a look at each of my versions of these boys. (P
 
 const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'development',
+  plugins: [
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 3000,
+      server: { baseDir: ['_site'] },
+      notify: false,
+      watch: true,
+    })
+  ],
   watch: true,
   devtool: 'inline-source-map'
-})
-
-```
-
-### `webpack.prod.js`
-
-```js
-const merge = require("webpack-merge")
-const common = require("./webpack.common.js")
-
-module.exports = merge(common, {
-  mode: "production" 
 })
 
 ```
@@ -82,25 +87,29 @@ module.exports = merge(common, {
 ```js
 
 const path = require('path')
-const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   entry: [
-    './src/assets/js/index.js',
+    './src/assets/js/index.js'
   ],
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '_site'),
   },
   plugins: [
+    new Dotenv({
+      path: path.resolve(__dirname, './.env'),
+      systemvars: true
+    }),
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
-      // ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
   ],
   node: {
+    global: true,
     fs: 'empty',
   },
   module: {
@@ -114,12 +123,9 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              // you can specify a publicPath here
-              // by default it uses publicPath in webpackOptions.output
-              publicPath: '../',
+              publicPath: '../'
             },
           },
-          // 'style-loader',
           'css-loader',
           'sass-loader',
         ],
@@ -177,9 +183,11 @@ module.exports = {
 As for `eleventy.js`, the main config file for Eleventy (thankfully, no separate `.dev` and `.prod` versions here), it goes like this:
 
 ```js
+
 const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
+const sanitizeHTML = require('sanitize-html')
 
 module.exports = function (eleventyConfig) {
 
@@ -202,6 +210,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toFormat('yyyy-MM-dd')
   })
 
+  eleventyConfig.addFilter('dateFromTimestamp', timestamp => {
+    return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
+  })
+
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
@@ -210,7 +222,6 @@ module.exports = function (eleventyConfig) {
   // --and-- https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   // --and-- https://github.com/planetoftheweb/seven/blob/master/.eleventy.js
   let markdownIt = require("markdown-it")
-  let markdownItPrism = require("markdown-it-prism")
   let markdownItFootnote = require("markdown-it-footnote")
   let markdownItOpts = {
     html: true,
@@ -219,7 +230,6 @@ module.exports = function (eleventyConfig) {
   }
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
-  markdownEngine.use(markdownItPrism)
   eleventyConfig.setLibrary("md", markdownEngine)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
@@ -236,6 +246,43 @@ module.exports = function (eleventyConfig) {
     return content
   })
 
+
+  /* === START, webmentions stuff === */
+  
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter('head', (array, n) => {
+    if (n < 0) {
+      return array.slice(n)
+    }
+    return array.slice(0, n)
+  })
+
+  
+  // Webmentions Filter
+  eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
+    const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of']
+    const clean = content =>
+      sanitizeHTML(content, {
+        allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+        allowedAttributes: {
+          a: ['href']
+        }
+      })
+
+    return webmentions
+      .filter(entry => entry['wm-target'] === url)
+      .filter(entry => allowedTypes.includes(entry['wm-property']))
+      .filter(entry => !!entry.content)
+      .map(entry => {
+        const { html, text } = entry.content
+        entry.content.value = html ? clean(html) : clean(text)
+        return entry
+      })
+  })
+
+  /* === END, webmentions stuff === */
+
+  
   /* pathPrefix: "/"; */
   return {
     dir: {
@@ -270,8 +317,8 @@ By now, the more observant among you, having seen certain items mentioned in the
     "ssgquiet": "npx @11ty/eleventy --serve --quiet",
     "clean": "rimraf _site",
     "start": "npm-run-all clean --parallel dev:*",
-    "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
-    "dev:webpack": "webpack --config webpack.dev.js",
+    "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet",
+    "dev:modewebpack": "webpack --mode development --watch --config webpack.dev.js",
     "build": "npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
     "prod:webpack": "webpack -p --config webpack.prod.js"
@@ -282,7 +329,7 @@ By now, the more observant among you, having seen certain items mentioned in the
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@babel/core": "^7.7.4",
+    "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
     "@babel/register": "^7.7.4",
     "babel-core": "^6.26.3",
@@ -291,7 +338,7 @@ By now, the more observant among you, having seen certain items mentioned in the
     "babel-preset-env": "^1.7.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-hot-loader": "^1.4.4",
-    "css-loader": "^3.2.0",
+    "css-loader": "^3.3.2",
     "debug": "^4.1.1",
     "del": "^5.1.0",
     "eleventy-rss-helper": "^1.2.0",
@@ -300,17 +347,18 @@ By now, the more observant among you, having seen certain items mentioned in the
     "glob": "^7.1.6",
     "html-loader": "^0.5.5",
     "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^6.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "img-loader": "^3.0.1",
     "inline-source-map": "^0.6.2",
     "instant.page": "^3.0.0",
     "lazysizes": "^5.2.0-beta1",
+    "lodash": "^4.17.15",
     "lqip-loader": "^2.2.0",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-footnote": "^3.0.2",
-    "markdown-it-prism": "^2.0.3",
     "mini-css-extract-plugin": "^0.8.0",
     "node-fetch": "^2.6.0",
     "node-loader": "^0.6.0",
@@ -322,9 +370,10 @@ By now, the more observant among you, having seen certain items mentioned in the
     "responsive-loader": "^1.2.0",
     "rimraf": "^3.0.0",
     "rss": "^1.2.2",
+    "sanitize-html": "^1.20.1",
     "sass": "^1.23.7",
     "sass-loader": "^8.0.0",
-    "sharp": "^0.23.3",
+    "sharp": "^0.23.4",
     "style-loader": "^1.0.1",
     "svg-url-loader": "^3.0.3",
     "typeface-roboto": "0.0.75",
@@ -334,11 +383,14 @@ By now, the more observant among you, having seen certain items mentioned in the
     "webpack-cli": "^3.3.10",
     "webpack-dashboard": "^3.2.0",
     "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "webpack-merge": "^4.2.2",
+    "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "html-minifier": "^4.0.0"
+    "dotenv-webpack": "^1.7.0",
+    "html-minifier": "^4.0.0",
+    "uninstall": "0.0.0"
   }
 }
 
