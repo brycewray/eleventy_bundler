@@ -39,7 +39,7 @@ li .lazywrapper {
 .ls-blur-up img {
   filter: blur(20px);
   opacity: 1;
-  transition: opacity 400ms, filter 800ms;
+  transition: opacity 200ms, filter 400ms;
 }
 
 .ls-blur-up-img.ls-inview.ls-original-loaded {
@@ -50,7 +50,7 @@ li .lazywrapper {
 .blur-up {
   -webkit-filter: blur(20px);
   filter: blur(20px);
-  transition: filter 400ms, -webkit-filter 400ms;
+  transition: filter 200ms, -webkit-filter 200ms;
   &.lazyloaded {
     -webkit-filter: blur(0);
     filter: blur(0);
