@@ -6,11 +6,10 @@ shortcode takes the following form...
 
 module.exports = (urlBasic, ext, width, alt) => {
   return `
-  <figure>
-    <div class="loader">
-      <img 
-      class="lazyload"
-      data-sizes="auto"
+  <img 
+      class="lazyload blur-up"
+      data-sizes="auto" 
+      srcset="/images/${urlBasic}-20.${ext}" 
       data-srcset="
       /images/${urlBasic}-300.${ext} 300w, 
       /images/${urlBasic}-600.${ext} 600w,
@@ -18,13 +17,6 @@ module.exports = (urlBasic, ext, width, alt) => {
       " 
       src="/images/${urlBasic}-${width}.${ext}" 
       alt="${alt}"
-      />
-      <img 
-      class="frozen" 
-      src="/images/${urlBasic}-20.${ext}" 
-      alt="Blurry version for effects - ${alt}"
-      />
-    </div>
-  </figure>
+    />
   `
 }
