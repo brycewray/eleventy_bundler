@@ -17,7 +17,13 @@
 			h1 {
 				margin-top: 0;
 				padding-top: 0;
-			}
+      }
+      img {
+        display: inline-block;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+      }
 		}
 		.twitter-timeline {
 			width: 95% !important;
@@ -25,7 +31,18 @@
 	}
 	.container {
 		display: inherit;
-	}
+  }
+  
+  .container-narrower {
+    img {
+      width: 100%;
+    }
+    pre[class*='language-'] {
+      width: 50%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 
 	.bg-dark {
 		h3 {

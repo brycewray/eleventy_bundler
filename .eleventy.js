@@ -37,6 +37,7 @@ module.exports = function (eleventyConfig) {
   // --and-- https://github.com/planetoftheweb/seven/blob/master/.eleventy.js
   let markdownIt = require("markdown-it")
   let markdownItFootnote = require("markdown-it-footnote")
+  let markdownItPrism = require('markdown-it-prism')
   let markdownItOpts = {
     html: true,
     linkify: true,
@@ -44,6 +45,7 @@ module.exports = function (eleventyConfig) {
   }
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
+  markdownEngine.use(markdownItPrism)
   eleventyConfig.setLibrary("md", markdownEngine)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
@@ -62,6 +64,8 @@ module.exports = function (eleventyConfig) {
 
 
   /* === START, webmentions stuff === */
+  // https://mxb.dev/blog/using-webmentions-on-static-sites/
+  // https://sia.codes/posts/webmentions-eleventy-in-depth/
   
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('head', (array, n) => {
