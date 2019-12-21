@@ -5,7 +5,7 @@ title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Excerpts from my Eleventy/webpack configuration."
 date: 2019-12-14T10:37:00-06:00
-lastmod: 2019-12-20T12:18:00-06:00
+lastmod: 2019-12-21T07:03:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 idx: 41
 featured_image: /images/markus-spiske-Skf7HxARcoc-unsplash_1920x1080-1920.jpg
@@ -19,7 +19,7 @@ featured_image_caption: "Image: Markus Spiske; unsplash.com"
 <div class="yellowBox">
 	<p><strong>Update, 2019-12-20 . . .</strong></p>
   <p>I am updating this primarily to conform to some fixes I made a few days after the original version of the post.</p>
-  <p>One thing I had noted was that, during development mode, Eleventy&rsquo;s included <a href="https://www.browsersync.io">Browsersync</a> server was auto-refreshing the browser when I made <em>textual</em> changes, but not <em>CSS/SCSS</em> changes; for the latter, I&rsquo;d have to do a manual refresh. Not terrible; just annoying. I then tried using webpack&rsquo;s built-in server instead, but found the same issue as <a href="https://github.com/11ty/eleventy/issues/272#issuecomment-457368626">others</a>, which was that it didn&rsquo;t &ldquo;see&rdquo; Eleventy&rsquo;s changes without, yep, manual refresh. What I finally tried was installing the <a href="https://www.npmjs.com/package/browser-sync-webpack-plugin">Browsersync plugin for webpack</a>, then setting Eleventy just to <em>watch</em> and <strong>not</strong> serve during development mode. Once I did a little tinkering with settings, that did the trick. Now, with the setup I have below&mdash;noted in <code>webpack.dev.cs</code> and <code>package.json</code>&mdash; I get full and <em>automatic</em> browser refresh during development mode when I edit either text or SCSS.</p>
+  <p>One thing I had noted was that, during development mode, Eleventy&rsquo;s included <a href="https://www.browsersync.io">Browsersync</a> server was auto-refreshing the browser when I made <em>textual</em> changes, but not <em>CSS/SCSS</em> changes; for the latter, I&rsquo;d have to do a manual refresh. Not terrible; just annoying. I then tried using webpack&rsquo;s built-in server instead, but found the same issue as <a href="https://github.com/11ty/eleventy/issues/272#issuecomment-457368626">others</a>, which was that it didn&rsquo;t &ldquo;see&rdquo; Eleventy&rsquo;s changes without, yep, manual refresh. What I finally tried was installing the <a href="https://www.npmjs.com/package/browser-sync-webpack-plugin">Browsersync plugin for webpack</a>, then setting Eleventy just to <em>watch</em> and <strong>not</strong> serve during development mode. Once I did a little tinkering with settings, that did the trick. Now, with the setup I have below&mdash;noted in <code>webpack.dev.js</code> and <code>package.json</code>&mdash; I get full and <em>automatic</em> browser refresh during development mode when I edit either text or SCSS.</p>
   <p>And, yes, it <em>was</em> worth the trouble. Trust me.</p>
 </div>
 
