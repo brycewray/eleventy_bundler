@@ -5,7 +5,7 @@ title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Excerpts from my Eleventy/webpack configuration."
 date: 2019-12-14T10:37:00-06:00
-lastmod: 2019-12-20T12:11:00-06:00
+lastmod: 2019-12-20T12:18:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 idx: 41
 featured_image: /images/markus-spiske-Skf7HxARcoc-unsplash_1920x1080-1920.jpg
@@ -21,7 +21,6 @@ featured_image_caption: "Image: Markus Spiske; unsplash.com"
   <p>I am updating this primarily to conform to some fixes I made a few days after the original version of the post.</p>
   <p>One thing I had noted was that, during development mode, Eleventy&rsquo;s included <a href="https://www.browsersync.io">Browsersync</a> server was auto-refreshing the browser when I made <em>textual</em> changes, but not <em>CSS/SCSS</em> changes; for the latter, I&rsquo;d have to do a manual refresh. Not terrible; just annoying. I then tried using webpack&rsquo;s built-in server instead, but found the same issue as <a href="https://github.com/11ty/eleventy/issues/272#issuecomment-457368626">others</a>, which was that it didn&rsquo;t &ldquo;see&rdquo; Eleventy&rsquo;s changes without, yep, manual refresh. What I finally tried was installing the <a href="https://www.npmjs.com/package/browser-sync-webpack-plugin">Browsersync plugin for webpack</a>, then setting Eleventy just to <em>watch</em> and <strong>not</strong> serve during development mode. Once I did a little tinkering with settings, that did the trick. Now, with the setup I have below&mdash;noted in <code>webpack.dev.cs</code> and <code>package.json</code>&mdash; I get full and <em>automatic</em> browser refresh during development mode when I edit either text or SCSS.</p>
   <p>And, yes, it <em>was</em> worth the trouble. Trust me.</p>
-  <p>While I was at it, I also cleaned up the <code>eleventy.js</code> file somewhat. For example, it no longer mentions a <a href="https://github.com/markdown-it/markdown-it">markdown-it</a> plugin I&rsquo;d used to handle code blocks since, with webpack, I simply import <a href="https://prismjs.com">prism.js</a> directly.</p>
 </div>
 
 *Following up on my [recent post](/posts/2019/12/packing-up) about how I got this site back to my favorite [static site generator](https://staticgen.com) (SSG), [Eleventy](https://11ty.dev), and also provided some enhancements with the [webpack](https://webpack.js.org) bundler&nbsp;app&nbsp;.&nbsp;.&nbsp;.*
@@ -75,6 +74,7 @@ module.exports = merge(common, {
       server: { baseDir: ['_site'] },
       notify: false,
       watch: true,
+      open: false, // won't automatically launch in default browser when started
     })
   ],
   watch: true,
@@ -224,6 +224,7 @@ module.exports = function (eleventyConfig) {
   // --and-- https://github.com/planetoftheweb/seven/blob/master/.eleventy.js
   let markdownIt = require("markdown-it")
   let markdownItFootnote = require("markdown-it-footnote")
+  let markdownItPrism = require('markdown-it-prism')
   let markdownItOpts = {
     html: true,
     linkify: true,
@@ -231,6 +232,7 @@ module.exports = function (eleventyConfig) {
   }
   const markdownEngine = markdownIt(markdownItOpts)
   markdownEngine.use(markdownItFootnote)
+  markdownEngine.use(markdownItPrism)
   eleventyConfig.setLibrary("md", markdownEngine)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
@@ -249,6 +251,8 @@ module.exports = function (eleventyConfig) {
 
 
   /* === START, webmentions stuff === */
+  // https://mxb.dev/blog/using-webmentions-on-static-sites/
+  // https://sia.codes/posts/webmentions-eleventy-in-depth/
   
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter('head', (array, n) => {
@@ -361,6 +365,7 @@ By now, the more observant among you, having seen certain items mentioned in the
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-footnote": "^3.0.2",
+    "markdown-it-prism": "^2.0.3",
     "mini-css-extract-plugin": "^0.8.0",
     "node-fetch": "^2.6.0",
     "node-loader": "^0.6.0",
