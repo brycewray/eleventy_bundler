@@ -52,6 +52,7 @@
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "markdown-it-footnote": "^3.0.2",
+    "markdown-it-prism": "^2.0.3",
     "mini-css-extract-plugin": "^0.8.0",
     "node-fetch": "^2.6.0",
     "node-loader": "^0.6.0",
