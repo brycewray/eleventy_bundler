@@ -58,16 +58,16 @@ layout: layouts/_default/baseof.njk
   {% if title != "The obligatory About Me page" %}
   <div class="bg-dark">
     <h3 class="ctr wht"><a href="/posts" style="border-bottom: 0;">Other posts</a></h3>
-  {% if collections.post[idx] %}
+  {% if nextPost.url %}
     <p class="ctr">
       <strong>Next</strong>: 
-      <a class="next" href={{ collections.post[idx].url }}>{{ collections.post[idx].data.title }}</a>
+      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
-  {% if collections.post[idx-2] %}
+  {% if prevPost.url %}
     <p class="ctr">
       <strong>Previous</strong>: 
-      <a class="previous" href={{ collections.post[idx-2].url }}>{{ collections.post[idx-2].data.title }}</a>
+      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
     </p>
   {% endif %}
   </div>
