@@ -34,7 +34,7 @@
     {% endif %}
 
     {% if featured_image %}
-    <meta property="og:image" content="https://brycewray.com{{ featured_image }}" />
+    <meta property="og:image" content="https://brycewray.com/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" />
     {% endif %}
     
     <!-- Twitter meta -->
@@ -44,7 +44,7 @@
     {% if title != "Home page" %}
       <meta name="twitter:description" content="{{ description }}" />
       <meta name="twitter:title" content="{{ title }}" />
-      <meta name="twitter:image" content="https://brycewray.com{{ featured_image }}" />
+      <meta name="twitter:image" content="https://brycewray.com/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" />
     {% else %}
       <meta name="twitter:description" content="{{ siteparams.siteDescription }}" />
       <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
