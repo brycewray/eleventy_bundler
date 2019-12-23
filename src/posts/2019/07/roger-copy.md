@@ -7,10 +7,6 @@ description: "How I now keep my site files “synced” across my devices—via 
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
 lastmod: 2019-10-02T19:36:00-05:00
-idx: 26
-draft: false # note!
-actual_path: /content/posts/2019/07/roger-copy
-final_url: /posts/2019/07/roger-copy
 discussionId: "2019-07-roger-copy"
 featured_image: /images/clocks-in-sync-3303560_1280x720_100pct-1280.jpg
 featured_image_base: clocks-in-sync-3303560_1280x720_100pct

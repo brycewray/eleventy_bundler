@@ -7,7 +7,6 @@ description: "Project Purple isn’t over, but today is worth celebrating."
 date: 2019-10-27T10:00:00-05:00
 #lastmod: t/k
 discussionId: "2019-10-now-gatsby-geezer"
-idx: 37
 featured_image: /images/gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker-1920.jpg
 featured_image_base: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker
 featured_image_width: 1920

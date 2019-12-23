@@ -7,11 +7,7 @@ description: A major ”Do’h” moment in the never-ending battle against Inte
 author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
 lastmod: 2019-11-08T10:00:00-06:00
-idx: 13
-draft: false # note!
-actual_path: /content/posts/2019/02/old-dog-old-trick
 discussionId: "2019-02-old-dog-old-trick"
-final_url: /posts/2019/02/old-dog-old-trick
 featured_image: /images/dog-2514968_1280x720-1280.jpg
 featured_image_base: dog-2514968_1280x720
 featured_image_width: 1280

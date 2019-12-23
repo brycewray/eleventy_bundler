@@ -7,10 +7,6 @@ description: "I admit it: I get too much utility from the myriad of Google servi
 author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
 #lastmod:
-idx: 29
-draft: false # note!
-actual_path: /content/posts/2019/08/backtracking-to-big-g
-final_url: /posts/2019/08/backtracking-to-big-g
 discussionId: "2019-08-backtracking-to-big-g"
 featured_image: /images/BW_shadow_of_G_on_gray_gradient_1280x720-1280.jpg
 featured_image_base: BW_shadow_of_G_on_gray_gradient_1280x720

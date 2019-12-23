@@ -7,11 +7,7 @@ description: "Some highly uncomplimentary words about WordPress page builders."
 author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
 lastmod: 2019-10-06T19:00:00-05:00
-idx: 11
-draft: false # note!
-actual_path: /content/posts/2019/01/blox-sux
 discussionId: "2019-01-blox-sux"
-final_url: /posts/2019/01/blox-sux
 featured_image: /images/lego-169603_1920x1080_crop_Gaussian_blur-1920.jpg
 featured_image_base: lego-169603_1920x1080_crop_Gaussian_blur
 featured_image_width: 1920

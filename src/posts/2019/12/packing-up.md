@@ -7,7 +7,6 @@ description: "How using a bundler makes the coolest SSG even better."
 date: 2019-12-08T17:48:00-06:00
 lastmod: 2019-12-23T09:05:00-06:00
 discussionId: "2019-12-packing-up"
-idx: 40
 featured_image: /images/chain-11ty-webpack-3867751_1920x1080-1920.jpg
 featured_image_base: chain-11ty-webpack-3867751_1920x1080
 featured_image_width: 1920

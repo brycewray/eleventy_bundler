@@ -7,11 +7,7 @@ description: "Markdown: how to have that plain-text cake and still eat it with f
 author: Bryce Wray
 date: 2019-03-08T22:08:00-06:00
 lastmod: 2019-10-02T19:26:00-05:00
-idx: 16
-draft: false # note!
-actual_path: /content/posts/2019/03/mark-it-down
 discussionId: "2019-03-mark-it-down"
-final_url: /posts/2019/03/mark-it-down
 featured_image: /images/ugly-duckling-young-swan-1639154_1280x720-1280.jpg
 featured_image_base: ugly-duckling-young-swan-1639154_1280x720
 featured_image_width: 1280

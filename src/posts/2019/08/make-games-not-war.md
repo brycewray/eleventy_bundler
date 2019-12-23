@@ -7,10 +7,6 @@ description: "I take a break from my “techy” stuff to opine on more logical 
 author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
 lastmod: 2019-08-07T12:42:00-05:00
-idx: 27
-draft: false # note!
-actual_path: /content/posts/2019/08/make-games-not-war
-final_url: /posts/2019/08/make-games-not-war
 discussionId: "2019-08-make-games-not-war"
 featured_image: /images/stadium-seats-3310891_1280x720-1280.jpg
 featured_image_base: stadium-seats-3310891_1280x720

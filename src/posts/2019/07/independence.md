@@ -7,10 +7,6 @@ description: "Thirty-five years ago this week, I encountered a Mac for the first
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
 #lastmod
-idx: 23
-draft: false # note!
-actual_path: /content/posts/2019/07/independence
-final_url: /posts/2019/07/independence
 discussionId: "2019-07-independence"
 featured_image: /images/1984-07-11_01_retouched_1280x720-1280.jpg
 featured_image_base: 1984-07-11_01_retouched_1280x720

@@ -7,11 +7,7 @@ description: 'A revisiting of the whole Ulysses matter—after I learned some mo
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
 lastmod: 2019-10-11T19:00:00-05:00
-idx: 20
-draft: false # note!
-actual_path: /content/posts/2019/05/boxed-in
 discussionId: "2019-05-boxed-in"
-final_url: /posts/2019/05/boxed-in
 featured_image: /images/thunderstorm-3625405_1280x720-1280.jpg
 featured_image_base: thunderstorm-3625405_1280x720
 featured_image_width: 1280

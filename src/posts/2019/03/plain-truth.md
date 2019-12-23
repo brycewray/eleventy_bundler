@@ -7,11 +7,7 @@ description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
 lastmod: 2019-04-27T06:38:00-05:00
-idx: 15
-draft: false # note!
-actual_path: /content/posts/2019/03/plain-truth
 discussionId: "2019-03-plain-truth"
-final_url: /posts/2019/03/plain-truth
 featured_image: /images/typewriter-1031024_1280x720-1280.jpg
 featured_image_base: typewriter-1031024_1280x720
 featured_image_width: 1280

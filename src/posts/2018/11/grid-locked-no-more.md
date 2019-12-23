@@ -7,11 +7,7 @@ description: "While I still think using frameworks is OK, I decided the best way
 author: Bryce Wray
 date: 2018-11-28T09:00:00-06:00
 lastmod: 2019-10-02T19:20:00-05:00
-idx: 9
-draft: false # note!
-actual_path: /content/posts/2018/11/grid-locked-no-more
 discussionId: "2018-11-grid-locked-no-more"
-final_url: /posts/2018/11/grid-locked-no-more/
 featured_image: /images/hairpin-turn-sign-94966_1280x720-1280.jpg
 featured_image_base: hairpin-turn-sign-94966_1280x720
 featured_image_width: 1280

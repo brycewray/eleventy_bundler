@@ -7,10 +7,6 @@ description: "Even for me, this switcheroo was quick, as the prodigal comes craw
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
-idx: 32
-#draft: Note!
-actual_path: /content/posts/2019/09/back-with-hugo
-final_url: /posts/2019/09/back-with-hugo
 discussionId: "2019-09-back-with-hugo"
 featured_image: /images/skid-mark-567668_1280x720-1280.jpg
 featured_image_base: skid-mark-567668_1280x720

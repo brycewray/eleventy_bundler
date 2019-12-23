@@ -7,8 +7,6 @@ description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
 lastmod: 2019-11-09T10:00:00-06:00
-idx: 34
-#draft: Note!
 discussionId: "2019-10-its-about-food-not-decor" # figure it out later
 featured_image: /images/mount-horeb-lunch-4162348_1280x720-1280.jpg
 featured_image_base: mount-horeb-lunch-4162348_1280x720

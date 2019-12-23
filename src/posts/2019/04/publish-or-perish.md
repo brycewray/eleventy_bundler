@@ -7,11 +7,7 @@ description: In a previous post, I told you how to create a Hugo-based site; now
 author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
-idx: 18
-draft: false # note!
-actual_path: /content/posts/2019/04/publish-or-perish
-#discussionId: "2019-04-publish-or-perish" -- assign later if possible
-final_url: /posts/2019/04/publish-or-perish
+discussionId: "2019-04-publish-or-perish"
 featured_image: /images/office-blogging-monochrome-381228_1280x720-1280.jpg
 featured_image_base: office-blogging-monochrome-381228_1280x720
 featured_image_width: 1280

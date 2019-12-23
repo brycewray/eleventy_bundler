@@ -7,11 +7,7 @@ description: “Didja ever notice...?” Yes, I did. And here’s the result.
 author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
 lastmod: 2019-07-30T19:50:00-05:00
-idx: 7
-draft: false # note!
-actual_path: /content/posts/2018/11/some-curmudgeonish-thoughts.md
 discussionId: "2018-11-some-curmudgeonish-thoughts"
-final_url: /posts/2018/11/some-curmudgeonish-thoughts/
 featured_image: /images/brain-1300479_1280x720_60pct-1280.jpg
 featured_image_base: brain-1300479_1280x720_60pct
 featured_image_width: 1280

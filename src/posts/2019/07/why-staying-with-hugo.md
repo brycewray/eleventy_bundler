@@ -7,10 +7,6 @@ description: After experimenting for a few weeks with Gatsby and a few other tre
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
-idx: 24
-draft: false
-actual_path: /content/posts/2019/07/why-staying-with-hugo
-final_url: /posts/2019/07/why-staying-with-hugo
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: /images/hugo-logo-on-black-1280x720-1280.png
 featured_image_base: hugo-logo-on-black-1280x720

@@ -7,11 +7,7 @@ description: Can we just agree that type on the Web should be, y’know, readab
 author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
 lastmod: 2019-04-11T20:33:00-05:00
-idx: 5
-draft: false # note!
-actual_path: /content/posts/2018/10/web-typography-part-1.md
 discussionId: "2018-10-web-typography-part-1"
-final_url: /posts/2018/10/web-typography-part-1/
 featured_image: /images/letters-691842_1280x720-1280.jpg
 featured_image_base: letters-691842_1280x720
 featured_image_width: 1280

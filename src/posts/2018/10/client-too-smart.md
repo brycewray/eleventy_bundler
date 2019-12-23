@@ -7,11 +7,7 @@ description: Pretty emails don’t work so well in an Outlook-centric business 
 author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
 lastmod: 2019-02-17T20:00:00-06:00
-idx: 4
-draft: false # note!!
-actual_path: /content/posts/2018/10/client-too-smart.md
 discussionId: "2018-10-client-too-smart"
-final_url: /posts/2018/10/client-too-smart/
 featured_image: /images/contact-2805253_cropped_1280x720-1280.png
 featured_image_base: contact-2805253_cropped_1280x720
 featured_image_width: 1280

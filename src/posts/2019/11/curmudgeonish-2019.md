@@ -7,7 +7,6 @@ description: "Here’s a follow-up on last year’s list of items that stick in 
 date: 2019-11-03T19:01:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
-idx: 38
 featured_image: /images/angry-bird-2234295_1280x720-1280.jpg
 featured_image_base: angry-bird-2234295_1280x720
 featured_image_width: 1280

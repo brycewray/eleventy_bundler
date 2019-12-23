@@ -7,11 +7,7 @@ description: The way I sort-of cured the email client dance.
 author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
 #lastmod
-idx: 21
-draft: false # note!
-actual_path: /content/posts/2019/05/the-holy-mail
 discussionId: "2019-05-the-holy-mail"
-final_url: /posts/2019/05/the-holy-mail
 featured_image: /images/letterbox-1926493_1280x720-1280.jpg
 featured_image_base: letterbox-1926493_1280x720
 featured_image_width: 1280

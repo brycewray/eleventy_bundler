@@ -7,11 +7,7 @@ description: "Some observations on good backup practices, notably the 4-2-2 appr
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
 lastmod: 2019-10-07T19:00:00-05:00
-idx: 14
-draft: false # note!
-actual_path: /content/posts/2019/02/back-up-jack
 discussionId: "2019-02-back-up-jack"
-final_url: /posts/2019/02/back-up-jack
 featured_image: /images/binary-2688910_1920_1280x721-1280.jpg
 featured_image_base: binary-2688910_1920_1280x721
 featured_image_width: 1280

@@ -7,10 +7,6 @@ description: "Having reached this milestone-of-sorts, I offer some different wor
 author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
 lastmod: 2019-09-10T14:37:00-05:00
-idx: 30
-#draft: Note!
-actual_path: /content/posts/2019/09/now-im-sixty-four
-final_url: /posts/2019/09/now-im-sixty-four
 discussionId: "2019-09-now-im-sixty-four"
 featured_image: /images/chevrolet-1955-stylized-829805_1280x720-1280.jpg
 featured_image_base: chevrolet-1955-stylized-829805_1280x720

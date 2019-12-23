@@ -7,10 +7,6 @@ description: "When even Ars Technica’s forum users can’t keep this straight,
 author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
 #lastmod:
-idx: 28
-draft: false # note!
-actual_path: /content/posts/2019/08/scrivener-and-cloud
-final_url: /posts/2019/08/scrivener-and-cloud
 discussionId: "2019-08-scrivener-and-cloud"
 featured_image: /images/scriv-and-cloud-from-3331240_1280x720-1280.jpg
 featured_image_base: scriv-and-cloud-from-3331240_1280x720

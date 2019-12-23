@@ -6,10 +6,6 @@ subtitle: What I found while trying other SSGs
 description: During my ill-fated (and ultimately wrong-headed) attempt to convert this site from Hugo to Gatsby, I learned a few interesting things.
 date: 2019-07-21T17:43:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
-idx: 25
-draft: false
-actual_path: /content/posts/2019/07/lessons-learned
-final_url: /posts/2019/07/lessons-learned
 discussionId: "2019-07-lessons-learned"
 featured_image: /images/binoculars-4143165_1280x719-1280.jpg
 featured_image_base: binoculars-4143165_1280x719

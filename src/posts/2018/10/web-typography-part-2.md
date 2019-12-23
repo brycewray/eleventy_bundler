@@ -7,11 +7,7 @@ description: Making the case for a system “fonts” approach to the typography
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
 lastmod: 2019-12-08T17:48:00-06:00
-idx: 6
-draft: false # note!
-actual_path: /content/posts/2018/10/web-typography-part-2.md
 discussionId: "2018-10-web-typography-part-2"
-final_url: /posts/2018/10/web-typography-part-2/
 featured_image: /images/computer-1869236_1920x1080-1920.jpg
 featured_image_base: computer-1869236_1920x1080
 featured_image_width: 1920

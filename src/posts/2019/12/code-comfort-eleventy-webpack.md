@@ -7,7 +7,6 @@ description: "Excerpts from my Eleventy/webpack configuration."
 date: 2019-12-14T10:37:00-06:00
 lastmod: 2019-12-23T08:10:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
-idx: 41
 featured_image: /images/markus-spiske-Skf7HxARcoc-unsplash_1920x1080-1920.jpg
 featured_image_base: markus-spiske-Skf7HxARcoc-unsplash_1920x1080
 featured_image_width: 1920

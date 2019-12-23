@@ -7,7 +7,6 @@ description: "Observations worth exactly what you’re paying for them."
 date: 2019-11-24T10:15:00-06:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-11-odds-ends-2019-11"
-idx: 39
 featured_image: /images/nuts-768243_1280x720-1280.jpg
 featured_image_base: nuts-768243_1280x720
 featured_image_width: 1280
