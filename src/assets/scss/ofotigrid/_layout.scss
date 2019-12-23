@@ -104,7 +104,7 @@ h3.twitter-border {
     width: 100%;
     .imgCover {
       object-fit: cover;
-      object-position: 50% 10%; // H = middle; V = 10% from top
+      object-position: 50% 50%; // H = middle; V = middle
       height: 100%;
       width: 100%;
     }
@@ -116,8 +116,8 @@ h3.twitter-border {
     }
     @media screen and (min-width: 1025px) {
       background-attachment: fixed;
-      height: 85vh;
-      max-height: 85vh;
+      height: 80vh;
+      max-height: 80vh;
     }
   }
   &-title-block-fit {
