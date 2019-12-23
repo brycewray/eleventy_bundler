@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: Back up, Jack 
 subtitle: From 3-2-1 to 4-2-2

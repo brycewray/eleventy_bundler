@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: Packing up
 subtitle: Eleventy and webpack are a powerful pair

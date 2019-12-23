@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: Picture perfect?
 subtitle: With SSGs and images, it’s “location, location, location”

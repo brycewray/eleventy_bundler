@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singleposthero.njk
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
