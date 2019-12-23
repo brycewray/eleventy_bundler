@@ -20,7 +20,8 @@ $darkblue: #0000aa;
 $shadow-color: rgba(0, 0, 0, .2);
 $code-color: #006400; // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
 $code-color-dark-mode: #88ff88;
-$code-bkgd-dark-mode: #114411;
+$code-bkgd-light-mode: #dfefff; // for reference, GitHub uses f6f8fa
+$code-bkgd-dark-mode: #4e4e4e;
 $code-color-tan: #996600;
 $code-color-tan-dark-mode: #cc9900;
 $code-color-blueLight-dark-mode: #88ddff;
@@ -29,7 +30,7 @@ $code-color-orange-dark-mode: #ffaa00;
 // Typography
 $sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $sans-serif-boot: Roboto, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; // based on the simplified system stack in Bootstrap 4 as of November, 2018
-$serif-primary: "Vollkorn", Georgia, "Droid Serif", Times, "Times New Roman", serif;
+$serif-primary: Georgia, "Droid Serif", Times, "Times New Roman", serif;
 $serif-secondary: "Georgia", serif;
 $monospaced: "Roboto Mono", "SFMono-Regular", Consolas, "Liberation-Mono", Menlo, "iA Writer Duospace", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 // ems rather than rems for older-browser support

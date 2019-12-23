@@ -8,6 +8,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
  code {
    font-family: $monospaced;
+   background: $code-bkgd-light-mode;
  }
  
  code[class*="language-"],
