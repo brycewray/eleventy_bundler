@@ -5,7 +5,7 @@ title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2019-12-16T11:00:00-06:00
+lastmod: 2019-12-23T09:05:00-06:00
 discussionId: "2019-12-packing-up"
 idx: 40
 featured_image: /images/chain-11ty-webpack-3867751_1920x1080-1920.jpg
@@ -13,7 +13,7 @@ featured_image_base: chain-11ty-webpack-3867751_1920x1080
 featured_image_width: 1920
 featured_image_ext: jpg
 featured_image_alt: "Eleventy and webpack logos over a chain"
-featured_image_caption: "Images: 11ty.dev; webpackjs.org; Pixabay"
+featured_image_caption: "Images: 11ty.dev; webpack.js.org; Pixabay"
 ---
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
