@@ -77,6 +77,30 @@ h3.twitter-border {
 	width: 100vw !important;
 }
 
+.imgCover {
+  object-fit: cover;
+  object-position: 50% 50%; // H = middle; V = middle
+  height: 100%;
+  width: 100%;
+}
+
+.hero-home {
+  background-color: #0088ff;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 45vh;
+  /* image supplied programmatically by template */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    height: 55vh;
+  }
+  @media screen and (min-width: 1025px) {
+    height: 65vh;
+  }
+  .imgCover { // just on the home page with that particular image
+    object-position: 50% 15%;
+  }
+}
+
 .background-hero {
   &-div {
     background: linear-gradient(
@@ -94,7 +118,6 @@ h3.twitter-border {
       height: 75vh;
     }
     @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
       height: 80vh;
     }
   }
@@ -102,12 +125,6 @@ h3.twitter-border {
     position: relative;
     overflow: hidden;
     width: 100%;
-    .imgCover {
-      object-fit: cover;
-      object-position: 50% 50%; // H = middle; V = middle
-      height: 100%;
-      width: 100%;
-    }
     height: 70vh;
     max-height: 70vh;
     @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -306,31 +323,6 @@ img.postsFeatImg {
 
 .bigger {
   font-size: $bigger + unquote("em");
-}
-
-$homeHeroImageURL: "/images/typewriter-monochrome_2242164_1280x720-1280.jpg"; // using responsive-loader result
-
-.hero { // specifically for home page, at least to begin with
-  background-color: #0088ff;
-  // old-browser stuff...
-  min-width: 100%;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  // end this particular old-browser stuff...
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 0;
-  height: 400px; // old browsers
-  height: 40vh;
-  &-home {
-    background-image: url($homeHeroImageURL);
-    @media screen and (min-width: 1025px) {
-      background-attachment: fixed;
-      height: 64.5vh;
-    }
-  }
 }
 
 .container {
