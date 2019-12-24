@@ -5,8 +5,15 @@ layout: layouts/_default/baseof.njk
 
 <main>
 
-  <div class="hero hero-home"></div>
-  <p class="legal ctr text-muted" style="margin-top: 0;">Image: Pixabay</p>
+  <div class="hero-home">
+    <picture>
+      <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" />
+      <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
+    </picture>
+  </div>
+  {% if featured_image_caption %}
+    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>Will appear distorted in obsolete browsers.</em></span></p>
+  {% endif %}
 
   <div class="container-home">
     <div class="column-home">
