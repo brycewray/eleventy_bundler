@@ -22,7 +22,7 @@ layout: layouts/_default/baseof.njk
     <div class="column-home">
       <h2 class="h1" style="margin-bottom: 0.5em;">Latest posts</h2>
       {% for post in collections.post | reverse %}
-        {% if loop.index0 < 2 %}			
+        {% if loop.index0 < 5 %}			
         <div>          
           <h2 class="h5" style="margin-bottom: 0;"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
           <time datetime="{{ post.date | htmlDateString }}" class="pokey text-muted text-sans-serif">{{ post.date | htmlDateString }}</time>
@@ -33,9 +33,7 @@ layout: layouts/_default/baseof.njk
         {% endif %}
       {% endfor %}
       <p class="text-sans-serif"><a href="/posts/"><strong>All posts</strong></a></p>
-      <h3 class="h5 twitter-border">Tweets by&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener">@BryceWrayTX</a></h3>
-      <p class="teeny"><strong>Note</strong>: Some retweets with added comments won‘t show the original&nbsp;tweets unless you click or tap on&nbsp;them.</p>
-      <a class="twitter-timeline" data-chrome="noheader transparent" data-tweet-limit="3" data-dnt="true" data-border-color="#656565" href="https://twitter.com/BryceWrayTX?ref_src=twsrc%5Etfw">Tweets by BryceWrayTX</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- Twitter timeline used to go here -->
     </div>
   </div>
 </main>
