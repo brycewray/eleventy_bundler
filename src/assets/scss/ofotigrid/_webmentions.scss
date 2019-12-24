@@ -77,6 +77,11 @@
 }
 
 .p-note {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
+  padding-bottom: 1.5em; // avoids phone UI stuff
+  @media screen and (min-width: 1025px) {
+    width: 50%;
+    padding-bottom: 0.5em;
+  }
 }
