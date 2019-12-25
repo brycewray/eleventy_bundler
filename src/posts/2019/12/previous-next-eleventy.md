@@ -5,7 +5,7 @@ title: "“Previous” and “next” in Eleventy"
 subtitle: "The answer to an authentic FAQ"
 description: "A brief description of code that easily enables this oft-requested feature."
 date: 2019-12-23T15:16:00-06:00
-#lastmod: TBD
+lastmod: 2019-12-25T08:05:00-06:00
 discussionId: "2019-12-previous-next-eleventy"
 featured_image: /images/two-way-sign-brick-bkgd-1513691_1920x1080.jpg
 featured_image_base: two-way-sign-brick-bkgd-1513691_1920x1080
@@ -28,13 +28,13 @@ You see, the most workable method I'd found so far from among the [starter proje
 {% if collections.post[idx] %}
 	<p class="ctr">
 		<strong>Next</strong>: 
-		<a class="next" href={{ collections.post[idx].url }}>{{ collections.post[idx].data.title }}</a>
+		<a class="next" href="{{ collections.post[idx].url }}">{{ collections.post[idx].data.title }}</a>
 	</p>
 {% endif %}
 {% if collections.post[idx-2] %}
 	<p class="ctr">
 		<strong>Previous</strong>: 
-		<a class="previous" href={{ collections.post[idx-2].url }}>{{ collections.post[idx-2].data.title }}</a>
+		<a class="previous" href="{{ collections.post[idx-2].url }}">{{ collections.post[idx-2].data.title }}</a>
 	</p>
 {% endif %}
 
@@ -76,13 +76,13 @@ Once you've added that to your site's `.eleventy.js` file, all you have to do is
   {% if nextPost.url %}
     <p class="ctr">
       <strong>Next</strong>: 
-      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+      <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
     <p class="ctr">
       <strong>Previous</strong>: 
-      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+      <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
   {% endif %}
 ```

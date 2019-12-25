@@ -65,13 +65,13 @@ layout: layouts/_default/baseof.njk
   {% if nextPost.url %}
     <p class="ctr">
       <strong>Next</strong>: 
-      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+      <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
     <p class="ctr">
       <strong>Previous</strong>: 
-      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+      <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
   {% endif %}
   </div>
