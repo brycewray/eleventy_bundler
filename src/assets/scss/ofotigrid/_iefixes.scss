@@ -7,12 +7,23 @@
   }
   
   .container-home {
-		border-spacing: 15px;
-		padding: 0;
-		// margin: 0;
-		.column-home {
-			margin-top: 0;
-			padding-top: 0;
+    display: table;
+    border-spacing: 15px;
+    padding: 0;
+    width: 90%;
+    // margin: 0;
+    .column-home-1 {
+      width: 65%;
+    }
+    .column-home-2 {
+      width: 35%;
+    }
+		.column-home-1, .column-home-2 {
+      display: table-cell;
+      margin-top: 0;
+      padding-top: 0;
+      padding-right: 0.25em;
+      padding-left: 0.25em;
 			h1 {
 				margin-top: 0;
 				padding-top: 0;
@@ -23,9 +34,6 @@
         margin-right: auto;
         margin-left: auto;
       }
-		}
-		.twitter-timeline {
-			width: 95% !important;
 		}
 	}
 	.container {
