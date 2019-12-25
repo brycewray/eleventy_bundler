@@ -7,9 +7,9 @@ description: "A brief description of code that easily enables this oft-requested
 date: 2019-12-23T15:16:00-06:00
 lastmod: 2019-12-25T08:05:00-06:00
 discussionId: "2019-12-previous-next-eleventy"
-featured_image: /images/two-way-sign-brick-bkgd-1513691_1920x1080.jpg
-featured_image_base: two-way-sign-brick-bkgd-1513691_1920x1080
-featured_image_width: 1920
+featured_image: /images/two-way-sign-brick-bkgd-1513691_1280x720_60pctprog.jpg
+featured_image_base: two-way-sign-brick-bkgd-1513691_1280x720_60pctprog
+featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: "Scratched two-way traffic sign in front of a brick wall"
 featured_image_caption: "Image: Pixabay"
