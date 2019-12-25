@@ -18,12 +18,18 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "browserslist": [
+    "defaults",
+    "maintained node versions",
+    "> 5%"
+  ],
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/register": "^7.7.7",
+    "autoprefixer": "^9.7.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-prismjs": "^1.1.1",
@@ -59,6 +65,9 @@
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^2.0.0",
     "posthtml": "^0.12.0",
     "prismjs": "^1.17.1",
     "responsive-loader": "^1.2.0",
@@ -78,6 +87,7 @@
     "webpack-dashboard": "^3.2.0",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2",
+    "workbox-webpack-plugin": "^4.3.1",
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
