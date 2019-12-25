@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: $sans-serif-boot !important;
+  font-family: $sans-serif !important;
   color: $default-color;
   letter-spacing: -0.001em;
   width: 100%;
@@ -14,7 +14,7 @@ body {
 }
 
 p, li {
-  line-height: 1.4; // if using $sans-serif-boot
+  line-height: 1.4; // if using $sans-serif
   // line-height: 1.7; // if using $serif-primary
   // font-size: 1.2em;
 }
@@ -25,7 +25,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: $sans-serif-boot;
+  font-family: $sans-serif;
   color: $default-color;
   letter-spacing: -0.025em;
   font-weight: 700;

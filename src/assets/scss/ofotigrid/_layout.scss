@@ -7,7 +7,7 @@
 }
 
 .text-sans-serif {
-  font-family: $sans-serif-boot;
+  font-family: $sans-serif;
 }
 
 .text-nowrap, .nobrk {
@@ -274,7 +274,7 @@ table.noborders {
   thead td {
     color: #fff !important;
     font-weight: bold;
-    font-family: $sans-serif-boot;
+    font-family: $sans-serif;
   }
   
   td.td70 {
@@ -394,7 +394,7 @@ img.postsFeatImg {
     }
 
     @media screen and (min-width: 769px) {
-      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight, figcaption {
+      h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, .twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight, figcaption {
 				margin: 1em auto 0 auto;
 				width: 50%;
       }
@@ -479,7 +479,7 @@ img.postsFeatImg {
 }
 
 .talkyard-comments {
-  font-family: $sans-serif-boot;
+  font-family: $sans-serif;
 }
 
 li p {

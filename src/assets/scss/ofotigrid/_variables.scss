@@ -23,10 +23,8 @@ $code-bkgd-light-mode: #dfefff; // for reference, GitHub uses f6f8fa
 $code-bkgd-dark-mode: #4e4e4e;
 
 // Typography
-$sans-serif: system-ui;
-$sans-serif-boot: "Roboto", system-ui;
+$sans-serif: "Roboto", system-ui;
 $serif-primary: Georgia, serif;
-$serif-secondary: Georgia, serif;
 $monospaced: "Roboto Mono", monospace;
 // ems rather than rems for older-browser support
 $biggest: 2.5;
