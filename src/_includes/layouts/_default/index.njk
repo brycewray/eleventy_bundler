@@ -16,10 +16,10 @@ layout: layouts/_default/baseof.njk
   {% endif %}
 
   <div class="container-home">
-    <div class="column-home">
+    <div class="column-home-1">
       {{ content | safe }}
     </div>
-    <div class="column-home">
+    <div class="column-home-2">
       <h2 class="h1" style="margin-bottom: 0.5em;">Latest posts</h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 5 %}			
