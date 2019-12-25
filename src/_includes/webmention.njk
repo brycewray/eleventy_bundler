@@ -19,7 +19,7 @@
     {% endif %}
 
     {% if webmention.published %}
-      <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | readableDate("yyyy-MM-dd - HH:mm") }}</time><!-- orig was dd LLL yyyy -->
+      <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">{{ webmention.published | dateFromTimestamp | dateStringISO }}</time><!-- orig was dd LLL yyyy -->
     {% endif %}
   </div>
   <div class="webmention__content p-content">
