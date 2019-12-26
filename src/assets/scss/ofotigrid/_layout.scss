@@ -316,40 +316,34 @@ img.postsFeatImg {
 }
 
 .container {
-  display: grid;
   // width: 90%;
   margin: 0 auto;
   &-home {
     display: grid;
     margin: 0 auto;
     width: 90%;
-    grid-template-areas: "home-1 . home-2";
     grid-gap: 0.25rem;
-    grid-template-columns: 100%;
-    @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 769px) {
       width: 75%;
-      grid-template-columns: 55% 5% 45%;
+      grid-template-columns: 60% 1fr;
+      grid-gap: 2rem;
       padding-top: 0.5em;
     }
-    .column-home-1 {
-      grid-area: home-1;
-    }
-    .column-home-2 {
-      grid-area: home-2;
-    }
-    .column-home-1, .column-home-2 {
-      display: grid-item;
-      img.homeContainedImage {
+    .column-home {
+      img.containedImage {
         display: block;
         width: 100%;
+        min-width: 100%;
         max-width: 100%;
         height: auto;
         margin-right: auto;
         margin-left: auto;
       }
-      @media screen and (min-width: 900px) {
-        img.homeContainedImage {
-          width: 90%;
+      @media screen and (min-width: 769px) {
+        img.containedImage {
+          min-width: 95%;
+          width: 95%;
         }
       }
     }
@@ -365,13 +359,10 @@ img.postsFeatImg {
       display: block;
       width: 100%;
       max-width: 100%;
+      min-width: 100%;
       height: auto;
       margin-right: auto;
       margin-left: auto;
-      @media screen and (min-width: 1025px) {
-        width: 50%;
-        max-width: 50%;
-      }
     }
 
     figure img {
@@ -393,7 +384,11 @@ img.postsFeatImg {
       }
     }
 
-    @media screen and (min-width: 769px) {
+    .twitter-tweet {
+      margin: 1em auto 0 auto;
+    }
+
+    @media screen and (min-width: 1025px) {
       h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, p, time, .twitter-widget, table, .twitter-tweet, ul, ol, hr, .highlight, figcaption {
 				margin: 1em auto 0 auto;
 				width: 50%;
