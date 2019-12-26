@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
 lastmod: 2019-09-10T14:37:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
+oldComments: true
 featured_image: /images/chevrolet-1955-stylized-829805_1280x720-1280.jpg
 featured_image_base: chevrolet-1955-stylized-829805_1280x720
 featured_image_width: 1280

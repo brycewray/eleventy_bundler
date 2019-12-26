@@ -8,6 +8,7 @@ author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
+oldComments: true
 featured_image: /images/detour-2496197_1280x720-1280.jpg
 featured_image_base: detour-2496197_1280x720
 featured_image_width: 1280

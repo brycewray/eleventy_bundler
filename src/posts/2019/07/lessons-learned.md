@@ -7,6 +7,7 @@ description: During my ill-fated (and ultimately wrong-headed) attempt to conver
 date: 2019-07-21T17:43:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-lessons-learned"
+oldComments: true
 featured_image: /images/binoculars-4143165_1280x719-1280.jpg
 featured_image_base: binoculars-4143165_1280x719
 featured_image_width: 1280

@@ -38,19 +38,10 @@ layout: layouts/_default/baseof.njk
   </div>
 
   {% if title != "Home page" and title != "Posts" %}
+  {% if oldComments %}
+  {% include 'comments/' + (discussionId) + '.njk' %}
+  {% endif %}
   {% include 'webmentionlist.njk' %}
-  <div class="container container-comments">
-    <p>&nbsp;</p>
-    <!-- Comments code -->
-    <script>talkyardServerUrl="{{ siteparams.talkyardServerUrl }}";</script>
-    <script async defer src="{{ siteparams.talkyardScriptUrl }}"></script>
-    <!-- You can specify a per page discussion id on the next line, if your URLs might change. -->
-    <div class="talkyard-comments" data-discussion-id="{{ discussionId }}" data-iframe-title="Comments section on brycewray.com, powered by Talkyard" style="margin-top: 3em;">
-      <noscript>Please enable Javascript to view comments.</noscript>
-      <!-- commenting this out because it's in the footer ... <p class="legal text-muted" style="margin-top: 2em;">Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.</p> -->
-    </div>
-    <!-- end, Comments code -->
-  </div>
   {% endif %}
 
   {% if title != "The obligatory About Me page" %}
