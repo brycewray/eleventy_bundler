@@ -1,4 +1,8 @@
 module.exports = {
   parser: 'postcss-scss',
-  plugins: {},
+  plugins: [
+    purgecss({
+      content: ['./**/*.html']
+    }),
+  ],
 }
