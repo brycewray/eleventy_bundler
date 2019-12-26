@@ -9,7 +9,7 @@
         <h4 class="ctr pokey">Information for webmentions</h4>
         <img class="u-photo" alt="'Smiling Mac' icon from 1984 Macintosh startup screen" src="/images/macicons_smiling_mac_1984-180.png" style="width: 45px; height: auto;" />
         <p class="p-note legal">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
-        {% if coll[i].data != "" %}
+        {% if (coll[i].data != "") and (title !="Posts") %}
         <h4 class="ctr legal">About this page</h4>
         <article class="h-entry legal">
           <div class="e-content p-name">{{ title }}{% if subtitle %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ subtitle }}{% endif %}{% if description %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ description}}{% endif %}</div>
