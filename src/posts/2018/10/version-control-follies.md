@@ -12,7 +12,8 @@ featured_image: /images/javascript-programming-1873854_1280x720-1280.jpg
 featured_image_base: javascript-programming-1873854_1280x720
 featured_image_width: 1280
 featured_image_ext: jpg
-featured_image_alt: Screen capture of Sourcetree software
+featured_image_alt: "Computer code on a monitor"
+featured_image_caption: "Image: Pixabay"
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving Web pages are much better now, and are continuing to improve.
