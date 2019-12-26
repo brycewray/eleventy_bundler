@@ -6,6 +6,8 @@ const sanitizeHTML = require('sanitize-html')
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('src/assets/js')
+
+  eleventyConfig.addPassthroughCopy('src/images/webmention-avatar-default.svg')
   
   eleventyConfig.addPassthroughCopy('robots.txt')
 
