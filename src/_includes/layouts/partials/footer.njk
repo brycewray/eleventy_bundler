@@ -14,7 +14,7 @@
         <article class="h-entry legal">
           <div class="e-content p-name">{{ title }}{% if subtitle %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ subtitle }}{% endif %}{% if description %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ description}}{% endif %}</div>
           <a class="u-url" href="{{ page.url }}">
-            Published <time class="dt-published">{{ page.date }}</time>
+            Published <time class="dt-published">{{ page.date | dateFromRFC2822 }}</time>
           </a>
           <link rel="author" href="https://brycewray.com/" />
         </article>

@@ -30,6 +30,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
   })
 
+  eleventyConfig.addFilter('dateFromRFC2822', timestamp => {
+    return DateTime.fromJSDate(timestamp).toISO()
+  })
+
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
