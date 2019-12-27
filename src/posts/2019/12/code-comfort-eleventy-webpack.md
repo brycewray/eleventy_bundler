@@ -3,9 +3,9 @@ layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
-description: "Excerpts from my Eleventy/webpack configuration."
-date: 2019-12-14T10:37:00-06:00
-lastmod: 2019-12-27T10:30:00-06:00
+description: "Some words about my Eleventy/webpack configuration."
+date: 2019-12-14T11:05:00-06:00
+lastmod: 2019-12-27T11:08:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
 featured_image: /images/markus-spiske-Skf7HxARcoc-unsplash_1920x1080-1920.jpg
 featured_image_base: markus-spiske-Skf7HxARcoc-unsplash_1920x1080
