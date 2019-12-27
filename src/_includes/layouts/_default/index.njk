@@ -20,7 +20,7 @@ layout: layouts/_default/baseof.njk
       {{ content | safe }}
     </div>
     <div class="column-home">
-      <h2 class="h1" style="margin-bottom: 0.5em;">Latest posts</h2>
+      <h2 class="h1" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
         <div>
@@ -38,7 +38,7 @@ layout: layouts/_default/baseof.njk
         </div>
         {% endif %}
       {% endfor %}
-      <p class="text-sans-serif"><a href="/posts/"><strong>All posts</strong></a></p>
+      <p class="text-sans-serif"><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>
