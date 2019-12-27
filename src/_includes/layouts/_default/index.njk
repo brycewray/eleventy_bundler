@@ -22,11 +22,17 @@ layout: layouts/_default/baseof.njk
     <div class="column-home">
       <h2 class="h1" style="margin-bottom: 0.5em;">Latest posts</h2>
       {% for post in collections.post | reverse %}
-        {% if loop.index0 < 5 %}			
-        <div>          
-          <h2 class="h5" style="margin-bottom: 0;"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <time datetime="{{ post.date | htmlDateString }}" class="pokey text-muted text-sans-serif">{{ post.date | htmlDateString }}</time>
-          <p class="pokey text-body">
+        {% if loop.index0 < 7 %}	
+        <div>
+          <h2 class="h5" style="margin: 0;"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p class="pokey h5" style="margin: 0;">{{ post.data.subtitle }}</p>
+          <p class="legal text-muted" style="margin-top: 0;">
+            <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
+            {% if post.data.lastmod %}
+            &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+            {% endif %}
+          </p>
+          <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 1.5em;">
             {{ post.data.description }}
           </p>
         </div>

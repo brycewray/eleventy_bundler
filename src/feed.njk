@@ -16,7 +16,7 @@ eleventyExcludeFromCollections: true
 	{%- for post in collections.post | reverse %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
-		<title>{{ post.data.title }}</title>
+		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
 		<link href="{{ absolutePostUrl }}"/>
     {% if post.data.lastmod %}
     <updated>{{ post.data.lastmod | rssDate }}</updated>
