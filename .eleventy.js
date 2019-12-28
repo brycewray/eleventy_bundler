@@ -56,6 +56,18 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      })
+      return minified
+    }
+    return content
+  })
+
   /* === START, webmentions stuff === */
   // https://mxb.dev/blog/using-webmentions-on-static-sites/
   // https://sia.codes/posts/webmentions-eleventy-in-depth/
