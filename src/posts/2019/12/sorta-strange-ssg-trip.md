@@ -5,7 +5,7 @@ title: "Sorta StranGe (SSG) trip"
 subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."
 date: 2019-12-27T14:42:40-06:00
-#lastmod:
+lastmod: 2019-12-28T07:05:00-05:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
 featured_image: /images/alarm-clock-4711181_1280×720-1280.jpg
 featured_image_base: alarm-clock-4711181_1280×720
@@ -94,7 +94,7 @@ However, that week, I **also** was getting ready for a transition that I thought
 - **[Why I left Hugo for Eleventy](/posts/2019/09/why-left-hugo-eleventy)**---I issued the post that said, essentially, "Hey, you know back in July when I told you I was glued to Hugo for life? Wel-l-l-l, not so fast."  \
 I still stand by all the good things I said about Eleventy in this post. What I didn't anticipate was that, only a few days later, the incredible ease of Eleventy---combined with a brief flurry of "Oh-I-don't-know-whether-all-this-[node-modules](https://docs.npmjs.com/about-packages-and-modules)-stuff-is-such-a-good-idea" angst, which now seems silly in retrospect---would lead me to turn yet another corner in what now clearly was "the dance."
 
-- **[Back with Hugo](/posts/2019/09/back-with-hugo)**---Twelve days after the last post came this one, which followed a long day of thinking about whether I was really going to get the learning experience I'd wanted to get by using Eleventy rather than Hugo. (Hey, this made sense to me at the time.) It also followed by reading a Flavio Copes article that seemed to be speaking *directly* to me about the folly of "the dance." So, like a whipped dog, back I came to Hugo---but not for long, as it would turn out.
+- **[Back with Hugo](/posts/2019/09/back-with-hugo)**---Twelve days after the last post came this one, which followed a long day of thinking about whether I was really going to get the learning experience I'd wanted to get by using Eleventy rather than Hugo. (Hey, this made sense to me at the time.) It also followed my reading a Flavio Copes article that seemed to be speaking *directly* to me about the folly of "the dance." So, like a whipped dog, back I came to Hugo---but not for long, as it would turn out.
 
 - **[Thinking dark thoughts](/posts/2019/09/thinking-dark-thoughts)**---This post was about using CSS to handle dark mode in the browser; but, truthfully, its title also reflected my mind's state at the time. Yes, I had "danced" back to Hugo, but I wasn't satisfied at all with the experience. Moreover, I was peeved that "the dance" was out there for all the world to see, thanks to these here posts. The inevitable result of that mood came soon enough.
 
