@@ -27,7 +27,7 @@ layout: layouts/_default/baseof.njk
   {% if featured_image %}
     <img src="{{ featured_image }}" class="img-fluid featured-image" alt="{{ featured_image_alt }}">
     {% if featured_image_caption %}
-      <p class="featured-image-caption">{{ featured_image_caption }}</p>
+      <p class="featured-image-caption">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
     {% endif %}
   {% endif %}
 

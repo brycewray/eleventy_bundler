@@ -12,14 +12,14 @@ layout: layouts/_default/baseof.njk
     </picture>
   </div>
   {% if featured_image_caption %}
-    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>Will appear distorted in obsolete browsers.</em></span></p>
+    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
   {% endif %}
 
   <div class="container-home">
-    <div class="column-home">
+    <div class="column-home-1">
       {{ content | safe }}
     </div>
-    <div class="column-home">
+    <div class="column-home-2">
       <h2 class="h1" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
