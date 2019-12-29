@@ -4,7 +4,7 @@ layout: layouts/_default/baseof.njk
 ---
 
 <main>
-  <div class="w-full">
+  <div class="w-full height-hero">
     <picture>
       <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" />
       <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
@@ -14,24 +14,24 @@ layout: layouts/_default/baseof.njk
     <p class="text-center text-xs tracking-normal mt-1">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
   {% endif %}
 
-  <div class="flex px-4">
-    <div class="w-2/3 px-2">
+  <div class="lg:flex">
+    <div class="lg:w-2/3  px-4">
       {{ content | safe }}
     </div>
-    <div class="w-1/3 px-2">
-      <h2 class="h1"><a href="/posts/">Posts</a></h2>
+    <div class="lg:w-1/3 px-4">
+      <h2 class="text-4xl"><a href="/posts/">Posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
         <div>
           <h2 class="h5"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="font-bold">{{ post.data.subtitle }}</p>
-          <p class="text-sm">
-            <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
+          <p class="font-bold mb-0">{{ post.data.subtitle }}</p>
+          <p class="text-xs tracking-normal mt-0 mb-1">
+            <time style="display: inline;" class="dateInfo" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
-            &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+            <span class="dateInfo">&nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
             {% endif %}
           </p>
-          <p class="text-sm mb-3">
+          <p class="text-sm mt-0 mb-3">
             {{ post.data.description }}
           </p>
         </div>
