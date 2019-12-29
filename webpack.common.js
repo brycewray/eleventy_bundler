@@ -1,5 +1,10 @@
 const path = require('path')
+const glob = require('glob')
+const PATHS = {
+  src: path.join(__dirname, 'src'),
+}
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 
 module.exports = {
@@ -10,14 +15,29 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, '_site'),
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'css/main',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  },
   plugins: [
     new Dotenv({
       path: path.resolve(__dirname, './.env'),
-      systemvars: true
+      systemvars: true,
     }),
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
+    }),
+    new PurgecssPlugin({
+      paths: () => glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
   ],
   node: {
@@ -31,7 +51,8 @@ module.exports = {
         loader: "babel-loader"
       },
       {
-        test: /\.(s*)css$/,
+        // test: /\.(s*)css$/,
+        test: /\.css$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -40,7 +61,17 @@ module.exports = {
             },
           },
           'css-loader',
-          'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+              ],
+            },
+          },
+          // 'sass-loader',
         ],
       },
       {

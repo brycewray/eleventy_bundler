@@ -5,7 +5,8 @@ require('dotenv').config()
 require("typeface-roboto")
 require("typeface-roboto-mono")
 
-import '../scss/ofotigrid.scss'
+import '../css/index.css'
+// import '../scss/ofotigrid.scss'
 
 import 'lazysizes'
 // import 'lazysizes/plugins/respimg/ls.respimg'
