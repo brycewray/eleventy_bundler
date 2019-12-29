@@ -12,7 +12,7 @@ module.exports = merge(common, {
       notify: false,
       watch: true,
       open: false, // won't automatically launch in default browser when started
-    })
+    }),
   ],
   watch: true,
   devtool: 'inline-source-map'
