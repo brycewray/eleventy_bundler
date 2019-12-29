@@ -80,6 +80,7 @@
     "style-loader": "^1.1.1",
     "svg-url-loader": "^3.0.3",
     "tailwindcss": "^1.1.4",
+    "tailwindcss-dark-mode": "^1.1.1",
     "typeface-roboto": "0.0.75",
     "typeface-roboto-mono": "0.0.75",
     "url-loader": "^3.0.0",
