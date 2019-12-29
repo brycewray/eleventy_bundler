@@ -9,8 +9,6 @@ import '../css/index.css'
 import '../css/prismjs.css'
 // import '../scss/ofotigrid.scss'
 
-import 'tailwindcss-dark-mode/prefers-dark'
-
 import 'lazysizes'
 // import 'lazysizes/plugins/respimg/ls.respimg'
 // import 'lazysizes/plugins/object-fit/ls.object-fit'
