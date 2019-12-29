@@ -6,7 +6,10 @@ require("typeface-roboto")
 require("typeface-roboto-mono")
 
 import '../css/index.css'
+import '../css/prismjs.css'
 // import '../scss/ofotigrid.scss'
+
+import 'tailwindcss-dark-mode/prefers-dark'
 
 import 'lazysizes'
 // import 'lazysizes/plugins/respimg/ls.respimg'
