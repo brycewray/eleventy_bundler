@@ -1,3 +1,4 @@
 module.exports = {
-  whitelist: ['mode-dark'],
+  // whitelistPatterns: [/flex/],
+  // whitelistPatternsChildren: [],
 }
