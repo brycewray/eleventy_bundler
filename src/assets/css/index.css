@@ -1,9 +1,62 @@
 @tailwind base;
 
+body {
+  @apply font-body;
+}
+
+pre, code {
+  @apply font-codefont;
+}
+
+.text-blue-light {
+  color: #0033ff;
+}
+
+.text-blue-dark {
+  color: #00bbff;
+}
+
+a {
+  @apply text-blue-light;
+  border-bottom: 1px solid #0033ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    @apply text-blue-dark;
+    border-bottom: 1px solid #00bbff;
+  }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @apply font-bold;
+}
+
+h4, .h4, h6, .h6 {
+  @apply italic;
+}
+
+h1, .h1 {
+  @apply text-5xl;
+}
+
+h2, .h2 {
+  @apply text-4xl;
+}
+
+h3, .h3 {
+  @apply text-3xl;
+}
+
+h4, .h4 {
+  @apply text-2xl;
+}
+
+h5, .h5, h6, .h6 {
+  @apply text-xl;
+}
+
 @tailwind components;
 
 @tailwind utilities;
 
-body {
-  background-color: #ff0000;
-}
