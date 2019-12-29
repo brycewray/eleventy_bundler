@@ -1,9 +1,4 @@
 const path = require('path')
-const glob = require('glob')
-const PATHS = {
-  src: path.join(__dirname, 'src'),
-}
-const PurgecssPlugin = require('purgecss-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
 
