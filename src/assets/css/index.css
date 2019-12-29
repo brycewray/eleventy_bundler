@@ -1,7 +1,14 @@
+/*! purgecss start ignore */
 @tailwind base;
 
 body {
   @apply font-body;
+  font-feature-settings: "liga" 1; /* ligatures won't work without this */
+}
+
+p, li {
+  /* for handling Markdown-created <p> and <li> */
+  @apply mb-3;
 }
 
 pre, code {
@@ -21,11 +28,8 @@ a {
   border-bottom: 1px solid #0033ff;
 }
 
-@media (prefers-color-scheme: dark) {
-  a {
-    @apply text-blue-dark;
-    border-bottom: 1px solid #00bbff;
-  }
+.dateInfo {
+  @apply text-gray-700;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -56,7 +60,39 @@ h5, .h5, h6, .h6 {
   @apply text-xl;
 }
 
+.height-hero {
+  height: 45vh;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .height-hero {
+    height: 55vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .height-hero {
+    height: 65vh;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: #000 !important;
+    color: #fff;
+  }
+  a {
+    @apply text-blue-dark;
+    border-bottom: 1px solid #00bbff;
+  }
+  .dateInfo {
+    @apply text-gray-400;
+  }
+}
+
 @tailwind components;
 
 @tailwind utilities;
+/*! purgecss end ignore */
 
