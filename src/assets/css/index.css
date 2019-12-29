@@ -15,6 +15,18 @@ pre, code {
   @apply font-codefont;
 }
 
+.bg-blue-deep {
+  background-color: #00a;
+}
+
+.navWhite, .navWhite:visited {
+  color: #fff;
+}
+
+.navWhite:focus, .navWhite:active {
+  @apply text-gray-400;
+}
+
 .text-blue-light {
   color: #0033ff;
 }
@@ -26,6 +38,14 @@ pre, code {
 a {
   @apply text-blue-light;
   border-bottom: 1px solid #0033ff;
+}
+
+#nav-toggle:checked + #navMenu {
+  display: block;
+}
+
+a.navborderless {
+  border-bottom: none;
 }
 
 .dateInfo {
