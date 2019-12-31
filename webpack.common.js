@@ -1,6 +1,13 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
+var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:\/]+/g)
+  }
+}
 
 module.exports = {
   entry: [
@@ -18,6 +25,18 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
+    }),
+    new OptimizeCssAssetsPlugin({
+      cssProcessorPluginOptions: {
+        preset: [
+          'default',
+          {
+            discardComments: {
+              removeAll: false
+            },
+          },
+        ],
+      },
     }),
   ],
   node: {

@@ -1,30 +1,28 @@
-const path = require('path')
 const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
-const glob = require('glob')
+const path = require('path')
+const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
-const PATHS = {
-  src: path.join(__dirname, 'src'),
-}
 
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:\/]+/g)
+  }
+}
 module.exports = merge(common, {
   mode: "production",
   plugins: [
     new PurgecssPlugin({
-      paths: () => glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
-      // whitelistPatterns: [/flex$/],
-    }),
-  ]/*,
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'css/main',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true,
+      paths: glob.sync([
+        path.join(__dirname, './src/**/*.html'),
+        path.join(__dirname, './src/**/*.njk'),
+      ]),
+      extractors: [
+        {
+          extractor: TailwindExtractor,
+          extensions: ['html', 'js', 'njk']
         },
-      },
-    },
-  },*/
+      ],
+    }),
+  ],
 })
