@@ -1,4 +1,3 @@
-/*! purgecss start ignore */
 @tailwind base;
 
 body {
@@ -114,5 +113,4 @@ h5, .h5, h6, .h6 {
 @tailwind components;
 
 @tailwind utilities;
-/*! purgecss end ignore */
 
