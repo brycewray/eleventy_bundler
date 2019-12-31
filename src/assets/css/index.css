@@ -1,13 +1,13 @@
 @tailwind base;
 
 body {
-  @apply font-body;
+  @apply font-body tracking-tight;
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
 }
 
 p, li {
   /* for handling Markdown-created <p> and <li> */
-  @apply mb-3;
+  @apply mb-3 text-base;
 }
 
 pre, code {
@@ -32,6 +32,14 @@ pre, code {
 
 .text-blue-dark {
   color: #00bbff;
+}
+
+.text-shadow-titles {
+  text-shadow: 4px 4px 2px #000;
+}
+
+.gradient-titles {
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95),#000);
 }
 
 a {
@@ -60,39 +68,82 @@ h4, .h4, h6, .h6 {
 }
 
 h1, .h1 {
-  @apply text-5xl;
-}
-
-h2, .h2 {
   @apply text-4xl;
 }
 
-h3, .h3 {
+h2, .h2 {
   @apply text-3xl;
 }
 
-h4, .h4 {
+h3, .h3 {
   @apply text-2xl;
 }
 
-h5, .h5, h6, .h6 {
+h4, .h4 {
   @apply text-xl;
 }
 
+h5, .h5, h6, .h6 {
+  @apply text-lg;
+}
+
+/* start, footnotes */
+
+.footnote-ref {
+  font-size: 0.65em;
+}
+
+.footnotes-sep {
+  @apply mb-3;
+}
+
+.footnotes-list {
+  @apply list-decimal pl-6;
+}
+
+.footnote-item, .footnote-item p {
+  @apply text-xs tracking-normal;
+}
+
+/* == end, footnotes */
+
 .height-hero {
   height: 45vh;
+  max-height: 45vh;
   overflow: hidden;
+}
+
+.height-post {
+  height: 45vh;
+  max-height: 45vh;
+  overflow: hidden;
+}
+
+.text-nowrap, .text-nobrk {
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .height-hero {
     height: 55vh;
+    max-height: 55vh;
+  }
+
+  .height-post {
+    height: 65vh;
+    max-height: 65vh;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .height-hero {
     height: 65vh;
+    max-height: 65vh;
+  }
+
+  .height-post {
+    height: 80vh;
+    max-height: 80vh;
   }
 }
 

@@ -4,22 +4,22 @@ layout: layouts/_default/baseof.njk
 ---
 
 <main>
-  <div class="background-hero-image-div">
+  <div class="container w-full min-w-full relative overflow-hidden height-post">
     <picture>
-      <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" />
-      <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
+      <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="object-cover" />
+      <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="object-cover" />
     </picture>
-    <div class="background-hero-title-block-fit">
-      <h1 class="background-hero-title-text">{{ title }}</h1>
-      <h2 class="background-hero-subtitle-text">
+    <div class="absolute bottom-0 text-shadow-titles sm:px-20 md:px-30 lg:px-40 gradient-titles w-full min-w-full">
+      <h1 class="text-center text-4x1 md:text-left md:text-5xl text-white">{{ title }}</h1>
+      <h2 class="text-center italic text-2x1 md:text-left md:text-3xl text-white">
         {% if subtitle %}
           {{ subtitle }}
         {% else %}
           &nbsp;
         {% endif %}
       </h2>
-      <p class="background-hero-description-text">{{ description }}</p>
-      <p class="background-hero-p-text">
+      <p class="h4 hidden not-italic md:block md:mt-4 text-white">{{ description }}</p>
+      <p class="text-base text-center md:text-right text-white">
         <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ page.date | htmlDateString }}</strong><br />
         <span class="pokey">
         {% if lastmod %}
@@ -32,13 +32,11 @@ layout: layouts/_default/baseof.njk
     </div>
   </div>
   {% if featured_image_caption %}
-    <p class="featured-image-caption">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
+    <p class="text-xs text-center tracking-normal">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
   {% endif %}
 
-  <div class="post-line"></div> 
-
-  <div class="container-narrower">
-    <article class="article">
+  <div class="sm:w-5/6 md:w-2/3 lg:w-1/2 mr-auto ml-auto">
+    <article>
       {{ content | safe }}
     </article>
   </div>
