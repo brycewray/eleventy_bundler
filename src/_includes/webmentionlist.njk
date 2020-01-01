@@ -3,7 +3,7 @@
 {%- set absoluteUrl -%}{{ page.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
 {%- set mentions = webmentions.children | webmentionsForUrl(absoluteUrl) -%}
 <div class="webmentions" id="webmentions">
-  <h3>Webmentions</h3>
+  <h3 class="mt-2 mb-4 italic">Webmentions</h3>
   {% if mentions | length %}
     <div class="webmentions__facepile">
       {% for webmention in mentions | reverse | head(5) %}
@@ -23,6 +23,6 @@
     </ol>
 
   {% else %}
-    <p class="ctr">(No mentions yet.)</p>
+    <p class="text-center text-base">(No mentions yet.)</p>
   {% endif %}
 </div>

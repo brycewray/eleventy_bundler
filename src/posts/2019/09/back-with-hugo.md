@@ -2,11 +2,11 @@
 layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: Back with Hugo
-subtitle: "Well, that didn't last long"
+subtitle: "Well, that didn’t last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
-lastmod: 2019-12-17T18:50:00-06:00
+lastmod: 2020-01-01T08:56:00-06:00
 discussionId: "2019-09-back-with-hugo"
 featured_image: /images/skid-mark-567668_1280x720-1280.jpg
 featured_image_base: skid-mark-567668_1280x720

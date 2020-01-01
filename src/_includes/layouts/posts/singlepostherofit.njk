@@ -3,25 +3,25 @@ title: singlepostherolqip.njk
 layout: layouts/_default/baseof.njk
 ---
 
-<main>
-  <div class="background-hero-image-div">
+<main class="pt-12">
+  <div class="container w-full min-w-full relative overflow-hidden height-post">
     <picture>
       <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" />
       <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
     </picture>
-    <div class="background-hero-title-block-fit">
-      <h1 class="background-hero-title-text">{{ title }}</h1>
-      <h2 class="background-hero-subtitle-text">
+    <div class="absolute bottom-0 text-shadow-titles sm:px-20 md:px-30 lg:px-36 pt-6 gradient-titles w-full min-w-full">
+      <h1 class="text-center text-4x1 md:text-left lg:text-5xl text-gray-200 tracking-tighter leading-tight mb-2 px-4 md:px-0">{{ title }}</h1>
+      <h2 class="text-center italic text-2xl md:text-left md:text-3xl text-gray-200 leading-tight tracking-tighter px-4 md:px-0">
         {% if subtitle %}
           {{ subtitle }}
         {% else %}
           &nbsp;
         {% endif %}
       </h2>
-      <p class="background-hero-description-text">{{ description }}</p>
-      <p class="background-hero-p-text">
+      <p class="h4 hidden not-italic md:block md:mt-4 text-gray-200">{{ description }}</p>
+      <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 text-gray-200">
         <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ page.date | htmlDateString }}</strong><br />
-        <span class="pokey">
+        <span class="text-sm">
         {% if lastmod %}
         <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ lastmod | htmlDateString }}
         {% else %}
@@ -31,14 +31,16 @@ layout: layouts/_default/baseof.njk
       </p>
     </div>
   </div>
+  <p class="text-xs text-center tracking-normal px-4 md:px-0 ">
   {% if featured_image_caption %}
-    <p class="featured-image-caption">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
+    {{ featured_image_caption }}
+  {% else %}
+    &nbsp;
   {% endif %}
+  </p>
 
-  <div class="post-line"></div> 
-
-  <div class="container-narrower">
-    <article class="article">
+  <div class="sm:w-5/6 md:w-2/3 lg:w-1/2 mt-10 mr-auto ml-auto px-8">
+    <article>
       {{ content | safe }}
     </article>
   </div>
@@ -51,18 +53,18 @@ layout: layouts/_default/baseof.njk
   {% endif %}
 
   {% if title != "The obligatory About Me page" %}
-  <div class="bg-dark">
-    <h3 class="ctr wht"><a href="/posts" style="border-bottom: 0;">Other posts</a></h3>
+  <div class="w-full px-8 md:px-0 bg-blue-deep align-middle mt-10 mb-10">
+    <h3 class="text-center text-3xl tracking-tight mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-200 hover:text-white italic">Other posts</a></h3>
   {% if nextPost.url %}
-    <p class="ctr">
+    <p class="text-center mt-2 mb-2 text-gray-200 leading-tight">
       <strong>Next</strong>: 
-      <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      <a class="border-transparent text-blue-200 hover:text-white hover:border-blue-200" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
-    <p class="ctr">
+    <p class="text-center pb-4 my-0 text-gray-200 leading-tight">
       <strong>Previous</strong>: 
-      <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+      <a class="border-transparent text-blue-200 hover:text-white hover:border-blue-200" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
   {% endif %}
   </div>

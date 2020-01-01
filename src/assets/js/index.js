@@ -1,21 +1,18 @@
-/* index.js */
-
 require('dotenv').config()
 
-require("typeface-roboto")
-require("typeface-roboto-mono")
+require('typeface-roboto-mono')
+require('typeface-public-sans')
 
-import '../scss/ofotigrid.scss'
+import '../css/index.css'
+import '../css/nav.css'
+import '../css/prismjs.css'
+import '../css/webmentions.css'
 
 import 'lazysizes'
-// import 'lazysizes/plugins/respimg/ls.respimg'
-// import 'lazysizes/plugins/object-fit/ls.object-fit'
-// import 'lazysizes/plugins/parent-fit/ls.parent-fit'
 import 'lazysizes/plugins/blur-up/ls.blur-up'
 import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
-// import 'lazysizes/plugins/progressive/ls.progressive'
-// import 'lazysizes/plugins/bgset/ls.bgset'
-// lazysizes.cfg.blurupMode = 'auto' // uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
+// lazysizes.cfg.blurupMode = 'auto'
+// ----- uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
 
 import 'prismjs'
 

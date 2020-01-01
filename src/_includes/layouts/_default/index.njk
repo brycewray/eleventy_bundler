@@ -4,35 +4,35 @@ layout: layouts/_default/baseof.njk
 ---
 
 <main>
-
-  <div class="hero-home">
+  <div class="w-full height-hero pt-12">
     <picture>
       <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" />
       <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
     </picture>
   </div>
   {% if featured_image_caption %}
-    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
+    <p class="text-center text-xs tracking-normal mt-1">{{ featured_image_caption }}</span></p>
   {% endif %}
 
-  <div class="container-home">
-    <div class="column-home-1">
+  <div class="lg:flex lg:w-3/4 mr-auto ml-auto">
+    <div class="lg:w-3/5 px-6">
       {{ content | safe }}
     </div>
-    <div class="column-home-2">
-      <h2 class="h1" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
+    <div class="lg:w-2/5 px-6">
+      <hr class="my-6 lg:hidden">
+      <h2 class="h1 mb-4"><a href="/posts/">Posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
         <div>
-          <h2 class="h5" style="margin: 0;"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="pokey h5" style="margin: 0;">{{ post.data.subtitle }}</p>
-          <p class="legal text-muted" style="margin-top: 0;">
-            <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
+          <h2 class="h5"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p class="font-bold text-sm mb-0">{{ post.data.subtitle }}</p>
+          <p class="text-xs tracking-normal mt-0 mb-1">
+            <time style="display: inline;" class="dateInfo" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
-            &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+            <span class="dateInfo">&nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
             {% endif %}
           </p>
-          <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 1.5em;">
+          <p class="text-sm mt-2 mb-3">
             {{ post.data.description }}
           </p>
         </div>

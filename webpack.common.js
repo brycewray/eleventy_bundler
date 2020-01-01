@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new Dotenv({
       path: path.resolve(__dirname, './.env'),
-      systemvars: true
+      systemvars: true,
     }),
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
@@ -31,7 +31,8 @@ module.exports = {
         loader: "babel-loader"
       },
       {
-        test: /\.(s*)css$/,
+        // test: /\.(s*)css$/,
+        test: /\.css$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -40,7 +41,17 @@ module.exports = {
             },
           },
           'css-loader',
-          'sass-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              ident: 'postcss',
+              plugins: [
+                require('tailwindcss'),
+                require('autoprefixer'),
+              ],
+            },
+          },
+          // 'sass-loader',
         ],
       },
       {
