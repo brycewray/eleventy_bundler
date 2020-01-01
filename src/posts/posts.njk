@@ -4,6 +4,7 @@ tags:
   - nav
 navtitle: Posts
 title: Posts
+description: "A listing of posts on brycewray.com"
 pagination: 
   data: collections.post
   size: 5
@@ -11,12 +12,12 @@ pagination:
   alias: posts
 ---
 
-<main>
-	<div class="container">
-		<h1 class="ctr topOfMain">Posts</h1>
+<main class="py-16">
+	<div class="px-40 lg:w-2/3 mx-auto">
+		<h1 class="text-center">Posts</h1>
 		<div class="post-line"></div>
-		<div class="container-narrower">
-      <p class="ctr pokey" style="margin-top: 0.5em; margin-bottom: 0.5em;">
+		<div>
+      <p class="text-center text-sm mt-2 mb-2">
         {% if pagination.firstPageHref != page.url %}
         <a href={{ pagination.firstPageHref}}>&lt;&lt;</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -37,32 +38,32 @@ pagination:
         <span class="text-muted">&gt;&gt;</span>
         {% endif %}
       </p>
-      <hr style="margin-top: 0; margin-bottom: 0.5em;" />
+      <hr class="mt-0 mb-4" />
       {% for post in posts %}
         <div>          
-          <h2 class="h5" style="margin-bottom: 0.25em;"><a href="{{ post.url }}">{{ post.data.title }}</a><br />
-          <span class="legal"><em>{{ post.data.subtitle }}</em></span></h2>
-          <p class="pokey text-muted" style="margin-top: 0;">
+          <h2 class="text-xl mb-1 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a><br />
+          <span class="text-base"><em>{{ post.data.subtitle }}</em></span></h2>
+          <p class="text-sm dateInfo" style="margin-top: 0;">
             Published: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
             <br />Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
             {% endif %}
           </p>
-          <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 2em;">
+          <p class="text-sm mt-2 mb-10">
             {{ post.data.description }}
           </p>
         </div>
       {% endfor %}
       <hr style="margin-top: 2em;" />
-      <p class="ctr pokey" style="margin-top: 0.5em;">
+      <p class="text-center text-sm mt-2 mb-0">
         {% if pagination.firstPageHref != page.url %}
         <a href={{ pagination.firstPageHref}}>&lt;&lt;</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href={{ pagination.previousPageHref }}>&lt;</a>
         {% else %}
-        <span class="text-muted">&lt;&lt;</span>
+        <span class="text-gray-300">&lt;&lt;</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-muted">&lt;</span>
+        <span class="text-gray-300">&lt;</span>
         {% endif %}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {% if pagination.lastPageHref != page.url %}
@@ -70,9 +71,9 @@ pagination:
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href={{ pagination.lastPageHref }}>&gt;&gt;</a>
         {% else %}
-        <span class="text-muted">&gt;</span>
+        <span class="text-gray-300">&gt;</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-muted">&gt;&gt;</span>
+        <span class="text-gray-300">&gt;&gt;</span>
         {% endif %}
       </p>
 		</div>
