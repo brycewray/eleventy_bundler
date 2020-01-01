@@ -13,7 +13,7 @@ pagination:
 ---
 
 <main class="py-16">
-	<div class="px-40 lg:w-2/3 mx-auto">
+	<div class="px-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
 		<h1 class="text-center">Posts</h1>
 		<div class="post-line"></div>
 		<div>
@@ -23,9 +23,9 @@ pagination:
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href={{ pagination.previousPageHref }}>&lt;</a>
         {% else %}
-        <span class="text-muted">&lt;&lt;</span>
+        <span class="text-gray-500">&lt;&lt;</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-muted">&lt;</span>
+        <span class="text-gray-500">&lt;</span>
         {% endif %}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {% if pagination.lastPageHref != page.url %}
@@ -33,9 +33,9 @@ pagination:
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href={{ pagination.lastPageHref }}>&gt;&gt;</a>
         {% else %}
-        <span class="text-muted">&gt;</span>
+        <span class="text-gray-200">&gt;</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-muted">&gt;&gt;</span>
+        <span class="text-gray-200">&gt;&gt;</span>
         {% endif %}
       </p>
       <hr class="mt-0 mb-4" />
@@ -44,9 +44,9 @@ pagination:
           <h2 class="text-xl mb-1 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a><br />
           <span class="text-base"><em>{{ post.data.subtitle }}</em></span></h2>
           <p class="text-sm dateInfo" style="margin-top: 0;">
-            Published: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
+            Published: <time class="inline-block" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
-            <br />Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+            <br />Last modified: <time class="inline-block" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
             {% endif %}
           </p>
           <p class="text-sm mt-2 mb-10">
@@ -61,9 +61,9 @@ pagination:
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href={{ pagination.previousPageHref }}>&lt;</a>
         {% else %}
-        <span class="text-gray-300">&lt;&lt;</span>
+        <span class="text-gray-500">&lt;&lt;</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-gray-300">&lt;</span>
+        <span class="text-gray-500">&lt;</span>
         {% endif %}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         {% if pagination.lastPageHref != page.url %}
@@ -71,9 +71,9 @@ pagination:
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href={{ pagination.lastPageHref }}>&gt;&gt;</a>
         {% else %}
-        <span class="text-gray-300">&gt;</span>
+        <span class="text-gray-500">&gt;</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="text-gray-300">&gt;&gt;</span>
+        <span class="text-gray-500">&gt;&gt;</span>
         {% endif %}
       </p>
 		</div>
