@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      body: ['Roboto', 'system-ui'],
+      body: ['Public Sans', 'system-ui'],
       codefont: ['Roboto Mono', 'monospace'],
     },
   },
