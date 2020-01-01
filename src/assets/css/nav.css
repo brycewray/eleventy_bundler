@@ -1,0 +1,256 @@
+/* CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/WRwJQX
+*/
+
+/* keep header here rather than base or layout SCSS */
+
+header {
+  @apply h-12 w-full fixed py-2 px-0;
+  background-color: #00a;
+  z-index: 9999;
+}
+
+.nav__bar {
+  @apply pt-16;
+  background-color: #00a;
+}
+
+@media (min-width: 900px) {
+  .nav__bar {
+    @apply text-center;
+    max-height:none;
+  }
+}
+
+.nav__item {
+  padding: 0;
+  margin: 0;
+  background: #00a;
+}
+
+@media (min-width: 900px) {
+  .nav__item {
+      display: inline-block;
+  }
+}
+
+.nav__item a {
+  display: block;
+  padding: .5em 1.5em;
+  margin: 0;
+  color: #fff;
+  background: #00a;
+  text-decoration: none;
+  transition: opacity .5s ease
+}
+
+@media (min-width: 900px) {
+  .nav__item a {
+      display:inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: none
+  }
+}
+
+.nav__item a:link,.nav__item a:visited {
+  color: #fff
+}
+
+.nav__item a:focus,.nav__item a:hover {
+  text-decoration: none;
+  opacity: .7
+}
+
+.nav__icon {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+  text-indent: -9999px;
+  transition: all 1s cubic-bezier(.19,1,.22,1);
+  border: none;
+  color: transparent;
+  text-shadow: 0 0 0 gray;
+  text-align: center
+}
+
+.nav__icon:focus {
+  outline: 0
+}
+
+@media (min-width: 900px) {
+  .nav__icon {
+      display:none
+  }
+}
+
+.nav__icon-line {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 27px;
+  height: .2rem;
+  border-radius: .2rem;
+  left: 0;
+  text-indent: 0;
+  transition: all .6s cubic-bezier(.5,.1,0,1.2)
+}
+
+.nav__icon-line:first-child {
+  top: 0
+}
+
+.nav__icon-line:nth-child(2) {
+  top: 8px
+}
+
+.nav__icon-line:nth-child(3) {
+  top: 16px
+}
+
+input[type=checkbox] {
+  display: none;
+  visibility: hidden
+}
+
+input[type=checkbox]:checked~nav .nav__items {
+  height: auto;
+  max-height: 30rem;
+  transition: all 2s cubic-bezier(.5,1,.22,1)
+}
+
+input[type=checkbox]:checked~label .nav__icon-line:first-child {
+  top: 0;
+  width: 27px;
+  transform: translateX(-8px) rotate(-45deg) translateY(12px)
+}
+
+input[type=checkbox]:checked~label .nav__icon-line:nth-child(2) {
+  opacity: 0
+}
+
+input[type=checkbox]:checked~label .nav__icon-line:nth-child(3) {
+  top: 14px;
+  width: 27px;
+  transform: translateX(-5px) rotate(45deg) translateY(-8px)
+}
+
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: #00a;
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top
+}
+
+nav ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: right;
+  list-style: none
+}
+
+nav li {
+  margin-bottom: .5em;
+  margin-right: 5%;
+  display: inline
+}
+
+@media screen and (max-width: 899px) {
+  nav li {
+      display:inherit
+  }
+}
+
+nav a {
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  border-bottom: 0;
+  opacity: 0
+}
+
+nav a:active,nav a:hover {
+  color: #c8c8c8;
+  border-bottom: 0
+}
+
+.nav-toggle:checked~nav {
+  transform: scale(1,1)
+}
+
+.nav-toggle:checked~nav a {
+  opacity: 1
+}
+
+.site-logo {
+  color: #fff;
+  font-size: 1.15em;
+  font-weight: 700;
+  margin-top: .2em;
+  margin-left: 5%
+}
+
+.site-logo a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 0
+}
+
+.site-logo a:active,.site-logo a:hover {
+  color: #c8c8c8;
+  border-bottom: 0
+}
+
+@media screen and (min-width: 900px) {
+  .nav-toggle-label {
+      display:none
+  }
+
+  header {
+      display: table;
+      display: grid;
+      grid-template-columns: 1fr auto minmax(300px,1fr) minmax(500px,1fr);
+      position: fixed
+  }
+
+  .site-logo {
+      z-index: 999999;
+      display: grid-item;
+      grid-column: 1/2;
+      text-align: left;
+      padding-left: 1.5em;
+      font-size: 1.15em
+  }
+
+  nav {
+      top: 25%;
+      transform: none;
+      margin-top: 0;
+      margin-left: 60%;
+      display: table;
+      grid-column: 4/5
+  }
+
+  nav a {
+      opacity: 1;
+      position: relative
+  }
+
+  nav ul {
+      margin: auto;
+      padding-right: 20%;
+      text-align: left
+  }
+
+  nav li {
+      margin-left: 3em;
+      margin-bottom: 0
+  }
+}
