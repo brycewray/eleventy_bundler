@@ -3,6 +3,7 @@ const common = require("./webpack.common.js")
 const path = require('path')
 const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 class TailwindExtractor {
   static extract(content) {
@@ -23,6 +24,18 @@ module.exports = merge(common, {
           extensions: ['html', 'js', 'njk']
         },
       ],
+    }),
+    new OptimizeCssAssetsPlugin({
+      cssProcessorPluginOptions: {
+        preset: [
+          'default',
+          {
+            discardComments: {
+              removeAll: false
+            },
+          },
+        ],
+      },
     }),
   ],
 })
