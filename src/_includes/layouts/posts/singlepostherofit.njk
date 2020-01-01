@@ -50,17 +50,17 @@ layout: layouts/_default/baseof.njk
 
   {% if title != "The obligatory About Me page" %}
   <div class="w-full bg-blue-deep align-middle mb-10">
-    <h3 class="text-center text-2xl mb-0"><a href="/posts" class="border-transparent text-blue-200 italic">Other posts</a></h3>
+    <h3 class="text-center text-2xl mb-0"><a href="/posts" class="border-transparent text-blue-300 hover:text-white italic">Other posts</a></h3>
   {% if nextPost.url %}
-    <p class="text-center mt-0 mb-0">
+    <p class="text-center mt-0 mb-0 text-gray-200">
       <strong>Next</strong>: 
-      <a class="border-transparent text-blue-200" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      <a class="border-transparent text-blue-300 hover:text-white" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
-    <p class="text-center">
+    <p class="text-center text-gray-200">
       <strong>Previous</strong>: 
-      <a class="border-transparent text-blue-200" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+      <a class="border-transparent text-blue-300 hover:text-white" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
   {% endif %}
   </div>
