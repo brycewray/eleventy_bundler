@@ -9,7 +9,7 @@ layout: layouts/_default/baseof.njk
       <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="object-cover" />
       <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="object-cover" />
     </picture>
-    <div class="absolute bottom-0 text-shadow-titles sm:px-20 md:px-30 lg:px-40 gradient-titles w-full min-w-full">
+    <div class="absolute bottom-0 text-shadow-titles sm:px-20 md:px-30 lg:px-40 pt-6 gradient-titles w-full min-w-full">
       <h1 class="text-center text-4x1 md:text-left md:text-5xl text-gray-200">{{ title }}</h1>
       <h2 class="text-center italic text-2x1 md:text-left md:text-3xl text-gray-200">
         {% if subtitle %}
