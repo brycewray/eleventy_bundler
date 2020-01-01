@@ -157,6 +157,80 @@ ul {
   @apply pl-4;
 }
 
+table.leagues {
+	width: 90%;
+	margin: 1em auto 0 auto;
+	border: 0;
+	border-collapse: collapse;
+}
+
+table.leagues td.col {
+  width: 50%;
+}
+
+@media (min-width: 900px) {
+  table.leagues {
+    width: 60%;
+  }
+  table.noborders {
+    width: 90%;
+  }
+}
+
+table.noborders {
+  width: 100%;
+  margin: 1.5em auto 1em auto;
+  border: 0;
+  border-collapse: collapse;
+}
+
+table.noborders td {
+  text-align: left !important;
+  vertical-align: middle;
+  padding: 0.25em 0 0.25em 0.5em;
+  @apply text-gray-800;
+}
+
+table.noborders td img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+table.noborders tr {
+  @apply bg-blue-200;
+}
+
+table.noborders tr:nth-child(even) {
+  @apply bg-gray-200;
+}
+
+table.noborders thead tr {
+  background-color: #0500a9;
+}
+  
+table.noborders thead td {
+  color: #fff !important;
+  font-weight: bold;
+  @apply font-body;
+}
+  
+table.noborders td.td70 {
+  width: 70%;
+}
+table.noborders td.td70 img {
+  display: block;
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+}
+
+table.noborders td.td30 {
+  width: 30%;
+}
+
+
+
 /* start, footnotes */
 
 .footnote-ref {
