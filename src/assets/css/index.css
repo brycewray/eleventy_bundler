@@ -8,7 +8,7 @@ body {
 
 p, li {
   /* for handling Markdown-created <p> and <li> */
-  @apply mb-3 text-base;
+  @apply mb-3 text-base text-lg;
 }
 
 pre, code {
@@ -41,6 +41,14 @@ pre, code {
 
 .gradient-titles {
   background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95),#000);
+}
+
+.ctr {
+  @apply text-center;
+}
+
+.legal {
+  @apply text-xs;
 }
 
 a {
@@ -156,9 +164,20 @@ article p {
   padding: 0.5em !important;
 }
 
+ul, ol {
+  @apply pl-8;
+}
+
 ul {
   @apply list-disc;
-  @apply pl-4;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+.twitter-tweet {
+  margin: 1em auto 0 auto;
 }
 
 table.leagues {
@@ -253,7 +272,7 @@ blockquote {
 }
 
 .footnote-item, .footnote-item p {
-  @apply text-xs tracking-normal;
+  @apply text-sm tracking-normal;
 }
 
 .aspect-16x9 {
