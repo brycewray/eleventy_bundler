@@ -6,7 +6,7 @@ subtitle: Plain but pretty
 description: "Markdown: how to have that plain-text cake and still eat it with formatting intact."
 author: Bryce Wray
 date: 2019-03-08T22:08:00-06:00
-lastmod: 2019-10-02T19:26:00-05:00
+lastmod: 2020-01-01T08:39:00-06:00
 discussionId: "2019-03-mark-it-down"
 featured_image: /images/ugly-duckling-young-swan-1639154_1280x720-1280.jpg
 featured_image_base: ugly-duckling-young-swan-1639154_1280x720
@@ -95,7 +95,7 @@ They were right.
 
 ## A daring fireball, indeed
 
-If you're a Apple *aficionado* like me, you probably need absolutely no introduction to John Gruber of [Daring Fireball](https://daringfireball.net) fame. He's earned a justifiable position as a tech journalist who really knows his stuff, especially where Apple-related news and rumors are concerned.
+If you're an Apple *aficionado* like me, you probably need absolutely no introduction to John Gruber of [Daring Fireball](https://daringfireball.net) fame. He's earned a justifiable position as a tech journalist who really knows his stuff, especially where Apple-related news and rumors are concerned.
 
 However, his lasting fame may well lie in his creation of Markdown in 2004 as a way to give HTML-hating writers a way to create the code they needed with just ordinary characters.
 
