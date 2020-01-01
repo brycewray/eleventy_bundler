@@ -2,11 +2,13 @@
 
 require('dotenv').config()
 
-require("typeface-roboto")
+// require("typeface-roboto")
 require("typeface-roboto-mono")
+require("typeface-public-sans")
 
 import '../css/index.css'
 import '../css/prismjs.css'
+import '../css/webmentions.css'
 // import '../scss/ofotigrid.scss'
 
 import 'lazysizes'
