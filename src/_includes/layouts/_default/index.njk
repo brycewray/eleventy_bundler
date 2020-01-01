@@ -11,7 +11,7 @@ layout: layouts/_default/baseof.njk
     </picture>
   </div>
   {% if featured_image_caption %}
-    <p class="text-center text-xs tracking-normal mt-1">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
+    <p class="text-center text-xs tracking-normal mt-1">{{ featured_image_caption }}</span></p>
   {% endif %}
 
   <div class="lg:flex lg:w-3/4 mr-auto ml-auto">
@@ -19,19 +19,20 @@ layout: layouts/_default/baseof.njk
       {{ content | safe }}
     </div>
     <div class="lg:w-2/5 px-6">
-      <h2 class="h1"><a href="/posts/">Posts</a></h2>
+      <hr class="my-6 lg:hidden">
+      <h2 class="h1 mb-4"><a href="/posts/">Posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
         <div>
           <h2 class="h5"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="font-bold mb-0">{{ post.data.subtitle }}</p>
+          <p class="font-bold text-sm mb-0">{{ post.data.subtitle }}</p>
           <p class="text-xs tracking-normal mt-0 mb-1">
             <time style="display: inline;" class="dateInfo" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
             <span class="dateInfo">&nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
             {% endif %}
           </p>
-          <p class="text-sm mt-0 mb-3">
+          <p class="text-sm mt-2 mb-3">
             {{ post.data.description }}
           </p>
         </div>

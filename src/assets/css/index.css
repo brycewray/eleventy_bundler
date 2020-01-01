@@ -74,6 +74,7 @@ a.navborderless {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   @apply font-bold;
+  @apply leading-tight;
 }
 
 h4, .h4, h6, .h6 {
@@ -89,7 +90,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  @apply text-2xl;
+  @apply text-2xl italic;
 }
 
 h4, .h4 {
@@ -98,6 +99,10 @@ h4, .h4 {
 
 h5, .h5, h6, .h6 {
   @apply text-lg;
+}
+
+h5, .h5 {
+  @apply italic;
 }
 
 .height-hero {
@@ -263,6 +268,10 @@ blockquote {
   font-size: 0.65em;
 }
 
+.footnote-ref a {
+  @apply border-transparent;
+}
+
 .footnotes-sep {
   @apply mb-3;
 }
@@ -281,9 +290,28 @@ blockquote {
 
 /* == end, footnotes */
 
+.imgCover {
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  border: 0.5px solid black;
+}
+
 @media (prefers-color-scheme: dark) {
   html, body {
     background-color: #000 !important;
+  }
+
+  hr {
+    border: 0.5px solid #ddd;
+  }
+
+  .border-black {
+    @apply border-gray-200 !important;
   }
   .text-body, body, figcaption {
     color: #ddd;
