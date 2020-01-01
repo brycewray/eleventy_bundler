@@ -40,7 +40,7 @@ pre, code {
 }
 
 .gradient-titles {
-  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.95),#000);
+  background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,.95),#000);
 }
 
 .ctr {
@@ -73,8 +73,7 @@ a.navborderless {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-bold;
-  @apply leading-tight;
+  @apply font-bold leading-tight;
 }
 
 h4, .h4, h6, .h6 {
@@ -82,7 +81,7 @@ h4, .h4, h6, .h6 {
 }
 
 h1, .h1 {
-  @apply text-4xl;
+  @apply text-4xl mb-4;
 }
 
 h2, .h2 {
@@ -112,9 +111,8 @@ h5, .h5 {
 }
 
 .height-post {
-  height: 45vh;
-  max-height: 45vh;
-  overflow: hidden;
+  height: 65vh;
+  max-height: 65vh;
 }
 
 .text-nowrap, .text-nobrk {
@@ -130,27 +128,16 @@ article p {
   @apply mt-6 mb-6;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
   .height-hero {
-    height: 55vh;
-    max-height: 55vh;
-  }
-
-  .height-post {
-    height: 65vh;
-    max-height: 65vh;
+    height: 70vh;
+    max-height: 70vh;
   }
 }
-
-@media screen and (min-width: 1025px) {
-  .height-hero {
-    height: 65vh;
-    max-height: 65vh;
-  }
-
+@media screen and (min-width: 900px) {
   .height-post {
-    height: 85vh;
-    max-height: 85vh;
+    height: 75vh;
+    max-height: 75vh;
   }
 }
 
