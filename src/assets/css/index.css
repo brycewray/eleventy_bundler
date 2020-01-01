@@ -1,7 +1,8 @@
 @tailwind base;
 
+/* purgecss start ignore */
 body {
-  @apply font-body tracking-tight;
+  @apply font-body;
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
 }
 
@@ -87,26 +88,6 @@ h5, .h5, h6, .h6 {
   @apply text-lg;
 }
 
-/* start, footnotes */
-
-.footnote-ref {
-  font-size: 0.65em;
-}
-
-.footnotes-sep {
-  @apply mb-3;
-}
-
-.footnotes-list {
-  @apply list-decimal pl-6;
-}
-
-.footnote-item, .footnote-item p {
-  @apply text-xs tracking-normal;
-}
-
-/* == end, footnotes */
-
 .height-hero {
   height: 45vh;
   max-height: 45vh;
@@ -121,6 +102,15 @@ h5, .h5, h6, .h6 {
 
 .text-nowrap, .text-nobrk {
   white-space: nowrap;
+}
+
+article h1, article h2, article h3, article h4 {
+  @apply tracking-tight mt-8 mb-6;
+}
+
+article p {
+  @apply leading-relaxed;
+  @apply mt-6 mb-6;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -142,24 +132,74 @@ h5, .h5, h6, .h6 {
   }
 
   .height-post {
-    height: 80vh;
-    max-height: 80vh;
+    height: 85vh;
+    max-height: 85vh;
   }
 }
+
+.yellowBox {
+  display: block;
+  background: #ffff88;
+  border: 1px solid #333;
+  margin: 0.5em auto;
+  width: 100%;
+  padding: 0 1em;
+}
+
+.yellowbox p { 
+  width: 100%;
+  margin: 0;
+  padding: 0.5em !important;
+}
+
+ul {
+  @apply list-disc;
+  @apply pl-4;
+}
+
+/* start, footnotes */
+
+.footnote-ref {
+  font-size: 0.65em;
+}
+
+.footnotes-sep {
+  @apply mb-3;
+}
+
+.footnotes-list {
+  @apply list-decimal pl-6;
+}
+
+.footnote-item, .footnote-item p {
+  @apply text-xs tracking-normal;
+}
+
+/* == end, footnotes */
 
 @media (prefers-color-scheme: dark) {
   html, body {
     background-color: #000 !important;
-    color: #fff;
+  }
+  .text-body, body, figcaption {
+    color: #ddd;
+  }
+  footer {
+    background: linear-gradient(rgba(0,0,0,0),#0500a9);
   }
   a {
     @apply text-blue-dark;
     border-bottom: 1px solid #00bbff;
   }
   .dateInfo {
-    @apply text-gray-400;
+    @apply text-gray-500;
+  }
+  .yellowBox {
+    background: #332200 !important;
+    border: 1px solid #aaa;
   }
 }
+/* purgecss end ignore */
 
 @tailwind components;
 

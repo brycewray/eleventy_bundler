@@ -10,7 +10,13 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
  code {
    @apply font-codefont;
-   /* background: $code-bkgd-light-mode; === scss version */
+   background: #dfefff;
+ }
+
+ @media (prefers-color-scheme: dark) {
+  code {
+    background: #0e2e3e;
+  }
  }
  
  code[class*="language-"],
@@ -197,3 +203,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  }
 
  /* purgecss end ignore */
+
+ .fakeruleforpurgecss {
+   font-size: 1em;
+ }
