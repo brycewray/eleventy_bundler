@@ -9,6 +9,7 @@ module.exports = merge(common, {
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['_site'] },
+      ghostMode: false,
       notify: false,
       watch: true,
       open: false, // won't automatically launch in default browser when started
