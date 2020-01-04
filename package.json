@@ -6,7 +6,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ssgquiet": "npx @11ty/eleventy --serve --quiet",
     "clean": "rimraf _site",
     "start": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet",
