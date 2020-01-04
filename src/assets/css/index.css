@@ -143,6 +143,7 @@ article p {
 
 .yellowBox {
   @apply bg-yellow-300 p-4 mx-auto my-2 w-full py-0 px-6;
+  border: 1px solid #000;
 }
 
 .yellowbox p { 
