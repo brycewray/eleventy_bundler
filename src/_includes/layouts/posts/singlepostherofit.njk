@@ -10,15 +10,15 @@ layout: layouts/_default/baseof.njk
       <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
     </picture>
     <div class="absolute bottom-0 text-shadow-titles sm:px-20 md:px-30 lg:px-36 pt-6 gradient-titles w-full min-w-full">
-      <h1 class="text-center text-4x1 md:text-left lg:text-5xl text-gray-200 tracking-tighter leading-tight mb-2 px-4 md:px-0">{{ title }}</h1>
-      <h2 class="text-center italic text-2xl md:text-left md:text-3xl text-gray-200 leading-tight tracking-tighter px-4 md:px-0">
+      <h1 class="text-center text-3x1 md:text-left md:text-5xl lg:text-5xl text-gray-200 tracking-tighter leading-tight mb-2 px-4 md:px-0">{{ title }}</h1>
+      <h2 class="text-center italic text-xl md:text-left md:text-3xl text-gray-200 leading-tight tracking-tighter px-4 md:px-0">
         {% if subtitle %}
           {{ subtitle }}
         {% else %}
           &nbsp;
         {% endif %}
       </h2>
-      <p class="h4 hidden not-italic md:block md:mt-4 text-gray-200">{{ description }}</p>
+      <p class="hidden not-italic md:block md:text-xl md:text-base md:mt-4 text-gray-200">{{ description }}</p>
       <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 text-gray-200">
         <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ page.date | htmlDateString }}</strong><br />
         <span class="text-sm">
