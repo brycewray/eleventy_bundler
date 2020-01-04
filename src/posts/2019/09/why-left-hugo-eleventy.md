@@ -17,7 +17,7 @@ featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="yellowBox">
+<div class="border-black border-solid border yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 

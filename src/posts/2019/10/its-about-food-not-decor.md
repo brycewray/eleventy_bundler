@@ -16,7 +16,7 @@ featured_image_alt: "Duotone photo of a diner with customers waiting to be serve
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="yellowBox">
+<div class="border-black border-solid border yellowBox">
 	<p><strong>Note</strong>: You formerly may have been redirected here because I deleted multiple posts I&rsquo;ll be discussing herein—including <em>why</em> I deleted them. However, I <a href="/posts/2019/10/otoh">later decided</a> that had been a bad idea, so they’re back. If you&rsquo;ll read that post to which I just linked, you&rsquo;ll know why you shouldn&rsquo;t either worry about, or take much heart in (as the case may be), my comments below regarding <em>not</em> writing about my SSG stuff going forward&mdash;since that, too, was a bad idea, Flavio Copes&rsquo;s wisdom quoted below and <a href="/posts/2019/09/back-with-hugo">previously</a> notwithstanding.</p>
 </div>
 
