@@ -15,7 +15,7 @@ featured_image_alt: "Computer code on a monitor"
 featured_image_caption: "Image: Markus Spiske; unsplash.com"
 ---
 
-<div class="border-black border-solid border yellowBox">
+<div class="border-black border-solid yellowBox">
 	<p class="h3"><em>Updates</em></p>
 	<p class="h4">2019-12-27</p>
 	<p><a href="https://github.com/brycewray/eleventy_bundler">This site&rsquo;s GitHub repository</a> is <strong>now public</strong>! Thus, I am taking out the code blocks that <strong>were</strong> here, since otherwise they&rsquo;d constantly be outdated compared to the current repo; instead, I will link to the appropriate parts of the repo. And, um, don't make me regret making the repo public, OK, Internet? Pretty please?<br />

@@ -16,7 +16,7 @@ featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="border-black border-solid border yellowBox">
+<div class="border-black border-solid yellowBox">
 	<p><strong>Note from 2019-12-08</strong>: Although the system &ldquo;fonts&rdquo; approach I describe in this post is still quite sensible in many cases, the <a href="/posts/2019/12/packing-up">decision to move the site to an Eleventy/webpack combination</a> allowed me to adopt a standard appearance for all devices and OSs without some of the usual technical drawbacks that I&rsquo;ll mention herein.</p>
 </div>
 &nbsp;<br />

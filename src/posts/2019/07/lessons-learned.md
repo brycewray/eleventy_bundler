@@ -16,7 +16,7 @@ featured_image_alt: A binocular telescope on a stand near a body of water
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-<div class="border-black border-solid border yellowBox">
+<div class="border-black border-solid yellowBox">
   <p><strong>Note</strong>: See also <a href="/posts/2019/10/otoh">this post</a> for why this post went away and, more to the point, why it&rsquo;s back.</p>
 </div>
 
