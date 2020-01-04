@@ -142,18 +142,11 @@ article p {
 }
 
 .yellowBox {
-  display: block;
-  background: #ffff88;
-  border: 1px solid #333;
-  margin: 0.5em auto;
-  width: 100%;
-  padding: 0 1em;
+  @apply bg-yellow-300 p-4 mx-auto my-2 w-full py-0 px-6;
 }
 
 .yellowbox p { 
-  width: 100%;
-  margin: 0;
-  padding: 0.5em !important;
+  @apply w-full p-2 m-0;
 }
 
 ul, ol {
@@ -320,7 +313,7 @@ hr {
     @apply text-gray-500;
   }
   .yellowBox {
-    background: #332200 !important;
+    @apply bg-gray-900;
     border: 1px solid #aaa;
   }
 }
