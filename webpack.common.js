@@ -31,7 +31,6 @@ module.exports = {
         loader: "babel-loader"
       },
       {
-        // test: /\.(s*)css$/,
         test: /\.css$/,
         use: [
           {
@@ -51,7 +50,6 @@ module.exports = {
               ],
             },
           },
-          // 'sass-loader',
         ],
       },
       {
