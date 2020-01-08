@@ -46,7 +46,7 @@ pagination:
           <p class="text-sm dateInfo" style="margin-top: 0;">
             Published: <time class="inline-block" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
-            <br />Last modified: <time class="inline-block" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+            <br />Last modified: <time class="inline-block" datetime="{{ post.data.lastmod | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
             {% endif %}
           </p>
           <p class="text-sm mt-2 mb-10">

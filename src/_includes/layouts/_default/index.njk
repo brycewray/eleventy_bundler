@@ -29,7 +29,7 @@ layout: layouts/_default/baseof.njk
           <p class="text-xs tracking-normal mt-0 mb-1">
             <time style="display: inline;" class="dateInfo" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
-            <span class="dateInfo">&nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
+            <span class="dateInfo">&nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.data.lastmod | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
             {% endif %}
           </p>
           <p class="text-sm mt-2 mb-3">
