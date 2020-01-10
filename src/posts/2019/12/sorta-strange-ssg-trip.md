@@ -5,14 +5,14 @@ title: "Sorta StranGe (SSG) trip"
 subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."
 date: 2019-12-27T14:42:40-06:00
-lastmod: 2019-12-28T07:05:00-05:00
+lastmod: 2019-12-27T11:08:00-06:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
 featured_image: /images/alarm-clock-4711181_1280×720-1280.jpg
 featured_image_base: alarm-clock-4711181_1280×720
 featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: "Old alarm clock nearing midnight on New Year's Eve"
-featured_image_caption: "Image by MrGajowy3 from Pixabay"
+featured_image_caption: "Image: MrGajowy3; Pixabay"
 ---
 
 In what almost certainly is my last post of 2019---this site's first full calendar year of existence---I want to look back at the major changes that I made on the site this year, and the learning experiences that resulted.

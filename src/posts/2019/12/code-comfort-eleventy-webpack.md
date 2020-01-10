@@ -12,7 +12,7 @@ featured_image_base: markus-spiske-Skf7HxARcoc-unsplash_1920x1080
 featured_image_width: 1920
 featured_image_ext: jpg
 featured_image_alt: "Computer code on a monitor"
-featured_image_caption: "Image: Markus Spiske; unsplash.com"
+featured_image_caption: "Image: Markus Spiske; Unsplash"
 ---
 
 <div class="border-black border-solid yellowBox">
