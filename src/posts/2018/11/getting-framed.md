@@ -3,10 +3,10 @@ layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: Getting framed
 subtitle: Why I still use Bootstrap
-description: "In an ideal world, Web devs would never use CSS frameworks, but we’re not in that world: why I still use Bootstrap."
+description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
 date: 2018-11-14T15:09:00-06:00
-lastmod: 2018-11-28T11:58:00-06:00
+lastmod: 2020-01-10T13:45:00-06:00
 discussionId: "2018-11-getting-framed"
 featured_image: /images/scaffolding-1617969_1280x720-1280.jpg
 featured_image_base: scaffolding-1617969_1280x720
