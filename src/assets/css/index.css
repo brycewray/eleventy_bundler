@@ -40,7 +40,7 @@ pre, code {
 }
 
 .gradient-titles {
-  background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,.95),#000);
+  background: linear-gradient(rgba(255,255,255,0.0) 0%,rgba(0,0,0,0.75) 70%,#000);
 }
 
 .ctr {
