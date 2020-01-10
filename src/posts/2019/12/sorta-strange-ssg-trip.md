@@ -5,7 +5,7 @@ title: "Sorta StranGe (SSG) trip"
 subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."
 date: 2019-12-27T14:42:40-06:00
-lastmod: 2019-12-27T11:08:00-06:00
+lastmod: 2019-12-28T07:05:00-06:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
 featured_image: /images/alarm-clock-4711181_1280×720-1280.jpg
 featured_image_base: alarm-clock-4711181_1280×720
