@@ -18,7 +18,7 @@ featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 
 <div class="yellowBox">
 	<h2><em>Update, 2020-01-11</em></h2>
-	<p>While I&rsquo;ll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to what you&rsquo;ll read herein, I&rsquo;m now &ldquo;just&rdquo; on 3-2-2 rather than 4-2-2). If you&rsquo;re on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta <em>can</em> imagine just doesn&rsquo;t seem to care about QC where its Mac version of OneDrive is concerned.</p>
+	<p>While I&rsquo;ll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I&rsquo;m now &ldquo;just&rdquo; on 3-2-2 rather than 4-2-2). If you&rsquo;re on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta <em>can</em> imagine just doesn&rsquo;t seem to care about QC where its Mac version of OneDrive is concerned.</p>
 </div>
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I’ve been trying to simplify my computing setup—not so much where hardware is concerned but, instead, the services to which I have subscribed.
