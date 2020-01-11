@@ -71,7 +71,7 @@ module.exports = {
             loader: 'responsive-loader',
             options: {
               adapter: require('responsive-loader/sharp'),
-              // quality: 60,
+              quality: 60,
               sizes: [
                 20, // placeholder for lqip
                 300,
@@ -81,28 +81,6 @@ module.exports = {
               placeholder: false, // otherwise, bundle is too big
               name: 'images/[name]-[width].[ext]',
             },
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 60,
-              },
-              optipng: {
-                optimizationLevel: 4,
-              },
-              pngquant: {
-                quality: [
-                  0.65,
-                  0.90
-                ],
-                speed: 4,
-              },
-              gifsicle: {
-                optimizationLevel: 2,
-              }
-            }
           },
         ],
       },
