@@ -94,7 +94,7 @@ That remains TBD.
 
 Finally, here are the best from among the many articles I've been reading (often, several times) recently while considering all this stuff:
 
-- "[CSS Utility Classes and 'Separation of Concerns](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)" by Adam Wathan, the creator of Tailwind CSS.
+- "[CSS Utility Classes and 'Separation of Concerns'](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/)" by Adam Wathan, the creator of Tailwind CSS.
 - "[In Defense of Utility-first CSS](https://frontstuff.io/in-defense-of-utility-first-css)" by Sarah Dayan.
 - "[A Year of Utility Classes](https://css-irl.info/a-year-of-utility-classes/)" by Michelle Barker.
 - "[The Perils of Functional CSS](https://www.browserlondon.com/blog/2019/06/10/functional-css-perils/)" by Jay Freestone.
