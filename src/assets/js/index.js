@@ -4,9 +4,6 @@ require('typeface-roboto-mono')
 require('typeface-public-sans')
 
 import '../css/index.css'
-import '../css/nav.css'
-import '../css/prismjs.css'
-import '../css/webmentions.css'
 
 import 'lazysizes'
 import 'lazysizes/plugins/blur-up/ls.blur-up'

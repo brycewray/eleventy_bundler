@@ -1,6 +1,6 @@
-@import variables.css;
-@import base.css;
-@import layout.css;
-@import nav.css;
-@import prismjs.css;
-@import webmentions.css;
+@import 'variables.css';
+@import 'base.css';
+@import 'layout.css';
+@import 'nav.css';
+@import 'prismjs.css';
+@import 'webmentions.css';

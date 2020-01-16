@@ -4,6 +4,7 @@ const path = require('path')
 const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const purgeHtml = require('purgecss-from-html')
 
 class TailwindExtractor {
   static extract(content) {
@@ -20,8 +21,8 @@ module.exports = merge(common, {
       ]),
       extractors: [
         {
-          extractor: TailwindExtractor,
-          extensions: ['html', 'js', 'njk']
+          extractor: purgeHtml,
+          extensions: ['html', 'njk']
         },
       ],
     }),

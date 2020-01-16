@@ -1,6 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
+const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   entry: [
@@ -41,13 +42,16 @@ module.exports = {
           },
           'css-loader',
           {
+            loader: 'resolve-url-loader',
+            options: {},
+          },
+          {
             loader: 'postcss-loader',
             options: {
-              ident: 'postcss',
-              plugins: [
-                // require('tailwindcss'),
-                require('autoprefixer'),
-              ],
+              config: {
+                path: './postcss.config.js',
+              },
+              sourceMap: true,
             },
           },
         ],
