@@ -5,7 +5,7 @@ title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2019-12-23T09:05:00-06:00
+lastmod: 2020-01-15T19:00:00-06:00
 discussionId: "2019-12-packing-up"
 featured_image: /images/chain-11ty-webpack-3867751_1920x1080-1920.jpg
 featured_image_base: chain-11ty-webpack-3867751_1920x1080
@@ -85,7 +85,7 @@ Bundler software like webpack[^otherBundlers] handles all of these issues. When 
 
 - Orders all the code appropriately to manage the dependencies.
 
-They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source Web typefaces. In fact, that's how I easily converted this site to [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there). Normally, it can be challenging to add Web "fonts" to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
+They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source Web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans). Normally, it can be challenging to add Web "fonts" to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
 
 So, I hope, that explains bundlers. Now, where was I? Oh, yeah&nbsp;.&nbsp;.&nbsp;.
 
