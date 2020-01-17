@@ -8,5 +8,10 @@ module.exports = {
       browsers: 'last 2 versions',
     }, 
     'postcss-nested': {},
-  }
+    'purgecss': {
+      extensions: [
+        'html', 'njk'
+      ], 
+    },
+  },
 }
