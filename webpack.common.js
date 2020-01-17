@@ -52,6 +52,7 @@ module.exports = {
               ident: 'postcss',
               plugins: () => [
                 postcssPresetEnv({
+                  browsers: 'last 6 versions',
                   options: {
                     stage: 2,
                     features: {
