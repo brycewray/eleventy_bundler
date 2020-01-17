@@ -22,8 +22,9 @@ header {
 .nav__bar {
   background-color: var(--darkblue);
   padding-top: var(--nav-height);
-
-  @media (min-width: var(--breakpoint)) {
+}
+@media (min-width: var(--breakpoint)) {
+  .nav__bar {
     max-height: none;
     text-align: center;
   }
@@ -34,10 +35,6 @@ header {
   margin: 0;
   background: var(--darkblue);
 
-  @media (min-width: var(--breakpoint)) {
-    display: inline-block;
-  }
-
   & a {
     display: block;
     padding: 0.5em 1.5em;
@@ -47,13 +44,6 @@ header {
     text-decoration: none;
     transition: opacity 0.5s ease;
 
-    @media (min-width: var(--breakpoint)) {
-      display: inline-block;
-      padding-top: 0;
-      padding-bottom: 0;
-      border: none;
-    }
-
     &:link, &:visited {
       color: #fff;
     }
@@ -61,6 +51,18 @@ header {
     &:hover, &:focus {
       text-decoration: none;
       opacity: 0.7;
+    }
+  }
+}
+
+@media (min-width: var(--breakpoint)) {
+  .nav__item {
+    display: inline-block;
+    & a {
+      display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: none;
     }
   }
 }
@@ -84,7 +86,9 @@ header {
   &:focus {
       outline: none;
   }
-  @media (min-width: var(--breakpoint)) {
+}
+@media (min-width: var(--breakpoint)) {
+  .nav__icon{
     display: none;
   }
 }
@@ -204,7 +208,7 @@ nav {
 /* === Beginning of primary settings for larger screens === */
 
 @media screen and (min-width: 900px) {
-/* can't use CSS vars in media queries yet */
+/* can't use CSS vars in media queries' parameters yet */
   .nav-toggle-label {
     display: none;
   }
