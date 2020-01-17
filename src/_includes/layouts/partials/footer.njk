@@ -1,26 +1,22 @@
-    <footer class="text-center pb-6">
-      <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
-        <p class="text-xs inline-flex mt-4 mb-4"><a href="https://twitter.com/BryceWrayTX" class="mb-0 border-transparent"><img src="/images/twitter-2430933_48x48-48.png" style="height: 24px; width: 24px;" alt="Twitter"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" class="mb-0 border-transparent"><img src="/images/linked-in-2674741_48x48-48.png" style="height: 24px; width: 24px;" alt="LinkedIn"></a>&nbsp;&nbsp;<a href="/feed.xml" class="mb-0 border-transparent"><img src="/images/rss-2440955_48x48-48.png" style="height: 24px; width:24px;" alt="RSS"></a></p>
-        <p class="text-xs tracking-normal">
-          Copyright&nbsp;&copy;&nbsp;2020&nbsp;<a class="h-card" rel="me" href="https://brycewray.com">Bryce Wray</a>.<br />
-          Site built and managed with <a href="https://11ty.dev">Eleventy</a>, <a href="https://jamstack.org" target="_blank" rel="noopener">the JAMstack</a>, <a href="https://webpack.js.org">webpack</a>, <a href="https://tailwindcss.com" target="_blank" rel="noopener">Tailwind CSS</a>, <a href="https://www.apple.com/macos" target="_blank" rel="noopener">macOS</a>, <a href="https://www.apple.com/ios" target="_blank" rel="noopener">iOS</a>, <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener">Markdown</a>, <span class="text-nowrap">time, and&nbsp;love.</span> <span class="text-nowrap">Hosted by <a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a></span>.
+    <footer class="ctr">
+      <p><a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" style="border-bottom: none;"><img src="/images/twitter-2430933_48x48-48.png" style="height: 24px; width: 24px;" alt="Twitter"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener" style="border-bottom: none;"><img src="/images/linked-in-2674741_48x48-48.png" style="height: 24px; width: 24px;" alt="LinkedIn"></a>&nbsp;&nbsp;<a href="/feed.xml" style="border-bottom: none;"><img src="/images/rss-2440955_48x48-48.png" style="height: 24px; width:24px;" alt="RSS"></a></p>
+      <p class="legaltxt">
+        Copyright&nbsp;&copy;&nbsp;2019&nbsp;<a class="h-card" rel="me" href="https://brycewray.com">Bryce Wray</a>.<br />
+          Site built and managed with <a href="https://jamstack.org" target="_blank" rel="noopener">the JAMstack</a>, <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" rel="noopener">CSS Grid</a>, <a href="https://www.apple.com/macos" target="_blank" rel="noopener">macOS</a>, <a href="https://www.apple.com/ios" target="_blank" rel="noopener">iOS</a>, <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener">Markdown</a>, <span class="text-nowrap">time, and&nbsp;love.</span> <span class="text-nowrap">Hosted by&nbsp;<a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a></span>.
         </p>
-      </div>
-      <!-- for webmentions -->
-      <hr class="mt-8 border-black" />
-      <div class="w-full mx-auto">
-        <h4 class="not-italic text-sm mt-4 mb-2">Information for webmentions</h4>
-        <p class="inline-flex"><img class="u-photo" alt="This site's 'BW' logo" src="/images/favicon-512x512-512.png" style="width: 45px; height: 45px;" /></p>
-        <p class="p-note text-xs tracking-normal leading-tight">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
+        <!-- for webmentions -->
+        <hr style="margin-top: 2em;" />
+        <h4 class="ctr pokey">Information for webmentions</h4>
+        <img class="u-photo" alt="'Smiling Mac' icon from 1984 Macintosh startup screen" src="/images/macicons_smiling_mac_1984-180.png" style="width: 45px; height: auto;" />
+        <p class="p-note legal">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
         {% if (coll[i].data != "") and (title !="Posts") %}
-        <h4 class="text-center not-italic text-sm mt-4">About this page</h4>
-        <article class="h-entry text-xs leading-tight">
-          <div class="e-content p-name tracking-normal">{{ title }}{% if subtitle %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ subtitle }}{% endif %}{% if description %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ description}}{% endif %}</div>
-          <a class="u-url tracking-normal" href="{{ page.url }}">
+        <h4 class="ctr legal">About this page</h4>
+        <article class="h-entry legal">
+          <div class="e-content p-name">{{ title }}{% if subtitle %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ subtitle }}{% endif %}{% if description %}&nbsp;&nbsp;|&nbsp;&nbsp;{{ description}}{% endif %}</div>
+          <a class="u-url" href="{{ page.url }}">
             Published <time class="dt-published">{{ page.date | dateFromRFC2822 }}</time>
           </a>
           <link rel="author" href="https://brycewray.com/" />
         </article>
         {% endif %}
-      </div>
     </footer>
