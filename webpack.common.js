@@ -40,12 +40,11 @@ module.exports = {
               publicPath: '../'
             },
           },
-          'css-loader',
           {
-            loader: 'resolve-url-loader',
+            loader: 'css-loader',
             options: {
               importLoaders: 1,
-            },
+            }
           },
           {
             loader: 'postcss-loader',
