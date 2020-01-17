@@ -49,9 +49,22 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
+              ident: 'postcss',
+              plugins: () => [
+                postcssPresetEnv({
+                  options: {
+                    stage: 2,
+                    features: {
+                      'nesting-rules': true,
+                    }
+                  },
+                }),
+              ],
+              /*
               config: {
                 path: './postcss.config.js',
               },
+              */
               // sourceMap: true,
             },
           },
