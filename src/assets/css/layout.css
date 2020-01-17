@@ -232,7 +232,7 @@ img.featured-image-hero {
   padding-bottom: 1.5em;
   text-align: center !important;
   font-size: calc(var(--legal) * 1em);
-  color: $grey-1;
+  color: var(--grey-1);
 }
 
 table.leagues {
@@ -273,7 +273,7 @@ table.noborders {
   }
 
   & thead {
-    background-color: $darkblue;
+    background-color: var(--darkblue);
   }
   
   & thead td {
