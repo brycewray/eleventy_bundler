@@ -18,137 +18,125 @@ header {
   z-index: 9999; /* keeps YT videos from appearing over it, for one thing */
 }
 
-.nav {
-  &__bar {
-    background-color: var(--darkblue);
-    padding-top: var(--nav-height);
+.nav__bar {
+  background-color: var(--darkblue);
+  padding-top: var(--nav-height);
 
-    @media (min-width: var(--breakpoint)) {
-      max-height: none;
-      text-align: center;
-    }
+  @media (min-width: var(--breakpoint)) {
+    max-height: none;
+    text-align: center;
+  }
+}
+
+.nav__item {
+  padding: 0;
+  margin: 0;
+  background: var(--darkblue);
+
+  @media (min-width: var(--breakpoint)) {
+    display: inline-block;
   }
 
-  &__item {
-    padding: 0;
+  & a {
+    display: block;
+    padding: 0.5em 1.5em;
     margin: 0;
-    background: var(--darkblue);
+    color: #fff;
+    background: $var(--darkblue);
+    text-decoration: none;
+    transition: opacity 0.5s ease;
 
     @media (min-width: var(--breakpoint)) {
       display: inline-block;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: none;
     }
 
-    a {
-      display: block;
-      padding: 0.5em 1.5em;
-      margin: 0;
+    &:link, &:visited {
       color: #fff;
-      background: $var(--darkblue);
+    }
+
+    &:hover, &:focus {
       text-decoration: none;
-      transition: opacity 0.5s ease;
-
-      @media (min-width: var(--breakpoint)) {
-        display: inline-block;
-        padding-top: 0;
-        padding-bottom: 0;
-        border: none;
-      }
-
-      &:link, &:visited {
-        color: #fff;
-      }
-
-      &:hover, &:focus {
-        text-decoration: none;
-        opacity: 0.7;
-      }
+      opacity: 0.7;
     }
   }
+}
 
-  &__icon {
-    display: block;
-    position: absolute;
-    top: calc((var(--nav-height) - 20px)/2);
-    right: 13px;
-    height: 27px;
-    width: 27px;
-    cursor: pointer;
-    text-indent: -9999px; /* hide the label */
-    transition: all 1s cubic-bezier(.19, 1, .22, 1);
+.nav__icon {
+  display: block;
+  position: absolute;
+  top: calc((var(--nav-height) - 20px)/2);
+  right: 13px;
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+  text-indent: -9999px; /* hide the label */
+  transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  /* Remove blinking cursor */
+  border: none;
+  color: transparent;
+  text-shadow: 0 0 0 gray;
+  text-align: center;
+  &:focus {
+      outline: none;
+  }
+  @media (min-width: var(--breakpoint)) {
+    display: none;
+  }
+}
 
-     /* Remove blinking cursor */
-     border: none;
-     color: transparent;
-     text-shadow: 0 0 0 gray;
-     text-align: center;
- 
-     &:focus {
-         outline: none;
-     }
- 
-     @media (min-width: var(--breakpoint)) {
-       display: none;
-     }
-   }
- 
-   &__icon-line {
-     position: absolute;
-     display: block;
-     background: #fff;
-     width: 27px;
-     height: 0.2rem;
-     border-radius: 0.2rem;
-     left: 0;
-     text-indent: 0;
-     transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
- 
-     &:first-child {
-       top: 0;
-     }
- 
-     &:nth-child(2) {
-       top: 8px;
-     }
- 
-     &:nth-child(3) {
-       top: 16px;
-     }
-   }
- }
+.nav__icon-line {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 27px;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  left: 0;
+  text-indent: 0;
+  transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+
+  &:first-child {
+    top: 0;
+  }
+
+  &:nth-child(2) {
+    top: 8px;
+  }
+
+  &:nth-child(3) {
+    top: 16px;
+  }
+}
  
  /* Checkbox hack for toggling mobile menu */
  input[type=checkbox] {
    display: none;
    visibility: hidden;
- 
    &:checked {
- 
-     ~ nav .nav__items {
+     & ~ nav .nav__items {
        height: auto;
        max-height: 30rem;
        transition: all 2s cubic-bezier(.5, 1, .22, 1);
      }
- 
-     ~ label .nav__icon-line:first-child {
+     & ~ label .nav__icon-line:first-child {
        top: 0px;
        width: 27px;
        transform: translateX(-8px) rotate(-45deg) translateY(12px);
      }
- 
-     ~ label .nav__icon-line:nth-child(2) {
+     & ~ label .nav__icon-line:nth-child(2) {
        opacity: 0;
      }
- 
-     ~ label .nav__icon-line:nth-child(3) {
+     & ~ label .nav__icon-line:nth-child(3) {
        top: 14px;
        width: 27px;
        transform: translateX(-5px) rotate(45deg) translateY(-8px);
      }
    }
- }
+}
  
-
-
 nav {
   position: absolute;
   text-align: left;
@@ -158,13 +146,13 @@ nav {
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
-  ul {
+  & ul {
     padding-left: 0;
     margin: 0;
     text-align: right;
     list-style: none;
   }
-  li {
+  & li {
     margin-bottom: 0.5em;
     margin-right: 5%;
     display: inline; /* putting here for really old non-query-savvy browsers */
@@ -172,14 +160,14 @@ nav {
       display: inherit;
     } /* undoing the inline-for-really-old-browsers stuff */
   }
-  a {
+  & a {
     color: #fff;
-    font-size: var(--stdsize) + unquote("em");
+    font-size: calc(var(--stdsize) * 1em);
     text-decoration: none;
     border-bottom: 0;
     opacity: 0;
   }
-  a:hover, a:active {
+  & a:hover, & a:active {
     color: var(--grey-2);
     border-bottom: 0;
   }
@@ -187,23 +175,23 @@ nav {
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
-  a {
+  & a {
     opacity: 1;
   }
 }
 
 .site-logo {
   color: #fff;
-  a {
+  & a {
     color: #fff;
     text-decoration: none;
     border-bottom: 0;
   }
-  a:active, a:hover {
+  & a:active, & a:hover {
     color: var(--grey-2);
     border-bottom: 0;
   }
-  font-size: var(--minimalbig) + unquote("em");
+  font-size: calc(var(--minimalbig) * 1em);
   font-weight: 700;
   margin-top: 0.2em;
   margin-left: 5%;
@@ -230,7 +218,7 @@ nav {
     grid-column: 1 / 2;
     text-align: left;
     padding-left: 1.5em;
-    font-size: var(--minimalbig) + unquote("em");
+    font-size: calc(var(--minimalbig) * 1em);
 }
 
   nav {
@@ -240,16 +228,16 @@ nav {
     margin-left: 60%;
     display: table;
     grid-column: 4 / 5;
-    a {
+    & a {
       opacity: 1;
       position: relative;
     }
-    ul {
+    & ul {
       margin: auto;
       padding-right: 20%;
       text-align: left; /* fixes old browsers that don't understand media queries */
     }
-    li {
+    & li {
       margin-left: 3em;
       margin-bottom: 0;
     }

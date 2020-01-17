@@ -42,23 +42,23 @@ h3, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: var(--biggest) + unquote("em");
+  font-size: calc(var(--biggest) * 1em);
 }
 
 h2, .h2 {
-  font-size: var(--bigger) + unquote("em");
+  font-size: calc(var(--bigger) * 1em);
 }
 
 h3, .h3 {
-  font-size: var(--mightybig) + unquote("em");
+  font-size: calc(var(--mightybig) * 1em);
 }
 
 h4, .h4 {
-  font-size: var(--sortabig) + unquote("em");
+  font-size: calc(var(--sortabig) * 1em);
 }
 
 h5, .h5, h6, .h6 {
-  font-size: var(--slightlybig) + unquote("em");
+  font-size: calc(var(--slightlybig) * 1em);
 }
 
 a, a:focus, a:hover, a:active {
@@ -85,7 +85,7 @@ blockquote {
 	margin-right: 1em;
 	margin-left: 2em;
 
-  p:last-child {
+  & p:last-child {
     margin-bottom: 0;
   }
 
@@ -99,44 +99,20 @@ td {
 }
 
 .footnotes {
-  font-size: var(--legal) + unquote("em");
+  font-size: calc(var(--legal) * 1em);
   letter-spacing: normal;
 
-  ol li {
+  & ol li {
     margin-bottom: 0.5em;
   }
 }
 
 sup.footnote-ref {
-  font-size: var(--teeny) + unquote("em");
+  font-size: calc(var(--teeny) * 1em);
 }
 
 a.footnote-return{
   font-size: 50%;
-}
-
-.microblog {
-
-  &_timeline {
-    color: var(--default-color);
-    font-size: var(--timelineTxt) + unquote("em");
-  }
-
-  &_post {
-    border-bottom: 1px solid var(--grey-2);
-    padding-bottom: 0.5em;
-  }
-
-  &_text {
-    img {
-      height: auto;
-    }
-  }
-
-  &_time {
-    color: var(--grey-1);
-    text-align: right;
-  }
 }
 
 .ctr {
@@ -156,15 +132,15 @@ a.footnote-return{
 }
 
 .teenytxt, .teeny {
-  font-size: var(--teeny) + unquote("em");
+  font-size: calc(var(--teeny) * 1em);
 }
 
 .legaltxt, .legal {
-  font-size: var(--legal) + unquote("em");
+  font-size: calc(var(--legal) * 1em);
 }
 
 .pokeytxt, .pokey {
-  font-size: var(--pokey) + unquote("em");
+  font-size: calc(var(--pokey) * 1em);
 }
 
 .nobrk {
@@ -180,7 +156,7 @@ a.footnote-return{
 	margin-top: 1em;
 	margin-bottom: 1em;
 
-  iframe {
+  & iframe {
     position: absolute;
     top: 0;
     left: 0;
