@@ -14,9 +14,21 @@ body {
 }
 
 p, li {
-  line-height: 1.4; /* if using --sans-serif */
-  /* line-height: 1.7; // if using --serif-primary */
-  /* font-size: 1.2em; */
+  line-height: 1.4;
+}
+
+article {
+  & p {
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  article {
+    & p{
+      font-size: calc(var(--minimalbig) * 1em);
+    }
+  }
 }
 
 h1, .h1,
