@@ -327,11 +327,19 @@ img.postsFeatImg {
   width: 90%;
   grid-gap: 0.25rem;
   grid-template-columns: 1fr;
+  grid-template-areas: 'column-home-1 column-home-2';
   @media screen and (min-width: 769px) {
     width: 75%;
     grid-template-columns: 60% 1fr;
     grid-gap: 2rem;
+    grid-template-areas: 'column-home-1 column-home-2';
     padding-top: 0.5em;
+  }
+  & .column-home-1 {
+    grid-area: column-home-1;
+  }
+  & .column-home-2 {
+    grid-area: column-home-2;
   }
   & .column-home-1, & .column-home-2 {
     margin: 0 auto;
