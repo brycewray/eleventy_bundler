@@ -43,7 +43,9 @@ module.exports = {
           'css-loader',
           {
             loader: 'resolve-url-loader',
-            options: {},
+            options: {
+              importLoaders: 1,
+            },
           },
           {
             loader: 'postcss-loader',
@@ -51,7 +53,7 @@ module.exports = {
               config: {
                 path: './postcss.config.js',
               },
-              sourceMap: true,
+              // sourceMap: true,
             },
           },
         ],
