@@ -15,7 +15,8 @@ header {
   position: fixed;
   padding: 0.5em 0;
   margin-top: 0;
-  z-index: 9999; /* keeps YT videos from appearing over it, for one thing */
+  z-index: 9999;
+  /* keeps YT videos from appearing over it, for one thing */
 }
 
 .nav__bar {
@@ -72,7 +73,8 @@ header {
   height: 27px;
   width: 27px;
   cursor: pointer;
-  text-indent: -9999px; /* hide the label */
+  text-indent: -9999px;
+  /* hide the label */
   transition: all 1s cubic-bezier(.19, 1, .22, 1);
   /* Remove blinking cursor */
   border: none;
@@ -155,10 +157,11 @@ nav {
   & li {
     margin-bottom: 0.5em;
     margin-right: 5%;
-    display: inline; /* putting here for really old non-query-savvy browsers */
-    @media screen and (max-width: 899px) {
+    display: inline;
+    @media screen and (max-width: calc(var(--breakpoint)-1)) {
       display: inherit;
-    } /* undoing the inline-for-really-old-browsers stuff */
+    }
+    /* undoing the inline-for-really-old-browsers stuff */
   }
   & a {
     color: #fff;
@@ -201,6 +204,7 @@ nav {
 /* === Beginning of primary settings for larger screens === */
 
 @media screen and (min-width: 900px) {
+/* can't use CSS vars in media queries yet */
   .nav-toggle-label {
     display: none;
   }
@@ -222,7 +226,7 @@ nav {
   }
 
   nav {
-    top: 25%;
+    top: 15%;
     transform: none;
     margin-top: 0;
     margin-left: 60%;
@@ -235,9 +239,11 @@ nav {
     & ul {
       margin: auto;
       padding-right: 20%;
-      text-align: left; /* fixes old browsers that don't understand media queries */
+      text-align: left;
+      /* fixes old browsers that don't understand media queries */
     }
     & li {
+      display: inline-block;
       margin-left: 3em;
       margin-bottom: 0;
     }
