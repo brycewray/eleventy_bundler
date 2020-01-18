@@ -18,7 +18,7 @@ featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 Here are a few odds and ends—some a tad acerbic, some not so much. And I swear I’m not trying to sound like the late [Andy Rooney](https://www.biography.com/people/andy-rooney-9542557), or even a parody&nbsp;thereof.&nbsp;&nbsp;.&nbsp;.&nbsp;.
 
 <br />
-<div class="aspect-16x9 relative">
+<div class="YTembed">
   <iframe class="lazyload absolute pin w-full h-full" data-src="https://www.youtube.com/embed/u8pCsfT1gDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

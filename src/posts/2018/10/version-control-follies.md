@@ -61,5 +61,3 @@ In short, I’d gone from a setup in which *every* change (no matter how tiny) i
 
 - *At the time I wrote this, I thought SourceTree was Bitbucket-specific but, of course, that's not true; it works also with GitHub and [GitLab](https://gitlab.com) as well.*
 - *Since the original writing, GitHub has joined Bitbucket (and GitLab) in having private repos. Each has slightly different rules about them, such as numbers of contributors allowed.*
-
-<hr />

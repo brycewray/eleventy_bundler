@@ -9,7 +9,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 
  code {
-   @apply font-codefont;
+   font-family: var(--monospaced);
    background: #dfefff;
  }
 
@@ -24,7 +24,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
    color: #ccc;
    background: none;
    @apply font-codefont;
-   font-size: 1em;
+   font-family: var(--monospaced);
    text-align: left;
    white-space: pre;
    word-spacing: normal;

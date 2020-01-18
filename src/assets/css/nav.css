@@ -3,87 +3,93 @@
 
 /* keep header here rather than base or layout SCSS */
 
+:root {
+  --breakpoint: 900px;
+}
+
 header {
-  @apply h-12 w-full fixed py-2 px-0;
-  background-color: #00a;
+  height: 30px;
+  font-family: var(--sans-serif);
+  width: 100%;
+  background-color: var(--darkblue);
+  position: fixed;
+  padding: 0.5em 0;
+  margin-top: 0;
   z-index: 9999;
+  /* keeps YT videos from appearing over it, for one thing */
 }
 
 .nav__bar {
-  @apply pt-16;
-  background-color: #00a;
+  background-color: var(--darkblue);
+  padding-top: var(--nav-height);
 }
-
-@media (min-width: 900px) {
+@media (min-width: var(--breakpoint)) {
   .nav__bar {
-    @apply text-center;
-    max-height:none;
+    max-height: none;
+    text-align: center;
   }
 }
 
 .nav__item {
   padding: 0;
   margin: 0;
-  background: #00a;
-}
+  background: var(--darkblue);
 
-@media (min-width: 900px) {
-  .nav__item {
-      display: inline-block;
+  & a {
+    display: block;
+    padding: 0.5em 1.5em;
+    margin: 0;
+    color: #fff;
+    background: var(--darkblue);
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+
+    &:link, &:visited {
+      color: #fff;
+    }
+
+    &:hover, &:focus {
+      text-decoration: none;
+      opacity: 0.7;
+    }
   }
 }
 
-.nav__item a {
-  display: block;
-  padding: .5em 1.5em;
-  margin: 0;
-  color: #fff;
-  background: #00a;
-  text-decoration: none;
-  transition: opacity .5s ease
-}
-
-@media (min-width: 900px) {
-  .nav__item a {
-      display:inline-block;
+@media (min-width: var(--breakpoint)) {
+  .nav__item {
+    display: inline-block;
+    & a {
+      display: inline-block;
       padding-top: 0;
       padding-bottom: 0;
-      border: none
+      border: none;
+    }
   }
-}
-
-.nav__item a:link,.nav__item a:visited {
-  color: #fff
-}
-
-.nav__item a:focus,.nav__item a:hover {
-  text-decoration: none;
-  opacity: .7
 }
 
 .nav__icon {
   display: block;
   position: absolute;
-  top: 15px;
+  top: calc((var(--nav-height) - 20px)/2);
   right: 13px;
   height: 27px;
   width: 27px;
   cursor: pointer;
   text-indent: -9999px;
-  transition: all 1s cubic-bezier(.19,1,.22,1);
+  /* hide the label */
+  transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  /* Remove blinking cursor */
   border: none;
   color: transparent;
   text-shadow: 0 0 0 gray;
-  text-align: center
+  text-align: center;
+  &:focus {
+      outline: none;
+  }
 }
-
-.nav__icon:focus {
-  outline: 0
-}
-
-@media (min-width: 900px) {
-  .nav__icon {
-      display:none
+@media (min-width: var(--breakpoint)) {
+  .nav__icon{
+    display: none;
   }
 }
 
@@ -92,165 +98,161 @@ header {
   display: block;
   background: #fff;
   width: 27px;
-  height: .2rem;
-  border-radius: .2rem;
+  height: 0.2rem;
+  border-radius: 0.2rem;
   left: 0;
   text-indent: 0;
-  transition: all .6s cubic-bezier(.5,.1,0,1.2)
-}
+  transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
 
-.nav__icon-line:first-child {
-  top: 0
-}
+  &:first-child {
+    top: 0;
+  }
 
-.nav__icon-line:nth-child(2) {
-  top: 8px
-}
+  &:nth-child(2) {
+    top: 8px;
+  }
 
-.nav__icon-line:nth-child(3) {
-  top: 16px
+  &:nth-child(3) {
+    top: 16px;
+  }
 }
-
-input[type=checkbox] {
-  display: none;
-  visibility: hidden
+ 
+ /* Checkbox hack for toggling mobile menu */
+ input[type=checkbox] {
+   display: none;
+   visibility: hidden;
+   &:checked {
+     & ~ nav .nav__items {
+       height: auto;
+       max-height: 30rem;
+       transition: all 2s cubic-bezier(.5, 1, .22, 1);
+     }
+     & ~ label .nav__icon-line:first-child {
+       top: 0px;
+       width: 27px;
+       transform: translateX(-8px) rotate(-45deg) translateY(12px);
+     }
+     & ~ label .nav__icon-line:nth-child(2) {
+       opacity: 0;
+     }
+     & ~ label .nav__icon-line:nth-child(3) {
+       top: 14px;
+       width: 27px;
+       transform: translateX(-5px) rotate(45deg) translateY(-8px);
+     }
+   }
 }
-
-input[type=checkbox]:checked~nav .nav__items {
-  height: auto;
-  max-height: 30rem;
-  transition: all 2s cubic-bezier(.5,1,.22,1)
-}
-
-input[type=checkbox]:checked~label .nav__icon-line:first-child {
-  top: 0;
-  width: 27px;
-  transform: translateX(-8px) rotate(-45deg) translateY(12px)
-}
-
-input[type=checkbox]:checked~label .nav__icon-line:nth-child(2) {
-  opacity: 0
-}
-
-input[type=checkbox]:checked~label .nav__icon-line:nth-child(3) {
-  top: 14px;
-  width: 27px;
-  transform: translateX(-5px) rotate(45deg) translateY(-8px)
-}
-
+ 
 nav {
   position: absolute;
   text-align: left;
   top: 100%;
   left: 0;
-  background-color: #00a;
+  background-color: var(--darkblue);
   width: 100%;
-  transform: scale(1,0);
-  transform-origin: top
-}
-
-nav ul {
-  padding-left: 0;
-  margin: 0;
-  text-align: right;
-  list-style: none
-}
-
-nav li {
-  margin-bottom: .5em;
-  margin-right: 5%;
-  display: inline
-}
-
-@media screen and (max-width: 899px) {
-  nav li {
-      display:inherit
+  transform: scale(1, 0);
+  transform-origin: top;
+  & ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    list-style: none;
+  }
+  & li {
+    margin-bottom: 0.5em;
+    margin-right: 5%;
+    display: inline;
+    @media screen and (max-width: calc(var(--breakpoint)-1)) {
+      display: inherit;
+    }
+    /* undoing the inline-for-really-old-browsers stuff */
+  }
+  & a {
+    color: #fff;
+    font-size: calc(var(--stdsize) * 1em);
+    text-decoration: none;
+    border-bottom: 0;
+    opacity: 0;
+  }
+  & a:hover, & a:active {
+    color: var(--grey-2);
+    border-bottom: 0;
   }
 }
 
-nav a {
-  color: #fff;
-  font-size: 1em;
-  text-decoration: none;
-  border-bottom: 0;
-  opacity: 0
-}
-
-nav a:active,nav a:hover {
-  color: #c8c8c8;
-  border-bottom: 0
-}
-
-.nav-toggle:checked~nav {
-  transform: scale(1,1)
-}
-
-.nav-toggle:checked~nav a {
-  opacity: 1
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+  & a {
+    opacity: 1;
+  }
 }
 
 .site-logo {
   color: #fff;
-  font-size: 1.15em;
+  & a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 0;
+  }
+  & a:active, & a:hover {
+    color: var(--grey-2);
+    border-bottom: 0;
+  }
+  font-size: calc(var(--minimalbig) * 1em);
   font-weight: 700;
-  margin-top: .2em;
-  margin-left: 5%
+  margin-top: 0.2em;
+  margin-left: 5%;
 }
 
-.site-logo a {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 0
-}
 
-.site-logo a:active,.site-logo a:hover {
-  color: #c8c8c8;
-  border-bottom: 0
-}
+/* === Beginning of primary settings for larger screens === */
 
 @media screen and (min-width: 900px) {
+/* can't use CSS vars in media queries' parameters yet */
   .nav-toggle-label {
-      display:none
+    display: none;
   }
-
+  
   header {
-      display: table;
-      display: grid;
-      grid-template-columns: 1fr auto minmax(300px,1fr) minmax(500px,1fr);
-      position: fixed
+    display: table;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
+    position: fixed;
   }
 
   .site-logo {
-      z-index: 999999;
-      display: grid-item;
-      grid-column: 1/2;
-      text-align: left;
-      padding-left: 1.5em;
-      font-size: 1.15em
+    z-index: 999999;
+    display: grid-item;
+    grid-column: 1 / 2;
+    text-align: left;
+    padding-left: 1.5em;
+    font-size: calc(var(--minimalbig) * 1em);
   }
 
   nav {
-      top: 25%;
-      transform: none;
-      margin-top: 0;
-      margin-left: 60%;
-      display: table;
-      grid-column: 4/5
-  }
-
-  nav a {
+    top: 15%;
+    transform: none;
+    margin-top: 0;
+    margin-left: 60%;
+    display: table;
+    grid-column: 4 / 5;
+    & a {
       opacity: 1;
-      position: relative
-  }
-
-  nav ul {
+      position: relative;
+    }
+    & ul {
       margin: auto;
       padding-right: 20%;
-      text-align: left
-  }
-
-  nav li {
+      text-align: left;
+      /* fixes old browsers that don't understand media queries */
+    }
+    & li {
+      display: inline-block;
       margin-left: 3em;
-      margin-bottom: 0
+      margin-bottom: 0;
+    }
   }
 }
+
+
+/* === End of primary settings for larger screens === */

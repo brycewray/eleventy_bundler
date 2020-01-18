@@ -5,7 +5,7 @@ title: "Two cheers for Tailwind"
 subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 date: 2020-01-12T11:00:00-06:00
-#lastmod: 
+lastmod: 2020-01-18T12:36:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: /images/CSS-code-1797778_1280x848-1280.jpg
 featured_image_base: CSS-code-1797778_1280x848
@@ -14,6 +14,11 @@ featured_image_ext: jpg
 featured_image_alt: "Closeup of computer monitor showing CSS"
 featured_image_caption: "Image: Wojciech Krakowiak; Pixabay"
 ---
+
+<div class="yellowBox">
+	<p><em><strong>Update, 2019-01-18</strong>:</em><br />
+	<em>You&rsquo;ll quickly notice that I&rsquo;m not wildly enthusiastic about the subject of this piece, which will make the newly added ending more understandable. Hint,&nbsp;hint.</em></p>
+</div>
 
 A couple of weekends ago, I tweeted a question for the Web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
@@ -102,3 +107,26 @@ Finally, here are the best from among the many articles I've been reading (often
 - "[Use Tailwind or Roll Your Own CSS Utility Library?](https://blog.bitsrc.io/use-tailwind-or-roll-your-own-css-utility-library-fdaa89659117)" by Oliver Williams.
 - "[In Defense of Functional CSS](https://critter.blog/2018/06/08/in-defense-of-functional-css/)" by Mike Crittenden.
 - "[Why I Haven't Jumped on the Tailwind CSS Bandwagon](https://block81.com/blog/why-i-havent-jumped-on-the-tailwind-css-bandwagon)" by Angie Herrera.
+
+
+<hr style="margin-bottom: 1em;" />
+
+## *Update, 2020-01-18*
+
+After a few days of mulling this over as well as re-reading a lot of stuff about what ordinary CSS can do these days, especially in league with PostCSS and the appropriate set of PostCSS plugins, I concluded I'd return to CSS Grid.[^TWCSSG]
+
+[^TWCSSG]: I did see a few days ago that [Tailwind CSS will soon include CSS Grid support](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.2.0-canary.4), which is definitely a good and overdue move; but it didn't change my mind.
+
+However, as I hinted above would be the case were I to eschew the utility-first approach, I opted *not* to return to SASS/SCSS.
+
+Why?
+
+Because I wanted to start doing CSS the right way, so to speak, rather than continuing to use the shortcuts in SASS/SCSS methods. This is not out of any masochistic tendencies (I think), but because "regular" CSS, and *non-obsolete* browsers' support for it, is getting better all the time and that's where the action is.
+
+I *won't* try to tell you that it was easy to take my previous SCSS and convert it to CSS that PostCSS can [transpile](https://en.wikipedia.org/wiki/Source-to-source_compiler) to browser-friendly CSS. Quite frankly, using SASS/SCSS left me with some bad habits, like nesting media queries inside selectors. And even if somewhere there *is* a PostCSS way to get around things like that: well, I don't care, now.[^elevwp]
+
+[^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer).
+
+Don't get me wrong. I do understand that there definitely are cases to be made for utility-based CSS, especially---as I tweeted back on December 28---for multi-dev shops. I just don't believe my little one-man, one-approver Web site qualifies as a good example of such a case.
+
+And, more to the point: I just like this way better and, unlike so many other things in my life, this is one situation where I get to make the final call.
