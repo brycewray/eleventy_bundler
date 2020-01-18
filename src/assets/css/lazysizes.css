@@ -1,3 +1,4 @@
+/*! purgecss start ignore */
 .lazywrapper {
   width: 100%;
   min-width: 320px;
@@ -98,3 +99,4 @@ li .lazywrapper {
     opacity:0;
   }
 }
+/*! purgecss end ignore */

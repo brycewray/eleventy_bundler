@@ -63,6 +63,7 @@ figcaption {
   text-align: center !important;
 }
 
+/*! purgecss start ignore */
 .lazypicturecaption {
   font-size: calc(var(--pokey) * 1em);
   padding: 0;
@@ -70,6 +71,7 @@ figcaption {
   line-height: 1.4;
   text-align: center;
 }
+/*! purgecss end ignore */
 
 h3.twitter-border {
   margin: 1em 0;
@@ -277,6 +279,7 @@ img.featured-image-hero {
   color: var(--grey-1);
 }
 
+/*! purgecss start ignore */
 table.leagues {
 	width: 90%;
 	margin: 1em auto 0 auto;
@@ -342,6 +345,7 @@ table.noborders {
     width: 90%;
   }
 }
+/*! purgecss end ignore */
 
 
 img.postsFeatImg {
@@ -492,6 +496,7 @@ li p {
   width: 100% !important;
 }
 
+/*! purgecss start ignore */
 .YTembed { /* container for iframe */
   position: relative;
   padding-top: 30px;
@@ -506,3 +511,4 @@ li p {
     height: 100%;
   }
 }
+/*! purgecss end ignore */
