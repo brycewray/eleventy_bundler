@@ -12,7 +12,7 @@ layout: layouts/_default/baseof.njk
     </picture>
   </div>
   {% if featured_image_caption %}
-    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
+    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>(May appear distorted in obsolete browsers.)</em></span></p>
   {% endif %}
 
   <div class="container-home">
@@ -20,12 +20,12 @@ layout: layouts/_default/baseof.njk
       {{ content | safe }}
     </div>
     <div class="column-home-2">
-      <h2 class="h1" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
+      <h2 class="h1 topofHome" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
         <div>
-          <h2 class="h5" style="margin: 0;"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="pokey h5" style="margin: 0;">{{ post.data.subtitle }}</p>
+          <h2 class="h5"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p class="h5"><em>{{ post.data.subtitle }}</em></p>
           <p class="legal text-muted" style="margin-top: 0;">
             <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
@@ -38,7 +38,7 @@ layout: layouts/_default/baseof.njk
         </div>
         {% endif %}
       {% endfor %}
-      <p><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a> <span class="pokey"><em>(five per page)</em></span></p>
+      <p><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>
