@@ -16,7 +16,7 @@ featured_image_caption: "Image: Wojciech Krakowiak; Pixabay"
 ---
 
 <div class="yellowBox">
-	<p><em><strong>Update, 2019-01-18</strong>:</em><br />
+	<p><em><strong>Update, 2020-01-18</strong>:</em><br />
 	<em>You&rsquo;ll quickly notice that I&rsquo;m not wildly enthusiastic about the subject of this piece, which will make the newly added ending more understandable. Hint,&nbsp;hint.</em></p>
 </div>
 
