@@ -5,7 +5,7 @@ title: "Two cheers for Tailwind"
 subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2020-01-18T12:30:00-06:00
+lastmod: 2020-01-18T12:36:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: /images/CSS-code-1797778_1280x848-1280.jpg
 featured_image_base: CSS-code-1797778_1280x848
@@ -113,9 +113,11 @@ Finally, here are the best from among the many articles I've been reading (often
 
 ## *Update, 2020-01-18*
 
-After a few days of mulling this over as well as re-reading a lot of stuff about what ordinary CSS can do these days, especially in league with PostCSS and the appropriate set of PostCSS plugins, I concluded I'd return to CSS Grid.
+After a few days of mulling this over as well as re-reading a lot of stuff about what ordinary CSS can do these days, especially in league with PostCSS and the appropriate set of PostCSS plugins, I concluded I'd return to CSS Grid.[^TWCSSG]
 
-However, as noted above, I opted *not* to return to SASS/SCSS.
+[^TWCSSG]: I did see a few days ago that [Tailwind CSS will soon include CSS Grid support](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.2.0-canary.4), which is definitely a good and overdue move; but it didn't change my mind.
+
+However, as I hinted above would be the case were I to eschew the utility-first approach, I opted *not* to return to SASS/SCSS.
 
 Why?
 
