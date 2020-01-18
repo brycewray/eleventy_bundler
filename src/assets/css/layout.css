@@ -383,10 +383,6 @@ img.postsFeatImg {
     & .column-home-2 {
       grid-area: column-home-2;
     }
-    & img.containedImage {
-      min-width: 95%;
-      width: 95%;
-    }
   }
 }
 
@@ -397,6 +393,10 @@ img.postsFeatImg {
   & twitter-widget {
     margin: 0 auto 0 auto;
   }
+  & img.containedImage {
+    min-width: 100%;
+    max-width: 100%;
+}
 }
 @media screen and (min-width: 1025px) {
   .container-narrower {
@@ -428,7 +428,7 @@ img.postsFeatImg {
     color: #fff;
 	}
 	& h3, & p {
-		margin: 0;
+		margin: 0.25em 0;
 		padding: 0;
 	}
   & a, & a.hover, & a.focus {
