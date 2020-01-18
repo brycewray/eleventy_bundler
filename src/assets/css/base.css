@@ -19,15 +19,8 @@ p, li {
 
 article {
   & p, & li {
-    line-height: 1.6;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  article {
-    & p, & li {
-      font-size: calc(var(--minimalbig) * 1em);
-    }
+    line-height: 1.7;
+    margin-bottom: 1.5em;
   }
 }
 
