@@ -309,7 +309,7 @@ table.noborders {
   
   & td.td70 {
     width: 70%;
-    img {
+    & img {
       display: block;
       width: 50%;
       max-width: 50%;
@@ -396,7 +396,12 @@ img.postsFeatImg {
   & img.containedImage {
     min-width: 100%;
     max-width: 100%;
-}
+  }
+  & .yellowBox {
+    padding: 0.5em 1.5em;
+    background: var(--yellowBox-light-mode);
+    border: 1px solid var(--black);
+  }
 }
 @media screen and (min-width: 1025px) {
   .container-narrower {
@@ -430,9 +435,21 @@ img.postsFeatImg {
 	& h3, & p {
 		margin: 0.25em 0;
 		padding: 0;
-	}
+  }
   & a, & a.hover, & a.focus {
     color: #aaddff !important;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .bg-dark {
+    & h3 {
+      font-size: calc(var(--bigger) * 1em);
+    }
+    & p {
+      font-size: calc(var(--slightlybig) * 1em);
+      letter-spacing: -0.03em;
+    }
   }
 }
 

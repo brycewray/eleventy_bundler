@@ -42,7 +42,7 @@
 
   .container-narrower {
     & .yellowBox {
-      background: #332200;
+      background: var(--yellowBox-dark-mode);
       border: 1px solid var(--grey-1);
     }
   }
