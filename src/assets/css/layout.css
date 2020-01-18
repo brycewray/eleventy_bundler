@@ -35,11 +35,19 @@ footer {
   width: 100%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  & p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 @media (min-width: 900px) {
   footer {
     margin: 2em auto 0 auto;
     padding-bottom: 1em;
+    & .p-note {
+      width: 50%;
+    }
   }
 }
 
@@ -386,6 +394,26 @@ img.postsFeatImg {
       height: auto;
       margin-right: auto;
       margin-left: auto;
+    }
+  }
+  & .column-home-1 {
+    & p {
+      font-size: calc(var(--minimalbig) * 1em);
+      letter-spacing: -0.025em;
+      line-height: 1.7;
+    }
+  }
+  & .column-home-2 {
+    & .topofHome {
+      margin: 0;
+    }
+    & h2.h5 {
+      font-size: calc(var(--slightlybig) * 1em);
+      margin: 0;
+    }
+    & p.h5 {
+      font-size: calc(var(--stdsize) * 1em);
+      margin: 0.5em 0 0.25em 0;
     }
   }
 }
