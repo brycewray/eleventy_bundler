@@ -63,6 +63,14 @@ figcaption {
   text-align: center !important;
 }
 
+.lazypicturecaption {
+  font-size: calc(var(--pokey) * 1em);
+  padding: 0;
+  margin: -2.25em 0 2em 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
 h3.twitter-border {
   margin: 1em 0;
   padding: 0.5em 0 0 0;
@@ -150,8 +158,8 @@ h3.twitter-border {
   position: absolute;
   bottom: 0;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.0),
-    rgba(0, 0, 0, 0.95),
+    transparent,
+    rgba(0, 0, 0, 0.75) 70%,
     rgba(0, 0, 0, 1.00)
   );
 }
@@ -184,7 +192,7 @@ h3.twitter-border {
 @media screen and (min-width: 1025px) {
   .background-hero-title-text, .background-hero-subtitle-text, .background-hero-description-text {
     text-align: left;
-    padding: 0 5% 0 10%;
+    padding: 0 0 0 5%;
   }
 }
 
@@ -192,12 +200,19 @@ h3.twitter-border {
   font-size: 2.5em;
   padding-top: 0.5em;
   padding-bottom: 0;
+  letter-spacing: -0.035em;
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .background-hero-title-text {font-size: 3.5em;}
+  .background-hero-title-text {
+    font-size: 3.5em;
+    letter-spacing: -0.04em;
+  }
 }
 @media screen and (min-width: 1025px) {
-  .background-hero-title-text {font-size: 3.5em;}
+  .background-hero-title-text {
+    font-size: 3.75em;
+    letter-spacing: -0.045em;
+  }
 }
 
 .background-hero-subtitle-text {
@@ -209,6 +224,7 @@ h3.twitter-border {
 @media screen and (min-width: 900px) {
   .background-hero-subtitle-text {
     font-size: 2.25em;
+    letter-spacing: -0.035em;
   }
 }
 
@@ -218,10 +234,10 @@ h3.twitter-border {
 @media screen and (min-width: 900px) {
   .background-hero-description-text {
     display: block;
-    font-weight: bold;
     padding-top: 0.25em;
     padding-right: 15%;
-    font-size: 1.25em;
+    font-size: 1.5em;
+    letter-spacing: -0.035em;
   }
 }
 
@@ -233,7 +249,7 @@ h3.twitter-border {
 @media screen and (min-width: 1024px) {
   .background-hero-p-text {
     text-align: right;
-    padding-right: 15%;
+    padding-right: 5%;
   }
 }
 
@@ -406,7 +422,7 @@ img.postsFeatImg {
 @media screen and (min-width: 1025px) {
   .container-narrower {
     margin: 1em auto 0 auto;
-    width: 50%;
+    width: 40%;
   }
 }
 

@@ -19,8 +19,21 @@ p, li {
 
 article {
   & p, & li {
-    line-height: 1.7;
-    margin-bottom: 1.5em;
+    letter-spacing: -0.025em;
+  }
+  & p {
+    line-height: 1.8;
+    margin-bottom: 1.7em;
+  }
+  & li {
+    margin-bottom: 1em;
+  }
+  & p, & li {
+    font-size: calc(var(--slightlybig) * 1em);
+  }
+  & ul li p, & ol li p, & li li, & li li li {
+    font-size: 1em;
+    /* turtles all the way down... */
   }
 }
 
@@ -32,8 +45,10 @@ h5, .h5,
 h6, .h6 {
   font-family: var(--sans-serif);
   color: var(--default-color);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.035em;
   font-weight: 700;
+  margin-bottom: 2em;
+  line-height: 1.2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -98,7 +113,7 @@ blockquote {
 
 @media (min-width: 600px) {
   blockquote {
-    padding: 0 5em 0 1.25em;
+    padding: 0 5em 0.5em 1.25em;
   }
 }
 
