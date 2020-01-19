@@ -1,5 +1,12 @@
 :root {
 
+  /* Media query breakpoints, saving in case someone figures out a way to make them work (see https://www.w3.org/TR/css-variables-1/#using-variables) */
+  --smaMQ: 640;
+  --medMQ: 768;
+  --tbpMQ: 900; /* tablet portrait */
+  --dskMQ: 1024;
+  --ldkMQ: 1280; /* large desktop screen */
+
   /* Colors */
   --default-color: #333;
   --default-color-dark-mode: #ddd;
