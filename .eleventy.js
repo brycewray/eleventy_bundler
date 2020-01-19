@@ -10,6 +10,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/images/webmention-avatar-default.svg')
   
   eleventyConfig.addPassthroughCopy('robots.txt')
+  
+  eleventyConfig.addPassthroughCopy('favicon.ico')
 
   eleventyConfig.addPlugin(pluginRss)
 
