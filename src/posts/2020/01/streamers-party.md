@@ -31,7 +31,7 @@ As of January 13, all our television comes entirely over the ’Net, via [YouTub
 
 [^TWC]: FrndlyTV is just $8 a month for the plan we chose. It has only a small number of channels. I wanted it because it was the cheapest way to get the Weather Channel, which is a comfort for us old farts living in Tornado Alley.
 
-We get everything we really wanted, and for about half the price. And it's all contract-free (even the connectivity, although my local choices are pretty limited), so we can change it up any time we want.[^NFLN]
+We get everything we really wanted, for about half the price. And it's all contract-free (even the connectivity, although my local choices are pretty limited), so we can change it up any time we want.[^NFLN]
 
 [^ExpressPlus]: If you, too, want to go streaming-only but aren't prepared to throw away an older TV that lacks the HDMI port a streaming device usually requires, I can suggest what worked for our early-2000s-model Sony: a Roku [Express+](https://www.roku.com/products/roku-express-plus-2018). Note that it's an Express *Plus*. In addition to an HDMI jack and cabling, the Express+ also has good ol' set of [composite jacks and the appropriate cable](https://en.wikipedia.org/wiki/Composite_video) for hooking into most TVs of that vintage. (On the other hand, if your TV is too old or too low-end to have even composite jacks, well, you're out of luck on that score. Better just hook it up to an outdoor antenna or "rabbit ears" and use it for strictly over-the-air reception.)
 
