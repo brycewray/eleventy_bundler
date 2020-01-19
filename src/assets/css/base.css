@@ -21,6 +21,9 @@ article {
   & p, & li {
     letter-spacing: -0.025em;
   }
+  & h2, & h3, & h4, & h5 {
+    margin: 1.5em 0 1.2em 0;
+  }
   & p {
     line-height: 1.8;
     margin-bottom: 1.7em;
