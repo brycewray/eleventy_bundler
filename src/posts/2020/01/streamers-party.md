@@ -5,7 +5,7 @@ title: "Streamers’ party"
 subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
 date: 2020-01-18T21:20:00-06:00
-#lastmod:
+lastmod: 2020-01-20T08:15:00-06:00
 discussionId: "2020-01-streamers-party"
 featured_image: /images/streaming-tv-remote-control-3914155_1280x854-1280.jpg
 featured_image_base: streaming-tv-remote-control-3914155_1280x854
@@ -67,7 +67,7 @@ At least, we had *all three channels* until my father was transferred to another
 
 [^ABCCBS]: On weekday mornings, the CBS/NBC station chose to run mostly NBC game shows, like the original *Jeopardy*; so CBS arranged to get much of its weekday morning schedule---notably, reruns of *I Love Lucy*---on that usually-ABC station.
 
-[^NETprog]: The only times I ever got to see that station on a reliable basis came once I was old enough to attend elementary school, because the school had a sufficient tall antenna to pick it up. The school showed us kiddoes the station's "educational programming," as the term went back then, for fifteen to thirty minutes every afternoon, right after lunchtime. My favorite show from that channel was the one---its name slips my memory---that ran on Mondays, Wednesdays, and Fridays. To this day, I can still hum the tune of its theme song. I have no idea what the words were. They were sung by children on a recording that was so poor, especially given the awful audio quality of most TVs at that time, that you couldn't understand a word they sang.
+[^NETprog]: The only times I ever got to see that station on a reliable basis came once I was old enough to attend elementary school, because the school had a sufficiently tall antenna to pick it up. The school showed us kiddoes the station's "educational programming," as the term went back then, for fifteen to thirty minutes every afternoon, right after lunchtime. My favorite show from that channel was the one---its name slips my memory---that ran on Mondays, Wednesdays, and Fridays. To this day, I can still hum the tune of its theme song. I have no idea what the words were. They were sung by children on a recording that was so poor, especially given the awful audio quality of most TVs at that time, that you couldn't understand a word they sang.
 
 When my father was transferred back to our home area in late 1965, I---a typical representative of my raised-on-TV generation---was utterly delighted to have *all three networks* on *separate channels*.[^JFKCBSNBC] Bliss. I finally got to see shows I'd missed for years, except where the station which chose not to air them at their actual network-fed times would record them as [kinescopes](https://en.wikipedia.org/wiki/Kinescope)[^kines] to run days later.
 
