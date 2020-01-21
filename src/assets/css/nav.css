@@ -3,10 +3,6 @@
 
 /* keep header here rather than base or layout SCSS */
 
-:root {
-  --breakpoint: 900px;
-}
-
 header {
   height: 30px;
   font-family: var(--sans-serif);
@@ -23,7 +19,7 @@ header {
   background-color: var(--darkblue);
   padding-top: var(--nav-height);
 }
-@media (min-width: var(--breakpoint)) {
+@media (min-width: 900px) {
   .nav__bar {
     max-height: none;
     text-align: center;
@@ -55,7 +51,7 @@ header {
   }
 }
 
-@media (min-width: var(--breakpoint)) {
+@media (min-width: 900px) {
   .nav__item {
     display: inline-block;
     & a {
@@ -87,7 +83,7 @@ header {
       outline: none;
   }
 }
-@media (min-width: var(--breakpoint)) {
+@media (min-width: 900px) {
   .nav__icon{
     display: none;
   }
@@ -162,7 +158,7 @@ nav {
     margin-bottom: 0.5em;
     margin-right: 5%;
     display: inline;
-    @media screen and (max-width: calc(var(--breakpoint)-1)) {
+    @media screen and (max-width: 899px) {
       display: inherit;
     }
     /* undoing the inline-for-really-old-browsers stuff */
