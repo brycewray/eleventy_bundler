@@ -5,9 +5,8 @@ shortcode takes the following form...
 */
 
 module.exports = (urlBasic, ext, width, alt) => {
-  return `
-  <img 
-      class="lazyload blur-up containedImage"
+  return `<img 
+      class="lazyload blurup containedImage"
       data-sizes="auto" 
       srcset="/images/${urlBasic}-20.${ext}" 
       data-srcset="
@@ -15,8 +14,7 @@ module.exports = (urlBasic, ext, width, alt) => {
       /images/${urlBasic}-600.${ext} 600w,
       /images/${urlBasic}-${width}.${ext} ${width}w,
       " 
-      src="/images/${urlBasic}-${width}.${ext}" 
-      alt="${alt}"
+      src="/images/${urlBasic}-${width}.${ext}" alt="${alt}"
     />
   `
 }
