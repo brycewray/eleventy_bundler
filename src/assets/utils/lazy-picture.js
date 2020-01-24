@@ -6,7 +6,7 @@ shortcode takes the following form...
 
 module.exports = (urlBasic, ext, width, alt) => {
   return `<img 
-      class="lazyload blurup containedImage"
+      class="lazyload blur-up containedImage"
       data-sizes="auto" 
       srcset="/images/${urlBasic}-20.${ext}" 
       data-srcset="
