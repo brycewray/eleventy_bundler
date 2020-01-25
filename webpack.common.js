@@ -1,6 +1,8 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
+
 
 module.exports = {
   entry: [
@@ -18,6 +20,20 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
+    }),
+    new ImageminWebpackPlugin({
+      pngquant: {
+        speed: 10,
+        quality: 50-80,
+      },
+      mozjpeg: {
+        quality: 60,
+        progressive: true,
+      },
+      gifsicle: {
+        optimizationLevel: 2,
+        colors: 64,
+      },
     }),
   ],
   node: {
@@ -74,7 +90,7 @@ module.exports = {
             loader: 'responsive-loader',
             options: {
               adapter: require('responsive-loader/sharp'),
-              quality: 60,
+              // quality: 60,
               sizes: [
                 20, // placeholder for lqip
                 300,
