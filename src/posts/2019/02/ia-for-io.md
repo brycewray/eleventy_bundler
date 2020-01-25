@@ -8,12 +8,12 @@ author: Bryce Wray
 date: 2019-02-03T09:25:00-06:00
 lastmod: 2019-10-02T19:23:00-05:00
 discussionId: "2019-02-ia-for-io"
-featured_image: /images/notebook-933362_1280x720-1280.jpg
-featured_image_base: notebook-933362_1280x720
+featured_image: /images/notebook-933362_1280x853-1280.jpg
+featured_image_base: notebook-933362_1280x853
 featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+featured_image_caption: "Image: Tookapic; Pixabay" # quotation marks to allow colon
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.

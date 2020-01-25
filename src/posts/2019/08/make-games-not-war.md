@@ -8,8 +8,8 @@ author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
 lastmod: 2019-08-07T12:42:00-05:00
 discussionId: "2019-08-make-games-not-war"
-featured_image: /images/stadium-seats-3310891_1280x720-1280.jpg
-featured_image_base: stadium-seats-3310891_1280x720
+featured_image: /images/stadium-seats-3310891_1280x853-1280.jpg
+featured_image_base: stadium-seats-3310891_1280x853
 featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: Rows of empty seats in a sports stadium

@@ -1,6 +1,7 @@
 const merge = require("webpack-merge")
 const common = require("./webpack.common.js")
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
 
 class TailwindExtractor {
   static extract(content) {
@@ -20,6 +21,20 @@ module.exports = merge(common, {
             },
           },
         ],
+      },
+    }),
+    new ImageminWebpackPlugin({
+      pngquant: {
+        speed: 10,
+        quality: 50-80,
+      },
+      mozjpeg: {
+        quality: 60,
+        progressive: true,
+      },
+      gifsicle: {
+        optimizationLevel: 2,
+        colors: 64,
       },
     }),
   ],

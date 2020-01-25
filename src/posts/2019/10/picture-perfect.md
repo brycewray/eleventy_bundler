@@ -7,12 +7,12 @@ description: "Image-related items to consider when structuring your SSG-powered 
 date: 2019-10-20T19:00:00-05:00
 lastmod: 2019-10-21T14:05:00-05:00
 discussionId: "2019-10-picture-perfect"
-featured_image: /images/camera-nikon-f-733546_1280x720-1280.jpg
-featured_image_base: camera-nikon-f-733546_1280x720
+featured_image: /images/camera-733546_1280x960-1280.jpg
+featured_image_base: camera-733546_1280x960
 featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
-featured_image_caption: "Image: Pixabay"
+featured_image_caption: "Image: Kelsey Burns; Pixabay"
 ---
 
 When I [was](/posts/2019/07/why-staying-with-hugo) [railing](/posts/2019/07/lessons-learned) [against](/posts/2019/09/why-left-hugo-eleventy) the [Gatsby](https://www.gatsbyjs.org) [static site generator](https://www.staticgen.com) (SSG)---that is, before I decided [yet again](/posts/2019/10/otoh) to give it a shot, which is continuing in the background now---one of the things I found most annoying was how it wouldn't let me put images just anywhere I pleased within the site's directory structure.

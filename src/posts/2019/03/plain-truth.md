@@ -8,8 +8,8 @@ author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
 lastmod: 2019-04-27T06:38:00-05:00
 discussionId: "2019-03-plain-truth"
-featured_image: /images/typewriter-1031024_1280x720-1280.jpg
-featured_image_base: typewriter-1031024_1280x720
+featured_image: /images/typewriter-1031024_1280x853-1280.jpg
+featured_image_base: typewriter-1031024_1280x853
 featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: A very old Royal-brand typewriter

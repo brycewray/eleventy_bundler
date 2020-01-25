@@ -13,7 +13,7 @@ featured_image_base: binoculars-4143165_1280x719
 featured_image_width: 1280
 featured_image_ext: jpg
 featured_image_alt: A binocular telescope on a stand near a body of water
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+featured_image_caption: "Image: Kisistvan77; Pixabay" # quotation marks to allow colon
 ---
 
 <div class="border-black border-solid yellowBox">

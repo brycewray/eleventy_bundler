@@ -7,12 +7,12 @@ description: "A brief description of code that easily enables this oft-requested
 date: 2019-12-23T15:16:00-06:00
 lastmod: 2019-12-25T08:05:00-06:00
 discussionId: "2019-12-previous-next-eleventy"
-featured_image: /images/two-way-sign-brick-bkgd-1513691_1280x720_60pctprog.jpg
-featured_image_base: two-way-sign-brick-bkgd-1513691_1280x720_60pctprog
+featured_image: /images/sand-1522182_1280x850-1280.jpg
+featured_image_base: sand-1522182_1280x850
 featured_image_width: 1280
 featured_image_ext: jpg
-featured_image_alt: "Scratched two-way traffic sign in front of a brick wall"
-featured_image_caption: "Image: Pixabay"
+featured_image_alt: "View from above of directional arrow in sand"
+featured_image_caption: "Image: Maret Hosemann; Pixabay"
 ---
 
 This one will be uncharacteristically short, you'll be happy to know. But I learned something yesterday that I just have to share with my fellow and sister [Eleventy](https://11ty.dev) aficionados out there.
