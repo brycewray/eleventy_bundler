@@ -6,15 +6,7 @@ shortcode takes the following form...
 
 module.exports = (urlBasic, ext, width, alt) => {
   return `
-  <img class="lazyload blur-up containedImage" 
-  data-sizes="auto" srcset="/images/${urlBasic}-20.${ext}" 
-  data-srcset="
-    /images/${urlBasic}-300.${ext} 300w, 
-    /images/${urlBasic}-600.${ext} 600w,
-    /images/${urlBasic}-${width}.${ext} ${width}w,
-  " 
-  src="/images/${urlBasic}-${width}.${ext}" alt="${alt}"
-  />
-  <noscript><img class="containedImage" src="/images/${urlBasic}-${width}.${ext}" alt="${alt}" /></noscript>
+  <picture><source class="lazyload blur-up containedImage" type="image/webp" srcset="/images/${urlBasic}-300.webp 300w, /images/${urlBasic}-600.webp 600w, /images/${urlBasic}-${width}.webp ${width}w" /><source class="lazyload blur-up containedImage" type="image/${ext}" srcset="/images/${urlBasic}-300.${ext} 300w, /images/${urlBasic}-600.${ext} 600w, /images/${urlBasic}-${width}.${ext} ${width}w" /><img class="lazyload blur-up containedImage" loading="lazy" data-src="/images/${urlBasic}-${width}.${ext}" alt="${alt}" /></picture>
+  <noscript><img class="containedImage" loading="lazy" src="/images/${urlBasic}-${width}.${ext}" alt="${alt}" /></noscript>
   `
 }
