@@ -1,7 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const Dotenv = require('dotenv-webpack')
-
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -19,6 +19,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '/css/[name].css',
       chunkFilename: '[id].css',
+    }),
+    new ImageminWebpWebpackPlugin({
+      config: [{
+        test: /\.(jpe?g|png)/,
+        options: {
+          quality: 60,
+        },
+      }],
     }),
   ],
   node: {
