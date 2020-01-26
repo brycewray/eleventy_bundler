@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config() // -- best done in Netlify
 
 require('typeface-roboto-mono')
 require('typeface-public-sans')
