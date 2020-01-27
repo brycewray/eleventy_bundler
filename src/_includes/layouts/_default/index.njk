@@ -7,7 +7,8 @@ layout: layouts/_default/baseof.njk
 
   <div class="hero-home">
     <picture>
-      <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" />
+      <source srcset="/images/{{featured_image_base}}-300.webp 300w, /images/{{featured_image_base}}-600.webp 600w, /images/{{featured_image_base}}-{{featured_image_width}}.webp {{featured_image_width}}w" class="imgCover" type="image/webp" />
+      <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" type="image/{{featured_image_ext}}" />
       <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
     </picture>
   </div>
