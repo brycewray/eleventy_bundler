@@ -9,7 +9,6 @@
     "clean": "rimraf _site",
     "start": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet",
-    "dashbdForRef": "webpack-dashboard -- webpack --mode development --watch --config webpack.dev.js",
     "dev:modewebpack": "webpack --mode development --watch --config webpack.dev.js",
     "build": "npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
