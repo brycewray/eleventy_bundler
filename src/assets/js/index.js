@@ -5,11 +5,17 @@ require('typeface-public-sans')
 
 import '../css/index.css'
 
+/*
 import 'lazysizes'
 import 'lazysizes/plugins/blur-up/ls.blur-up'
 import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
 // lazysizes.cfg.blurupMode = 'auto'
 // ----- uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
+*/
+
+import lazyLoadInit from "./lazyload-init"
+
+lazyLoadInit()
 
 import 'prismjs'
 
