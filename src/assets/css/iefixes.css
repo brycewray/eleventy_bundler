@@ -86,7 +86,7 @@
   }
   
   .noIE {
-    display: none;
+    display: none !important;
   }
 
   .IEonly {
