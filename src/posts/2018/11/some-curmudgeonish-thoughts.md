@@ -19,7 +19,7 @@ Here are a few odds and ends—some a tad acerbic, some not so much. And I swear
 
 <br />
 <div class="YTembed">
-  <iframe class="lazyload absolute pin w-full h-full" data-src="https://www.youtube.com/embed/u8pCsfT1gDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/u8pCsfT1gDU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 .&nbsp;.&nbsp;.&nbsp;but there may be some hint of that herein, for which I apologize ahead of time.
