@@ -43,7 +43,7 @@
     "cssnano": "^4.1.10",
     "debug": "^4.1.1",
     "del": "^5.1.0",
-    "eleventy-plugin-youtube-embed": "^1.1.1",
+    "eleventy-plugin-youtube-embed": "^1.1.2",
     "eleventy-rss-helper": "^1.2.1",
     "fibers": "^4.0.2",
     "file-loader": "^5.0.2",
