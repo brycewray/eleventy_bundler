@@ -119,27 +119,31 @@ h3.twitter-border {
 .background-hero-div {
   background: linear-gradient(
     rgba(0,0,170,1.00),
-    rgba(0,0,85,1.00)
+    rgba(0,0,0,1.00)
   );
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
   position: relative;
-  height: 70vh;
+  padding-bottom: 0.5em;
+  /* height: 50vh; */
   /* image supplied programmatically by template */
 }
+/*
 @media screen and (min-width: 768px) {
   .background-hero-div {
-    height: 75vh;
+    height: 35vh;
   }
 }
 @media screen and (min-width: 1024px) {
   .background-hero-div {
-    height: 80vh;
+    height: 30vh;
   }
 }
+*/
 
+/*
 .background-hero-image-div {
   position: relative;
   overflow: hidden;
@@ -159,12 +163,15 @@ h3.twitter-border {
     max-height: 80vh;
   }
 }
+*/
 
 .background-hero-title-block-fit {
   display: block;
   width: 100%;
+  /*
   position: absolute;
   bottom: 0;
+  */
   background: linear-gradient(
     transparent,
     rgba(0, 0, 0, 0.75) 70%,
@@ -172,17 +179,6 @@ h3.twitter-border {
   );
 }
 
-.background-hero-title-block {
-  display: block;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.0),
-    rgba(0, 0, 0, 0.95),
-    rgba(0, 0, 0, 1.00)
-  );
-}
 .background-hero-title-text, .background-hero-subtitle-text, .background-hero-description-text {
   color: #fff;
   margin: 0 auto;
@@ -205,14 +201,14 @@ h3.twitter-border {
 }
 
 .background-hero-title-text {
-  font-size: 2.5em;
-  padding-top: 0.5em;
+  font-size: 2.25em;
+  padding-top: 1em;
   padding-bottom: 0;
   letter-spacing: -0.035em;
 }
 @media screen and (min-width: 768px) {
   .background-hero-title-text {
-    font-size: 3.5em;
+    font-size: 3em;
     letter-spacing: -0.04em;
   }
 }
@@ -225,25 +221,30 @@ h3.twitter-border {
 
 .background-hero-subtitle-text {
   font-size: 1.5em;
-  padding-top: 0.25em;
-  padding-bottom: 0.5em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
   font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .background-hero-subtitle-text {
+    font-size: 2.25em;
+    letter-spacing: -0.0325em;
+  }
 }
 @media screen and (min-width: 900px) {
   .background-hero-subtitle-text {
-    font-size: 2.25em;
+    font-size: 2.5em;
     letter-spacing: -0.035em;
   }
 }
 
 .background-hero-description-text {
-  display: none; /* appears only on wider screens */
+  padding: 1em;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .background-hero-description-text {
-    display: block;
-    padding-top: 0.25em;
-    padding-right: 15%;
+    padding: 1em 15% 1em 5%;
     font-size: 1.5em;
     letter-spacing: -0.035em;
   }
@@ -254,7 +255,7 @@ h3.twitter-border {
   text-shadow: 4px 4px 2px #000;
   text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .background-hero-p-text {
     text-align: right;
     padding-right: 5%;

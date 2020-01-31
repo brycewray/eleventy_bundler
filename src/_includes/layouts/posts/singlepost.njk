@@ -4,32 +4,29 @@ layout: layouts/_default/baseof.njk
 ---
 
 <main>
-  <h1 class="ctr topOfMain">{{ title }}</h1>
-  <h2 class="ctr h4" style="margin-top: 0;">
-    {% if subtitle %}
-    {{ subtitle }}
-    {% else %}
-    &nbsp;
-    {% endif %}
-  </h2>
-  <p class="text-muted text-sans-serif ctr">
-    Published: {{ page.date | htmlDateString }}<br /><span style="font-size: 85%;">
-    {% if lastmod %}
-      Last modified: {{ lastmod | htmlDateString }}
-    {% else %}
-      &nbsp;
-    {% endif %}
-    </span>
-  </p>
-
-  <div class="post-line"></div> 
-
-  {% if featured_image %}
-    <img src="{{ featured_image }}" class="img-fluid featured-image" alt="{{ featured_image_alt }}">
-    {% if featured_image_caption %}
-      <p class="featured-image-caption">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>May appear distorted in obsolete browsers.</em></span></p>
-    {% endif %}
-  {% endif %}
+  <div class="background-hero-div">
+    <div class="background-hero-title-block-fit">
+      <h1 class="background-hero-title-text">{{ title }}</h1>
+      <h2 class="background-hero-subtitle-text">
+        {% if subtitle %}
+          {{ subtitle }}
+        {% else %}
+          &nbsp;
+        {% endif %}
+      </h2>
+      <p class="background-hero-description-text">{{ description }}</p>
+      <p class="background-hero-p-text">
+        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ page.date | htmlDateString }}</strong><br />
+        <span class="pokey">
+        {% if lastmod %}
+        <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ lastmod | htmlDateString }}
+        {% else %}
+        &nbsp;
+        {% endif %}
+        </span>
+      </p>
+    </div>
+  </div>
 
   <div class="container-narrower">
     <article class="article">
