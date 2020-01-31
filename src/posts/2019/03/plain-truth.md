@@ -1,12 +1,12 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Plain truth 
 subtitle: On permanence
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
-lastmod: 2019-04-27T06:38:00-05:00
+lastmod: 2020-01-31T08:35:00-06:00
 discussionId: "2019-03-plain-truth"
 featured_image: /images/typewriter-1031024_1280x853-1280.jpg
 featured_image_base: typewriter-1031024_1280x853
@@ -64,7 +64,11 @@ First, let me tell you how I created those documents that I retain five decades 
 
 ## The Royal treatment
 
-That typewriter in the photo at the top of this page looks very similar to the old Royal manual I was using back in 1969 to write the aforementioned school newspaper op-ed and attempt-at-a-novel. About five years earlier, my father had bought it secondhand out of the garage of some folks up the hill from where we lived at the time, so my sister would have a typewriter on which to do her tenth-grade typing homework.
+{% lazypicture "typewriter-1031024_1280x853", "jpg", 1280, "A very old Royal-brand typewriter" %}
+
+<p class="lazypicturecaption">Photo: Pixabay.</p>
+
+The typewriter in this photo looks very similar to the old Royal manual I was using back in 1969 to write the aforementioned school newspaper op-ed and attempt-at-a-novel. About five years earlier, my father had bought it secondhand out of the garage of some folks up the hill from where we lived at the time, so my sister would have a typewriter on which to do her tenth-grade typing homework.
 
 As far as I can remember, she rarely if ever used it for anything else, but nine-year-old me was agog. I was one of those kids who liked to write stuff all the time and would turn it in for my teacher to critique. It wasn't for extra credit; I just wanted someone to read it. My writing jag started about midway through the third grade.
 
