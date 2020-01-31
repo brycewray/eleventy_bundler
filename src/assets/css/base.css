@@ -113,7 +113,6 @@ sup a, a.previous, a.next, .footnote-return {
   border-bottom: 0;
 }
 
-/*! purgecss start ignore */
 blockquote {
   color: var(--grey-1);
   /* border-left: 2px solid var(--grey-1); */
@@ -130,13 +129,11 @@ blockquote {
     padding: 0 5em 0.5em 1.25em;
   }
 }
-/*! purgecss end ignore */
 
 td {
   vertical-align: top;
 }
 
-/*! purgecss start ignore */
 .footnotes-sep {
   margin-top: 2em;
 }
@@ -157,7 +154,6 @@ sup.footnote-ref {
 a.footnote-return{
   font-size: 50%;
 }
-/*! purgecss end ignore */
 
 .ctr {
   text-align: center;

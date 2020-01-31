@@ -27,7 +27,6 @@
     color: var(--default-color-dark-mode);
   }
 
-  /*! purgecss start ignore */
   blockquote, .featured-image-caption {
     color: var(--grey-2-dark-mode) !important;
   }
@@ -40,8 +39,7 @@
   table.noborders thead tr {
     background-color: var(--darkblue);
   }
-  /*! purgecss end ignore */
-
+  
   .container-narrower {
     & .yellowBox {
       background: var(--yellowBox-dark-mode);
