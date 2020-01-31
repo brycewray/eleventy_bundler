@@ -47,7 +47,6 @@
       width: 100%;
     }
     & pre[class*='language-'] {
-      width: 50%;
       margin-right: auto;
       margin-left: auto;
     }
