@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium
@@ -66,6 +66,3 @@ Why would a Chrome user or Firefox user switch?
 What would compel someone starting with a fresh new Windows PC to choose the new Edge over Chrome, which is as synonymous with the Web today as IE was fifteen years or so ago?
 
 Those are the kinds of questions with which Microsoft will be dealing in the months ahead. Its answer before was “standards,” and that ended up being not enough. We’ve all heard the joke about the current Edge (and, before it, IE): it’s what Windows users use to download Chrome. Only the next few months will tell us whether that’s changed.
-
-<hr style="color: solid #fff; size: 2px; margin-top: 2em;" />
-<p class="ctr legal">Original form of Chromium logo shown above is copyright &copy; The&nbsp;Chromium&nbsp;Projects and is licensed under the Creative Commons license (Attribution 2.5&nbsp;Generic). Edited&nbsp;for&nbsp;effect. Please&nbsp;see <a href="https://commons.wikimedia.org/wiki/File:Chromium_11_Logo.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Chromium_11_Logo.svg</a> for more&nbsp;details.</p>

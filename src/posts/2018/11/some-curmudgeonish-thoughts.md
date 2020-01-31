@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Some curmudgeonish thoughts
 subtitle: (with apologies to the late Andy Rooney)

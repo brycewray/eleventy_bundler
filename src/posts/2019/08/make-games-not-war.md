@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
