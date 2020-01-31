@@ -44,6 +44,19 @@ article {
     line-height: 1.7;
     /* turtles all the way down... */
   }
+  padding-top: 0.25em;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    padding-top: 0.5em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  article {
+    padding-top: 0.75em;
+  }
 }
 
 h1, .h1,
