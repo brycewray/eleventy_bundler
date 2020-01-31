@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2019-02-16T10:50:00-06:00
 lastmod: 2019-11-08T10:00:00-06:00
 discussionId: "2019-02-old-dog-old-trick"
-featured_image: /images/dog-2514968_1280x853-1280.jpg
-featured_image_base: dog-2514968_1280x853
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Face of an old dog
-featured_image_caption: "Image: Sergeljeanette; Pixabay" # quotation marks to allow colon
 ---
 
 "What? You must be joking! *Darth Vader* was Luke's *father*?"

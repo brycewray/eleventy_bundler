@@ -4,15 +4,10 @@ tags: post
 title: "Code comfort: Eleventy and webpack"
 subtitle: "Peeking inside this site"
 description: "Some words about my Eleventy/webpack configuration."
+author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00
 lastmod: 2019-12-27T11:08:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
-featured_image: /images/code-1486361_1280x853-1280.jpg
-featured_image_base: code-1486361_1280x853
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "Computer code on a monitor"
-featured_image_caption: "Image: Markus Spiske; Pixabay"
 ---
 
 <div class="border-black border-solid yellowBox">

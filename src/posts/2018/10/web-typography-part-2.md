@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
 lastmod: 2019-12-08T17:48:00-06:00
 discussionId: "2018-10-web-typography-part-2"
-featured_image: /images/computer-1869236_1920x1440-1920.jpg
-featured_image_base: computer-1869236_1920x1440
-featured_image_width: 1920
-featured_image_ext: jpg
-featured_image_alt: Backlit computer keyboard
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 <div class="yellowBox">

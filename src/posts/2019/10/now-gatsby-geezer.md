@@ -4,15 +4,10 @@ tags: post
 title: Now I’m a Gatsby geezer
 subtitle: Gatsby Experiment III proves the winner
 description: "Project Purple isn’t over, but today is worth celebrating."
+author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00
 #lastmod: t/k
 discussionId: "2019-10-now-gatsby-geezer"
-featured_image: /images/gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker-1920.jpg
-featured_image_base: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker
-featured_image_width: 1920
-featured_image_ext: jpg
-featured_image_alt: "Gatsby monogram logo over monochrome photo of puzzle pieces"
-featured_image_caption: "Images: Gatsby; Pixabay"
 ---
 
 While stubbornness is by no means always a virtue, it has its moments. What I'll be announcing in this post is proof.

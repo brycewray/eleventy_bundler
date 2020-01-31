@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
 lastmod: 2019-10-02T19:30:00-05:00
 discussionId: "2019-04-ec-static"
-featured_image: /images/server-1235959_1280x853-1280.jpg
-featured_image_base: server-1235959_1280x853
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Internet server
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 Want to share your thoughts on the Web? [Good for you](https://ia.net/topics/take-the-power-back).

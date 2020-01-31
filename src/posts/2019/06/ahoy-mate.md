@@ -9,12 +9,6 @@ date: 2019-06-08T20:25:00-05:00
 lastmod: 2019-07-25T19:05:00-05:00
 discussionId: "2019-06-ahoy-mate"
 oldComments: true
-featured_image: /images/MailMate_screen_cap_1280x720-1280.jpg
-featured_image_base: MailMate_screen_cap_1280x720
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Screen capture of the MailMate app
-featured_image_caption: "MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake" # quotation marks to allow colon
 ---
 
 My [last post](/posts/2019/05/the-holy-mail) closed with:

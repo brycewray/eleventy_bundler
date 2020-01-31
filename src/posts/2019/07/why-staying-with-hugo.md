@@ -9,12 +9,6 @@ date: 2019-07-14T20:45:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 oldComments: true
-featured_image: /images/hugo-logo-on-black-1280x720-1280.png
-featured_image_base: hugo-logo-on-black-1280x720
-featured_image_width: 1280
-featured_image_ext: png
-featured_image_alt: Logo for the Hugo static site generator.
-featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 ---
 
 <div class="border-black border-solid yellowBox">

@@ -4,15 +4,10 @@ tags: post
 title: Some curmudgeonish thoughts, 2019 edition
 subtitle: A few more things that irk me
 description: "Here’s a follow-up on last year’s list of items that stick in my craw."
+author: Bryce Wray
 date: 2019-11-03T19:01:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
-featured_image: /images/cat-4383134_1280x800-1280.jpg
-featured_image_base: cat-4383134_1280x800
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "Obviously angry cat"
-featured_image_caption: "Image: Mircea Lancu; Pixabay"
 ---
 
 A little over a year ago, I decided to use this site to note some pet peeves. I entitled the resulting post "[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)."

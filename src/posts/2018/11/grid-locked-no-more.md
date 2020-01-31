@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2018-11-28T09:00:00-06:00
 lastmod: 2019-10-02T19:20:00-05:00
 discussionId: "2018-11-grid-locked-no-more"
-featured_image: /images/railing-4274523_1280x853-1280.jpg
-featured_image_base: railing-4274523_1280x853
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Clear view of sky above fencing
-featured_image_caption: "Image: Analogicus; Pixabay" # quotation marks to allow colon
 ---
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: “Never mind.”
 

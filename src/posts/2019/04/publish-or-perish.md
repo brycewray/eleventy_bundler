@@ -9,12 +9,6 @@ date: 2019-04-11T19:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
 discussionId: "2019-04-publish-or-perish"
 oldComments: true
-featured_image: /images/office-381228_1280x960-1280.jpg
-featured_image_base: office-381228_1280x960
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Hand moving a computer mouse near a keyboard
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static Web site](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** Web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.

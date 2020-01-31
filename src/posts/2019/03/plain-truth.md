@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
 lastmod: 2020-01-31T08:35:00-06:00
 discussionId: "2019-03-plain-truth"
-featured_image: /images/typewriter-1031024_1280x853-1280.jpg
-featured_image_base: typewriter-1031024_1280x853
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: A very old Royal-brand typewriter
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 I still have stuff I wrote fifty years ago.

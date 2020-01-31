@@ -4,15 +4,10 @@ tags: post
 title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
 description: "Observations worth exactly what you’re paying for them."
+author: Bryce Wray
 date: 2019-11-24T10:15:00-06:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-11-odds-ends-2019-11"
-featured_image: /images/nuts-768243_1280x853-1280.jpg
-featured_image_base: nuts-768243_1280x853
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "Closeup view of mixed nuts"
-featured_image_caption: "Image: Okan Caliskan; Pixabay"
 ---
 
 For decades, Dallas/Fort Worth-area newspaper readers got to enjoy content from the late [Blackie Sherrod](https://www.dallasnews.com/news/obituaries/2016/04/28/legendary-news-sportswriter-blackie-sherrod-dies-at-96/#). Perhaps his best-remembered output, although certainly only a small sample of his work, came in the form of a Sunday column he called "Scattershooting." Each edition thereof was---rather than the usual format and dedicated to just one subject---a collection of one- or two-sentence (mostly) sports-related opinions, reportage, *bon mots*, and just general Blackie-isms. He'd always begin each by saying something like: "Scattershooting while wondering whatever happened to *[formerly prominent person]* &nbsp;.&nbsp;.&nbsp;."
