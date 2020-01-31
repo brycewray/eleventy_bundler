@@ -12,12 +12,6 @@ import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
 // lazysizes.cfg.blurupMode = 'auto'
 // ----- uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
 
-/*
-import lazyLoadInit from "./lazyload-init"
-
-lazyLoadInit()
-*/
-
 import 'prismjs'
 
 import 'instant.page' // until there's a webpack-friendly version of flying-pages
