@@ -6,7 +6,7 @@ subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
-lastmod: 2020-01-09T21:05:00-06:00
+lastmod: 2020-01-31T14:23:00-06:00
 discussionId: "2019-05-boxed-in"
 ---
 
@@ -46,16 +46,21 @@ In the second week after I issued that post, I got curious and began researching
 
 [Yes, I know: [the correct line from *Goodfellas*](http://www.moviequotedb.com/movies/goodfellas/quote_9863.html) is "Now go home and get your \*\*\*\*ing *shinebox*." But, hey, work with me, okay?]
 
-Mind you, my post had differentiated between apps like Ulysses---sometimes called *shoebox* or *central-library* apps \(like Apple's own Notes and Photos apps, among many others\)---and *document-based* apps like iA Writer.[^centralLib]
+Mind you, my post had differentiated between apps like Ulysses---sometimes called *shoebox* or *central-library* apps \(like Apple's own Notes and Photos apps, among many others\)---and *document-based* apps like iA Writer.[^centralLib] In a few words&nbsp;.&nbsp;.&nbsp;.
 
-In a few words&nbsp;.&nbsp;.&nbsp;.
+A shoebox app:
 
-- A shoebox app:
-	- Keeps its working files in an obscure location on the device, such as `/Users/[your user name]/Library/Containers/com.ulyssesapp.mac/Data/CloudKit/` .&nbsp;.&nbsp;. and then deeper inside from there.
-	- Reacts to saves and syncs by altering a database.
-- A document-based app:
-	- Keeps its working files in a readily accessible location, typically a visible folder within iCloud Drive.
-	- Reacts to saves and syncs by altering separate documents.
+- Keeps its working files in an obscure location on the device[^obscLoc] and then deeper inside from there.
+
+- Reacts to saves and syncs by altering a database.
+
+[^obscLoc]: *E.g.*: `/Users/[your user name]/Library/Containers/com.ulyssesapp.mac/Data/CloudKit/`.
+
+A document-based app:
+
+- Keeps its working files in a readily accessible location, typically a visible folder within iCloud Drive.
+
+- Reacts to saves and syncs by altering separate documents.
 
 Each variation has its advantages and disadvantages, but a search reveals a shoebox app, in general, tends to have more difficulty interacting successfully with iCloud sync than does a document-based app.[^otherEqual] Here are some links I found from the last few years for how other shoebox apps caution their users about possible issues with iCloud Sync and suggest attempted fixes:
 
