@@ -24,7 +24,7 @@ module.exports = {
       config: [{
         test: /\.(jpe?g|png)/,
         options: {
-          quality: 60,
+          quality: 30,
         },
       }],
     }),
