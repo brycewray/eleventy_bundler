@@ -5,7 +5,7 @@ title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
-date: 2020-02-01T10:00:00-06:00
+date: 2020-02-01T09:50:00-06:00
 #lastmod: TBD
 discussionId: "2020-02-so-much-for-heroes"
 ---
@@ -14,7 +14,7 @@ Who needs heroes? Not this site, I've decided.
 
 Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimization-glossary/hero-image/)---a massive photo or other graphic element that constitutes much if not all of the "above-the-fold" content on the typical Web site these days.
 
-If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great big honkin' stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019)):
+If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin' stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019)):
 
 {% lazypicture "2020-01-31--curmudgeonishish-2019_1280x726", "jpg", 1280, "Screen capture of “hero image” from “Some curmudgeonish thoughts, 2019 edition,” as it appeared before the site redesign" %}
 
