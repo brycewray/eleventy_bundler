@@ -114,6 +114,11 @@
     margin-top: 40px;
   }
 
+  .site-logo-holder {
+    font-size: 115%;
+    /* IE doesn't know 'vertical-align' */
+  }
+
 }
 
 
