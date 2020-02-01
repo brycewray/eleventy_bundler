@@ -1,18 +1,13 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Two cheers for Tailwind"
 subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
+author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
 lastmod: 2020-01-18T12:36:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
-featured_image: /images/CSS-code-1797778_1280x848-1280.jpg
-featured_image_base: CSS-code-1797778_1280x848
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "Closeup of computer monitor showing CSS"
-featured_image_caption: "Image: Wojciech Krakowiak; Pixabay"
 ---
 
 <div class="yellowBox">

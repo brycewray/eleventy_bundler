@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "It’s about the food, not the decor"
 subtitle: "The delivery method matters far less than what’s being delivered"
@@ -7,13 +7,7 @@ description: "Thoughts about my recent emphasis on switching between SSGs."
 author: Bryce Wray
 date: 2019-10-02T18:15:00-05:00
 lastmod: 2019-11-09T10:00:00-06:00
-discussionId: "2019-10-its-about-food-not-decor" # figure it out later
-featured_image: /images/mount-horeb-lunch-4162348_1280x855-1280.jpg
-featured_image_base: mount-horeb-lunch-4162348_1280x855
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "Duotone photo of a diner with customers waiting to be served"
-featured_image_caption: "Image: Mike Goad; Pixabay" # quotation marks to allow colon
+discussionId: "2019-10-its-about-food-not-decor"
 ---
 
 <div class="border-black border-solid yellowBox">

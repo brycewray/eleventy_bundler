@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Why I finally settled on Ulysses
 subtitle: The write stuff (sorry)
@@ -7,12 +7,7 @@ description: How I came to realize why one particular creative writing app was a
 author: Bryce Wray
 date: 2018-09-22T11:04:36-05:00
 lastmod: 2019-09-12T19:00:00-05:00
-discussionId: "2018-09-why-finally-settled-ulysses"
-featured_image: /images/Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720-1280.png
-featured_image_base: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720
-featured_image_ext: png
-featured_image_width: 1280
-featured_image_alt: Screen capture - Ulysses app preferences window
+discussionId: 2018-09-why-finally-settled-ulysses
 ---
 
 As I write this in late September, 2018, it’s a little over a year since I began writing a novel I really, truly thought I’d have finished by now.

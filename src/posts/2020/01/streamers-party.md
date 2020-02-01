@@ -1,18 +1,13 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Streamers’ party"
 subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
+author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
 lastmod: 2020-01-20T08:15:00-06:00
 discussionId: "2020-01-streamers-party"
-featured_image: /images/streaming-tv-remote-control-3914155_1280x854-1280.jpg
-featured_image_base: streaming-tv-remote-control-3914155_1280x854
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "A hand holding a remote control for streaming device"
-featured_image_caption: "Image: ncassullo; Pixabay"
 ---
 
 At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).

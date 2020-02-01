@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Now I’m sixty-four
 subtitle: Amending my obligatory earworm
@@ -9,12 +9,6 @@ date: 2019-09-06T06:40:00-05:00
 lastmod: 2019-09-10T14:37:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
 oldComments: true
-featured_image: /images/chevrolet-1955-stylized-829805_1280x720-1280.jpg
-featured_image_base: chevrolet-1955-stylized-829805_1280x720
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile
-featured_image_caption: "Original image: Pixabay; edited in Affinity Photo" # quotation marks to allow colon
 ---
 
 *(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) copyright &copy; Sony/ATV Music Publishing LLC.*)

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Readable Web text, pretty please
 subtitle: Part 1 of a two-part series on Web typography
@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
 lastmod: 2019-04-11T20:33:00-05:00
 discussionId: "2018-10-web-typography-part-1"
-featured_image: /images/letters-691842_1280x856-1280.jpg
-featured_image_base: letters-691842_1280x856
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Letters for old-style typesetting
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 As I suggested in a [recent post](https://brycewray.com/posts/2018/09/why-finally-settled-ulysses), I’m more than a little hung up on on-screen type; so I thought I’d do a little two-part series on Web site typography and share some appropriate insights and tips. They come from two decades as a Web designer and three-and-a-half decades as a writer and formatter—oh, and nearly six decades of reading. Perhaps you’ll find them useful.

@@ -21,10 +21,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
+
     {% if title == "Home page" %}
       <meta name="description" content="{{ siteparams.siteDescription }}">
       <meta property="og:description" content="{{ siteparams.siteDescription }}" />
-      <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
     {% elseif description != "" %}
       <meta name="description" content="{{ description }}">
     {% endif %}
@@ -33,22 +34,17 @@
       <meta property="og:url" content="{{ siteparams.siteBaseURL }}{{ final_url }}" />        
     {% endif %}
 
-    {% if featured_image %}
-    <meta property="og:image" content="https://brycewray.com/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" />
-    {% endif %}
-    
     <!-- Twitter meta -->
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://brycewray.com/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" />
     {% if title != "Home page" %}
       <meta name="twitter:description" content="{{ description }}" />
       <meta name="twitter:title" content="{{ title }}" />
-      <meta name="twitter:image" content="https://brycewray.com/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" />
     {% else %}
       <meta name="twitter:description" content="{{ siteparams.siteDescription }}" />
       <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
-      <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
     {% endif %}
 
     <!-- Favicon -->
@@ -63,7 +59,6 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144-144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180-180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192-192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96-96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-16.png">

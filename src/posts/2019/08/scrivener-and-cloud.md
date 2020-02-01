@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Scrivener and The Cloud
 subtitle: Cutting through the fog (maybe)
@@ -8,12 +8,6 @@ author: Bryce Wray
 date: 2019-08-18T14:15:00-05:00
 #lastmod:
 discussionId: "2019-08-scrivener-and-cloud"
-featured_image: /images/scriv-and-cloud-from-3331240_1280x720-1280.jpg
-featured_image_base: scriv-and-cloud-from-3331240_1280x720
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: Scrivener logo and cloud computing icon
-featured_image_caption: "Images: Literature and Latte; Pixabay" # quotation marks to allow colon
 ---
 
 It can be hard on one's psyche to visit the comments sections of many tech-oriented Web sites, particularly when people are in a nasty mood about something, and *most* particularly when the trolls come out brandishing their typical "I-hate-this-and-Imma-gonna-tell-ya-why-for-the-millionth-time-with-what-I-consider-to-be-my-clever-wit" approach.

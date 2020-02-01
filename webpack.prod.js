@@ -35,7 +35,7 @@ module.exports = merge(common, {
       },
       plugins: [
         imageminMozjpeg({
-          quality: 60,
+          quality: 75,
           progressive: true,
         }),
       ],

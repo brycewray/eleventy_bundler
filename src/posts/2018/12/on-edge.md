@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium
@@ -8,13 +8,8 @@ author: Bryce Wray
 date: 2018-12-07T13:35:00-06:00
 # lastmod
 discussionId: "2018-12-on-edge"
-featured_image: /images/MS-Edge-logo-and-bkgd_1920x1080-1920.jpg
-featured_image_base: MS-Edge-logo-and-bkgd_1920x1080
-featured_image_width: 1920
-featured_image_ext: jpg
-featured_image_alt: Logos for Microsoft Edge and Chromium
-featured_image_caption: "Images: DeviantArt; The Chromium Projects" # quotation marks to allow colon
 ---
+
 Earlier this week, there were [reports](https://www.windowscentral.com/microsoft-building-chromium-powered-web-browser-windows-10) that Microsoft was going to dump the [EdgeHTML engine](https://en.wikipedia.org/wiki/EdgeHTML) that has powered its [Edge browser](https://www.microsoft.com/en-us/windows/microsoft-edge) since its introduction in the summer of 2015, when Windows 10 also debuted. Yesterday, [Microsoft officially confirmed](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) that it’s moving toward basing Edge on Chromium and, thus, on the same [Blink engine](https://www.chromium.org/blink) as one finds under the hood in Chrome.
 
 In short: soon, making something work and look a certain way on the [runaway market leader](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers), Chrome, should assure it also works and looks the same in Edge. In theory, at least, that should simplify things for Web designers and Web devs. I emphasize: _in theory_. More on that in a little bit.
@@ -66,6 +61,3 @@ Why would a Chrome user or Firefox user switch?
 What would compel someone starting with a fresh new Windows PC to choose the new Edge over Chrome, which is as synonymous with the Web today as IE was fifteen years or so ago?
 
 Those are the kinds of questions with which Microsoft will be dealing in the months ahead. Its answer before was “standards,” and that ended up being not enough. We’ve all heard the joke about the current Edge (and, before it, IE): it’s what Windows users use to download Chrome. Only the next few months will tell us whether that’s changed.
-
-<hr style="color: solid #fff; size: 2px; margin-top: 2em;" />
-<p class="ctr legal">Original form of Chromium logo shown above is copyright &copy; The&nbsp;Chromium&nbsp;Projects and is licensed under the Creative Commons license (Attribution 2.5&nbsp;Generic). Edited&nbsp;for&nbsp;effect. Please&nbsp;see <a href="https://commons.wikimedia.org/wiki/File:Chromium_11_Logo.svg" target="_blank">https://commons.wikimedia.org/wiki/File:Chromium_11_Logo.svg</a> for more&nbsp;details.</p>
