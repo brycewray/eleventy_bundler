@@ -52,7 +52,7 @@ The best way to learn about Working Copy is to read Borum's excellent [documenta
 
 [^docs]: After the awfulness of the [SSG](https://staticgen.com) documentation that I recently [attacked](/posts/2019/07/lessons-learned), it was and is a distinct pleasure to use Working Copy's outstanding online manual.
 
-Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early front matter and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file ("roger-copy.md"), highlighted on the right in iA Writer:
+Early this morning in the comfort of the living room recliner, I started this very post in [iA Writer](https://ia.net/writer) on the iPad. I put in some early front matter and a paragraph of text just to get started, and then I opened Working Copy and had both apps running in [split-screen mode](https://support.apple.com/en-us/HT207582). As you can see on the left, I'd started a Git commit of this article's original [Markdown](https://daringfireball.net/projects/markdown) file, "roger-copy.md," highlighted on the right in iA Writer:
 
 {% lazypicture "Working_Copy_scr_cap_01_1024x768", "jpg", 1024, "iPad screen capture: Working Copy on the left, iA Writer on the right" %}
 
