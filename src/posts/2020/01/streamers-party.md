@@ -6,11 +6,11 @@ subtitle: "Getting with the (TV) program"
 description: "I finally jump off the sinking ship that is cable television—while also regaling you with tales of yesteryear."
 author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
-lastmod: 2020-01-20T08:15:00-06:00
+lastmod: 2020-02-04T07:20:00-06:00
 discussionId: "2020-01-streamers-party"
 ---
 
-At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
+At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We e [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
 
 We are free, free at last, from the preposterous monstrosity of cable television&nbsp;.&nbsp;.&nbsp;.
 
@@ -34,7 +34,7 @@ We get everything we really wanted, for about half the price. And it's all contr
 
 I, for one, am thrilled that we've done it at last. Indeed: had it been totally up to me, we'd have done it years ago.
 
-Thing is, we married nerds can't make such changes until everyone in-house is willing to accept such an adjustment. You younger folks, probably only vaguely remembering the pre-Internet era, have no idea how hard it can be to move that boulder up the hill, particularly if one's Significant Other is already somewhat of a technophobe.
+Thing is, we married nerds can't make such changes until everyone in-house is willing to accept such an adjustment. You younger folks, probably only vaguely remembering the pre-Web era, have no idea how hard it can be to move that boulder up the hill, particularly if one's Significant Other is already somewhat of a technophobe.
 
 In our case, the successful job of persuasion that, yes, it's time for us to make the big jump and I "[think you're gonna love it](https://www.inc.com/jason-aten/5-reasons-apples-product-announcements-are-so-much-better-than-everyone-else.html)," had to wait until *both* of two things had happened:
 
