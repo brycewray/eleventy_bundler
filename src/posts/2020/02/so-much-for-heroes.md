@@ -6,7 +6,7 @@ subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2020-02-03T08:11:00-06:00
+lastmod: 2020-02-04T14:41:00-06:00
 discussionId: "2020-02-so-much-for-heroes"
 ---
 
@@ -50,7 +50,7 @@ I won't get into all the details, but the skinny on why the WebP images *weren't
 
 More maddeningly, it was just hit-or-miss enough that I couldn't reliably configure all the settings to prevent it. So, rather than "rewarding" WebP-compatible browsers with smaller-size graphics, in many cases I would be "punishing" them with bigger ones. Definitely not okay.
 
-While figuring out what to do, I tried Google's versatile [`cwebp`](https://developers.google.com/speed/webp/docs/cwebp) (WebP encoder) tool. While it, understandably, produced better results than my webpack config, I soon saw that the only reliable setup which *always* produced a WebP file that was smaller than the original JPG or PNG was when I had the *truly* original JPG or PNG. That is, I couldn't use a *processed* version of the original, or I'd almost always get a larger WebP file.
+While figuring out what to do, I tried Google's versatile [`cwebp`](https://developers.google.com/speed/webp/docs/cwebp) (WebP encoder) tool. Although it, understandably, produced better results than my webpack config, I soon saw that the only reliable setup which *always* produced a WebP file that was smaller than the original JPG or PNG was when I had the *truly* original JPG or PNG. That is, I couldn't use a *processed* version of the original, or I'd almost always get a larger WebP file.
 
 Only problem with that was, in many cases, I *had* no unprocessed version of the JPG or PNG file.
 
