@@ -20,7 +20,7 @@ This isn&rsquo;t a complete list but, rather, covers only the biggies. Check out
 - [lazysizes](https://github.com/aFarkas/lazysizes) (and several of its plugins), [responsive-loader](https://github.com/herrstucki/responsive-loader), and a variety of [imagemin](https://github.com/imagemin/imagemin)-related items for processing the few images on the site.
 - [typefaces](https://github.com/kyleamathews/typefaces), through which I&rsquo;m using the [Public Sans](https://public-sans.digital.gov) Web &ldquo;[font](https://brycewray.com/posts/2018/10/web-typography-part-2/)&rdquo; for all non-code text and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for code and code blocks.
 - [Browsersync](https://browsersync.io)&mdash;Although Eleventy comes with Browsersync for Eleventy-only use (*i.e.*, if you **weren&rsquo;t** using it with a bundler, as I am here with webpack), I use a separate Browsersync instance for the `testbuild` script (see &ldquo;Scripts in `package.json`&rdquo;). **Note**: I have Browsersync&rsquo;s usually-on [ghost mode](https://browsersync.io/docs/options#option-ghostMode) turned **off** because it creeps me out 🙂 when I&rsquo;m testing locally; you, however, might prefer the default &ldquo;on&rdquo; setting.
-- [PostCSS](https://postcss.org) for, among other things, transpiling my CSS for easier consumption — especially by obsolete browsers (looking at you, IE).
+- [PostCSS](https://postcss.org) for, among other things, transpiling my CSS for easier consumption — even for obsolete browsers (looking at you, IE).
 
 ## Scripts in `package.json`
 
