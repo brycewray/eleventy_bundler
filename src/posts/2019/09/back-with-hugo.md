@@ -54,7 +54,7 @@ While Eleventy does an admirable job of keeping that from its users, it can't do
 
 Thus, I was back to preferring the all-in-one-box, single-binary goodness of Hugo once again. Then I read something that helped me make up my mind, if such a thing is ever possible with a flighty cranium like mine.
 
-### Flavio Copes is 'waaaay smarter than I (no&nbsp;kidding)
+### Flavio Copes is ’waaaay smarter than I (no&nbsp;kidding)
 
 On the day this week when I was pondering whether to revert to Hugo, egg-on-my-face be damned, I encountered one particular article that made the choice a lot easier---if not less personally embarrassing, given the big deal I'd made about the short-lived change.
 
