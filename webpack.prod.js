@@ -4,11 +4,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default
 const imageminMozjpeg = require('imagemin-mozjpeg')
 
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g)
-  }
-}
 module.exports = merge(common, {
   mode: "production",
   plugins: [
