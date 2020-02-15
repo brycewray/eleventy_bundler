@@ -10,7 +10,7 @@ lastmod: 2020-02-04T07:20:00-06:00
 discussionId: "2020-01-streamers-party"
 ---
 
-At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We e [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
+At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).
 
 We are free, free at last, from the preposterous monstrosity of cable television&nbsp;.&nbsp;.&nbsp;.
 
