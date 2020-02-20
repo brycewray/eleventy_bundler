@@ -6,7 +6,7 @@ subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."
 author: Bryce Wray
 date: 2019-12-27T14:42:40-06:00
-lastmod: 2019-12-28T07:05:00-06:00
+lastmod: 2020-02-19T19:57:00-06:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
 ---
 
@@ -77,7 +77,7 @@ So things settled down for a little while, "dance"-wise; but, in my always troub
 - **[Make games, not war](/posts/2019/08/make-games-not-war)**---Perhaps mentally fatigued by not only Gatsby Experiment I and its aftermath but also some work-related stuff going on at the time, I penned (keyed?) this change-of-pace piece about how Major League Baseball and the National Football League should reorganize themselves for the sake of common sense. Shockingly, neither has taken me up on my eminently logical suggestions although I concede they'd likely cost billions in ad revenue---a small price to pay for the inner satisfaction of being *logical*, I say.
 
 - **[Scrivener and The Cloud](/posts/2019/08/scrivener-and-cloud)**---This was a rebuttal of an Ars Technica forum comment saying, erroneously, that [Scrivener](https://literatureandlatte.com/scrivener/overview) for iOS works with iCloud sync. Nope, nope, nope. Would that it were true, but t'ain't.
-- **[Backtracking to Big G](/posts/2019/08/backtracking-to-big-g)**---I tried to get away from Google services. I couldn't. Argh. However, in my defense, I *did* later once again remove the massive cookies deployment machine known as Google Analytics and replace it with the totally cookie-free Netlify Analytics. (It wasn't purely good intentions on my part, to be honest with you. My readers tend to be tech-savvy users of ad blockers, thus making Google Analytics data essentially meaningless on this site.)
+- **[Backtracking to Big G](/posts/2019/08/backtracking-to-big-g)**---I tried to get away from Google services. I couldn't. Argh. However, in my defense, I *did* later once again remove the massive cookies deployment machine known as Google Analytics and replace it with the totally cookie-free Netlify Analytics. (It wasn't purely good intentions on my part, to be honest with you. My readers tend to be tech-savvy users of ad blockers, thus making Google Analytics data essentially meaningless on this site.)^[Update from February, 2020: Speaking of "once again," I've ceased using Netlify Analytics once again to save the nine bucks a month. No, I ***didn't*** go back to Google Analytics; I'm just flying without any analytics now, period. Netlify Analytics will have to wait for that perhaps-never-to-occur day in the future when I decide to monetize this site---somehow.]
 
 As August came to an end, "the dance" reared its ugly head again and, in the background, I was on what I'd soon announce as Gatsby Experiment II. Let's just say it didn't go much better than Gatsby Experiment I. By Labor Day weekend, I'd canned Gatsby again but, this time, in favor of [Eleventy](https://11ty.dev). And that takes us to September, where suddenly "the dance" became a matter of public record.
 
