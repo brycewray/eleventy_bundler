@@ -5,9 +5,9 @@ title: "YouTube TV and the RSNs flap"
 subtitle: "Is the pyramid near collapse?"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
-date: 2020-02-28T19:00:00-06:00
+date: 2020-02-28T21:30:00-06:00
 #lastmod: TBD
-discussionId: "2020-02-takeaways-rsn-flap"
+discussionId: "2020-02-youtube-tv-rsns-flap"
 ---
 
 Ninety years ago, a reporter asked Babe Ruth about the fact that his previous year's pay had been higher than that of the president of the United States, Herbert Hoover. The Babe [responded](https://quoteinvestigator.com/2014/12/28/better-year/), in a probable dig at Hoover's handling of the dawning Great Depression: "I had a better year than he did."
@@ -24,7 +24,7 @@ Fast-forward to today, when:
 
 It's been [over 150 years](https://ohiohistorycentral.org/w/Cincinnati_Reds) since professional sports began to captivate the hearts of U. S. fans. Now, all of this may finally have become unsustainable, a possibility I've been pondering for a while. It may well be that the pyramid is, at long last, toppling.
 
-I was further prompted toward this conclusion yesterday, when [YouTube TV](https://tv.youtube.com)---[our home's streaming provider of choice](/posts/2020/01/streamers-party)---[announced](https://www.cordcuttersnews.com/youtube-tv-is-losing-sinclair-owned-fox-sports-networks/) that it, like several other TV services before it, is dropping the Sinclair-owned RSNs on which many sports fans depend to watch their favorite teams. The two sides just couldn't reach an agreement.^[Today, things got still stranger when [it was reported](https://www.cordcuttersnews.com/comcast-may-lose-fox-rsns-later-this-year/) that even a *conventional cable service*, none other than the giant Comcast, was seriously considering telling Sinclair to shove its RSNs.]
+I was further prompted toward this conclusion yesterday, when [YouTube TV](https://tv.youtube.com)---[our home's streaming provider of choice](/posts/2020/01/streamers-party)---[announced](https://www.cordcuttersnews.com/youtube-tv-is-losing-sinclair-owned-fox-sports-networks/) that it, like several other TV services before it, is dropping the [Sinclair](https://en.wikipedia.org/wiki/Sinclair_Broadcast_Group)-owned RSNs on which many sports fans depend to watch their favorite teams. The two sides just couldn't reach an agreement.^[Today, things got still stranger when [it was reported](https://www.cordcuttersnews.com/comcast-may-lose-fox-rsns-later-this-year/) that even a *conventional cable service*, none other than the giant Comcast, was seriously considering telling Sinclair to shove its RSNs.]
 
 Before I go on, the obvious question is: "What's an RSN, and why should you care?"
 
@@ -32,7 +32,7 @@ Before I go on, the obvious question is: "What's an RSN, and why should you care
 
 I'll address the second part of that question first: if you have little or no use for watching sports on TV, you probably *don't* care about RSNs. Still, please keep reading because there are some points ahead which may very well merit your attention and consideration, even if only on an academic basis.
 
-An RSN is a *regional sports network*. Here in the Dallas/Fort Worth area, the main example is Fox Sports Southwest, which carries almost all the regular-season games for the Texas Rangers baseball team, the Dallas Mavericks basketball team, and the Dallas Stars hockey team. It also airs a variety of college and high school sporting events.
+An RSN is a *regional sports network*. Probably the most prominent example is the New York area's [YES Network](http://web.yesnetwork.com/). Where I live, there's [Fox Sports Southwest](https://www.foxsports.com/southwest), which carries almost all the regular-season games for the Texas Rangers baseball team, the Dallas Mavericks basketball team, and the Dallas Stars hockey team. It also airs a variety of college- and high-school-level sporting events.
 
 Wait a minute: it's *Fox* Sports Southwest? But didn't I say these were owned by Sinclair?
 
@@ -46,7 +46,7 @@ I grew up a TV sports fan. My late father and I spent many a weekend afternoon w
 
 However, as one service after another drops RSNs because the rising cost doesn't justify having them, I suspect I've reached the end of always being just one button-press away from seeing my local teams, a luxury (as it turns out) to which I'd become accustomed over the last decade and a half.
 
-At this writing, there remain two streaming services that are still carrying the Sinclair-owned RSNs: AT&amp;T Now and Hulu. Compared to YouTube TV, each costs more and doesn't work as well, in my opinion as a [long-time TV nerd](/posts/2020/01/streamers-party).^[Similarly, my wife likes certain YouTube TV features---notably the category-leading DVD functionality---much better than what we had with cable. She's not easy to please when it's necessary to make a change, especially if she deems it a "technical" subject, so I'm not about to upset the applecart on that score.] So, although the Twitterverse and various online comments sections would lead me to believe I'm in the minority on this, I'm sticking with YouTube TV. Sinclair is known for its stubbornness (and, not to forget, [being](https://splinternews.com/sinclair-boss-gives-his-most-evil-sounding-interview-ye-1825143498) [evil](https://www.huffpost.com/entry/opinion-weiss-sinclair-television-propaganda_n_5ac2c6d4e4b09712fec38b95)), so I doubt seriously there will be a resolution that fixes this mess. The other providers who dropped the Sinclair RSNs haven't come back, and I see no reason to believe YouTube TV will vary from that pattern.^[And you may be absolutely sure I have *no intention whatsoever* of backtracking to cable, and the humongous bills that accompany it, just to get the "local" RSN back. No way.]
+At this writing, there remain two streaming services that are still carrying the Sinclair-owned RSNs: AT&amp;T Now and Hulu. Compared to YouTube TV, each costs more and doesn't work as well, in my opinion as a [long-time TV nerd](/posts/2020/01/streamers-party).^[Similarly, my wife likes certain YouTube TV features---notably the category-leading DVD functionality---much better than what we had with cable. She's not easy to please when it's necessary to make a change, especially if she deems it a "technical" subject, so I'm not about to upset the applecart on that score.] So, although the Twitterverse and various online comments sections would lead me to believe I'm in the minority on this, I'm sticking with YouTube TV. Sinclair is known for its stubbornness (and [other](https://splinternews.com/sinclair-boss-gives-his-most-evil-sounding-interview-ye-1825143498) [things](https://www.huffpost.com/entry/opinion-weiss-sinclair-television-propaganda_n_5ac2c6d4e4b09712fec38b95)), so I doubt seriously there will be a resolution. The other providers who dropped the Sinclair RSNs haven't come back, and I see no reason to believe YouTube TV will vary from that pattern.^[And you may be absolutely sure I have *no intention whatsoever* of backtracking to cable, and the humongous bills that accompany it, just to get the "local" RSN back. No way.]
 
 ## The shadow of the pyramid
 
