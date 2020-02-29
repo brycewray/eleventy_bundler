@@ -62,7 +62,7 @@ Every month, tens of thousands more homes cut the cord---often in favor of servi
 
 As a result, the pool of TV money on which the pro sports organizations have depended will, inevitably, shrink.
 
-Then what will the pro sports leagues do?
+When it does, what will those organizations do?
 
 They can't cut the massive salaries the athletes make. That would result in strikes which would cripple the leagues, perhaps irrevocably.
 
