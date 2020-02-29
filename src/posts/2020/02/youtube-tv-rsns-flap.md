@@ -6,9 +6,11 @@ subtitle: "Is the pyramid near collapse?"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
-#lastmod: TBD
+lastmod: 2020-02-29T06:55:00-06:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 ---
+
+***Update, 2020-02-29***---This morning, I learned from [a story on *CordCutters News*](https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/) that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I'll still keep this post in place because (a.) that's not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker's opinion, remain salient nonetheless.{.yellowBox}
 
 Ninety years ago, a reporter asked Babe Ruth about the fact that his previous year's pay had been higher than that of the president of the United States, Herbert Hoover. The Babe [responded](https://quoteinvestigator.com/2014/12/28/better-year/), in a probable dig at Hoover's handling of the dawning Great Depression: "I had a better year than he did."
 
