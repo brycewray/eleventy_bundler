@@ -2,8 +2,6 @@ exports.data = {
   layout: 'layouts/_default/base.11ty.js'
 }
 
-// const webmentionList = require('../webmention.11ty.js')
-
 exports.render = function (data) {
 
   let pubDate = (data.page.date).toLocaleDateString('en-US', {
@@ -51,9 +49,37 @@ exports.render = function (data) {
 
   ${
     data.title !== "Home page" && data.title !== "Posts"
-    ? `<p class="ctr">Webmentions stuff goes here</p>`
+    ? `
+    <!-- from https://github.com/maxboeck/eleventy-webmentions/blob/master/_includes/webmention.njk -->
+  
+    <article class="webmention h-cite" id="webmention-${data.webmention}['wm-id']">
+      <div class="webmention__meta">
+        ${
+          (data.webmention.author !== null) 
+          ? `<a class="webmention__author p-author h-card u-url" href="${data.webmention.url}" target="_blank" rel="noopener noreferrer">
+            ${(data.webmention.author.photo !== null)
+              ? `<img class="webmention__author__photo u-photo" src="${data.webmention.author.photo}" alt="${data.webmention.author.name}">`
+              : `<img class="webmention__author__photo" src="/images/webmention-avatar-default.svg" alt="">`
+            }
+            <strong class="p-name">${data.webmention.author.name}</strong>
+          </a>`
+          : `<span class="webmention__author">
+            <img class="webmention__author__photo" src="/images/webmention-avatar-default.svg" alt="">
+            <strong>Anonymous</strong>
+          </span>`
+        }
+    
+        ${(data.webmention.published !== null)
+          ? `<time class="webmention__pubdate dt-published" datetime="${data.webmention.published}">${data.webmention.published}</time><!-- orig was dd LLL yyyy -->`
+          : ``
+        }
+      </div>
+      <div class="webmention__content p-content">
+        ${data.webmention.content.value}
+      </div>
+    </article>
+    `
     : ``
-    // somewhere in here we need the comments/webmentions stuff
   }
   
   ${data.title != "The obligatory About Me page"
