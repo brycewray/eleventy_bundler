@@ -2,8 +2,13 @@ const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
 const sanitizeHTML = require('sanitize-html')
+const ofotigrid = require('./src/_includes/ofotigrid.js')
 
 module.exports = function (eleventyConfig) {
+
+  ofotigrid(eleventyConfig) // theming -- based on Reuben Lillie's code
+
+  eleventyConfig.setQuietMode(true)
 
   eleventyConfig.addPassthroughCopy('src/assets/js')
 
@@ -141,7 +146,8 @@ module.exports = function (eleventyConfig) {
     templateFormats: [
       'html',
       'md',
-      'njk'
+      'njk',
+      '11ty.js'
     ],
     passthroughFileCopy: true,
   }
