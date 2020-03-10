@@ -16,7 +16,7 @@ The old saying is that "Life is what happens when you're making other plans." Tr
 
 I [told](/posts/2019/09/now-im-sixty-four) you back in September that we were awaiting our first grandchild; then, in November, I [noted](/posts/2019/11/mixed-nuts-2019-11) that we'd learned she'd be a granddaughter, arriving in April.
 
-Granddaughter? Check. But arriving in April? Well&nbsp;.&nbsp;&nbsp;.
+Granddaughter? Check. But arriving in April? Well&nbsp;.&nbsp;.&nbsp;.
 
 This past Saturday morning, March 7, I ran a quick errand and, planning to have a restful weekend from there, started to write what was to have been the next post here. Suddenly, I heard my wife's distressed voice from down the hall, telling me that our daughter was texting to say that her "water" had "broken" and she was already at the hospital.
 
