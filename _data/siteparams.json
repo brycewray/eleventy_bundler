@@ -3,6 +3,8 @@
   "siteTitle": "BryceWray.com",
   "siteAuthor": "Bryce Wray",
   "siteDescription": "brycewray.com — Observations, opinions, geekery.",
+  "talkyardServerUrl": "https://comments-for-brycewray-com.talkyard.net",
+  "talkyardScriptUrl": "https://c1.ty-cdn.net/-/talkyard-comments.min.js",
   "feed": {
     "subtitle": "brycewray.com — Observations, opinions, geekery.",
     "filename": "feed.xml",
