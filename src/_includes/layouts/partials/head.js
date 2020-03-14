@@ -40,7 +40,7 @@ module.exports = function(eleventyConfig) {
     ${
       (data.title == "Home page")
       ? `
-      <meta name="description" content="${data.siteparams.siteDescription}">
+      <meta name="description" content="${data.siteparams.siteDescription}" />
       <meta property="og:description" content="${data.siteparams.siteDescription}" />
       `
       : (data.description != "")
@@ -51,11 +51,11 @@ module.exports = function(eleventyConfig) {
     }
 
     ${
-      (data.final_url !== null)
+      (data.page.url !== null)
       ? `
-      <meta property="og:url" content="{{ siteparams.siteBaseURL }}{{ final_url }}" />
+      <meta property="og:url" content="${data.siteparams.siteURLforOG}${data.page.url}" />
       `
-      : ``
+      : `<meta property="og:url" content="${data.siteparams.siteURLforOG}" />`
     }
 
     <!-- Twitter meta -->
@@ -64,14 +64,14 @@ module.exports = function(eleventyConfig) {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
     ${
-      (data.title != "Home page")
+      data.title !== "Home page"
       ? `
       <meta name="twitter:description" content="${data.description}" />
       <meta name="twitter:title" content="${data.title}" />
       `
       : `
-      <meta name="twitter:description" content=${data.siteparams.siteDescription}" />
-      <meta name="twitter:title" content="${siteparams.siteTitle}" />
+      <meta name="twitter:description" content="${data.siteparams.siteDescription}" />
+      <meta name="twitter:title" content="${data.siteparams.siteTitle}" />
       `
     }
 
