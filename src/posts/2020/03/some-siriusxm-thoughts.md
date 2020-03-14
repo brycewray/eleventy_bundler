@@ -32,7 +32,7 @@ If reading the Web-based comments from those who gripe about SiriusXM programmin
 
 - The music channels didn't feature such compressed audio. "It sounds like *[again, the expletive]*."
 
-- The simulcasts of programs like [*The Dan Patrick Show*](https://www.danpatrickshow.com) weren't replete with commercials. "I thought this [*expletive, once more*] is supposed to be commercial-free!"
+- The simulcasts of programs like *The Dan Patrick Show* weren't replete with commercials. "I thought this [*expletive, once more*] is supposed to be commercial-free!"
 
 Jeeeez. Well, now&nbsp;.&nbsp;.&nbsp;.
 
