@@ -1,5 +1,5 @@
 ---
-layout: layouts/_default/index.11ty.js
+layout: layouts/_default/index.njk
 title: "Home page"
 description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # quotation marks to allow colon
 author: Bryce Wray

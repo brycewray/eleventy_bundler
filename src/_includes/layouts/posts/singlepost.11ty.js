@@ -3,18 +3,6 @@ exports.data = {
 }
 
 exports.render = function (data) {
-
-  let pubDate = (data.page.date).toLocaleDateString('en-US', {
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric'
-  })
-  let modDate = (data.lastmod).toLocaleDateString('en-US', {
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric'
-  })
-
   return `
 <main>
   <div class="background-hero-div">
@@ -22,19 +10,21 @@ exports.render = function (data) {
       <h1 class="background-hero-title-text">${data.title}</h1>
       <h2 class="background-hero-subtitle-text">
         ${
-          data.subtitle !== null
+          data.subtitle
             ? data.subtitle
-            : ``
+            : `&nbsp;`
         }
       </h2>
       <p class="background-hero-description-text">${data.description}</p>
       <p class="background-hero-p-text">
-        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${pubDate}</strong><br />
+        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
+          year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />
         <span class="pokey">
         ${
-          modDate !== null
-          ? `<span style="font-variant: small-caps">last modified:</span>&nbsp;${modDate}`
-          : ``
+          data.lastmod !== null && data.lastmod !== undefined
+          ? `<span style="font-variant: small-caps">last modified:</span>&nbsp;${(data.lastmod).toLocaleDateString('en-US', {
+            year: 'numeric', month: 'long', day: 'numeric'})}`
+          : `&nbsp;`
         }
         </span>
       </p>

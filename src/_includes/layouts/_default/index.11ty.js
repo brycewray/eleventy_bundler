@@ -15,7 +15,7 @@ exports.render = function (data) {
     </picture>
   </div>
   ${
-    (data.featured_image_caption !== null)
+    (data.featured_image_caption)
     ? `<p class="legal ctr text-muted" style="margin-top: 0.5em;">${data.featured_image_caption}<span class="IEonly"> &bull; <em>(May appear distorted in obsolete browsers.)</em></span></p>`
     : ``
   }
@@ -35,7 +35,7 @@ exports.render = function (data) {
         <p class="legal text-muted" style="margin-top: 0;">
           <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
           ${
-            post.data.lastmod !== null && post.data.lastmod !== undefined
+            post.data.lastmod
             ? `
           &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}">${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}</time>
             `
@@ -49,7 +49,7 @@ exports.render = function (data) {
         ` 
       ).join('')}
 
-      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>
