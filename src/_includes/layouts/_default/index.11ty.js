@@ -3,7 +3,7 @@ exports.data = {
 }
 
 exports.render = function (data) {
-  `
+  return `
 
   <main>
 
@@ -22,28 +22,34 @@ exports.render = function (data) {
 
   <div class="container-home">
     <div class="column-home-1">
-      {{ content | safe }}
+      ${data.content}
     </div>
     <div class="column-home-2">
       <h2 class="h1 topofHome" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
-      {% for post in collections.post | reverse %}
-        {% if loop.index0 < 7 %}	
-        <div>
-          <h2 class="h5"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="h5"><em>{{ post.data.subtitle }}</em></p>
-          <p class="legal text-muted" style="margin-top: 0;">
-            <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
-            {% if post.data.lastmod %}
-            &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
-            {% endif %}
-          </p>
-          <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 1.5em;">
-            {{ post.data.description }}
-          </p>
-        </div>
-        {% endif %}
-      {% endfor %}
-      <p><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+      ${
+        data.collections.post.reverse().slice(0, 7).map(post =>
+        `
+      <div>
+        <h2 class="h5"><a href="${post.url}">${post.data.title}</a></h2>
+        <p class="h5"><em>${post.data.subtitle}</em></p>
+        <p class="legal text-muted" style="margin-top: 0;">
+          <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
+          ${
+            post.data.lastmod !== null && post.data.lastmod !== undefined
+            ? `
+          &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}">${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}</time>
+            `
+            : ``
+          }
+        </p>
+        <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 1.5em;">
+          ${post.data.description}
+        </p>
+      </div>
+        ` 
+      ).join('')}
+
+      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>
