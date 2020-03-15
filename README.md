@@ -10,7 +10,7 @@ While this is the actual site&rsquo;s repo rather than a starter version thereof
 2. Make appropriate changes to the `_data` directory&rsquo;s files.
 3. Delete from `src` the Markdown files and images (well, maybe you should keep one or two of each around at the start, until you see how things work).
 
-I chose to build this site with [Nunjucks](https://mozilla.github.io/nunjucks/) templates after converting its content from the [Go](https://golang.org)-based [Hugo](https://gohugo.io) and the [React](https://reactjs.org)-based [Gatsby](https://gatsbyjs.org); but Eleventy itself is [extremely flexible](https://www.11ty.dev/docs/languages/) in that regard, so go with what you prefer.
+I initially chose to build this site with [Nunjucks](https://mozilla.github.io/nunjucks/) templates after converting its content from the [Go](https://golang.org)-based [Hugo](https://gohugo.io) and the [React](https://reactjs.org)-based [Gatsby](https://gatsbyjs.org); but Eleventy itself is [extremely flexible](https://www.11ty.dev/docs/languages/) in that regard, so go with what you prefer. Indeed, I&rsquo;ve recently changed most of the site over to JavaScript templates (.11ty.js), following the [amazingly well-documented example](https://gitlab.com/reubenlillie/reubenlillie.com) of [Reuben Lillie's site](https://reuvenlillie.com).
 
 ## What&rsquo;s under the hood
 

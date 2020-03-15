@@ -49,7 +49,7 @@ exports.render = function (data) {
         ` 
       ).join('')}
 
-      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a></p>
+      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>

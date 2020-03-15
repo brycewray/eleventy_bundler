@@ -1,6 +1,6 @@
 exports.data = {
   layout: 'layouts/_default/base.11ty.js',
-  tags: '- nav',
+  tags: ['nav'],
   navtitle: 'Posts',
   title: 'Posts',
   pagination: { 
@@ -18,7 +18,7 @@ exports.render = function (data) {
 	<div class="container">
 		<h1 class="ctr topOfMain">Posts</h1>
 		<div class="post-line"></div>
-		<div class="container-narrower">
+    <div class="container-narrower">
       ${
         data.collections.post.reverse().map(post =>
         `

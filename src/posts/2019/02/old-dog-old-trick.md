@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Old dog learns old trick 
 subtitle: How’d I miss this way to fool IE?

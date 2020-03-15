@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Mixed nuts • February, 2020"
 subtitle: "Here and there, frick and frack, yadda and yadda"
