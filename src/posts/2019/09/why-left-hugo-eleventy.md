@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"

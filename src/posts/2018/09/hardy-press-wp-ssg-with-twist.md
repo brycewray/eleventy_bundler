@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "HardyPress: WP + SSG with a twist"
 subtitle: Trying to have the best of two worlds

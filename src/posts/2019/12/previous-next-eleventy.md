@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "“Previous” and “next” in Eleventy"
 subtitle: "The answer to an authentic FAQ"

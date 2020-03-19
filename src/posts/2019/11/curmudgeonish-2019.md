@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: Some curmudgeonish thoughts, 2019 edition
 subtitle: A few more things that irk me
