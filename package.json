@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf _site",
+    "clean": "rm -rf _site",
     "start": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet",
     "dev:modewebpack": "webpack --mode development --watch --config webpack.dev.js",
@@ -85,7 +85,6 @@
     "prismjs": "^1.19.0",
     "resolve-url-loader": "^3.1.1",
     "responsive-loader": "^1.2.0",
-    "rimraf": "^3.0.2",
     "rss": "^1.2.2",
     "sanitize-html": "^1.22.1",
     "sharp": "^0.23.4",
