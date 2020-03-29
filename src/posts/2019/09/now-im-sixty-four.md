@@ -6,12 +6,12 @@ subtitle: Amending my obligatory earworm
 description: "Having reached this milestone-of-sorts, I offer some different wording for a Lennon/McCartney classic that suits me today."
 author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
-lastmod: 2019-09-10T14:37:00-05:00
+lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
 oldComments: true
 ---
 
-*(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) copyright &copy; Sony/ATV Music Publishing LLC.*)
+*(With apologies to the late John&nbsp;Lennon and the very much still-with-us Sir&nbsp;Paul&nbsp;McCartney. [Original lyrics](https://en.wikipedia.org/wiki/When_I'm_Sixty-Four) &copy; Sony/ATV Music Publishing LLC.*)
 
 Long before aging,  
 I lost my hair  
