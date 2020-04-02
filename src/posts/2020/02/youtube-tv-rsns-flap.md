@@ -6,7 +6,7 @@ subtitle: "Is the pyramid near collapse?"
 description: "A tale of shrinking options for cord-cutters who love TV sports."
 author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
-lastmod: 2020-02-29T06:55:00-06:00
+lastmod: 2020-04-02T12:23:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 ---
 
@@ -48,7 +48,7 @@ I grew up a TV sports fan. My late father and I spent many a weekend afternoon w
 
 However, as one service after another drops RSNs because the rising cost doesn't justify having them, I suspect I've reached the end of always being just one button-press away from seeing my local teams, a luxury (as it turns out) to which I'd become accustomed over the last decade and a half.
 
-At this writing, there remain two streaming services that are still carrying the Sinclair-owned RSNs: AT&amp;T Now and Hulu. Compared to YouTube TV, each costs more and doesn't work as well, in my opinion as a [long-time TV nerd](/posts/2020/01/streamers-party).^[Similarly, my wife likes certain YouTube TV features---notably the category-leading DVD functionality---much better than what we had with cable. She's not easy to please when it's necessary to make a change, especially if she deems it a "technical" subject, so I'm not about to upset the applecart on that score.] So, although the Twitterverse and various online comments sections would lead me to believe I'm in the minority on this, I'm sticking with YouTube TV. Sinclair is known for its stubbornness (and [other](https://splinternews.com/sinclair-boss-gives-his-most-evil-sounding-interview-ye-1825143498) [things](https://www.huffpost.com/entry/opinion-weiss-sinclair-television-propaganda_n_5ac2c6d4e4b09712fec38b95)), so I doubt seriously there will be a resolution. The other providers who dropped the Sinclair RSNs haven't come back, and I see no reason to believe YouTube TV will vary from that pattern.^[And you may be absolutely sure I have *no intention whatsoever* of backtracking to cable, and the humongous bills that accompany it, just to get the "local" RSN back. No way.]
+At this writing, there remain two streaming services that are still carrying the Sinclair-owned RSNs: AT&amp;T Now and Hulu. Compared to YouTube TV, each costs more and doesn't work as well, in my opinion as a [long-time TV nerd](/posts/2020/01/streamers-party).^[Similarly, my wife likes certain YouTube TV features---notably the category-leading DVR functionality---much better than what we had with cable. She's not easy to please when it's necessary to make a change, especially if she deems it a "technical" subject, so I'm not about to upset the applecart on that score.] So, although the Twitterverse and various online comments sections would lead me to believe I'm in the minority on this, I'm sticking with YouTube TV. Sinclair is known for its stubbornness (and [other](https://splinternews.com/sinclair-boss-gives-his-most-evil-sounding-interview-ye-1825143498) [things](https://www.huffpost.com/entry/opinion-weiss-sinclair-television-propaganda_n_5ac2c6d4e4b09712fec38b95)), so I doubt seriously there will be a resolution. The other providers who dropped the Sinclair RSNs haven't come back, and I see no reason to believe YouTube TV will vary from that pattern.^[And you may be absolutely sure I have *no intention whatsoever* of backtracking to cable, and the humongous bills that accompany it, just to get the "local" RSN back. No way.]
 
 ## The shadow of the pyramid
 
