@@ -92,6 +92,6 @@ So, it's gone.
 
 Will I miss the hero images? Perhaps. Maybe some of you will, too. And I did think they added a nice feel to things at times. Nonetheless, I hope this decision, like others[^decisions] I've made over the brief history of this site, will ensure that each visitor's browsing experience will be the best possible.
 
-After all, *you* folks are the *real* heroes. You keep coming back. If that's not heroic, I don't know what is.
-
 [^decisions]: For example: doing the site in a [static site generator](https://staticgen.com) in the first place; choosing [Netlify](https://netlify.com) to host it; and generating it through the [current Eleventy/webpack combo](/posts/2019/12/packing-up).
+
+After all, *you* folks are the *real* heroes. You keep coming back. If that's not heroic, I don't know what is.
