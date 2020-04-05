@@ -21,7 +21,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  pre[class*="language-"] {
    color: #ccc;
    background: none;
-   @apply font-codefont;
+   /* @apply font-codefont; */
    font-family: var(--monospaced);
    text-align: left;
    white-space: pre;
