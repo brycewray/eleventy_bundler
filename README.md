@@ -38,3 +38,10 @@ This isn&rsquo;t a complete list but, rather, covers only the biggies. Check out
 ## Questions?
 
 I don&rsquo;t claim to be an expert on **any** of this stuff&mdash;as even a casual reading of the site itself, not to mention this repo&rsquo;s contents, probably will demonstrate pretty quickly&mdash;but, if you have any questions about this repo, create an [issue](https://github.com/brycewray/eleventy_bundler/issues) or contact me via either [Twitter](https://twitter.com/BryceWrayTX) or [email](mailto:bw@brycewray.com). I can&rsquo;t promise the answers will be that great, but I&rsquo;ll do my best to help. Others have helped me greatly in my attempts at site-building, so I want to &ldquo;pay it forward,&rdquo; as the saying goes.
+
+## Interested in other SSGs?
+
+For those interested in other static site generators, I have also created [Gatsby](https://gatsbyjs.org)- and [Hugo](https://gohugo.io)-based versions of this repo which also are now public. For more information, see “[Different modes for different code](https://brycewray.com/posts/2020/04/different-modes-different-codes).” As for the repo links themselves:
+
+- [Gatsby version](https://github.com/brycewray/gatsby_site_css-grid)
+- [Hugo version](https://github.com/brycewray/hugo_site_css-grid)
