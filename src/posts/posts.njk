@@ -37,7 +37,7 @@ pagination:
         <span class="text-muted">&gt;&gt;</span>
         {% endif %}
       </p>
-      <hr style="margin-top: 0; margin-bottom: 0.5em;" />
+      <hr style="margin-top: 0.5em; margin-bottom: 1.5em;" />
       {% for post in posts %}
         <div>          
           <h2 class="h5" style="margin-bottom: 0.25em;"><a href="{{ post.url }}">{{ post.data.title }}</a><br />
@@ -53,7 +53,7 @@ pagination:
           </p>
         </div>
       {% endfor %}
-      <hr style="margin-top: 2em;" />
+      <hr style="margin-top: 1.5em;" />
       <p class="ctr pokey" style="margin-top: 0.5em;">
         {% if pagination.firstPageHref != page.url %}
         <a href={{ pagination.firstPageHref}}>&lt;&lt;</a>
