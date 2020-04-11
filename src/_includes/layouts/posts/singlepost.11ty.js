@@ -36,18 +36,6 @@ exports.render = function (data) {
       ${data.content}
     </article>
   </div>
-
-  <div class="container container-comments">
-    <p>&nbsp;</p>
-    <!-- Comments code -->
-    <script>talkyardServerUrl="${data.siteparams.talkyardServerUrl}";</script>
-    <script async defer src="${data.siteparams.talkyardScriptUrl}"></script>
-    <div class="talkyard-comments" data-discussion-id="${data.discussionId}" data-iframe-title="Comments section on brycewray.com, powered by Talkyard" style="margin-top: 3em;">
-      <noscript>Please enable Javascript to view comments.</noscript>
-      <!-- commenting this out because it's in the footer ... <p class="legal text-muted" style="margin-top: 2em;">Comments powered by <a href="https://www.talkyard.io">Talkyard</a>.</p> -->
-    </div>
-    <!-- end, Comments code -->
-  </div>
   
   ${data.title != "The obligatory About Me page"
     ? `<div class="bg-dark">
