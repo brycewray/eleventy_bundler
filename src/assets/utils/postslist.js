@@ -5,7 +5,7 @@
 module.exports = eleventyConfig =>
 
   eleventyConfig.addShortcode('postslist', function (data, arr) {
-    var l10n = data.site[data.locale]
+    // var l10n = data.site[data.locale]
     return `
     <section>
       ${arr.map(item =>
