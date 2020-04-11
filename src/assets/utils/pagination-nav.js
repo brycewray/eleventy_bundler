@@ -1,6 +1,6 @@
 // Borrowed shamelessly from Reuben Lillie's code:
 // https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_includes/shortcodes/pagination-nav.js
-// ... as of 2020-04-10
+// ... as of 2020-04-11
 
 module.exports = eleventyConfig =>
 
@@ -33,7 +33,7 @@ eleventyConfig.addShortcode('paginationNav', (data) => {
       <!-- Show numbered pages
         when there are at least five -->
       ${data.pagination.pages.length >= 5
-        ? data.pagination.pages.map((item, index) =>
+        ? data.pagination.pages.map((page, index) =>
           `<a href="${data.pagination.hrefs[index]}"
             aria-label="${l10n.pageLabel} ${index + 1}"
             ${data.page.url === data.pagination.hrefs[index]
