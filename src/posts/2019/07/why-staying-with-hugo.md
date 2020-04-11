@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Why I’m staying with Hugo
 subtitle: An “interesting” learning experience

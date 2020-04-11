@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "YouTube TV and the RSNs flap"
 subtitle: "Is the pyramid near collapse?"
