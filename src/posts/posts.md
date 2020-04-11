@@ -4,7 +4,7 @@ tags: nav
 navtitle: Posts
 title: Posts
 pagination: 
-  data: collections.post
+  data: collections.posts
   size: 5
   reverse: true
   alias: posts
