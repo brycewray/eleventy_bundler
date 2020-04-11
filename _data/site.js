@@ -1,6 +1,5 @@
 // Based shamelessly on Reuben Lillie's code:
 // https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_data/site.js
-// (as of 2020-04-10)
 
  module.exports = {
    baseURL: 'https://brycewray.com',

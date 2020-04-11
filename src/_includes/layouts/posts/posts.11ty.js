@@ -1,3 +1,6 @@
+// Borrowed shamelessly from Reuben Lillie's code:
+// https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_includes/layouts/archive.11ty.js
+
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
 }
