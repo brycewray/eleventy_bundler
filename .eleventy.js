@@ -1,12 +1,22 @@
 const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
-const ofotigrid = require('./src/_includes/ofotigrid.js')
+var ofotigrid = require('./src/_includes/ofotigrid.js')
+var includes = require('./src/assets/utils/index.js')
 
 module.exports = function (eleventyConfig) {
 
   // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
   ofotigrid(eleventyConfig)
+
+  // includes -- based on Reuben Lillie's code
+  // ... https://gitlab.com/reubenlillie/eleventy-dot-js-blog/
+  includes(eleventyConfig)
+
+  // Combine data in the Eleventy data cascade rather than overwriting
+  // ... based on Reuben Lillie's code
+  // https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/.eleventy.js
+  eleventyConfig.setDataDeepMerge(true)
 
   eleventyConfig.setQuietMode(true)
 
