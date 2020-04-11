@@ -10,6 +10,7 @@ exports.render = function (data) {
       <h1 class="ctr topOfMain">Posts</h1>
       <div class="post-line"></div>
       <div class="container-narrower">
+        ${data.content}
         ${this.postslist(data, data.pagination.items)}
         }
       </div>
