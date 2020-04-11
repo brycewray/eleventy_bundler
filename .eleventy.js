@@ -2,7 +2,7 @@ const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
 var ofotigrid = require('./src/_includes/ofotigrid.js')
-var includes = require('./src/assets/utils/index.js')
+var includes = require('./src/_includes/shortcodes/index.js')
 
 module.exports = function (eleventyConfig) {
 
@@ -73,7 +73,7 @@ module.exports = function (eleventyConfig) {
   markdownEngine.use(markdownItBrakSpans)
   eleventyConfig.setLibrary("md", markdownEngine)
 
-  eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+  eleventyConfig.addShortcode("lazypicture", require("./src/_includes/shortcodes/lazy-picture.js"))
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
