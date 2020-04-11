@@ -37,8 +37,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(timestamp).toISO()
   })
 
+  /*
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
+  */
 
   /* Markdown plugins */
   // https://www.11ty.dev/docs/languages/markdown/
