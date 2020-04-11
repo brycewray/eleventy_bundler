@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
@@ -50,7 +50,7 @@ While checking out differences between Goldmark and Eleventy's [Markdown-it](htt
 
 What I'd been doing recently was so-called *inline* footnoting, like this:
 
-```Markdown
+```markdown
 This^[This would be a footnote] is an example of an alternative footnoting method, inline footnoting, that works in Eleventy.
 
 ```
@@ -64,7 +64,7 @@ OK, fine. I put it *after* the bracket. Then, Hugo and Gatsby worked fine---but 
 
 So I decided to quit being cute and went back to a more standard method which works across all three, although it's a tad clunkier to type:
 
-```Markdown
+```markdown
 This[^SomeReference] is an example of the once-and-future (non-inline) method of footnoting.
 
 [^SomeReference]: This would be a footnote.
@@ -72,7 +72,7 @@ This[^SomeReference] is an example of the once-and-future (non-inline) method of
 
 Clunky or not, one other advantage of this method is that none of these SSGs will balk at links in footnotes, unlike what happened with the inline footnoting---in which it was wise to "hard"-code links (if you can call HTML *coding*) rather than just doing them like this:
 
-```Markdown
+```markdown
 This[^SomeReference] is an example of the once-and-future (non-inline) method of footnoting.
 
 [^SomeReference]: And [this](https://www.11ty.dev) will be a link to Eleventy's own site.
