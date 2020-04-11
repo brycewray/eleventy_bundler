@@ -1,11 +1,10 @@
 // Borrowed shamelessly from Reuben Lillie's code:
 // https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_includes/shortcodes/archive.js
-// ... as of 2020-04-10
 
 module.exports = eleventyConfig =>
 
   eleventyConfig.addShortcode('postslist', function (data, arr) {
-    // var l10n = data.site[data.locale]
+    var l10n = data.site[data.locale]
     return `
     <section>
       ${arr.map(item =>
