@@ -111,7 +111,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: 'src', // <--- everything else in 'dir' is relative to this directory! https://www.11ty.dev/docs/config/#directory-for-includes
-      data: '_data',
+      data: '../_data',
       includes: '_includes'
     },
     templateFormats: [
