@@ -13,6 +13,7 @@ module.exports = eleventyConfig =>
           <h2>
             <a href="${item.data.page.url}">${item.data.title}</a>
           </h2>
+          <p>${item.data.subtitle}</p>
           <p>${item.data.description}</p>
         </article>`).join('')}
     </section>
