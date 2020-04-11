@@ -1,7 +1,5 @@
 exports.data = {
-  layout: 'layouts/_default/base.11ty.js',
-  navtitle: 'Posts',
-  title: 'Posts'
+  layout: 'layouts/_default/base.11ty.js'
 }
 
 exports.render = function (data) {
