@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Mixed nuts • November, 2019
 subtitle: In a nutshell, odds and ends
