@@ -11,12 +11,22 @@ exports.data = {
   }
 }
 
-let pagerThing = `
-  <p class="ctr">This is pagerThing</p>
-`
-
 exports.render = function (data) {
-
+  const pagerThing = `
+  <p class="ctr pokey" style="margin-top: 0.5em; margin-bottom: 0.5em;">
+    ${
+      data.pagination.href.previous === null 
+        ? `<span class="text-muted">&lt;&lt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span>`
+        : `<a href="${data.pagination.href.first}">&lt;&lt;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.previous}">&lt;</a>`      
+    }
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    ${
+      data.pagination.href.next === null
+        ? `<span class="text-muted">&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;</span>`
+        : `<a href="${data.pagination.href.next}">&gt;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.last}">&gt;&gt;</a>` 
+    }
+  </p>
+`
   return `
   <main>
 	<div class="container">
