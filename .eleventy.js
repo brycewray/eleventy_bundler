@@ -1,8 +1,6 @@
 const { DateTime } = require('luxon')
-const pluginRss = require('@11ty/eleventy-plugin-rss')
 const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
-const fs = require('fs')
 
 module.exports = function (eleventyConfig) {
 
@@ -14,8 +12,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/js')
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
-
-  eleventyConfig.addPlugin(pluginRss)
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
