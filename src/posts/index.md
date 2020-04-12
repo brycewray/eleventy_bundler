@@ -5,7 +5,7 @@ navtitle: Posts
 title: Posts
 eleventyExcludeFromCollections: true
 pagination: 
-  data: collections.posts
+  data: collections.post
   size: 5
   reverse: true
   alias: posts

@@ -90,7 +90,7 @@ module.exports = function (eleventyConfig) {
   /* === START, prev/next posts stuff === */
   // https://github.com/11ty/eleventy/issues/529#issuecomment-568257426
 
-  eleventyConfig.addCollection("posts", function(collection) {
+  eleventyConfig.addCollection("post", function(collection) {
     const coll = collection.getFilteredByTag("post")
 
     for(let i = 0; i < coll.length; i++) {
@@ -111,7 +111,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: 'src', // <--- everything else in 'dir' is relative to this directory! https://www.11ty.dev/docs/config/#directory-for-includes
-      data: '../_data',
+      data: '_data',
       includes: '_includes'
     },
     templateFormats: [
