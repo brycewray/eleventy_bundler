@@ -1,7 +1,8 @@
-const { DateTime } = require("luxon")
-const pluginRss = require("@11ty/eleventy-plugin-rss")
+const { DateTime } = require('luxon')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
 const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
+const fs = require('fs')
 
 module.exports = function (eleventyConfig) {
 
@@ -93,7 +94,6 @@ module.exports = function (eleventyConfig) {
   })
 
   /* === END, prev/next posts stuff === */
-
   
   /* pathPrefix: "/"; */
   return {
