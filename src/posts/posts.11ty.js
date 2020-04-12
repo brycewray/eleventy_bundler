@@ -11,14 +11,20 @@ exports.data = {
   }
 }
 
+let pagerThing = `
+  <p class="ctr">This is pagerThing</p>
+`
+
 exports.render = function (data) {
 
   return `
   <main>
 	<div class="container">
 		<h1 class="ctr topOfMain">Posts</h1>
-		<div class="post-line"></div>
+    <div class="post-line"></div>
     <div class="container-narrower">
+      ${pagerThing}
+      <hr style="margin-top: 0.5em; margin-bottom: 1.5em;" />
       ${
         data.pagination.items.map(post =>
         `
@@ -40,6 +46,8 @@ exports.render = function (data) {
         `
         ).join('')
       }
+      <hr style="margin-top: 1.5em;" />
+      ${pagerThing}
 		</div>
 	</div>
 
