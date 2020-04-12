@@ -1,7 +1,6 @@
 const { DateTime } = require("luxon")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const htmlmin = require('html-minifier')
-const sanitizeHTML = require('sanitize-html')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 
 module.exports = function (eleventyConfig) {
