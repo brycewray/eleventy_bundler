@@ -5,8 +5,8 @@ exports.data = {
   title: 'Posts',
   pagination: { 
     data: 'collections.post',
-    size: '5',
-    reverse: 'true',
+    size: 5,
+    reverse: true,
     alias: 'posts'
   }
 }
@@ -20,7 +20,7 @@ exports.render = function (data) {
 		<div class="post-line"></div>
     <div class="container-narrower">
       ${
-        data.collections.post.reverse().map(post =>
+        data.pagination.items.map(post =>
         `
         <div>          
           <h2 class="h5" style="margin-bottom: 0.25em;"><a href="${post.url}">${post.data.title}</a><br />
