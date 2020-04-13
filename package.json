@@ -69,6 +69,7 @@
     "markdown-it-attrs": "^3.0.2",
     "markdown-it-bracketed-spans": "^1.0.1",
     "markdown-it-footnote": "^3.0.2",
+    "markdown-it-link-attributes": "^3.0.0",
     "markdown-it-prism": "^2.0.5",
     "mini-css-extract-plugin": "^0.9.0",
     "node-fetch": "^2.6.0",

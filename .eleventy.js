@@ -46,6 +46,7 @@ module.exports = function (eleventyConfig) {
   let markdownItPrism = require('markdown-it-prism')
   let markdownItAttrs = require('markdown-it-attrs')
   let markdownItBrakSpans = require('markdown-it-bracketed-spans')
+  let markdownItLinkAttrs = require('markdown-it-link-attributes')
   let markdownItOpts = {
     html: true,
     linkify: true,
@@ -56,6 +57,13 @@ module.exports = function (eleventyConfig) {
   markdownEngine.use(markdownItPrism)
   markdownEngine.use(markdownItAttrs)
   markdownEngine.use(markdownItBrakSpans)
+  markdownEngine.use(markdownItLinkAttrs, {
+    pattern: /^https:/,
+    attrs: {
+      target: '_blank',
+      rel: 'noopener'
+    }
+  })
   eleventyConfig.setLibrary("md", markdownEngine)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
