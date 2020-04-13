@@ -27,7 +27,7 @@ exports.render = function (data) {
     <div class="column-home-2">
       <h2 class="h1 topofHome" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
       ${
-        data.collections.post.reverse().slice(0, 7).map(post =>
+        data.collections.post.slice(0, 7).map(post =>
         `
       <div>
         <h2 class="h5"><a href="${post.url}">${post.data.title}</a></h2>
