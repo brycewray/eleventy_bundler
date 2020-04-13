@@ -8,7 +8,7 @@ exports.render = data => `
       data.collections.post.reverse().map(post =>
         `
         <url>
-          <loc>${data.siteparams.siteBaseURL}${post.url}</loc>
+          <loc>${data.siteparams.siteURLforOG}${post.url}</loc>
           ${
             post.data.lastmod
             ? `<lastmod>${this.dateStringISO(post.data.lastmod)}</lastmod>`
@@ -19,12 +19,12 @@ exports.render = data => `
       ).join('')
     }
     <url>
-      <loc>${data.siteparams.siteBaseURL}/about</loc>
-      <lastmod>2019-09-08</lastmod>
+      <loc>${data.siteparams.siteURLforOG}/about</loc>
+      <lastmod>2019-10-02</lastmod>
     </url>
     <url>
-      <loc>${data.siteparams.siteBaseURL}</loc>
-      <lastmod>2019-09-08</lastmod>
+      <loc>${data.siteparams.siteURLforOG}/</loc>
+      <lastmod>2019-10-02</lastmod>
     </url>
   </urlset>
 `
