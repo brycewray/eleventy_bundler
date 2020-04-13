@@ -1,24 +1,22 @@
 exports.data = {
-  permalink: '/sitemap.xml'
+  permalink: 'sitemap.xml'
 }
 
-exports.render = function(data) {
-  `
-  <?xml version="1.0" encoding="UTF-8"?>
+exports.render = data => `
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${
       data.collections.post.reverse().map(post =>
         `
         <url>
-          <loc>${data.siteparams.siteBaseURL}${data.post.url}</loc>
+          <loc>${data.siteparams.siteBaseURL}${post.url}</loc>
           ${
-            data.post.data.lastmod
-            ? `<lastmod>${this.dateStringISO(data.post.data.lastmod)}</lastmod>`
-            : `<lastmod>${this.dateStringISO(data.post.date)}</lastmod>`
+            post.data.lastmod
+            ? `<lastmod>${this.dateStringISO(post.data.lastmod)}</lastmod>`
+            : `<lastmod>${this.dateStringISO(post.date)}</lastmod>`
           }
         </url>
         `
-      )
+      ).join('')
     }
     <url>
       <loc>${data.siteparams.siteBaseURL}/about</loc>
@@ -29,5 +27,4 @@ exports.render = function(data) {
       <lastmod>2019-09-08</lastmod>
     </url>
   </urlset>
-  `
-}
+`
