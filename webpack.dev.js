@@ -16,7 +16,6 @@ module.exports = merge(common, {
       open: false, // won't automatically launch in default browser when started
       /*
       ***
-      
       Following 'callbacks' option code combines instructions from...
       - https://www.browsersync.io/docs/options/#option-callbacks
       - https://www.11ty.dev/docs/quicktips/not-found/#with-serve
@@ -27,11 +26,11 @@ module.exports = merge(common, {
       **Note**: 
       Your console likely will get the following Node.js warning when using this, 
       but it doesn't appear to impair Eleventy serve ops or cause other issues:
+        "[DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated"
 
-      "[DEP0079] DeprecationWarning: Custom inspection function on Objects via .inspect() is deprecated"
-
+      For that reason, I've left it commented, but simply uncomment it for functionality.
       ***
-      */
+
       callbacks: {
         ready: function(err, bs) {
           console.log(bs.options.get('urls'))
@@ -43,6 +42,7 @@ module.exports = merge(common, {
           })
         }
       }
+      */
     }),
   ],
   watch: true,
