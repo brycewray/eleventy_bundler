@@ -9,7 +9,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setQuietMode(true)
 
-  eleventyConfig.addPassthroughCopy('src/assets/js')
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
 
