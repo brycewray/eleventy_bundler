@@ -5,6 +5,7 @@ exports.data = {
   permalink: '404.html'
 }
 
+// following (as opposed to 'module.exports = `` without 'data') needed to work with above front matter
 exports.render = data => `
   <main>
     <h1 class="ctr" style="margin-top: 2em;">Page not found</h1>
