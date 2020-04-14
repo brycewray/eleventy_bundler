@@ -1,3 +1,6 @@
+// .11ty.js version of 2019-09-why-left-hugo-eleventy.njk
+
+exports.render = data => `
 <div class="webmentions">
   <h3 class="ctr">Comments</h3>
   <p class="legal ctr">
@@ -18,3 +21,4 @@
   <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-09-30</em></p>
   <p class="commentBody">My continuing experimentation <strong>in the background</strong> (!) makes it increasingly clear that Gatsby is only for those who are thoroughly into React. Maybe someday I&rsquo;ll get it, but I&rsquo;m not holding my breath. But, yes, if your purposes are better served by a JS-based SSG, I emphatically recommend Eleventy. It is wonderfully easy to use and customize, especially if you have sufficient JS knowledge, and its build speed is surprisingly close to Hugo&rsquo;s, especially in league with Netlify.</p>
 </div>
+`

@@ -1,3 +1,6 @@
+// .11ty.js version of 2019-07-why-staying-with-hugo.njk
+
+exports.render = data => `
 <div class="webmentions">
   <h3 class="ctr">Comments</h3>
   <p class="legal ctr">
@@ -18,3 +21,4 @@
   <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-07-16</em></p>
   <p class="commentBody">Given how long I yakked in this article, you have no need to apologize. :-) Thanks for your kind words and insights.</p>
 </div>
+`

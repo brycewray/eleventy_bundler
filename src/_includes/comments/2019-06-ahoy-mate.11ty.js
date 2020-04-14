@@ -1,3 +1,6 @@
+// .11ty.js version of 2019-06-ahoy-mate.njk
+
+exports.render = data => `
 <div class="webmentions">
   <h3 class="ctr">Comments</h3>
   <p class="legal ctr">
@@ -19,3 +22,4 @@
   <p class="commentBody">Later note . . .</p>
   <p class="commentBody">To be fair: I should also note that, as I&rsquo;d originally suspected, MailMate has turned out to be more than my relatively pedestrian scenario really needs &mdash; but I&rsquo;m very much <em><strong>not</strong></em> sorry that I bought a license and became a patron. Dr. Nielsen&rsquo;s work is easily worthy of both.</p>
 </div>
+`

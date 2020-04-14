@@ -1,3 +1,6 @@
+// .11ty.js version of 2019-07-lessons-learned.njk
+
+exports.render = data => `
 <div class="webmentions">
   <h3 class="ctr">Comments</h3>
   <p class="legal ctr">
@@ -28,3 +31,4 @@
   <p class="commentBody">Very interesting! Will check into this.</p>
   <p class="commentBody">(To other readers: this gentleman is the creator and developer of the Talkyard platform that powers these comments. If you have your own SSG-based site and need a way to provide comments, I highly recommend both Talkyard and this extremely helpful dev.)</p>
 </div>
+`

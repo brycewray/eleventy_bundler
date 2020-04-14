@@ -1,3 +1,6 @@
+// .11ty.js version of 2019-09-now-im-sixty-four.njk
+
+exports.render = data => `
 <div class="webmentions">
   <h3 class="ctr">Comments</h3>
   <p class="legal ctr">
@@ -8,3 +11,4 @@
   <p class="commentBody">People that use Word that don't &quot;get&quot; styles and formatting in general are generally just annoying. Like people who drive that don't bother with turn signals.<br />
     ...and then there's Excel...</p>
 </div>
+`
