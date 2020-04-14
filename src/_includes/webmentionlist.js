@@ -37,7 +37,7 @@ module.exports = function(eleventyConfig) {
                       </span>`
                   }
                   ${webmention.published
-                    ? `<time class="webmention__pubdate dt-published" datetime="${webmention.published}">${webmention.published}</time><!-- orig was dd LLL yyyy -->`
+                    ? `&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${webmention.published}">${this.readableDateFromISO(webmention.published)}</time></span>`
                     : ``
                   }
                 </div>
