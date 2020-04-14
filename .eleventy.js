@@ -34,6 +34,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(timestamp).toISO()
   })
 
+  eleventyConfig.addFilter('readableDateFromISO', dateObj => {
+    return DateTime.fromISO(dateObj).toFormat('LLL d, yyyy h:mm:ss a ZZZZ')
+  })
+
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
@@ -49,7 +53,7 @@ module.exports = function (eleventyConfig) {
   let markdownItLinkAttrs = require('markdown-it-link-attributes')
   let markdownItOpts = {
     html: true,
-    linkify: true,
+    linkify: false,
     typographer: true
   }
   const markdownEngine = markdownIt(markdownItOpts)
