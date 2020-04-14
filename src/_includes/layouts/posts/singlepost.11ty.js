@@ -36,6 +36,16 @@ exports.render = function (data) {
       ${data.content}
     </article>
   </div>
+
+  ${data.title != "Home page" && data.title != "Posts"
+    ? `<p class="ctr pokey">Comments/webmentions section will appear here</p>
+      ${data.oldComments
+        ? `<p class="ctr pokey">Old comments will appear here</p>`
+        : ``
+      }
+      <p class="ctr pokey">And the webmentions-only section will appear here, either a 'None yet' message or actual webmentions.</p>`
+    : ``
+  }
   
   ${data.title != "The obligatory About Me page"
     ? `<div class="bg-dark">
