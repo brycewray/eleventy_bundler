@@ -1,6 +1,7 @@
 const { DateTime } = require('luxon')
 const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
+const sanitizeHTML = require('sanitize-html')
 
 module.exports = function (eleventyConfig) {
 
