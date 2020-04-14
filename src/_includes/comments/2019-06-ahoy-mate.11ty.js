@@ -1,6 +1,6 @@
 // .11ty.js version of 2019-06-ahoy-mate.njk
 
-exports.render = data => `
+module.exports = `
 <div class="webmentions">
   <h3 class="ctr">Comments</h3>
   <p class="legal ctr">
