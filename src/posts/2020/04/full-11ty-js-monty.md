@@ -76,15 +76,33 @@ As I note in my repo's [README](https://github.com/brycewray/eleventy_bundler/bl
 
 .&nbsp;.&nbsp;.&nbsp;but, that said, I do hope that this post and the repo---and, yes, even those aforementioned branches thereof---will help others with Eleventy-based sites who want to take a shot at all-.11ty.js templating.
 
-I must once again extend my highest thanks and commendations to various folks for their extremely valuable help, online code examples, and/or superb community behavior (or, as some of them might spell it, *behaviour*). In particular:
+I must once again extend my highest thanks and commendations to various folks for their extremely valuable help, online code examples, and/or superb community behavior (or, as some of them might spell it, *behaviour*). Three stand out in particular.
 
-- **[Reuben Lillie](https://www.reubenlillie.com)**---I [already noted](/posts/2020/03/back-nunjucks-eleventy-site) Mr. Lillie's great example in steering us Eleventy advocates toward the path of all-.11ty.js with the example of his own site's fantastically well-documented [repository](https://gitlab.com/reubenlillie/reubenlillie.com/). Then, in the days after that post, he exceeded even the already optimistic expectations I'd formed after combing that repo for code guidance and exchanging some email and tweets with him. Not only has he since put up an *additional* repo, [eleventy-dot-js-blog](https://gitlab.com/reubenlillie/eleventy-dot-js-blog), an all-.11ty.js Eleventy *starter* site ready for your cloning/forking pleasure; but he also gave me far more help than I deserve last weekend---a holiday weekend---as I tried to incorporate some of that new repo's code in a branch of this site. He has rapidly become someone to watch in the Eleventy community, and a nicer and more helpful fellow you couldn't find. (That mindset seems to be a feature, not a bug, in the Eleventy community, which is yet another reason I enjoy Eleventy so much.)
+### Reuben Lillie
 
-- **[Max Böck](https://mxb.dev)** and **[Sia Karamalegos](https://sia.codes/)**---Mr. Böck's ["Static Indieweb pt2: using Webmentions"](https://mxb.dev/blog/using-webmentions-on-static-sites/) and Ms. Karamalegos's ["An In-Depth Tutorial of Webmentions + Eleventy"](https://sia.codes/posts/webmentions-eleventy-in-depth/), the latter based on the former, were the original sources of the Nunjucks-based webmentions templates I began using near the end of 2019. Thus, it was only natural that I returned to these amazingly informative posts when I chose to make .11ty.js versions of that code. (Fortunately, I didn't have to bug them with questions online this time, as I did the first time around a few months back.) It was utterly critical for me to understand what key sections of the original Nunjucks code were doing, and Mr. Böck's and Ms. Karamalegos's patient and well-worded explanations made that possible. Believe me, any of you who may be considering webmentions in general and Eleventy-based webmentions in particular: if *I* could understand what they conveyed and implement it, *you* can, too.
+I [already noted](/posts/2020/03/back-nunjucks-eleventy-site) Mr. Lillie's great example in steering us Eleventy advocates toward the path of all-.11ty.js with [his own site](https://reubenlillie.com)'s [fantastically well-documented repo](https://gitlab.com/reubenlillie/reubenlillie.com/). Then, in the days after that post, he exceeded even the already optimistic expectations I'd formed after combing that repo for code guidance and exchanging some email and tweets with him.
 
-.&nbsp;.&nbsp;.&nbsp;and, of course, *always*:
+Not only has he since put up an *additional* repo, [eleventy-dot-js-blog](https://gitlab.com/reubenlillie/eleventy-dot-js-blog), an all-.11ty.js Eleventy *starter* site ready for your cloning/forking pleasure; but he also gave me far more help than I deserve last weekend---a holiday weekend---as I tried to incorporate some of that new repo's code in a branch of this site.
 
-- [Zach Leatherman](https://zachleat.com)---He just, you know, *created* Eleventy and works on it nearly every day, despite his having [just switched Day Jobs](https://www.zachleat.com/web/netlify/), to make it the coolest, friendliest, most easily configured SSG out there. No biggie.
+He has rapidly become someone to watch in the Eleventy community, and a nicer and more helpful fellow you couldn't find. (That mindset seems to be a feature, not a bug, in the Eleventy community, which is yet another reason I enjoy Eleventy so much.)
+
+### Max Böck and Sia Karamalegos
+
+Mr. Böck's "[Static Indieweb pt2: using Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/)" and Ms. Karamalegos's "[An In-Depth Tutorial of Webmentions + Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/)," the latter based on the former, were the original sources of the Nunjucks-based webmentions templates I began using near the end of 2019. Thus, it was only natural that I returned to these amazingly informative posts when I chose to make .11ty.js versions of that code.
+
+(Fortunately, I didn't have to bug them with questions online this time, as I did the first time around a few months back.)
+
+It was utterly critical for me to understand what key sections of the original Nunjucks code were doing, and Mr. Böck's and Ms. Karamalegos's patient and well-worded explanations made that possible.
+
+Believe me, any of you who may be considering webmentions in general and Eleventy-based webmentions in particular: if *I* could understand what they conveyed and implement it, *you* can, too.
+
+### Zach Leatherman
+
+And, of course, one must *always* acknowledge [the guy](https://zachleat.com) who, you know, [*created* Eleventy](https://www.zachleat.com/web/introducing-eleventy/) and works nearly every day on making it better, despite his having [just switched Day Jobs](https://www.zachleat.com/web/netlify/), to make it the coolest, friendliest, most easily configured SSG out there. No biggie.
+
+But, seriously: that great Eleventy community I mentioned earlier seems to take its cues from Mr. Leatherman, whose friendly nature and quick wit make adopting Eleventy even more pleasant than it would be anyway. As I [wrote last December](/posts/2019/12/packing-up), Eleventy is "a good product built by a good person."
+
+Eleventy is by no means the best-known of the SSGs, and [it is purposely *not* based on any framework](https://www.11ty.dev/docs/), so it can claim no built-in base of fanboy developers---as can Gatsby because of its ties to React, or [Gridsome](https://gridsome.org)'s creators hope it will because of its ties to [Vue](https://vuejs.org). Thus, Mr. Leatherman's continuing achievement in building and enhancing Eleventy, along with the growth and *esprit de corps* of the Eleventy community, are even more impressive by comparison.
 
 ## Next up?
 
