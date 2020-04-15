@@ -6,7 +6,7 @@ subtitle: "Taking a course of lesser resistance"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."
 author: Bryce Wray
 date: 2020-03-22T14:30:00-05:00
-lastmod: 2020-03-29T10:15:00-05:00
+lastmod: 2020-04-15T17:30:00-05:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
 ---
 
@@ -51,3 +51,5 @@ I *remain* very interested in the *idea* of going fully to .11ty.js templates, b
 If you, too, would like to see that, please note that Mr. Lillie is interested in providing such documentation that could, with the approval of Eleventy creator [Zach Leatherman](https://zachleat.com), become part of the official docs.
 
 I hope that happens sooner rather than later. If it does, and if Mr. Lillie's docs are *half* as good as the documentation he put in his own code---wowzers.
+
+***Update, 2020-04-15***---Have now transitioned to full-.11ty.js templating ([details](/posts/2020/04/full-11ty-js-monty)). {.yellowBox}
