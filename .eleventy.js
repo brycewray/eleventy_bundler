@@ -99,12 +99,25 @@ module.exports = function (eleventyConfig) {
   
   // Webmentions Filter
   eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
-    const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of']
+    const allowedTypes = [
+      'mention-of',
+      'in-reply-to',
+      'like-of',
+      'repost-of',
+      'bookmark-of'
+    ]
     const clean = content =>
       sanitizeHTML(content, {
-        allowedTags: ['b', 'i', 'em', 'strong', 'a'],
+        allowedTags: [
+          'b',
+          'i',
+          'em',
+          'strong',
+          'a'],
         allowedAttributes: {
-          a: ['href']
+          a: [
+            'href'
+          ]
         }
       })
 
