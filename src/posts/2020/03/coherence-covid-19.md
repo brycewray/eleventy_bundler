@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Coherence and COVID-19"
 subtitle: "Trying to grasp the new reality"

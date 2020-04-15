@@ -26,7 +26,8 @@
   --blueFirst: #0088ff; /* Will use as a hover color only */
   --blueLight: #00bbff; /* for use with dark mode where supported */
   --darkblue: #0000aa;
-  --shadow-color: rgba(0, 0, 0, .2);--code-color-dark-mode: #88ff88;
+  --shadow-color: rgba(0, 0, 0, .2);
+  --code-color-dark-mode: #88ff88;
   --code-bkgd-light-mode: #dfefff; /* for reference, GitHub uses f6f8fa */
   --code-bkgd-dark-mode: #0e2e3e;
 

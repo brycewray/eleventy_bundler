@@ -1,3 +1,7 @@
+module.exports = function (eleventyConfig) {
+
+  eleventyConfig.addShortcode('siteHeader', function() {
+    return `
     <header>
       <p class="site-logo"><span class="site-logo-holder"><a href="/"><img src="/images/BW_avatar_36x36_xpar-36.png" alt="This site's logo; click here to go to the home page"></a></span>&nbsp;&nbsp;&nbsp;<a href="/">BryceWray.com</a></p>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
@@ -17,4 +21,6 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header>` 
+  })
+}

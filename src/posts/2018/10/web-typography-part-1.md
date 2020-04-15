@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Readable Web text, pretty please
 subtitle: Part 1 of a two-part series on Web typography
@@ -10,7 +10,7 @@ lastmod: 2019-04-11T20:33:00-05:00
 discussionId: "2018-10-web-typography-part-1"
 ---
 
-As I suggested in a [recent post](https://brycewray.com/posts/2018/09/why-finally-settled-ulysses), I’m more than a little hung up on on-screen type; so I thought I’d do a little two-part series on Web site typography and share some appropriate insights and tips. They come from two decades as a Web designer and three-and-a-half decades as a writer and formatter—oh, and nearly six decades of reading. Perhaps you’ll find them useful.
+As I suggested in a [recent post](/posts/2018/09/why-finally-settled-ulysses), I’m more than a little hung up on on-screen type; so I thought I’d do a little two-part series on Web site typography and share some appropriate insights and tips. They come from two decades as a Web designer and three-and-a-half decades as a writer and formatter—oh, and nearly six decades of reading. Perhaps you’ll find them useful.
 
 ## Readability&nbsp;.&nbsp;.&nbsp;.&nbsp;! Do you _speak_ it?
 

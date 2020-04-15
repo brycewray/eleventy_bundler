@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: A stacked deck
 subtitle: Part 2 of a two-part series on Web typography
@@ -15,7 +15,7 @@ discussionId: "2018-10-web-typography-part-2"
 </div>
 &nbsp;<br />
 
-In [Part 1](https://brycewray.com/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
+In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
 <hr style="border: 1px solid #666;" />
 
@@ -125,7 +125,7 @@ A few days after I began writing this, I converted the site over to [Bootstrap 4
 
 At first, I was sufficiently unimpressed with this simplification that I overrode it in my site-wide CSS with the more comprehensive “system fonts stack” I mentioned above. However, after some experimentation with how the Bootstrap 4 version looked in certain Linux distributions as compared to what I was using, I decided I preferred Bootstrap’s way, after all, and changed my CSS accordingly. The vast majority of you, covered by the first three entries, will never know the difference; but, on a few odd combinations of OS and devices, the Bootstrap version is better. Lesson learned; _mea&nbsp;culpa_.
 
-[^1]:	As, indeed, I did in my earlier post, “[Why I finally settled on Ulysses](https://brycewray.com/posts/2018/09/why-finally-settled-ulysses),” when referring to the available selections.
+[^1]:	As, indeed, I did in my earlier post, “[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses),” when referring to the available selections.
 
 [^2]:	“[Typeface](https://en.wikipedia.org/wiki/Typeface),” Wikipedia, retrieved 2018-10-22.
 

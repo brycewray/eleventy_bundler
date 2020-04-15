@@ -1,13 +1,35 @@
+module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addShortcode('headTag', function(data) {
+
+    return `
+  
   <head>
     <meta name="generator" content="Eleventy - https://11ty.dev" />
         
-    {% if title == "Home page" %}
-      <title>{{ siteparams.siteTitle }}</title>
-      <meta property="og:title" content="{{ siteparams.siteTitle }}" />
-    {% else %}
-      <title>{{ title }} | {{ siteparams.siteTitle }}</title>
-      <meta property="og:title" content="{{ title }} | {{ siteparams.siteTitle }}" />
-    {% endif %}
+    ${
+      (data.title == "Home page")
+      ? `
+      <title>${data.siteparams.siteTitle}</title> 
+      <meta property="og:title" content="${data.siteparams.siteTitle}" />
+      `
+      : `
+      <title>${data.title} | ${data.siteparams.siteTitle}</title>
+      <meta property="og:title" content="${data.title} | ${data.siteparams.siteTitle}" />
+      `
+    }
+
+    <!-- IndieWeb -->
+    ${
+      (data.title == "Home page")
+      ? `
+      <link rel="me" href="https://twitter.com/BryceWrayTX" />
+      <link rel="me" href="https://github.com/brycewray" />
+      `
+      : ``
+    }
+    <link rel="webmention" href="https://webmention.io/brycewray.com/webmention" />
+    <link rel="pingback" href="https://webmention.io/brycewray.com/xmlrpc" />
     
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,27 +37,43 @@
 
     <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
 
-    {% if title == "Home page" %}
-      <meta name="description" content="{{ siteparams.siteDescription }}">
-      <meta property="og:description" content="{{ siteparams.siteDescription }}" />
-    {% elseif description != "" %}
-      <meta name="description" content="{{ description }}">
-    {% endif %}
+    ${
+      (data.title == "Home page")
+      ? `
+      <meta name="description" content="${data.siteparams.siteDescription}" />
+      <meta property="og:description" content="${data.siteparams.siteDescription}" />
+      `
+      : (data.description != "")
+        ? `
+      <meta name="description" content="${data.description}">
+        `
+      : ``
+    }
 
-    <meta property="og:url" content="https://brycewray.com{{ page.url }}" />        
+    ${
+      (data.page.url !== null)
+      ? `
+      <meta property="og:url" content="${data.siteparams.siteURLforOG}${data.page.url}" />
+      `
+      : `<meta property="og:url" content="${data.siteparams.siteURLforOG}" />`
+    }
 
     <!-- Twitter meta -->
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
-    {% if title != "Home page" %}
-      <meta name="twitter:description" content="{{ description }}" />
-      <meta name="twitter:title" content="{{ title }}" />
-    {% else %}
-      <meta name="twitter:description" content="{{ siteparams.siteDescription }}" />
-      <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
-    {% endif %}
+    ${
+      data.title !== "Home page"
+      ? `
+      <meta name="twitter:description" content="${data.description}" />
+      <meta name="twitter:title" content="${data.title}" />
+      `
+      : `
+      <meta name="twitter:description" content="${data.siteparams.siteDescription}" />
+      <meta name="twitter:title" content="${data.siteparams.siteTitle}" />
+      `
+    }
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico">
@@ -63,3 +101,8 @@
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
   </head>
+  `
+
+  })
+
+}

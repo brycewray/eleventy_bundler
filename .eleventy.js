@@ -1,17 +1,17 @@
-const { DateTime } = require("luxon")
-const pluginRss = require("@11ty/eleventy-plugin-rss")
+const { DateTime } = require('luxon')
 const htmlmin = require('html-minifier')
+const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 
 module.exports = function (eleventyConfig) {
 
+  // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
+  ofotigrid(eleventyConfig)
+
   eleventyConfig.setQuietMode(true)
 
-  eleventyConfig.addPassthroughCopy('src/assets/js')
-  eleventyConfig.addPassthroughCopy('robots.txt')  
+  eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
-
-  eleventyConfig.addPlugin(pluginRss)
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
@@ -30,6 +30,14 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromISO(timestamp, { zone: 'utc' }).toJSDate()
   })
 
+  eleventyConfig.addFilter('dateFromRFC2822', timestamp => {
+    return DateTime.fromJSDate(timestamp).toISO()
+  })
+
+  eleventyConfig.addFilter('readableDateFromISO', dateObj => {
+    return DateTime.fromISO(dateObj).toFormat('LLL d, yyyy h:mm:ss a ZZZZ')
+  })
+
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
 
@@ -42,9 +50,10 @@ module.exports = function (eleventyConfig) {
   let markdownItPrism = require('markdown-it-prism')
   let markdownItAttrs = require('markdown-it-attrs')
   let markdownItBrakSpans = require('markdown-it-bracketed-spans')
+  let markdownItLinkAttrs = require('markdown-it-link-attributes')
   let markdownItOpts = {
     html: true,
-    linkify: true,
+    linkify: false,
     typographer: true
   }
   const markdownEngine = markdownIt(markdownItOpts)
@@ -52,6 +61,13 @@ module.exports = function (eleventyConfig) {
   markdownEngine.use(markdownItPrism)
   markdownEngine.use(markdownItAttrs)
   markdownEngine.use(markdownItBrakSpans)
+  markdownEngine.use(markdownItLinkAttrs, {
+    pattern: /^https:/,
+    attrs: {
+      target: '_blank',
+      rel: 'noopener'
+    }
+  })
   eleventyConfig.setLibrary("md", markdownEngine)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
@@ -67,6 +83,56 @@ module.exports = function (eleventyConfig) {
     }
     return content
   })
+
+  /* === START, webmentions stuff === */
+  // https://mxb.dev/blog/using-webmentions-on-static-sites/
+  // https://sia.codes/posts/webmentions-eleventy-in-depth/
+  
+  // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter('head', (array, n) => {
+    if (n < 0) {
+      return array.slice(n)
+    }
+    return array.slice(0, n)
+  })
+
+  
+  // Webmentions Filter
+  eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
+    const allowedTypes = [
+      'mention-of',
+      'in-reply-to',
+      'like-of',
+      'repost-of',
+      'bookmark-of'
+    ]
+    const clean = content =>
+      sanitizeHTML(content, {
+        allowedTags: [
+          'b',
+          'i',
+          'em',
+          'strong',
+          'a'],
+        allowedAttributes: {
+          a: [
+            'href'
+          ]
+        }
+      })
+
+    return webmentions
+      .filter(entry => entry['wm-target'] === url)
+      .filter(entry => allowedTypes.includes(entry['wm-property']))
+      .filter(entry => !!entry.content)
+      .map(entry => {
+        const { html, text } = entry.content
+        entry.content.value = html ? clean(html) : clean(text)
+        return entry
+      })
+  })
+
+  /* === END, webmentions stuff === */
 
   /* === START, prev/next posts stuff === */
   // https://github.com/11ty/eleventy/issues/529#issuecomment-568257426
@@ -86,7 +152,6 @@ module.exports = function (eleventyConfig) {
   })
 
   /* === END, prev/next posts stuff === */
-
   
   /* pathPrefix: "/"; */
   return {
@@ -98,7 +163,8 @@ module.exports = function (eleventyConfig) {
     templateFormats: [
       'html',
       'md',
-      'njk'
+      'njk',
+      '11ty.js'
     ],
     passthroughFileCopy: true,
   }

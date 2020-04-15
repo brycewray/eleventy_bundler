@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Scrivener and The Cloud
 subtitle: Cutting through the fog (maybe)

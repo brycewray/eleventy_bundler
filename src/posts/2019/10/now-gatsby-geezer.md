@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Now I’m a Gatsby geezer
 subtitle: Gatsby Experiment III proves the winner
