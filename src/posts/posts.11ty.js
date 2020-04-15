@@ -42,7 +42,7 @@ exports.render = function (data) {
           <h2 class="h5" style="margin-bottom: 0.25em;"><a href="${post.url}">${post.data.title}</a><br />
           <span class="legal"><em>${post.data.subtitle}</em></span></h2>
           <p class="pokey text-muted" style="margin-top: 0;">
-            <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
+            Published: <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
             ${
               post.data.lastmod
               ? `<br />Last modified: <time style="display: inline;" datetime="${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}">${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}</time>`
