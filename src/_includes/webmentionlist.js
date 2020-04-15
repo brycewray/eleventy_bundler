@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
       <h3>Webmentions</h3>
       ${mentions.length > 0
         ? `
+        <p class="legal ctr" style="margin-bottom: 1em;">Webmentions&rsquo; order depends on how they arrive from <a href="https://brid.gy/" target="_blank" rel="noopener">Bridgy</a>; note&nbsp;timestamps.</p>
         <div class="webmentions__facepile">
           ${mentions.map(webmention =>
             `<img src="${webmention.author.photo ? webmention.author.photo : `/images/webmention-avatar-default.svg`}" title="${webmention.author.name}" alt="${webmention.author.name}" class="webmentions__face" />`
