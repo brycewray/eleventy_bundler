@@ -10,7 +10,7 @@ While this is the actual site&rsquo;s repo rather than a starter version thereof
 2. Make appropriate changes to the `_data` directory&rsquo;s files.
 3. Delete from `src` the Markdown files and images (well, maybe you should keep one or two of each around at the start, until you see how things work).
 
-I chose to build this site with [Nunjucks](https://mozilla.github.io/nunjucks/) templates after converting its content from the [Go](https://golang.org)-based [Hugo](https://gohugo.io) and the [React](https://reactjs.org)-based [Gatsby](https://gatsbyjs.org); but Eleventy itself is [extremely flexible](https://www.11ty.dev/docs/languages/) in that regard, so go with what you prefer. [If you‘re interested in JavaScript templates (.11ty.js), I strongly suggest you check the [amazingly well-documented example](https://gitlab.com/reubenlillie/reubenlillie.com) of [Reuben Lillie‘s site](https://reuvenlillie.com).]
+I initially chose to build this site with [Nunjucks](https://mozilla.github.io/nunjucks/) templates after converting its content from the [Go](https://golang.org)-based [Hugo](https://gohugo.io) and the [React](https://reactjs.org)-based [Gatsby](https://gatsbyjs.org); but Eleventy itself is [extremely flexible](https://www.11ty.dev/docs/languages/) in that regard, so go with what you prefer. Indeed, I&rsquo;ve recently changed the site over to JavaScript templates (.11ty.js), following the [amazingly well-documented example](https://gitlab.com/reubenlillie/reubenlillie.com) of [Reuben Lillie's site](https://reuvenlillie.com) as well as specific code and articles by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/).
 
 ## What&rsquo;s under the hood
 
@@ -45,3 +45,5 @@ For those interested in other static site generators, I have also created [Gatsb
 
 - [Gatsby version](https://github.com/brycewray/gatsby_site_css-grid)
 - [Hugo version](https://github.com/brycewray/hugo_site_css-grid)
+
+Please note that I **do not** promise to keep them **fully** up to date with this repo (*i.e*, the real site), but will do so as time and circumstances allow.
