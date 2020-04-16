@@ -106,6 +106,10 @@ module.exports = function (eleventyConfig) {
       'repost-of',
       'bookmark-of'
     ]
+
+    const orderByDate = (a, b) =>
+      new Date(a.published) - new Date(b.published)
+
     const clean = content =>
       sanitizeHTML(content, {
         allowedTags: [
@@ -125,6 +129,7 @@ module.exports = function (eleventyConfig) {
       .filter(entry => entry['wm-target'] === url)
       .filter(entry => allowedTypes.includes(entry['wm-property']))
       .filter(entry => !!entry.content)
+      .sort(orderByDate)
       .map(entry => {
         const { html, text } = entry.content
         entry.content.value = html ? clean(html) : clean(text)
