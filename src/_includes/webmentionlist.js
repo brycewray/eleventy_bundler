@@ -11,8 +11,6 @@ module.exports = function(eleventyConfig) {
       <h3>Webmentions</h3>
       ${mentions.length > 0
         ? `
-        <p class="legal ctr" style="margin-bottom: 1em;">Webmentions&rsquo; order depends on how they arrive from <a href="https://brid.gy/" target="_blank" rel="noopener">Bridgy</a>; note&nbsp;timestamps.</p>
-  
         <ol class="webmentions__list">
           ${mentions.map(webmention =>
             `<li class="webmentions__item">
