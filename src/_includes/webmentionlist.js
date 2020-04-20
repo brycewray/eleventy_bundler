@@ -17,71 +17,70 @@ module.exports = function(eleventyConfig) {
   
     <div class="webmentions" id="webmentions">
       <h3>Webmentions</h3>
-      ${wMentions.length > 0 // if there are any WMs **at all**
-        ? `
-        ${wMentions.map(wMention =>
-          `${likesSize
-            ? `<details>
-                <summary class="h4">Likes</summary>
-                <ul class="webmentions__list_facepile">
-                ${likes.map(like =>
-                  `<li><a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a></li>`
-                )}
-                </ul>
-              </details>`
-            : ``
-          }
-          ${repostsSize
-            ? `<details>
-                <summary class="h4">Reposts</summary>
-                <ul class="webmentions__list_facepile">
-                ${reposts.map(repost =>
-                  `<li><a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a></li>`
-                )}
-                </ul>
-              </details>`
-            : ``
-          }
-          ${repliesSize
-            ? ``
-            : ``
-          }
-          ${mentionsSize
-            ? ``
-            : ``
-          }
-          <ol class="webmentions__list">
-            <li class="webmentions__item">
-              <article class="webmention h-cite" id="webmention-${wMention['wm-id']}">
-                <div class="webmention__meta">
-                  ${wMention.author
-                    ? `<a class="webmention__author p-author h-card u-url" href="${wMention.url}" target="_blank" rel="noopener noreferrer">
-                      ${wMention.author.photo
-                        ? `<img class="webmention__author__photo u-photo" src="${wMention.author.photo}" alt="${wMention.author.name}">`
-                        : `<img class="webmention__author__photo" src="/images/webmention-avatar-default.svg" alt="(No image available)">`
-                      }
-                      <strong class="p-name">${wMention.author.name}</strong>
-                      </a>`
-                    : `<span class="webmention__author">
-                        <img class="webmention__author__photo" src="/images/webmention-avatar-default.svg" alt="(No image available)">
-                        <strong>Anonymous</strong>
-                      </span>`
-                  }
-                  ${wMention.published
-                    ? `&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${wMention.published}">${this.readableDateFromISO(wMention.published)}</time></span>`
-                    : ``
-                  }
-                </div>
-                <div class="webmention__content p-content">
-                  ${wMention.content.value}
-                </div>
-              </article>
-            </li>`
-            ).join('')
-          }
-        </ol>
+      ${wMentions.length > 0
+        ? 
         `
-        : `<p class="ctr">(No mentions yet.)</p>`
+        ${likesSize
+          ? `<details>
+              <summary class="h4">Likes</summary>
+              <ul class="webmentions__list_facepile">
+              ${likes.map(like =>
+                `<li><a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a></li>`
+              ).join('')}
+              </ul>
+            </details>`
+          : ``
+        }
+        ${repostsSize
+          ? `<details>
+              <summary class="h4">Reposts</summary>
+              <ul class="webmentions__list_facepile">
+              ${reposts.map(repost =>
+                `<li><a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a></li>`
+              ).join('')}
+              </ul>
+            </details>`
+          : ``
+        }
+        ${repliesSize
+          ? `<details>
+              <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies</summary>
+              <ol class="webmentions__list">
+                ${replies.map(reply =>
+                  `<li class="webmentions__item">
+                    <article class="webmention h-cite">
+                      <div class="webmention__meta">
+                        <a class="webmention__author p-author h-card u-url" href="${reply.url}"><img class="webmention__author__photo u-photo" src="${reply.author.photo}" alt="${reply.author.name}"><strong class="p-name">${reply.author.name}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${reply.published}">${this.readableDateFromISO(reply.published)}</time></span>
+                      </div>
+                      <div class="webmention__content p-content">
+                        ${reply.content.value}
+                      </div>
+                  </li>`
+                ).join('')}
+              </ol>
+            </details>`
+          : ``
+        }
+        ${mentionsSize
+          ? `<details>
+              <summary class="h4">Mentions</summary>
+              <ol class="webmentions__list">
+                ${mentions.map(mention =>
+                  `<li class="webmentions__item">
+                    <article class="webmention h-cite">
+                      <div class="webmention__meta">
+                        <a class="webmention__author p-author h-card u-url" href="${mention.url}"><img class="webmention__author__photo u-photo" src="${mention.author.photo}" alt="${mention.author.name}"><strong class="p-name">${mention.author.name}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${mention.published}">${this.readableDateFromISO(mention.published)}</time></span>
+                      </div>
+                      <div class="webmention__content p-content">
+                        ${mention.content.value}
+                      </div>
+                  </li>`
+                ).join('')}
+              </ol>
+            </details>`
+          : ``
+        }`
+        : `<p class="ctr">(No webmentions yet.)</p>`
       }
     </div>  
     `
