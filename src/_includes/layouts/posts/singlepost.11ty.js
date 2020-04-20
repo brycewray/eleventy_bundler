@@ -37,7 +37,7 @@ exports.render = function (data) {
     </article>
   </div>
 
-  ${data.title != "Home page" && data.title != "Posts"
+  ${data.title != "Home page" && data.title != "Posts" && data.title != "The obligatory About Me page"
     ? `
       ${data.oldComments
         ? data.oldComments
