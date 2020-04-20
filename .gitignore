@@ -46,3 +46,5 @@ _site
 
 *.code-workspace
 .env
+
+data/*.json
