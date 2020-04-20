@@ -17,6 +17,10 @@ module.exports = function(eleventyConfig) {
   
     <div class="webmentions" id="webmentions">
       <h3>Webmentions</h3>
+      <p>Likes = ${likesSize}<br />
+      Replies = ${repliesSize}<br />
+      Reposts = ${repostsSize}<br />
+      Mentions = ${mentionsSize}</p>
       ${wMentions.length > 0
         ? 
         `
@@ -53,7 +57,7 @@ module.exports = function(eleventyConfig) {
                         <a class="webmention__author p-author h-card u-url" href="${reply.url}"><img class="webmention__author__photo u-photo" src="${reply.author.photo}" alt="${reply.author.name}"><strong class="p-name">${reply.author.name}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${reply.published}">${this.readableDateFromISO(reply.published)}</time></span>
                       </div>
                       <div class="webmention__content p-content">
-                        ${reply.content.value}
+                        ${reply.content.html}
                       </div>
                   </li>`
                 ).join('')}
@@ -72,7 +76,7 @@ module.exports = function(eleventyConfig) {
                         <a class="webmention__author p-author h-card u-url" href="${mention.url}"><img class="webmention__author__photo u-photo" src="${mention.author.photo}" alt="${mention.author.name}"><strong class="p-name">${mention.author.name}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${mention.published}">${this.readableDateFromISO(mention.published)}</time></span>
                       </div>
                       <div class="webmention__content p-content">
-                        ${mention.content.value}
+                        ${mention.content.html}
                       </div>
                   </li>`
                 ).join('')}
