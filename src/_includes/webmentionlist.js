@@ -17,10 +17,6 @@ module.exports = function(eleventyConfig) {
   
     <div class="webmentions" id="webmentions">
       <h3>Webmentions</h3>
-      <p>Likes = ${likesSize}<br />
-      Replies = ${repliesSize}<br />
-      Reposts = ${repostsSize}<br />
-      Mentions = ${mentionsSize}</p>
       ${wMentions.length > 0
         ? 
         `
