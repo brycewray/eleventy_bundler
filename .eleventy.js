@@ -2,6 +2,7 @@ const { DateTime } = require('luxon')
 const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
+const filters = require('./src/assets/utils/filters.js')
 
 module.exports = function (eleventyConfig) {
 
@@ -135,6 +136,11 @@ module.exports = function (eleventyConfig) {
         entry.content.value = html ? clean(html) : clean(text)
         return entry
       })
+  })
+
+  // next is based on the 'const filters' line at the top
+  Object.keys(filters).forEach(filterName => {
+    eleventyConfig.addFilter(filterName, filters[filterName])
   })
 
   /* === END, webmentions stuff === */
