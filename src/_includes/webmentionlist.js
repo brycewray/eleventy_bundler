@@ -55,6 +55,7 @@ module.exports = function(eleventyConfig) {
                       <div class="webmention__content p-content">
                         ${reply.content.html}
                       </div>
+                    </article>
                   </li>`
                 ).join('')}
               </ol>
@@ -74,6 +75,7 @@ module.exports = function(eleventyConfig) {
                       <div class="webmention__content p-content">
                         ${mention.content.html}
                       </div>
+                    </article>
                   </li>`
                 ).join('')}
               </ol>
