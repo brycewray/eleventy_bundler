@@ -2,11 +2,15 @@ const { DateTime } = require('luxon')
 const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
+const filters = require('./src/assets/utils/filters.js')
 
 module.exports = function (eleventyConfig) {
 
   // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
   ofotigrid(eleventyConfig)
+
+  // Filters for webmentions are added
+  // **IN THAT SECTION BELOW!!**
 
   eleventyConfig.setQuietMode(true)
 
@@ -100,9 +104,9 @@ module.exports = function (eleventyConfig) {
   // Webmentions Filter
   eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
     const allowedTypes = [
+      'like-of',
       'mention-of',
       'in-reply-to',
-      'like-of',
       'repost-of',
       'bookmark-of'
     ]
@@ -128,13 +132,18 @@ module.exports = function (eleventyConfig) {
     return webmentions
       .filter(entry => entry['wm-target'] === url)
       .filter(entry => allowedTypes.includes(entry['wm-property']))
+      .sort(orderByDate)/*
       .filter(entry => !!entry.content)
-      .sort(orderByDate)
       .map(entry => {
         const { html, text } = entry.content
         entry.content.value = html ? clean(html) : clean(text)
         return entry
-      })
+      })*/
+  })
+
+  // next is based on the 'const filters' line at the top
+  Object.keys(filters).forEach(filterName => {
+    eleventyConfig.addFilter(filterName, filters[filterName])
   })
 
   /* === END, webmentions stuff === */
