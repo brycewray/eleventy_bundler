@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
         `
         ${likesSize
           ? `<details>
-              <summary class="h4">Likes</summary>
+              <summary class="h4">Likes&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${likesSize})</span></summary>
               <ul class="webmentions__list_facepile">
               ${likes.map(like =>
                 `<li><a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a></li>`
@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
         }
         ${repostsSize
           ? `<details>
-              <summary class="h4">Reposts</summary>
+              <summary class="h4">Reposts&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${repostsSize})</span></summary>
               <ul class="webmentions__list_facepile">
               ${reposts.map(repost =>
                 `<li><a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a></li>`
@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
         }
         ${repliesSize
           ? `<details>
-              <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies</summary>
+              <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${repliesSize})</span></summary>
               <ol class="webmentions__list">
                 ${replies.map(reply =>
                   `<li class="webmentions__item">
@@ -64,7 +64,7 @@ module.exports = function(eleventyConfig) {
         }
         ${mentionsSize
           ? `<details>
-              <summary class="h4">Mentions</summary>
+              <summary class="h4">Mentions&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${mentionsSize})</span></summary>
               <ol class="webmentions__list">
                 ${mentions.map(mention =>
                   `<li class="webmentions__item">
