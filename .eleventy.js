@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
+  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.11ty.js")
 
   /* Markdown plugins */
   // https://www.11ty.dev/docs/languages/markdown/
