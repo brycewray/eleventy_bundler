@@ -69,7 +69,7 @@ module.exports = function (eleventyConfig) {
     pattern: /^https:/,
     attrs: {
       target: '_blank',
-      rel: 'noopener'
+      rel: 'noreferrer noopener'
     }
   })
   eleventyConfig.setLibrary("md", markdownEngine)
