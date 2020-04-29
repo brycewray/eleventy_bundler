@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Gatsby"
 description: "Part 4 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Gatsby."
 author: Bryce Wray
 date: 2020-04-28T16:45:00-05:00
-#lastmod: TBD
+lastmod: 2020-04-29T06:40:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 ---
 
@@ -26,13 +26,13 @@ I knew that [Chris Biscardi](https://www.christopherbiscardi.com/post/building-g
 
 Still, handling the webmention.io token as an [environment variable](https://en.wikipedia.org/wiki/Environment_variable) in Gatsby was tricky because I had to do two things to make the plugin send the appropriate token:
 
-- Instead of having just one `/.env` file, I had to have separate `./env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node JS](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
+- Instead of having just one `/.env` file, I had to have separate `/.env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node JS](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
 
 [^RegularEnv]: Just to be consistent with the other repos, I still put a [non-source-controlled](https://dev.to/somedood/please-dont-commit-env-3o9h) `/.env` file in the Gatsby repo, but I know Gatsby doesn't see it.
 
-- In each of those `/env.*` (so to speak) files, I had to give the webmention token a name with a *prefix* of `GATSBY_`. (I did try a [plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-env-variables/) that was supposed to fix this, but it didn't work for me.) So, since my token is called `WEBMENTION_IO_TOKEN` in other repos' respective `.env` files, I named it `GATSBY_WEBMENTION_IO_TOKEN` in *both* `/.env.development` and `/.env.production`.
+- In each of those `/.env.*` (so to speak) files, I had to give the webmention token a name with a *prefix* of `GATSBY_`. (I did try a [plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-env-variables/) that was supposed to fix this, but it didn't work for me.) So, since my token is called `WEBMENTION_IO_TOKEN` in other repos' respective `/.env` files, I named it `GATSBY_WEBMENTION_IO_TOKEN` in *both* `/.env.development` and `/.env.production`.
 
-**Note**: If you deploy a repo like this through [Netlify](https://netlify.com), that `.env.production` file is irrelevant since the proper procedure is to [let Netlify handle sending an environment variable](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables) at the appropriate time. I use that file only for executing "production" builds on my local setup in the testing process through the `gatsby build` command (which is all that's in the `build` script in [`package.json`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/package.json)).
+**Note**: If you deploy a repo like this through [Netlify](https://netlify.com), that `/.env.production` file is irrelevant since the proper procedure is to [let Netlify handle sending an environment variable](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables) at the appropriate time. I use that file only for executing "production" builds on my local setup in the testing process through the `gatsby build` command (which is all that's in the `build` script in [`package.json`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/package.json)).
 
 Once I'd properly assuaged this particular Gatsby quirk, I could see the webmention.io data was clearly coming through in GraphQL. That's why I figured I was already about eight-tenths of the way home even before I got started on the more tedious coding required to make things actually appear.
 

@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
-#lastmod: TBD
+lastmod: 2020-04-29T06:40:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
 ---
 
@@ -48,7 +48,7 @@ Finally, after hours of sifting through similar issues reports from Hugo users, 
 "dev:wmFetch": "node -r dotenv/config assets/js/webmentions.js"
 ```
 
-**Note**: If you deploy a repo like this through [Netlify](https://netlify.com), that `.env` file is irrelevant in production, since the proper procedure is to [let Netlify handle sending an environment variable](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables) at the appropriate time. Other than during development, I use that file only for executing "production" builds on my local setup in the testing process through the `testbuild` script in `/package.json`.
+**Note**: If you deploy a repo like this through [Netlify](https://netlify.com), that `/.env` file is irrelevant in production, since the proper procedure is to [let Netlify handle sending an environment variable](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables) at the appropriate time. Other than during development, I use that file only for executing "production" builds on my local setup in the testing process through the `testbuild` script in `/package.json`.
 
 
 ## Hugo: Displaying webmentions
