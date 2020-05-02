@@ -7,7 +7,7 @@ description: How I came to realize why one particular creative writing app was a
 author: Bryce Wray
 date: 2018-09-22T11:04:36-05:00
 lastmod: 2020-04-22T19:30:00-05:00
-discussionId: 2018-09-why-finally-settled-ulysses
+discussionId: "2018-09-why-finally-settled-ulysses"
 ---
 
 As I write this in late September, 2018, it’s a little over a year since I began writing a novel I really, truly thought I’d have finished by now.
