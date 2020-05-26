@@ -2,7 +2,13 @@
 
 import '../css/index.css'
 
-import 'vanilla-lazyload'
+import LazyLoad from "vanilla-lazyload"
+var lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy",
+  cancel_on_exit: true,
+  threshold: 150,
+  // ...more custom settings?
+})
 
 import 'prismjs'
 
