@@ -83,7 +83,14 @@ module.exports = {
               sizes: [
                 20, // placeholder for lqip
                 300,
+                450,
                 600,
+                750,
+                900,
+                1050,
+                1200,
+                1350,
+                1500,
                 4000, // using a ridiculous width so it will process the original (won't make a bigger version)
               ],
               placeholder: false, // otherwise, bundle is too big

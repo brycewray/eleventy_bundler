@@ -1,7 +1,8 @@
+
 module.exports = function (data) {
   return `
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-body dark:bg-black">
   ${this.headTag(data)}
   <body>
     ${this.siteHeader(data)}
@@ -10,5 +11,5 @@ module.exports = function (data) {
     <script src="/bundle.js"></script>
   </body>
 </html>
-  `
+`
 }

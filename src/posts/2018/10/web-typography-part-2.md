@@ -6,22 +6,17 @@ subtitle: Part 2 of a two-part series on Web typography
 description: Making the case for a system “fonts” approach to the typography on Web sites.
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2019-12-08T17:48:00-06:00
+lastmod: 2020-05-20T12:51:00-05:00
 discussionId: "2018-10-web-typography-part-2"
 ---
 
-<div class="yellowBox">
-	<p><strong>Note from 2019-12-08</strong>: Although the system &ldquo;fonts&rdquo; approach I describe in this post is still quite sensible in many cases, the <a href="/posts/2019/12/packing-up">decision to move the site to an Eleventy/webpack combination</a> allowed me to adopt a standard appearance for all devices and OSs without some of the usual technical drawbacks that I&rsquo;ll mention herein.</p>
-</div>
-&nbsp;<br />
-
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
-<hr style="border: 1px solid #666;" />
+<hr />
 
 _**Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there’s a major change at the bottom. For the rest of you, as a friend from my high school days used to say, “Go ahead on.”_
 
-<hr style="border: 1px solid #666;" />
+<hr />
 
 First, this nerdish note: you’ll see me referring herein to _typefaces_ rather than _fonts_. That said, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I would probably slip and call them “fonts,” as well.[^1] It’s more commonly understood and, besides, we’re all accustomed to how our apps’ menus call them “fonts” rather than “typefaces.” That convention that dates back at least to 1984 and the original Mac. However, as Wikipedia says:
 
@@ -33,7 +28,7 @@ So, with that understood, let’s get on with it.
 
 The early years of the Web involved considerable limitations where Web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system “fonts”](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the Web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple Web site as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
-{% lazypicture "Early-Web-font-grfx-1-2018-10-16_1218x1296", "jpg", 1218, "Image from Apple Web site in 1999 showing graphic elements as text" %}
+{% lazypicture "Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg", "Image from Apple Web site in 1999 showing graphic elements as text" %}
 
 The only “real” text in this view was the timestamp, on the right side under the image of the [iMac of that era in all its Bondi Blue glory](https://everymac.com/systems/apple/imac/specs/imac_ab.html). All other textual elements shown were graphics. (The image-missing icon above the [iBook](https://everymac.com/systems/apple/ibook/index-ibook.html) image apparently indicates a missing image that the Internet Archive didn’t capture at the time or, otherwise, was unable to recover at the time I made this screen capture.)
 
@@ -81,17 +76,17 @@ In case you aren’t familiar with all of these, here you go (all except the gen
 
 <table class="noborders">
 <thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
-<tr><td class="td30">San Francisco</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_San_Francisco-684.png" alt="San Francisco typeface"></td></tr>
-<tr><td class="td30">Segoe UI</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Segoe_UI-684.png" alt="Segoe UI typeface"></td></tr>
-<tr><td class="td30">Tahoma</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Tahoma-684.png" alt="Tahoma typeface"></td></tr>
-<tr><td class="td30">Roboto</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Roboto_from_GF-684.png" alt="Roboto typeface"></td></tr>
-<tr><td class="td30">Oxygen</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Oxygen_from_GF-684.png" alt="Oxygen typeface" ></td></tr>
-<tr><td class="td30">Ubuntu</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Ubuntu_from_GF-684.png" alt="Ubuntu typeface"></td></tr>
-<tr><td class="td30">Cantarell</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Cantarell_from_GF-684.png" alt="Cantarell typeface"></td></tr>
-<tr><td class="td30">Fira Sans</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Fira_Sans_from_GF-684.png" alt="Fira Sans typeface"></td></tr>
-<tr><td class="td30">Droid Sans</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Droid_Sans_from_GF-684.png" alt="Droid Sans typeface"></td></tr>
-<tr><td class="td30">Helvetica Neue</td><td class="td70"><img loading="lazy" src="/images/Sys_font_stack_Helvetica_Neue-680.png" alt="Helvetica Neue typeface"></td></tr>
-<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img loading="lazy" src="/images/Sys_font_stack_Lucida_Grande-680.png" alt="Lucida Grande typeface"></td></tr>
+<tr><td class="td30">San Francisco</td><td class="td70">{% lazypicture "Sys_font_stack_San_Francisco.png", "San Francisco typeface" %}</td></tr>
+<tr><td class="td30">Segoe UI</td><td class="td70">{% lazypicture "Sys_font_stack_Segoe_UI.png", "Segoe UI typeface" %}</td></tr>
+<tr><td class="td30">Tahoma</td><td class="td70">{% lazypicture "Sys_font_stack_Tahoma.png", "Tahoma typeface" %}</td></tr>
+<tr><td class="td30">Roboto</td><td class="td70">{% lazypicture "Sys_font_stack_Roboto_from_GF.png", "Roboto typeface" %}</td></tr>
+<tr><td class="td30">Oxygen</td><td class="td70">{% lazypicture "Sys_font_stack_Oxygen_from_GF.png", "Oxygen typeface" %}</td></tr>
+<tr><td class="td30">Ubuntu</td><td class="td70">{% lazypicture "Sys_font_stack_Ubuntu_from_GF.png", "Ubuntu typeface" %}</td></tr>
+<tr><td class="td30">Cantarell</td><td class="td70">{% lazypicture "Sys_font_stack_Cantarell_from_GF.png", "Cantarell typeface" %}</td></tr>
+<tr><td class="td30">Fira Sans</td><td class="td70">{% lazypicture "Sys_font_stack_Fira_Sans_from_GF.png", "Fira Sans typeface" %}</td></tr>
+<tr><td class="td30">Droid Sans</td><td class="td70">{% lazypicture "Sys_font_stack_Droid_Sans_from_GF.png", "Droid Sans typeface" %}</td></tr>
+<tr><td class="td30">Helvetica Neue</td><td class="td70">{% lazypicture "Sys_font_stack_Helvetica_Neue.png", "Helvetica Neue typeface" %}</td></tr>
+<tr><td class="td30">Lucida Grande</td><td class="ctr td70">{% lazypicture "Sys_font_stack_Lucida_Grande.png", "Lucida Grande typeface" %}</td></tr>
 </table>
 
 The easiest way[^3] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):

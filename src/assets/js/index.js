@@ -1,16 +1,14 @@
 // require('dotenv').config() // -- best done in Netlify
 
-require('typeface-roboto-mono')
-require('typeface-public-sans')
-
 import '../css/index.css'
 
-
-import 'lazysizes'
-import 'lazysizes/plugins/blur-up/ls.blur-up'
-import 'lazysizes/plugins/unveilhooks/ls.unveilhooks'
-// lazysizes.cfg.blurupMode = 'auto'
-// ----- uses blur-up with only non-cached images (https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/blur-up)
+import LazyLoad from "vanilla-lazyload"
+var lazyLoadInstance = new LazyLoad({
+  elements_selector: ".lazy",
+  cancel_on_exit: true,
+  threshold: 150,
+  // ...more custom settings?
+})
 
 import 'prismjs'
 

@@ -5,5 +5,4 @@ module.exports = function (eleventyConfig) {
     <title>${data.title} | brycewray.com</title>
     `
   })
-
 }

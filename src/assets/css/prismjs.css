@@ -5,10 +5,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-
- code {
-   font-family: var(--monospaced);
-   background: #dfefff;
+code {
+  background: #dfefff;
  }
 
  @media (prefers-color-scheme: dark) {
@@ -21,8 +19,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  pre[class*="language-"] {
    color: #ccc;
    background: none;
-   /* @apply font-codefont; */
-   font-family: var(--monospaced);
    text-align: left;
    white-space: pre;
    word-spacing: normal;
@@ -157,9 +153,10 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  div.code-toolbar > .toolbar .toolbar-item {
    display: inline-block;
-   span {
-     color: #fff;
-   }
+ }
+
+ div.code-toolbar > .toolbar .toolbar-item span {
+   color: #fff;
  }
  
  div.code-toolbar > .toolbar a {
@@ -174,7 +171,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
    line-height: normal;
    overflow: visible;
    padding: 0;
-   -webkit-user-select: none; /* for button */
+   user-select: none; /* for button */
+   -webkit-user-select: none;
    -moz-user-select: none;
    -ms-user-select: none;
  }
@@ -182,12 +180,12 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  div.code-toolbar > .toolbar a,
  div.code-toolbar > .toolbar button,
  div.code-toolbar > .toolbar span {
+   background: #000;
+   border-radius: .5em;
+   box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
    color: #fff; /* was #bbb */
    font-size: .8em;
    padding: 0 .5em;
-   background: #000;
-   box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-   border-radius: .5em;
  }
  
  div.code-toolbar > .toolbar a:hover,

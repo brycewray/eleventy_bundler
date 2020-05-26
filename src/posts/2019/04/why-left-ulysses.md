@@ -8,16 +8,16 @@ date: 2019-04-20T11:17:00-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
 oldComments: |
-    <div class="webmentions">
-      <h3 class="ctr">Comments</h3>
-      <p class="legal ctr">
+    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
+      <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
-      <p class="commentOpen"><strong>Chris Rosser</strong> <em>2019-04-30</em></p>
-      <p class="commentBody">An excellent and very well considered article as always. Thanks for posting it!</p>
+      <p class="mt-6 mb-0 text-base"><strong>Chris Rosser</strong> <span class="italic text-sm">2019-04-30</span></p>
+      <p class="my-0 text-base leading-normal">An excellent and very well considered article as always. Thanks for posting it!</p>
     
-      <p class="commentOpen"><strong>Bryce Wray</strong> <em>2019-05-01</em></p>
-      <p class="commentBody">Thank you, sir. I&rsquo;d have liked nothing more than for it to have been a &ldquo;Why I was able to stick with Ulysses despite a few scary moments&rdquo; article, instead (although that would have been a goofy article title); but, sadly, the continuing glitches left me no good choice in the end.</p>
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-05-01</span></p>
+      <p class="my-0 text-base leading-normal">Thank you, sir. I&rsquo;d have liked nothing more than for it to have been a &ldquo;Why I was able to stick with Ulysses despite a few scary moments&rdquo; article, instead (although that would have been a goofy article title); but, sadly, the continuing glitches left me no good choice in the end.</p>
     </div>
 ---
 
@@ -58,7 +58,8 @@ At the beginning, I wished only to make blogging a little less tedious.
 
 I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-io/) [time](/posts/2019/02/old-dog-old-trick) over the  last few months that I was experimenting with other [Markdown](https://daringfireball.net/projects/markdown/) editors. While I still enjoyed writing this site's posts in Ulysses, I'd wearied of the write-export-write-export dance it required because the native Ulysses file format is proprietary, not the standalone Markdown (.md) needed by my [static site generator](https://www.staticgen.com) of choice, [Hugo](https://gohugo.io). Thus, I was trying writing apps that saved *natively* to Markdown without needing to export.[^preview]
 
-{% lazypicture "Ulysses_export_to_Markdown_750x528", "jpg", 750, "Screen capture of Quick Export feature of Ulysses app" %}
+{% lazypicture "Ulysses_export_to_Markdown_750x528.jpg", "Screen capture of Quick Export feature of Ulysses app" %}
+
 <p class="lazypicturecaption">Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.</p>
 
 [^preview]: Sometimes there are disparities between the original Markdown files and how they translate to HTML, so it's best to catch those in a local instance before you publish to the real site, and thus I was having to do that "dance" quite often during the editing process.
@@ -85,7 +86,8 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-{% lazypicture "iCloud_sync-save_icon_in_Ulysses_634x265", "jpg", 634, "Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" %}
+{% lazypicture "iCloud_sync-save_icon_in_Ulysses_634x265.jpg", "[Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" %}
+
 <p class="lazypicturecaption">When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn&rsquo;t change, even though you edited this file days ago on another device—Houston, we have an iCloud&nbsp;sync&nbsp;problem.</p>
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
@@ -188,7 +190,8 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-{% lazypicture "iA_Writer_on_why-left-ulysses_post_cropped_1272x620", "jpg", 1272, "Screen capture from iA Writer app" %}
+{% lazypicture "iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg", "Screen capture from iA Writer app" %}
+
 <p class="lazypicturecaption">Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.</p>
 
 *For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW]---and that's high praise, because each of those is outstanding in its own way.
