@@ -5,11 +5,7 @@ description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # 
 author: Bryce Wray
 date: 2018-09-14T21:00:00-05:00
 lastmod: 2019-10-02T19:15:00-05:00
-featured_image: /images/typewriter-monochrome_2242164_1280x720.jpg
-featured_image_base: typewriter-monochrome_2242164_1280x720
-featured_image_ext: jpg
-featured_image_width: 1280
-featured_image_alt: "Monochrome image of typing on an old typewriter"
+featured_image: typewriter-monochrome_2242164_1280x720.jpg
 featured_image_caption: "Image: Pixabay"
 ---
 
@@ -19,7 +15,7 @@ Eons ago, when [the Web was a new thing](http://info.cern.ch/hypertext/WWW/ThePr
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715", "jpg", 1280, "HTML code from a 1997 Web site" %}
+{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 Web site" %}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites---mine among them.
 
