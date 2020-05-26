@@ -80,7 +80,6 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss": "^7.0.30",
     "postcss-css-variables": "^0.14.0",
-    "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
@@ -94,7 +93,6 @@
     "sharp": "^0.25.3",
     "style-loader": "^1.2.1",
     "svg-url-loader": "^3.0.3",
-    "tailwindcss": "^1.4.6",
     "url-loader": "^3.0.0",
     "vanilla-lazyload": "^16.1.0",
     "webpack": "^4.43.0",
@@ -110,7 +108,12 @@
     "dotenv-webpack": "^1.8.0",
     "get-json": "^1.0.1",
     "html-minifier": "^4.0.0",
+    "image-size": "^0.8.3",
     "jsonfile": "^6.0.1",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "node-dir": "^0.1.17",
+    "postcss-clean": "^1.1.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.4.6"
   }
 }
