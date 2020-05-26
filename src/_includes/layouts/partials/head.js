@@ -3,8 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode('headTag', function(data) {
 
     return `
-  
-  <head>
+    <head>
     <meta name="generator" content="Eleventy - https://11ty.dev" />
         
     ${
@@ -30,7 +29,7 @@ module.exports = function(eleventyConfig) {
     }
     <link rel="webmention" href="https://webmention.io/brycewray.com/webmention" />
     <link rel="pingback" href="https://webmention.io/brycewray.com/xmlrpc" />
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,22 +77,23 @@ module.exports = function(eleventyConfig) {
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57-57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60-60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72-72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76-76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114-114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120-120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144-144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180-180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96-96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-16.png">
-    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144-144.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
-    <noscript><style>.lazyload {display: none !important;}</style></noscript>
+    <link rel="preload" as="style" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+    <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
     <noscript>
       <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
@@ -101,7 +101,7 @@ module.exports = function(eleventyConfig) {
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
   </head>
-  `
+    `
 
   })
 
