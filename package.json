@@ -10,11 +10,11 @@
     "start": "npm-run-all clean --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --watch --quiet",
     "dev:modewebpack": "webpack --mode development --watch --config webpack.dev.js",
-    "build": "npm-run-all clean --parallel prod:*",
+    "build": "NODE_ENV=production npm-run-all clean --parallel prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./_site",
     "prod:webpack": "webpack -p --config webpack.prod.js",
     "bsprod": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
-    "testbuild": "npm-run-all clean --parallel prod:webpack prod:eleventy bsprod"
+    "testbuild": "NODE_ENV=production npm-run-all clean --parallel prod:webpack prod:eleventy bsprod"
   },
   "keywords": [],
   "author": "",
