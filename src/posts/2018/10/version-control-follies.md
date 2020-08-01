@@ -1,20 +1,26 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: The version-control follies
 subtitle: Life’s too short for CLI
 description: Why you should go GUI with version control.
 author: Bryce Wray
-date: 2018-10-06T08:30:00-05:00
-lastmod: 2019-07-14T11:40:00-05:00
+date: 2018-10-06T13:30:00
+lastmod: 2019-07-14T16:40:00
 discussionId: "2018-10-version-control-follies"
+featured_image: javascript-programming-1873854_2605x1432.jpg
+featured_image_width: 2605
+featured_image_height: 1432
+featured_image_alt: "Computer code on a monitor"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/Boskampi-3788146/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1873854">Boskampi</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1873854">Pixabay</a></span>
 ---
 
-If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving Web pages are much better now, and are continuing to improve.
+If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving web pages are much better now, and are continuing to improve.
 
 However, one aspect of them probably won’t improve any time soon, and that’s the dreaded thing known as [*version control*](https://en.wikipedia.org/wiki/Version_control), usually accomplished through [Git](https://git-scm.com) commands. Now, mind you, I would never say a bad thing about version control. It’s wonderful to have when a SNAFU occurs in one or more parts of your site and you can just use a simple command to roll back to a more pristine setup.
 
-No, the problem is that “simple command” part. Just as [the cake is a lie](https://knowyourmeme.com/memes/the-cake-is-a-lie), so, too, is the idea that it’s just like falling off a log to use Git commands. Yet, when you read many how-to articles about working with an SSG to do a Web site, you keep seeing examples that are replete with Git commands entered through a [*command-line interface* (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
+No, the problem is that “simple command” part. Just as [the cake is a lie](https://knowyourmeme.com/memes/the-cake-is-a-lie), so, too, is the idea that it’s just like falling off a log to use Git commands. Yet, when you read many how-to articles about working with an SSG to do a website, you keep seeing examples that are replete with Git commands entered through a [*command-line interface* (CLI)](https://en.wikipedia.org/wiki/Command-line_interface).
 
 ## An obligatory break for pseudo-nostalgia
 
@@ -43,7 +49,7 @@ Having served my time in hell with MS-DOS a quarter-century ago, I say: nope, li
 
 ## “We’re gonna need&nbsp;.&nbsp;.&nbsp;.”
 
-And, yes, there are GUI apps for Git. But what complicated this a little bit for me was that, rather than the seemingly ubiquitous [GitHub](https://github.com), I’d chosen [Bitbucket](https://bitbucket.org) to hold the Web-based remote repository (or “repo”) for my site’s files, from which they’d be pushed to the host, [Netlify](https://netlify.com). Why Bitbucket? Because Bitbucket allows free private repos and GitHub doesn’t. No, I’m not that cheap, but this site isn’t likely to generate income for a good while, so I considered it a waste of money to have the meter ticking in the interim if I could help it. And, with Bitbucket, I could. Besides, its parent company is [Atlassian](https://www.atlassian.com/software), whose products I’ve used at multiple Day Jobs and thus I have become, at least, comfortable with how the company does things.
+And, yes, there are GUI apps for Git. But what complicated this a little bit for me was that, rather than the seemingly ubiquitous [GitHub](https://github.com), I’d chosen [Bitbucket](https://bitbucket.org) to hold the web-based remote repository (or “repo”) for my site’s files, from which they’d be pushed to the host, [Netlify](https://netlify.com). Why Bitbucket? Because Bitbucket allows free private repos and GitHub doesn’t. No, I’m not that cheap, but this site isn’t likely to generate income for a good while, so I considered it a waste of money to have the meter ticking in the interim if I could help it. And, with Bitbucket, I could. Besides, its parent company is [Atlassian](https://www.atlassian.com/software), whose products I’ve used at multiple Day Jobs and thus I have become, at least, comfortable with how the company does things.
 
 So I needed not just a GUI app for Git-commanded version control, but a GUI app for Git-commanded version control with Bitbucket. Fortunately for my sanity, Atlassian has one. It’s called [Sourcetree](https://www.sourcetreeapp.com). While some developers don’t care for it, I found it precisely what I needed. I needed only minutes to make Sourcetree see both my local repo and the remote repo on Bitbucket. After that, keeping them sync’d was, and has remained, a matter of point-and-click. Ah. bliss.
 

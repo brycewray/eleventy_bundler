@@ -3,19 +3,23 @@ layout: layouts/_default/index.11ty.js
 title: "Home page"
 description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # quotation marks to allow colon
 author: Bryce Wray
-date: 2018-09-14T21:00:00-05:00
-lastmod: 2019-10-02T19:15:00-05:00
-featured_image: typewriter-monochrome_2242164_1280x720.jpg
-featured_image_caption: "Image: Pixabay"
+date: 2018-09-15T02:00:00
+lastmod: 2020-07-17T00:30:00
+featured_image: typewriter-monochrome_2242164_6260x4374.jpg
+featured_image_width: 6260
+featured_image_height: 4374
+featured_image_alt: "Monochrome photo of hands typing on an old typewriter"
+featured_image_caption: |
+  Image: <a href="https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164">rawpixel</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164">Pixabay</a>
 ---
 
 # Welcome.
 
-Eons ago, when [the Web was a new thing](http://info.cern.ch/hypertext/WWW/TheProject.html) and people still capitalized _Web_, consarn it, [ISPs](https://en.wikipedia.org/wiki/Internet_service_provider) tended to provide free file space for people to have [little personal Web sites](https://consumerist.com/2015/03/20/where-did-everyone-from-the-90s-go-when-we-all-got-facebook-and-quit-web-1-0/). Back in those days, one did so with whatever [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) client one could find, what we now know as static [HTML](https://www.w3schools.com/html/html_intro.asp) files (but not [CSS](https://www.w3schools.com/Css/), not yet anyway), and lots and lots of [dialup modem noise](https://en.wikipedia.org/wiki/File:Dial_up_modem_noises.ogg).
+Eons ago, when [the web was a new thing](http://info.cern.ch/hypertext/WWW/TheProject.html)---and people still capitalized _Web_ and used two words for _Web site_, consarn it---[ISPs](https://en.wikipedia.org/wiki/Internet_service_provider) tended to provide free file space for people to have [little personal websites](https://consumerist.com/2015/03/20/where-did-everyone-from-the-90s-go-when-we-all-got-facebook-and-quit-web-1-0/). Back in those days, one did so with whatever [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) client one could find, what we now know as static [HTML](https://www.w3schools.com/html/html_intro.asp) files (but not [CSS](https://www.w3schools.com/Css/), not yet anyway), and lots and lots of [dialup modem noise](https://en.wikipedia.org/wiki/File:Dial_up_modem_noises.ogg).
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 Web site" %}
+{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 website", 1280, 715 %}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites---mine among them.
 
@@ -25,7 +29,7 @@ And then there are creatures like Facebook, Instagram, and Twitter, which [for a
 
 (Don’t worry. This site is, and will remain, apolitical by design unless we're nearing World War III or something along those lines. Maybe even then, since I doubt my little ol' site is going to stop The Really Big One.)
 
-Anyway, it seemed a lot of the fun had gone out of puttering around on the Web and actually creating content. Then---first among the techno-cognoscenti and, more recently, among us ordinary folks---came Web sites powered by [static site generators (SSGs)](https://www.staticgen.com) and written in [Markdown](https://daringfireball.net/projects/markdown/). I found them a source of curiosity at first but gradually became more interested in the prospect, especially as I learned more about their [technical advantages](https://www.makeuseof.com/tag/reasons-ditch-cms-static-site-generator/); and, so, here we are.
+Anyway, it seemed a lot of the fun had gone out of puttering around on the web and actually creating content. Then---first among the techno-cognoscenti and, more recently, among us ordinary folks---came websites powered by [static site generators (SSGs)](https://www.staticgen.com) and written in [Markdown](https://daringfireball.net/projects/markdown/). I found them a source of curiosity at first but gradually became more interested in the prospect, especially as I learned more about their [technical advantages](https://www.makeuseof.com/tag/reasons-ditch-cms-static-site-generator/); and, so, here we are.
 
 Thank you for stopping by. I hope you find this site a source of various little nuggets of helpful info, and occasionally a laugh or two---even if I hadn't intended it, but especially if I had.
 
