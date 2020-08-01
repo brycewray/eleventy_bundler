@@ -59,7 +59,7 @@ module.exports = {
             },
           },
         ],
-      },
+      },/*
       {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
@@ -71,7 +71,7 @@ module.exports = {
             },
           },
         ],
-      },
+      },*/
       {
         test: /\.(jpe?g|png|gif)$/i,
         use: [
@@ -81,7 +81,7 @@ module.exports = {
               adapter: require('responsive-loader/sharp'),
               // quality: 60,
               sizes: [
-                20, // placeholder for lqip
+                // 20, // placeholder for lqip
                 300,
                 450,
                 600,
