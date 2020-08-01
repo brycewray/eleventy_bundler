@@ -16,6 +16,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
+  eleventyConfig.addPassthroughCopy('browserconfig.xml')
+  eleventyConfig.addPassthroughCopy('./src/images') // not just icons due to that one OG image
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")

@@ -17,10 +17,10 @@ module.exports = function(eleventyConfig) {
       <nav role="navigation" class="nav">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="/about" title="About">About</a>
+            <a href="/about/" title="About">About</a>
           </li>
           <li class="nav__item">
-            <a href="/posts" title="Posts">Posts</a>
+            <a href="/posts/" title="Posts">Posts</a>
           </li>
         </ul>
       </nav>

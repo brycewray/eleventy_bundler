@@ -1,11 +1,13 @@
+const analyticsCode = require('../../../assets/utils/analytics.js')
+
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode('headTag', function(data) {
 
     return `
-    <head>
-    <meta name="generator" content="Eleventy - https://11ty.dev" />
-        
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
+    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - v${require(`@11ty/eleventy/package.json`).version}" />        
     ${
       (data.title == "Home page")
       ? `
@@ -17,6 +19,9 @@ module.exports = function(eleventyConfig) {
       <meta property="og:title" content="${data.title} | ${data.siteparams.siteTitle}" />
       `
     }
+
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://boa.brycewray.com">
 
     <!-- IndieWeb -->
     ${
@@ -34,8 +39,7 @@ module.exports = function(eleventyConfig) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
-
+    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720.jpg" />
     ${
       (data.title == "Home page")
       ? `
@@ -48,7 +52,6 @@ module.exports = function(eleventyConfig) {
         `
       : ``
     }
-
     ${
       (data.page.url !== null)
       ? `
@@ -61,7 +64,7 @@ module.exports = function(eleventyConfig) {
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
+    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720.jpg" />
     ${
       data.title !== "Home page"
       ? `
@@ -74,9 +77,18 @@ module.exports = function(eleventyConfig) {
       `
     }
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- **** BEGINNING, favicons **** -->
+
+    <!-- generics -->
+    <link rel="icon" href="/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/images/icons/favicon-57x57.png" sizes="57x57">
+    <link rel="icon" href="/images/icons/favicon-76x76.png" sizes="76x76">
+    <link rel="icon" href="/images/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/images/icons/favicon-128x128.png" sizes="128x128">
+    <link rel="icon" href="/images/icons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" href="/images/icons/favicon-228x228.png" sizes="228x228">
+
+    <!-- iOS -->
     <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
@@ -86,20 +98,30 @@ module.exports = function(eleventyConfig) {
     <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
-    <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-    <link rel="preload" as="style" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/main.css" type="text/css" />
-    <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="/images/icons/favicon-196x196.png">
+
+    <!-- Windows 8, IE 10 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+
+    <!-- Windows 8.1 and up, IE 11 -->
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <!-- **** CONCLUSION, favicons **** -->
+
+    <link rel="preload" as="style" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" type="text/css" />
+    <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>
 
     <noscript>
       <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
       <meta name="twitter:widgets:theme" content="dark">
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
+
+    ${analyticsCode}
   </head>
     `
 

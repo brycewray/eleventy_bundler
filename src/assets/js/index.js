@@ -1,18 +1,12 @@
-// require('dotenv').config() // -- best done in Netlify
-
 import '../css/index.css'
 
 import LazyLoad from "vanilla-lazyload"
 var lazyLoadInstance = new LazyLoad({
-  elements_selector: ".lazy",
-  cancel_on_exit: true,
   threshold: 150,
-  // ...more custom settings?
+  use_native: true,
 })
 
 import 'prismjs'
-
-import 'instant.page' // until there's a webpack-friendly version of flying-pages
 
 var req = require.context("../../images", true, /\.(jpe?g|png|gif)$/)
 req.keys().forEach(function(key){

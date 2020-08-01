@@ -25,7 +25,7 @@ module.exports = function(eleventyConfig) {
               <summary class="md:text-2xl font-bold tracking-tight">Likes&nbsp;&nbsp;<span class="text-base font-normal">(${likesSize})</span></summary>
               <div>
               ${likes.map(like =>
-                `<a href="${like.url}" class="border-0 no-underline" aria-label="${like.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" data-src="${like.author.photo}" alt="${like.author.name}"></a>`
+                `<a href="${like.url}" class="border-0 no-underline" aria-label="${like.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" data-src="${like.author.photo}" alt="${like.author.name}"></a>`
               ).join('')}
               </div>
             </details>`
@@ -36,7 +36,7 @@ module.exports = function(eleventyConfig) {
               <summary class="md:text-2xl font-bold tracking-tight">Reposts&nbsp;&nbsp;<span class="text-base font-normal">(${repostsSize})</span></summary>
               <div>
               ${reposts.map(repost =>
-                `<a href="${repost.url}" class="border-0 no-underline" aria-label="${repost.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" data-src="${repost.author.photo}" alt="${repost.author.name}"></a>`
+                `<a href="${repost.url}" class="border-0 no-underline" aria-label="${repost.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" data-src="${repost.author.photo}" alt="${repost.author.name}"></a>`
               ).join('')}
               </div>
             </details>`
@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
                   `<li class="mt-8">
                     <article class="block h-cite">
                       <div class="flex items-center flex-wrap">
-                        <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="${reply.url}" aria-label="${reply.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" data-src="${reply.author.photo}" alt="${reply.author.name}"><strong class="p-name text-base">${reply.author.name}</strong></a>&nbsp;<span class="text-sm"><time class="italic dt-published" datetime="${reply.published}">${this.readableDateFromISO(reply.published)}</time></span>
+                        <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="${reply.url}" aria-label="${reply.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" data-src="${reply.author.photo}" alt="${reply.author.name}"><strong class="p-name text-base">${reply.author.name}</strong></a>&nbsp;<span class="text-sm"><time class="italic dt-published" datetime="${reply.published}">${this.readableDateFromISO(reply.published)}</time></span>
                       </div>
                       <div class="p-content pt-2 pl-2 text-base leading-normal">
                         ${reply.content.html}
@@ -70,7 +70,7 @@ module.exports = function(eleventyConfig) {
                   `<li class="mt-8">
                     <article class="block h-cite">
                       <div class="flex items-center flex-wrap">
-                        <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="${mention.url}" aria-label="${mention.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" loading="lazy" data-src="${mention.author.photo}" alt="${mention.author.name}"><strong class="p-name text-base">${mention.author.name}</strong></a>&nbsp;<span class="text-sm"><time class="italic dt-published" datetime="${mention.published}">${this.readableDateFromISO(mention.published)}</time></span>
+                        <a class="text-black dark:text-white flex items-center flex-wrap border-0 no-underline p-author h-card" href="${mention.url}" aria-label="${mention.author.name}"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo lazy" data-src="${mention.author.photo}" alt="${mention.author.name}"><strong class="p-name text-base">${mention.author.name}</strong></a>&nbsp;<span class="text-sm"><time class="italic dt-published" datetime="${mention.published}">${this.readableDateFromISO(mention.published)}</time></span>
                       </div>
                       <div class="p-content text-base">
                         ${mention.content.html}
