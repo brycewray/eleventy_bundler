@@ -85,7 +85,7 @@
     "style-loader": "^1.2.1",
     "svg-url-loader": "^3.0.3",
     "url-loader": "^3.0.0",
-    "vanilla-lazyload": "^16.1.0",
+    "vanilla-lazyload": "^17.1.0",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
