@@ -1,5 +1,6 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ImageminPlugin = require('imagemin-webpack')
 
 module.exports = {
   entry: [
@@ -11,8 +12,17 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '/css/[name].css',
+      filename: '/css/index.css',
       chunkFilename: '[id].css',
+    }),
+    new ImageminPlugin({
+      bail: false,
+      cache: true,
+      imageminOptions: {
+        plugins: [
+          ["mozjpeg", { quality: 60 }],
+        ],
+      },
     }),
   ],
   node: {
@@ -25,6 +35,13 @@ module.exports = {
         test: /\.js$/, 
         use: 'babel-loader',
         exclude: '/node_modules'
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: 'images/[name].[ext]',
+        },
       },
       {
         test: /\.css$/,

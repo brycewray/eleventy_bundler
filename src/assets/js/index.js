@@ -1,10 +1,15 @@
 import '../css/index.css'
 
 import LazyLoad from "vanilla-lazyload"
-var lazyLoadInstance = new LazyLoad({
+const lazyLoadOptions = {
+  elements_selector: ".lazy",
   threshold: 150,
   use_native: true,
-})
+}
+const createLazyLoadInstance = () => {
+  return new LazyLoad(lazyLoadOptions)
+}
+document.addEventListener("DOMContentLoaded", createLazyLoadInstance)
 
 import 'prismjs'
 

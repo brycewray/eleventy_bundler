@@ -12,21 +12,23 @@ exports.render = function (data) {
     ${stringtoRet(data.featured_image, data.featured_image_alt, data.featured_image_width, data.featured_image_height, "posts")}
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
-      <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
-      <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
+        <h1 class="text-center text-4xl md:text-5xl xl:text-6xl md:text-left tracking-tight leading-tight mb-2 text-white">${data.title}</h1>
+        <h2 class="text-center text-2xl md:text-left md:text-3xl xl:text-4xl leading-tight tracking-tight text-white italic">
           ${
             data.subtitle
               ? data.subtitle
               : `&nbsp;`
           }
         </h2>
-        <p class="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:mt-8 mb-6 text-white">${data.description}</p>
-        <p class="text-sm md:text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
-          <span style="font-variant: small-caps;">published:</span>&nbsp; <strong>${this.pub_lastmod(data.page.date)}</strong><span style="font-variant: small-caps;">&nbsp;utc</span><br />
-          <span class="text-xs md:text-sm">
+        <p class="hidden not-italic md:block md:text-xl tracking-tight md:mt-3 mb-0 text-white">${data.description}</p>
+        <p class="text-base text-center md:text-right mt-3 mb-0 text-white">
+          <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
+            year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />
+          <span class="text-sm">
           ${
             data.lastmod !== null && data.lastmod !== undefined
-            ? `<span style="font-variant: small-caps;">last modified:</span>&nbsp;${this.pub_lastmod(data.lastmod)}<span style="font-variant: small-caps;">&nbsp;utc</span>`
+            ? `<span style="font-variant: small-caps">last modified:</span>&nbsp;${(data.lastmod).toLocaleDateString('en-US', {
+              year: 'numeric', month: 'long', day: 'numeric'})}`
             : `&nbsp;`
           }
           </span>
@@ -41,7 +43,7 @@ exports.render = function (data) {
     </div>
   </div>
 
-  <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 xb:w-5/12 mt-10 mr-auto ml-auto px-6 lg:px-16">
+  <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 mt-10 mr-auto ml-auto px-6 lg:px-16">
     <article>
       ${data.content}
     </article>

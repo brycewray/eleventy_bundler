@@ -80,27 +80,27 @@ module.exports = function(eleventyConfig) {
     <!-- **** BEGINNING, favicons **** -->
 
     <!-- generics -->
-    <link rel="icon" href="/images/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" href="/images/icons/favicon-57x57.png" sizes="57x57">
-    <link rel="icon" href="/images/icons/favicon-76x76.png" sizes="76x76">
-    <link rel="icon" href="/images/icons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" href="/images/icons/favicon-128x128.png" sizes="128x128">
-    <link rel="icon" href="/images/icons/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" href="/images/icons/favicon-228x228.png" sizes="228x228">
+    <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/images/favicon-57x57.png" sizes="57x57">
+    <link rel="icon" href="/images/favicon-76x76.png" sizes="76x76">
+    <link rel="icon" href="/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/images/favicon-128x128.png" sizes="128x128">
+    <link rel="icon" href="/images/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" href="/images/favicon-228x228.png" sizes="228x228">
 
     <!-- iOS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
 
     <!-- Android -->
-    <link rel="shortcut icon" sizes="196x196" href="/images/icons/favicon-196x196.png">
+    <link rel="shortcut icon" sizes="196x196" href="/images/favicon-196x196.png">
 
     <!-- Windows 8, IE 10 -->
     <meta name="msapplication-TileColor" content="#FFFFFF">
