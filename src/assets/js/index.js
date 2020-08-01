@@ -3,7 +3,7 @@ import '../css/index.css'
 import LazyLoad from "vanilla-lazyload"
 const lazyLoadOptions = {
   elements_selector: ".lazy",
-  threshold: 150,
+  threshold: 300,
   use_native: true,
 }
 const createLazyLoadInstance = () => {
