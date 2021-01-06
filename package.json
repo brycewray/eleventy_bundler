@@ -93,7 +93,7 @@
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dot-env": "0.0.1",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.8.0",
